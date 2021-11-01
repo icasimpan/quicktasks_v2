@@ -1,6 +1,6 @@
 ---
 title: "Golang Module"
-date: 2021-11-01T23:17:11+08:00
+date: 2021-11-01T23:05:11+08:00
 tags: [golang, module]
 draft: false
 ---
