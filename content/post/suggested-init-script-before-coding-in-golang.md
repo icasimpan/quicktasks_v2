@@ -13,7 +13,7 @@ My preference is to put it in a directory where my go code exists. So here's a s
 
 if [[ -z $GOPATH ]]; then
     export GOPATH=$(pwd)
-    export PATH=$GOPATH:$PATH
+    export PATH=$GOPATH/bin:$PATH
    
     echo '--------------------------------------------------------'
     echo 'GoLang environment now defined!' 
