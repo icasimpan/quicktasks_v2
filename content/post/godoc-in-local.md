@@ -1,5 +1,5 @@
 ---
-title: "godoc-in-local"
+title: "GoDoc in Local"
 date: 2021-11-05T10:05:11+08:00
 tags: [golang, godoc]
 draft: false
