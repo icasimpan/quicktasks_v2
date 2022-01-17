@@ -5,9 +5,9 @@ tags: [golang, godoc]
 draft: false
 ---
 
-In your preferred directory, initialize GOPATH using the short script in https://ismael.casimpan.com/quicktasks-golang/suggested-init-script-before-coding-in-golang/
+In your preferred directory, initialize GOPATH using the short script in [Suggested GoLang Init Script](https://ismael.casimpan.com/quicktasks-golang/suggested-init-script-before-coding-in-golang/).
 
-Do the following steps:
+Then, do the following steps:
 
 1. Install godoc
 
