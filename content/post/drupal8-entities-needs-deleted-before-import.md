@@ -1,7 +1,7 @@
 ---
 title: "Drupal 8: Entities neeeds to be deleted before importing error"
 date: 2019-09-21T00:20:25+08:00
-tags: [drupal, d8, entities, configuratio, cim, import, error]
+tags: [drupal, d8, entities, configuration, cim, import, error, troubleshooting]
 draft: false
 ---
 
