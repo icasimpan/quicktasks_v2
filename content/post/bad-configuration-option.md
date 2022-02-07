@@ -1,7 +1,7 @@
 ---
 title: "Bad Configuration Option"
 date: 2020-04-05T18:36:44+08:00
-tags: [ssh, config, bad]
+tags: [ssh, config, bad, troubleshooting]
 draft: false
 ---
 
