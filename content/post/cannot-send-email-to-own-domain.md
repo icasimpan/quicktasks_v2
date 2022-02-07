@@ -1,7 +1,7 @@
 ---
 title: "Cannot Send Email To Own Domain in Postfix"
 date: 2019-09-28T00:20:25+08:00
-tags: [postfix, cannot-send, own-domain]
+tags: [postfix, cannot-send, own-domain, troubleshooting]
 draft: false
 ---
 
