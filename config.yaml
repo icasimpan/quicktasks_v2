@@ -1,7 +1,7 @@
-baseURL: https://ismael.casimpan.com/quicktasks-golang
+baseURL: https://ismael.casimpan.com/quicktasks_v2
 languageCode: en-us
 defaultContentLanguage: en
-title: Golang | IT Quicktasks
+title: IT Quicktasks
 theme: cupper-hugo-theme
 #googleAnalytics: UA-123456789-1
 #disqusShortname: yourdiscussshortname
@@ -17,8 +17,8 @@ imaging:
   quality: 99
 
 params:
-  description: "IT Quicktasks: Golang"
-  homeMetaContent: golang
+  description: "IT Quicktasks: Multiple-Topics"
+  homeMetaContent: golang, mysql, apache, etc
   footer: Made with [Hugo](https://gohugo.io/). Themed by [Cupper](https://github.com/zwbetz-gh/cupper-hugo-theme).
   # For more date formats see https://gohugo.io/functions/format/
   dateFormat: Jan 2, 2006
@@ -30,7 +30,7 @@ menu:
     - name: Home
       url: /
       weight: 1
-    - name: Golang
+    - name: Quicktasks
       url: /post/
       weight: 2
     - name: Tags

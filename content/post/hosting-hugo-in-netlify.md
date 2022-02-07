@@ -1,0 +1,42 @@
+---
+title: "Hosting Hugo in Netlify"
+date: 2020-08-11T23:17:11+08:00
+tags: [hugo, hosting, netlify]
+draft: false
+---
+
+You need to add in root directory `netfily.toml`. 
+```
+[build]
+publish = "public"
+command = "hugo --gc --minify"
+
+[context.production.environment]
+HUGO_VERSION = "0.74.3"
+HUGO_ENV = "production"
+HUGO_ENABLEGITINFO = "true"
+
+[context.split1]
+command = "hugo --gc --minify --enableGitInfo"
+
+[context.split1.environment]
+HUGO_VERSION = "0.74.3"
+HUGO_ENV = "production"
+
+[context.deploy-preview]
+command = "hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL"
+
+[context.deploy-preview.environment]
+HUGO_VERSION = "0.74.3"
+
+[context.branch-deploy]
+command = "hugo --gc --minify -b $DEPLOY_PRIME_URL"
+
+[context.branch-deploy.environment]
+HUGO_VERSION = "0.74.3"
+
+[context.next.environment]
+HUGO_ENABLEGITINFO = "true"
+```
+
+See details in https://gohugo.io/hosting-and-deployment/hosting-on-netlify/
