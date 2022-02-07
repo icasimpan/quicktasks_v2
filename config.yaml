@@ -17,7 +17,7 @@ imaging:
   quality: 99
 
 params:
-  description: "IT Quicktasks: Multiple-Topics"
+  #description: "IT Quicktasks: Multiple-Topics"
   homeMetaContent: golang, mysql, apache, etc
   footer: Made with [Hugo](https://gohugo.io/). Themed by [Cupper](https://github.com/zwbetz-gh/cupper-hugo-theme).
   # For more date formats see https://gohugo.io/functions/format/
