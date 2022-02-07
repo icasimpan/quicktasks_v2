@@ -1,7 +1,7 @@
 ---
 title: "Remove Bad Keys From ~/.ssh/known_hosts"
 date: 2020-04-02T18:36:44+08:00
-tags: [ssh, keys, public-key, bad, config]
+tags: [ssh, keys, public-key, bad, config, troubleshooting]
 draft: false
 ---
 
