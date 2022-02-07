@@ -1,7 +1,7 @@
 ---
 title: "Drupal 8: Broken Web UI"
 date: 2019-09-21T00:20:25+08:00
-tags: [drupal, d8, ui, ux, webui, broken, error]
+tags: [drupal, d8, ui-ux, webui, broken, error, troubleshooting]
 draft: false
 ---
 
