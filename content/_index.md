@@ -5,15 +5,14 @@ title: "Home"
 
 Welcome to **IT Quicktasks**.
 
-* [MySQL/MariaDB](tags/mysql/)
-* [Drupal](tags/drupal)
+* *Databases* - [MySQL](tags/mysql/), [MariaDB](tags/mariadb/)
+* *CMS* - [Drupal](tags/drupal), [WordPress](tags/wordpress)
 * [Rsync](tags/rsync)
 * [Git](tags/git)
 * [Hugo](tags/hugo)
 * [Ansible](tags/ansible)
 * [Docker](tags/docker)
 * [Pantheon.io](tags/pantheon.io)
-* [WordPress](tags/wordpress)
 * [PHP](tags/php)
 * [Fail2Ban](tags/fail2ban)
 * [Postfix](tags/postfix)
