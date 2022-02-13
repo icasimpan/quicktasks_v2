@@ -29,7 +29,19 @@ dog
 moose
 ```
 
-If you're familiar with shell scripting, this is similar to one way to iterate in bash:
+Or more simply, without using "enumerate" function:
+```
+>>> # Pythonic Example
+>>> animals = ['cat', 'dog', 'moose']
+>>> for animal in animals:
+...     print(animal)
+...
+cat
+dog
+moose
+```
+
+If you're familiar with shell scripting, the last one is familiar as it is similar to one way to iterate in bash:
 ```
 strings="
 the
