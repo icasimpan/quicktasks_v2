@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'myapp', ## << add it here
 ]
+```
 
 # Create template files
 
@@ -81,7 +82,7 @@ db.sqlite3
 manage.py
 mysite/ 
 mysite/urls.py ## << here
-``
+```
 as follows:
 
 ```
