@@ -1,7 +1,7 @@
 ---
 title: "Starting Django"
 date: 2022-02-11T23:17:11+08:00
-tags: [python, django, web-dev]
+tags: [django, web-dev]
 draft: false
 ---
 
