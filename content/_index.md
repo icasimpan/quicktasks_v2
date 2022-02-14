@@ -5,7 +5,7 @@ title: "Home"
 
 Welcome to **IT Quicktasks**.
 
-* **Databases** - [MySQL](tags/mysql/), [MariaDB](tags/mariadb/)
+* **Databases** - [MySQL](tags/mysql/), [MariaDB](tags/mariadb/), [PostgreSQL](tags/postgresql)
 * **CMS** - [Drupal](tags/drupal), [WordPress](tags/wordpress)
 * **Email Management** - [Postfix](tags/postfix), [MailGun](tags/mailgun)
 * **Security** - [Fail2Ban](tags/fail2ban), [Firewall](tags/firewall), [TLS/SSL Cert](tags/sslcert)
@@ -15,8 +15,9 @@ Welcome to **IT Quicktasks**.
 * **Programming** - [PHP](tags/php), [GoLang](tags/golang)
 * **Linux OS** - [CentOS](tags/centos), [Ubuntu](tags/ubuntu), [Windows Subsystem for Linux](tags/wsl)
 * **Windows OS** - [Windows](tags/windows)
+* **Bash Scripting** - [Bash](tags/bash)
 * **Web Servers** - [Apache](tags/apache), [Nginx](tags/nginx)
 * **Dev Tools** - [Git](tags/git), [Docker](tags/docker), [CI](tags/ci)
 * **Cloud Platforms** - [Acquia](tags/acquia), [Pantheon.io](tags/pantheon.io)
-* **DevOps Tools** - [Rsync](tags/rsync), [Ansible](tags/ansible), [Curl](tags/curl), [SSH](tags/ssh), [Troubleshooting](tags/troubleshooting), [Kubernetes](tags/kubernetes), [Varnish](tags/varnish), [Solr](tags/solr), [NewRelic](tags/newrelic),  [PowerShell](tags/powershell), [Raspberry Pi](tags/raspberrypi)
+* **DevOps Tools** - [Rsync](tags/rsync), [Ansible](tags/ansible), [Curl](tags/curl), [SSH](tags/ssh), [Troubleshooting](tags/troubleshooting), [Kubernetes](tags/kubernetes), [Varnish](tags/varnish), [Solr](tags/solr), [NewRelic](tags/newrelic),  [PowerShell](tags/powershell), [Raspberry Pi](tags/raspberrypi), [AWK](tags/awk)
 * **Static Site Generators** - [Hugo](tags/hugo)
