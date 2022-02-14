@@ -13,7 +13,7 @@ Welcome to **IT Quicktasks**.
 * **Python** - [Python](tags/python), [Django](tags/django)
 * **Javascript** - [NodeJS](tags/nodejs)
 * **Programming** - [PHP](tags/php), [GoLang](tags/golang)
-* **Linux OS** - [CentOS](tags/centos), (tags/ubuntu), [Windows Subsystem for Linux](tags/wsl)
+* **Linux OS** - [CentOS](tags/centos), [Ubuntu](tags/ubuntu), [Windows Subsystem for Linux](tags/wsl)
 * **Windows OS** - [Windows](tags/windows)
 * **Web Servers** - [Apache](tags/apache), [Nginx](tags/nginx)
 * **Dev Tools** - [Git](tags/git), [Docker](tags/docker), [CI](tags/ci)
