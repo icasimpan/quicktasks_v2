@@ -38,7 +38,7 @@ What is your username? mikeymouse
 Hello, mikeymouse.
 ```
 
-"mikeymouse" was the keyboard input and taken using "<STDIN>" in line 7.
+"mikeymouse" was the keyboard input and taken using `<STDIN>` in line 7.
 If you comment out line 8, then your output would become:
 ```
 Hello, mikeymouse
