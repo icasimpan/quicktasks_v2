@@ -1,8 +1,8 @@
 ---
-title: "Simple OOP Example"
+title: "Simple Golang OOP Example"
 date: 2022-01-17T13:01:11+08:00
 tags: [golang, oop]
-draft: false
+draft: true
 ---
 
 *** draft ***
