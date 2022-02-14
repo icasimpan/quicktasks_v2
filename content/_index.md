@@ -9,6 +9,7 @@ Welcome to **IT Quicktasks**.
 * **CMS** - [Drupal](tags/drupal), [WordPress](tags/wordpress)
 * **Email Management** - [Postfix](tags/postfix), [MailGun](tags/mailgun)
 * **Security** - [Fail2Ban](tags/fail2ban), [Firewall](tags/firewall), [TLS/SSL Cert](tags/sslcert)
+* **Perl** - [Perl](tags/perl)
 * **Python** - [Python](tags/python), [Django](tags/django)
 * **Programming** - [PHP](tags/php), [GoLang](tags/golang)
 * **Linux OS** - [Linux](tags/linux), [Windows Subsystem for Linux](tags/wsl)
