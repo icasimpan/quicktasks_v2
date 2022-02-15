@@ -5,6 +5,10 @@ title: "Home"
 
 Welcome to **IT Quicktasks**.
 
+These are my notes on technologies I encountered and learned for quick reference.
+
+Accuracy is **NOT** implied. Enjoy!
+
 * **Databases** - [MySQL](tags/mysql/), [MariaDB](tags/mariadb/), [PostgreSQL](tags/postgresql)
 * **CMS** - [Drupal](tags/drupal), [WordPress](tags/wordpress)
 * **Email Management** - [Postfix](tags/postfix), [MailGun](tags/mailgun)
@@ -12,7 +16,8 @@ Welcome to **IT Quicktasks**.
 * **Perl** - [Perl](tags/perl)
 * **Python** - [Python](tags/python), [Django](tags/django)
 * **Javascript** - [NodeJS](tags/nodejs)
-* **Programming** - [PHP](tags/php), [GoLang](tags/golang)
+* **PHP** - [PHP](tags/php)
+* **Go** - [Go](tags/golang)
 * **Linux OS** - [CentOS](tags/centos), [Ubuntu](tags/ubuntu), [Windows Subsystem for Linux](tags/wsl)
 * **Windows OS** - [Windows](tags/windows)
 * **Bash Scripting** - [Bash](tags/bash)
