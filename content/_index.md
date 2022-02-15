@@ -8,7 +8,7 @@ Welcome to **IT Quicktasks**.
 These are my notes on technologies I encountered and learned for quick reference.
 Accuracy is **NOT** implied. Enjoy!
 
-* **Databases** - [MySQL](tags/mysql/), [MariaDB](tags/mariadb/), [PostgreSQL](tags/postgresql)
+* **Databases** - [MySQL](tags/mysql/), [MariaDB](tags/mariadb/), [PostgreSQL](tags/postgresql), [MSSQL](tags/mssql)
 * **CMS** - [Drupal](tags/drupal), [WordPress](tags/wordpress)
 * **Email Management** - [Postfix](tags/postfix), [MailGun](tags/mailgun)
 * **Security** - [Fail2Ban](tags/fail2ban), [Firewall](tags/firewall), [TLS/SSL Cert](tags/sslcert)
