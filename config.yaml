@@ -27,10 +27,10 @@ params:
 
 menu:
   nav:
-    - name: Home
+    - name: Curated
       url: /
       weight: 1
-    - name: Quicktasks
+    - name: All
       url: /post/
       weight: 2
     - name: Tags

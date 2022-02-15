@@ -1,12 +1,11 @@
 ---
 date: "2017-06-26T18:27:58+01:00"
-title: "Home"
+title: "Curated Quicktasks"
 ---
 
 Welcome to **IT Quicktasks**.
 
 These are my notes on technologies I encountered and learned for quick reference.
-
 Accuracy is **NOT** implied. Enjoy!
 
 * **Databases** - [MySQL](tags/mysql/), [MariaDB](tags/mariadb/), [PostgreSQL](tags/postgresql)
