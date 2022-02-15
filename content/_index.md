@@ -8,19 +8,24 @@ Welcome to **IT Quicktasks**.
 These are my notes on technologies I encountered and learned for quick reference.
 Accuracy is **NOT** implied. Enjoy!
 
-* **Databases** - [MySQL](tags/mysql/), [MariaDB](tags/mariadb/), [PostgreSQL](tags/postgresql), [MSSQL](tags/mssql)
-* **CMS** - [Drupal](tags/drupal), [WordPress](tags/wordpress)
-* **Email Management** - [Postfix](tags/postfix), [MailGun](tags/mailgun)
-* **Security** - [Fail2Ban](tags/fail2ban), [Firewall](tags/firewall), [TLS/SSL Cert](tags/sslcert)
+# Programming Language(s)
+
 * **Perl** - [Perl](tags/perl)
 * **Python** - [Python](tags/python), [Django](tags/django)
 * **Javascript** - [NodeJS](tags/nodejs)
 * **PHP** - [PHP](tags/php)
 * **Go** - [Go](tags/golang)
-* **Linux OS** - [CentOS](tags/centos), [Ubuntu](tags/ubuntu), [Windows Subsystem for Linux](tags/wsl)
-* **Windows OS** - [Windows](tags/windows)
 * **Bash Scripting** - [Bash](tags/bash)
 * **Java** - [Java 8](tags/java8)
+
+# Sysadmin
+
+* **Databases** - [MySQL](tags/mysql/), [MariaDB](tags/mariadb/), [PostgreSQL](tags/postgresql), [MSSQL](tags/mssql)
+* **CMS** - [Drupal](tags/drupal), [WordPress](tags/wordpress)
+* **Email Management** - [Postfix](tags/postfix), [MailGun](tags/mailgun)
+* **Security** - [Fail2Ban](tags/fail2ban), [Firewall](tags/firewall), [TLS/SSL Cert](tags/sslcert)
+* **Linux OS** - [CentOS](tags/centos), [Ubuntu](tags/ubuntu), [Windows Subsystem for Linux](tags/wsl)
+* **Windows OS** - [Windows](tags/windows)
 * **Web Servers** - [Apache](tags/apache), [Nginx](tags/nginx)
 * **Dev Tools** - [Git](tags/git), [Docker](tags/docker), [CI](tags/ci)
 * **Cloud Platforms** - [Acquia](tags/acquia), [Pantheon.io](tags/pantheon.io)
