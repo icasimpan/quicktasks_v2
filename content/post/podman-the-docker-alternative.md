@@ -1,6 +1,6 @@
 ---
-title: "Pull an Image from DockerHub"
-date: 2022-02-16T00:20:25+08:00
+title: "Podman: the Docker alternative."
+date: 2022-02-14T00:20:25+08:00
 tags: [docker, docker-alternative, podman]
 draft: false
 ---
