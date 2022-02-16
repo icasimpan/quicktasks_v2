@@ -21,7 +21,7 @@ Accuracy is **NOT** implied. Enjoy!
 
 # Sysadmin
 
-* **Databases** - [MySQL](tags/mysql/), [MariaDB](tags/mariadb/), [PostgreSQL](tags/postgresql), [MSSQL](tags/mssql)
+* **Databases** - [MySQL](tags/mysql/), [MariaDB](tags/mariadb/), [PostgreSQL](tags/postgresql), [MSSQL](tags/mssql), [SQLite](tags/sqlite)
 * **CMS** - [Drupal](tags/drupal), [WordPress](tags/wordpress)
 * **Email Management** - [Postfix](tags/postfix), [MailGun](tags/mailgun)
 * **Security** - [Fail2Ban](tags/fail2ban), [Firewall](tags/firewall), [TLS/SSL Cert](tags/sslcert)
