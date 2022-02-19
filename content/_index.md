@@ -17,7 +17,7 @@ Accuracy is **NOT** implied. Enjoy!
 * **Go** - [Go](tags/golang)
 * **Bash Scripting** - [Bash](tags/bash)
 * **Java** - [Java 8](tags/java8)
-* **Ruby** - [Ruby](tags/ruby), [Ruby on Rails](tags/ruby-on-rails)
+* [bm](tags/ruby-links)  **Ruby** - [Ruby](tags/ruby), [Ruby on Rails](tags/ruby-on-rails)
 
 # Sysadmin
 
