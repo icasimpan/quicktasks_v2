@@ -1,7 +1,7 @@
 ---
 title: "Links - Go"
-date: 2022-02-18T09:17:11+08:00
-tags: [go-links, golang]
+date: 2022-02-18T09:18:11+08:00
+tags: [go-links, golang, links]
 draft: false
 ---
 
