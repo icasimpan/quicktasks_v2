@@ -14,7 +14,7 @@ Accuracy is **NOT** implied. Enjoy!
 * **Python** - [Python](tags/python), [Django](tags/django)
 * **Javascript** - [NodeJS](tags/nodejs)
 * **PHP** - [PHP](tags/php)
-* **Go** - [Go](tags/golang)
+* [bm](https://ismael.casimpan.com/quicktasks/links-go/)**Go** - [Go](tags/golang)
 * **Bash Scripting** - [Bash](tags/bash)
 * **Java** - [Java 8](tags/java8)
 * [bm](https://ismael.casimpan.com/quicktasks/links-ruby/)  **Ruby** - [Ruby](tags/ruby), [Ruby on Rails](tags/ruby-on-rails)
