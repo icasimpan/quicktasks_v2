@@ -11,7 +11,7 @@ Accuracy is **NOT** implied. Enjoy!
 # Programming Language(s)
 
 * **Perl** - [Perl](tags/perl)
-* **Python** - [Python](tags/python), [Django](tags/django)
+* [bm](https://ismael.casimpan.com/quicktasks/links-python/)**Python** - [Python](tags/python), [Django](tags/django)
 * **Javascript** - [NodeJS](tags/nodejs)
 * **PHP** - [PHP](tags/php)
 * [bm](https://ismael.casimpan.com/quicktasks/links-go/)**Go** - [Go](tags/golang)
