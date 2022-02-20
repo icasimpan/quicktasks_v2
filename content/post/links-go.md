@@ -27,4 +27,5 @@ draft: false
 
 # Go Frameworks
 * [Go Echo Framework](https://echo.labstack.com/guide/) - High performance, extensible, minimalist Go web framework
+* [Go Echo Framework Tutorial](https://www.youtube.com/watch?v=_pww3NJuWnk&list=PLFmONUGpIk0YwlJMZOo21a9Q1juVrk4YY) - by Blue Bot on youtube
 * [GORM](https://gorm.io/index.html) - The fantastic ORM library for Golang
