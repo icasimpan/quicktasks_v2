@@ -8,16 +8,21 @@ Welcome to **IT Quicktasks**.
 These are my notes on technologies I encountered and learned for quick reference.
 Accuracy is **NOT** implied. Enjoy!
 
+# Web Development
+* [Web Dev Resources Links](https://ismael.casimpan.com/quicktasks/links-webdev/)
+* [Ruby on Rails](tags/ruby-on-rails)
+* [Django](tags/django)
+
 # Programming Language(s)
 
 * [bm](https://ismael.casimpan.com/quicktasks/links-perl) **Perl** - [Perl](tags/perl)
-* [bm](https://ismael.casimpan.com/quicktasks/links-python/) **Python** - [Python](tags/python), [Django](tags/django)
+* [bm](https://ismael.casimpan.com/quicktasks/links-python/) **Python** - [Python](tags/python)
 * [bm](https://ismael.casimpan.com/quicktasks/links-js) **Javascript** - [NodeJS](tags/nodejs)
 * [bm](https://ismael.casimpan.com/quicktasks/links-php/) **PHP** - [PHP](tags/php)
 * [bm](https://ismael.casimpan.com/quicktasks/links-go/) **Go** - [Go](tags/golang)
 * [bm](https://ismael.casimpan.com/quicktasks/links-bash/) **Bash Scripting** - [Bash](tags/bash)
 * **Java** - [Java 8](tags/java8)
-* [bm](https://ismael.casimpan.com/quicktasks/links-ruby/) **Ruby** - [Ruby](tags/ruby), [Ruby on Rails](tags/ruby-on-rails)
+* [bm](https://ismael.casimpan.com/quicktasks/links-ruby/) **Ruby** - [Ruby](tags/ruby)
 
 # Sysadmin
 
