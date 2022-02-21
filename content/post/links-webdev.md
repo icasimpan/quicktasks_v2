@@ -21,6 +21,7 @@ draft: false
 * [Google Fonts](https://fonts.google.com/) - Free Fonts from Google Fonts (check licenses)
 * [Emulsify](https://www.emulsify.info/) - open-source tool for creating design systems with reusable components and clear guidelines for teams
 * [Style Guides](http://styleguides.io/tools.html)
+* [Font Awesome](https://fontawesome.com/) -  internet's icon library and toolkit used by millions of designers, developers, and content creators
 
 # Front-End Frameworks
 * [Bootstrap](https://getbootstrap.com/)
