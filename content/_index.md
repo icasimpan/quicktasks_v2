@@ -10,7 +10,7 @@ Accuracy is **NOT** implied. Enjoy!
 
 # Programming Language(s)
 
-* [bm](https://ismael.casimpan.com/quicktasks/links-perl) *Perl** - [Perl](tags/perl)
+* [bm](https://ismael.casimpan.com/quicktasks/links-perl) **Perl** - [Perl](tags/perl)
 * [bm](https://ismael.casimpan.com/quicktasks/links-python/) **Python** - [Python](tags/python), [Django](tags/django)
 * [bm](https://ismael.casimpan.com/quicktasks/links-js) **Javascript** - [NodeJS](tags/nodejs)
 * [bm](https://ismael.casimpan.com/quicktasks/links-php/) **PHP** - [PHP](tags/php)
