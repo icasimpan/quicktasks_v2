@@ -18,3 +18,6 @@ draft: false
 * [Django Project](https://www.djangoproject.com/) 
 * [Flask](https://flask.palletsprojects.com/)
 * [Bottle](https://bottlepy.org/docs/dev/)
+
+# Others
+* [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/) - HTML & XML web scraping
