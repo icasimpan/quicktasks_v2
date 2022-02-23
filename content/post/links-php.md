@@ -10,6 +10,7 @@ draft: false
 * [OOP from php.net manual](https://www.php.net/manual/en/language.oop5.php)
 * [PHP PDO by PhpTutorial.net](https://www.phptutorial.net/php-pdo/)
 * [PHP OOP by PhpTutorial.net](https://www.phptutorial.net/php-oop/)
+* [Friends of PHP](https://github.com/FriendsOfPHP)
 
 # Laravel
 * [Laravel Tutorial for Beginners](https://www.guru99.com/laravel-tutorial.html)
