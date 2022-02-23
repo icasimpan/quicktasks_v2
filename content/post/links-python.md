@@ -21,3 +21,5 @@ draft: false
 
 # Others
 * [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/) - HTML & XML web scraping
+* [Stackoverflow: Other alternatives to venv](https://stackoverflow.com/questions/41573587/what-is-the-difference-between-venv-pyvenv-pyenv-virtualenv-virtualenvwrappe)
+* [Build REST API with Django REST Framework in 30mis](https://medium.com/swlh/build-your-first-rest-api-with-django-rest-framework-e394e39a482c)
