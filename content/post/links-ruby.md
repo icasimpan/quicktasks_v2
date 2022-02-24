@@ -21,3 +21,6 @@ draft: false
 # Learn Rails
 * [Boring Rails](https://boringrails.com/) - Direct to the point articles about rails
 * [Launch School: Demystifying Rails](https://launchschool.com/books/demystifying_rails)
+
+# Ruby Tools
+* [Curl to Ruby](https://jhawthorn.github.io/curl-to-ruby/)

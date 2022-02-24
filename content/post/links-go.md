@@ -30,3 +30,6 @@ draft: false
 * [Go Echo Framework Tutorial](https://www.youtube.com/watch?v=_pww3NJuWnk&list=PLFmONUGpIk0YwlJMZOo21a9Q1juVrk4YY) - by Blue Bot on youtube
 * [GORM](https://gorm.io/index.html) - The fantastic ORM library for Golang
 * [GORM Example](https://www.mindbowser.com/golang-go-with-gorm/)
+
+# Go Tools
+* [Curl to Go](https://mholt.github.io/curl-to-go/)
