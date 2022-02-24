@@ -36,4 +36,6 @@ draft: false
 
 # Tools
 * [API Collections](https://rapidapi.com/collections)
+* [DevDocs](https://devdocs.io/) - collection of Developer Documentations by freecodecamp.org
 * [Postman](https://www.postman.com)
+* [Quick guide to IndexDB](https://www.freecodecamp.org/news/a-quick-but-complete-guide-to-indexeddb-25f030425501/)
