@@ -24,3 +24,4 @@ draft: false
 
 # Ruby Tools
 * [Curl to Ruby](https://jhawthorn.github.io/curl-to-ruby/)
+* [Ruby Cheetsheet](https://www.shortcutfoo.com/app/dojos/ruby-dates/cheatsheet)
