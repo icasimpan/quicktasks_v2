@@ -14,3 +14,6 @@ draft: false
 * [150 Ruby Articles by Jesus Castello](https://www.rubyguides.com/ruby-post-index/)
 * [Idiosyncratic Ruby](https://idiosyncratic-ruby.com/) - Documenting All Ruby Specialities
 * [The Definitive Ruby Tutorial For Complete Beginners](https://www.rubyguides.com/ruby-tutorial/)
+
+# Learn Rails
+* [Boring Rails](https://boringrails.com/) - Direct to the point articles about rails
