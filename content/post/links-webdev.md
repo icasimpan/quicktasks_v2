@@ -9,6 +9,9 @@ draft: false
 * [Docksal](https://docksal.io/) - best tool for local web development without learning the nitty gritty docker and docker-compose things
 * [Provus](https://promet.github.io/provus/) - Promet's opensource framework for Drupal 8/9. I implemented the current automatic drupal core upgrade functionality.
 
+# Backend Development
+* [Launch School: Working with Web API](https://launchschool.com/books/working_with_apis)
+
 # Front-End Development
 * [Photopea](https://www.photopea.com/) - FREE Photoshop-like tool on the web
 * [Background Removal](https://www.remove.bg/)
@@ -30,4 +33,3 @@ draft: false
 # Web Accessibility
 * [WhoCanUse](https://whocanuse.com/) - Who can use this color combination?
 * [CanIUse](https://caniuse.com/)
-
