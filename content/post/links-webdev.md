@@ -40,3 +40,4 @@ draft: false
 * [Postman](https://www.postman.com)
 * [Quick guide to IndexDB](https://www.freecodecamp.org/news/a-quick-but-complete-guide-to-indexeddb-25f030425501/)
 * [httpie](https://httpie.io/docs/cli) - for testing APIs
+* [Bare CURL from CLI](https://www.baeldung.com/curl-rest) - For quick testing API without using Postman
