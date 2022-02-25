@@ -14,7 +14,8 @@ draft: false
 * [Go By Example](https://gobyexample.com/)
 * [Learn Go in Y Minutes](https://learnxinyminutes.com/docs/go/)
 * [Go Web by Example](https://gowebexamples.com/) - simple web development examples using golang
-* [TutorialEdge Golang](https://tutorialedge.net/golang/parsing-json-with-golang/) - Complete tutorial from beginners to advanced topics
+* [TutorialEdge: Basic Golang](https://tutorialedge.net/golang/getting-started-with-go/)
+
 * [Gophercises](https://gophercises.com/)
 * [Golang Weekly](https://golangweekly.com)
 * [Go Collectives on StackOverflow](https://stackoverflow.com/collectives/go)
