@@ -8,3 +8,4 @@ draft: false
 * [ExploringJS](https://exploringjs.com/)
 * [JavaScript.info](https://javascript.info/) - Learn Modern Javascript, easy to understand tutorial.
 * [JQuery Fundamentals](http://jqfundamentals.com/)
+* [ReactJS Chrome Plugin](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi/related?hl=en) - adds a tab in developer tools
