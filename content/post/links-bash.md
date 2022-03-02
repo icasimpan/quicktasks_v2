@@ -14,3 +14,6 @@ draft: false
 * [shell-tips.com](https://www.shell-tips.com/bash)
 * [linuxhandbook.com/tag/bash-beginner](https://linuxhandbook.com/tag/bash-beginner)
 * [sodocumentation.net/bash](https://sodocumentation.net/bash)
+
+## Others
+* [Multipass](https://multipass.run/)
