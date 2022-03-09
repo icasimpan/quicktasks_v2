@@ -23,6 +23,7 @@ draft: false
 * [Tutorialpoint: Laravel](https://www.tutorialspoint.com/laravel/index.htm)
 * [LaraDock](https://laradock.io) - a docker environment for Laravel like docksal
 * [Carbon Library](https://www.digitalocean.com/community/tutorials/easier-datetime-in-laravel-and-php-with-carbon)
+* [Enlightn: Laravel Security Checker](https://github.com/enlightn/laravel-security-checker)
 
 # Symfony
 * [Tutorialpoint: Symfony](https://www.tutorialspoint.com/symfony/index.htm)
