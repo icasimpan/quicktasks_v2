@@ -18,6 +18,7 @@ draft: false
 * [Laravel Tutorial for Beginners](https://www.guru99.com/laravel-tutorial.html)
 * [Tutorialpoint: Laravel](https://www.tutorialspoint.com/laravel/index.htm)
 * [LaraDock](https://laradock.io) - a docker environment for Laravel like docksal
+* [Carbon Library](https://www.digitalocean.com/community/tutorials/easier-datetime-in-laravel-and-php-with-carbon)
 
 # Symfony
 * [Tutorialpoint: Symfony](https://www.tutorialspoint.com/symfony/index.htm)
