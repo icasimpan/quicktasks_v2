@@ -11,8 +11,12 @@ draft: false
 * [PHP PDO by PhpTutorial.net](https://www.phptutorial.net/php-pdo/)
 * [PHP OOP by PhpTutorial.net](https://www.phptutorial.net/php-oop/)
 * [Friends of PHP](https://github.com/FriendsOfPHP)
+
+# Hard-Core PHP Using Best Practices
 * [PHP The Right Way](https://phptherightway.com/)
 * [Clear PHP](https://github.com/dseguy/clearPHP/blob/master/rules/README.md)
+* [PHP Design Patterns](https://designpatternsphp.readthedocs.io/en/latest/README.html)
+* [PHP Best Practices](https://phpbestpractices.org/)
 
 # Laravel
 * [Laravel Tutorial for Beginners](https://www.guru99.com/laravel-tutorial.html)
