@@ -11,6 +11,8 @@ draft: false
 * [PHP PDO by PhpTutorial.net](https://www.phptutorial.net/php-pdo/)
 * [PHP OOP by PhpTutorial.net](https://www.phptutorial.net/php-oop/)
 * [Friends of PHP](https://github.com/FriendsOfPHP)
+* [PHP The Right Way](https://phptherightway.com/)
+* [Clear PHP](https://github.com/dseguy/clearPHP/blob/master/rules/README.md)
 
 # Laravel
 * [Laravel Tutorial for Beginners](https://www.guru99.com/laravel-tutorial.html)
