@@ -37,3 +37,4 @@ draft: false
 
 # PHP Tools
 * [Curl-to-Php](https://incarnate.github.io/curl-to-php/)
+* [PHP Security Checker](https://github.com/fabpot/local-php-security-checker)
