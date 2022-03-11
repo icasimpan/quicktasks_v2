@@ -17,6 +17,7 @@ draft: false
 * [Clear PHP](https://github.com/dseguy/clearPHP/blob/master/rules/README.md)
 * [PHP Design Patterns](https://designpatternsphp.readthedocs.io/en/latest/README.html)
 * [PHP Best Practices](https://phpbestpractices.org/)
+* [Efficient Data Structure](https://medium.com/@rtheunissen/efficient-data-structures-for-php-7-9dda7af674cd)
 
 # Laravel
 * [Laravel Tutorial for Beginners](https://www.guru99.com/laravel-tutorial.html)

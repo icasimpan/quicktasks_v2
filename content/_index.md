@@ -18,7 +18,7 @@ Accuracy is **NOT** implied. Enjoy!
 * [bm](https://ismael.casimpan.com/quicktasks/links-perl) **Perl** - [Perl](tags/perl)
 * [bm](https://ismael.casimpan.com/quicktasks/links-python/) **Python** - [Python](tags/python)
 * [bm](https://ismael.casimpan.com/quicktasks/links-js) **Javascript** - [NodeJS](tags/nodejs)
-* [bm](https://ismael.casimpan.com/quicktasks/links-php/) **PHP** - [PHP](tags/php)
+* [bm](https://ismael.casimpan.com/quicktasks/links-php/) **PHP** - [PHP Coding](tags/php-coding), [PHP Troubleshooting](tags/php)
 * [bm](https://ismael.casimpan.com/quicktasks/links-go/) **Go** - [Go](tags/golang)
 * [bm](https://ismael.casimpan.com/quicktasks/links-bash/) **Bash Scripting** - [Bash](tags/bash)
 * **Java** - [Java 8](tags/java8)
