@@ -1,6 +1,6 @@
 ---
 title: "Php Anonymous Function"
-date: 2022-03-13T00:20:25+08:00
+date: 2022-03-12T00:20:25+08:00
 tags: [php, php-coding]
 draft: false
 ---
