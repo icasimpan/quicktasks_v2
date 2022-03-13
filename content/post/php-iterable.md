@@ -44,4 +44,4 @@ foreach($myIterable as $item) {
 ?>
 ```
 
-See details in https://www.w3schools.com/php/php_iterables.asp
+See details in https://www.w3schools.com/php/php_iterables.asp or https://www.php.net/manual/en/language.types.iterable.php
