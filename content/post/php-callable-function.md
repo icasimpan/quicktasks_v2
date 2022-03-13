@@ -34,4 +34,4 @@ This outputs "Hello World!".
 * Line 7 is the callable function
 * Line 8 is the call to function that calls the callable function "exclaim".
 
-See further details in https://www.php.net/manual/en/language.types.callable.php
+See further details in https://www.php.net/manual/en/language.types.callable.php and https://www.w3schools.com/php/keyword_callable.asp
