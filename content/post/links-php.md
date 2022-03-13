@@ -5,13 +5,17 @@ tags: [php-links, php, laravel, symfony]
 draft: false
 ---
 
-# PHP
-* [PHP Language Reference](https://www.php.net/manual/en/langref.php) - from official php manual 
+# PHP Official Manual
+* [PHP Language Reference](https://www.php.net/manual/en/langref.php)
+* [PHP Function Reference](https://www.php.net/manual/en/funcref.php)
+* [PHP Features](https://www.php.net/manual/en/features.php)
+* [PHP Security](https://www.php.net/manual/en/security.php)
+
+# PHP Object Oriented
 * [Object Oriented PHP](https://phpenthusiast.com/)
 * [OOP from php.net manual](https://www.php.net/manual/en/language.oop5.php)
 * [PHP PDO by PhpTutorial.net](https://www.phptutorial.net/php-pdo/)
 * [PHP OOP by PhpTutorial.net](https://www.phptutorial.net/php-oop/)
-* [Friends of PHP](https://github.com/FriendsOfPHP)
 
 # Hard-Core PHP Using Best Practices
 * [PHP The Right Way](https://phptherightway.com/)
@@ -40,3 +44,4 @@ draft: false
 # PHP Tools
 * [Curl-to-Php](https://incarnate.github.io/curl-to-php/)
 * [PHP Security Checker](https://github.com/fabpot/local-php-security-checker)
+* [Friends of PHP](https://github.com/FriendsOfPHP)
