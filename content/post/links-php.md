@@ -6,6 +6,7 @@ draft: false
 ---
 
 # PHP
+* [PHP Language Reference](https://www.php.net/manual/en/langref.php) - from official php manual 
 * [Object Oriented PHP](https://phpenthusiast.com/)
 * [OOP from php.net manual](https://www.php.net/manual/en/language.oop5.php)
 * [PHP PDO by PhpTutorial.net](https://www.phptutorial.net/php-pdo/)
