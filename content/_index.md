@@ -32,6 +32,7 @@ Accuracy is **NOT** implied. Enjoy!
 * **Security** - [Fail2Ban](tags/fail2ban), [Firewall](tags/firewall), [TLS/SSL Cert](tags/sslcert)
 * **Linux OS** - [CentOS](tags/centos), [Ubuntu](tags/ubuntu), [Windows Subsystem for Linux](tags/wsl)
 * **Windows OS** - [Windows](tags/windows)
+* **MacOS** - [Mac](tags/mac)
 * **Web Servers** - [Apache](tags/apache), [Nginx](tags/nginx)
 * **Dev Tools** - [Git](tags/git), [Docker](tags/docker), [Podman](tags/podman), [CI](tags/ci)
 * **Cloud Platforms** - [Acquia](tags/acquia), [Pantheon.io](tags/pantheon.io)
