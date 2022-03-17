@@ -42,3 +42,5 @@ draft: false
 * [httpie](https://httpie.io/docs/cli) - for testing APIs
 * [Bare CURL from CLI](https://www.baeldung.com/curl-rest) - For quick testing API without using Postman
 * [VS Code Keyboard Shortcuts](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf)
+* [Mock Codes](https://mock.codes/) - mock API status codes
+* [Mockoon](https://mockoon.com/) - easily creates mock APIs. Download the package for your OS to create the json file. Is opensource.
