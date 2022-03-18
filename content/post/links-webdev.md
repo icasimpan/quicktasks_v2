@@ -25,10 +25,10 @@ draft: false
 * [Emulsify](https://www.emulsify.info/) - open-source tool for creating design systems with reusable components and clear guidelines for teams
 * [Style Guides](http://styleguides.io/tools.html)
 * [Font Awesome](https://fontawesome.com/) -  internet's icon library and toolkit used by millions of designers, developers, and content creators
-* [TailwindCSS](https://tailwindcss.com/)
 
 # Front-End Frameworks
 * [Bootstrap](https://getbootstrap.com/)
+* [TailwindCSS](https://tailwindcss.com/)
 
 # Web Accessibility
 * [WhoCanUse](https://whocanuse.com/) - Who can use this color combination?
@@ -41,6 +41,9 @@ draft: false
 * [Quick guide to IndexDB](https://www.freecodecamp.org/news/a-quick-but-complete-guide-to-indexeddb-25f030425501/)
 * [httpie](https://httpie.io/docs/cli) - for testing APIs
 * [Bare CURL from CLI](https://www.baeldung.com/curl-rest) - For quick testing API without using Postman
-* [VS Code Keyboard Shortcuts](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf)
 * [Mock Codes](https://mock.codes/) - mock API status codes
 * [Mockoon](https://mockoon.com/) - easily creates mock APIs. Download the package for your OS to create the json file. Is opensource.
+
+# Generic Reference
+* [HTTP Status Codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)
+* [VS Code Keyboard Shortcuts](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf)
