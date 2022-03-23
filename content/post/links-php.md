@@ -31,6 +31,12 @@ draft: false
 * [Carbon Library](https://www.digitalocean.com/community/tutorials/easier-datetime-in-laravel-and-php-with-carbon)
 * [Enlightn: Laravel Security Checker](https://github.com/enlightn/laravel-security-checker)
 
+## Laravel 6
+* [How to Send Mail in Laravel 6?](https://www.itsolutionstuff.com/post/how-to-send-mail-in-laravel-6example.html)
+* [Laravel 6 Guzzle Http Client Example](https://www.itsolutionstuff.com/post/laravel-6-guzzle-http-client-exampleexample.html)
+* [How to Define Constant Variable in Laravel?](https://www.itsolutionstuff.com/post/how-to-define-constant-variable-in-laravel-6example.html)
+* [What is Database Seeder in Laravel 6?](https://www.itsolutionstuff.com/post/what-is-database-seeder-in-laravel-6example.html)
+
 # Symfony
 * [Tutorialpoint: Symfony](https://www.tutorialspoint.com/symfony/index.htm)
 * [Symfony 5: The Fast Track](https://symfony.com/doc/current/the-fast-track/en/index.html)
