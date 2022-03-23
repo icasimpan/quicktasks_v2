@@ -36,6 +36,9 @@ draft: false
 * [Laravel 6 Guzzle Http Client Example](https://www.itsolutionstuff.com/post/laravel-6-guzzle-http-client-exampleexample.html)
 * [How to Define Constant Variable in Laravel?](https://www.itsolutionstuff.com/post/how-to-define-constant-variable-in-laravel-6example.html)
 * [What is Database Seeder in Laravel 6?](https://www.itsolutionstuff.com/post/what-is-database-seeder-in-laravel-6example.html)
+* [Laravel 6 CORS Middleware Tutorial](https://www.itsolutionstuff.com/post/laravel-6-cors-middleware-tutorialexample.html)
+* [How to Create Zip File and Download in Laravel 7/6?](https://www.itsolutionstuff.com/post/how-to-create-zip-file-and-download-in-laravel-6example.html)
+* [Laravel 6 Pagination Example Tutorial](https://www.itsolutionstuff.com/post/laravel-6-pagination-example-tutorialexample.html)
 
 # Symfony
 * [Tutorialpoint: Symfony](https://www.tutorialspoint.com/symfony/index.htm)
