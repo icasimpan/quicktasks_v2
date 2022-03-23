@@ -44,7 +44,7 @@ echo "root:x:$0:0::/:bin/sh"                        >> /tmp/fake-passwd
 
 3. Add the password changer to Dockerfile so you know what password to use when you finally `su`:
 ```
-+RUN echo 'root:Docker!' | chpasswd
+RUN echo 'root:Docker!' | chpasswd
 ```
 
 4. Mount the /tmp/fake-passwd to docker-compose service or docker. In my case I have docker-compose so I just added it to the corresponding service `volumes` section
@@ -83,6 +83,20 @@ docker-compose build node
 Password:                          ## Input the password in #3 above
 /var/www/frontend #                ## See how the prompt changes to # which means, you're now the root user.
 ```
+
+7. Overwrite the `/bin/su` with the one that works. Check that the sticky-bit ('s' in owner permission) still exist.
+```
+/var/www/frontend # cp su /bin/su
+/var/www/frontend # ls -l /bin/su
+-rwsr-xr-x    1 root     root        841288 Mar 23 02:21 /bin/su
+/var/www/frontend # ls -l su
+-rwsr-xr-x    1 root     root        841288 Mar 22 11:12 su
+/var/www/frontend # sha256sum /bin/su
+d62b5272e28473938cd6b8be12cc6260195e635968c1b02397b9e851702ccedb  /bin/su
+/var/www/frontend # sha256sum su
+d62b5272e28473938cd6b8be12cc6260195e635968c1b02397b9e851702ccedb  su
+```
+You may delete after the temporary su created in step #1 after testing that it works. 
 
 Enjoy!
 
