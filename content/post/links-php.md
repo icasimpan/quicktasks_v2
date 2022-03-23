@@ -39,6 +39,9 @@ draft: false
 * [Laravel 6 CORS Middleware Tutorial](https://www.itsolutionstuff.com/post/laravel-6-cors-middleware-tutorialexample.html)
 * [How to Create Zip File and Download in Laravel 7/6?](https://www.itsolutionstuff.com/post/how-to-create-zip-file-and-download-in-laravel-6example.html)
 * [Laravel 6 Pagination Example Tutorial](https://www.itsolutionstuff.com/post/laravel-6-pagination-example-tutorialexample.html)
+* [Laravel 6 CRUD Application Tutorial](https://www.itsolutionstuff.com/post/laravel-6-crud-application-tutorialexample.html)
+* [Laravel 6 Create Custom Helper Function](https://www.itsolutionstuff.com/post/laravel-6-create-custom-helper-functionexample.html)
+* [Laravel 5 - Simple CRUD Application Using ReactJS - Part 1](https://www.itsolutionstuff.com/post/laravel-5-simple-crud-application-using-reactjs-part-1example.html)
 
 # Symfony
 * [Tutorialpoint: Symfony](https://www.tutorialspoint.com/symfony/index.htm)
