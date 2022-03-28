@@ -30,6 +30,7 @@ draft: false
 * [LaraDock](https://laradock.io) - a docker environment for Laravel like docksal
 * [Carbon Library](https://www.digitalocean.com/community/tutorials/easier-datetime-in-laravel-and-php-with-carbon)
 * [Enlightn: Laravel Security Checker](https://github.com/enlightn/laravel-security-checker)
+* [Laracasts: PHP Vars to JS Transformer](https://github.com/laracasts/PHP-Vars-To-Js-Transformer)
 
 ## Laravel 6
 * [How to Send Mail in Laravel 6?](https://www.itsolutionstuff.com/post/how-to-send-mail-in-laravel-6example.html)
