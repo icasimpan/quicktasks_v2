@@ -32,6 +32,7 @@ draft: false
 * [Enlightn: Laravel Security Checker](https://github.com/enlightn/laravel-security-checker)
 * [Laracasts: PHP Vars to JS Transformer](https://github.com/laracasts/PHP-Vars-To-Js-Transformer)
 * [Optimization: Laravel Server Timing](https://github.com/beyondcode/laravel-server-timing)
+
 ## Laravel 6
 * [How to Send Mail in Laravel 6?](https://www.itsolutionstuff.com/post/how-to-send-mail-in-laravel-6example.html)
 * [Laravel 6 Guzzle Http Client Example](https://www.itsolutionstuff.com/post/laravel-6-guzzle-http-client-exampleexample.html)
@@ -43,6 +44,8 @@ draft: false
 * [Laravel 6 CRUD Application Tutorial](https://www.itsolutionstuff.com/post/laravel-6-crud-application-tutorialexample.html)
 * [Laravel 6 Create Custom Helper Function](https://www.itsolutionstuff.com/post/laravel-6-create-custom-helper-functionexample.html)
 * [Laravel 5 - Simple CRUD Application Using ReactJS - Part 1](https://www.itsolutionstuff.com/post/laravel-5-simple-crud-application-using-reactjs-part-1example.html)
+* [Laravel 5 - Simple CRUD Application Using ReactJS - Part 2](https://www.itsolutionstuff.com/post/laravel-5-simple-crud-application-using-reactjs-part-2example.html)
+* [Laravel 5 - Simple CRUD Application Using ReactJS - Part 3](https://www.itsolutionstuff.com/post/laravel-5-simple-crud-application-using-reactjs-part-3example.html)
 
 # Symfony
 * [Tutorialpoint: Symfony](https://www.tutorialspoint.com/symfony/index.htm)
