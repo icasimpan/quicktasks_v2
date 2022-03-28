@@ -8,10 +8,10 @@ draft: false
 
 Doing a backup of your mysql container's DB can be automated just like any other task.
 
-Script below is one way on how it's done.
+Script below is one way to do it.
 
 You may or may not provide a parameter to the script and you'll always get the gzipped
-version of the backup + it's sha256 checksum.
+version of the backup + its sha256 checksum.
 
 # Sample Use Case:
 
