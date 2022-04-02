@@ -14,6 +14,7 @@ draft: false
 * [shell-tips.com](https://www.shell-tips.com/bash)
 * [linuxhandbook.com/tag/bash-beginner](https://linuxhandbook.com/tag/bash-beginner)
 * [sodocumentation.net/bash](https://sodocumentation.net/bash)
+* [Redirecting output](https://ops.tips/gists/redirect-all-outputs-of-a-bash-script-to-a-file/)
 
 ## Others
 * [Multipass](https://multipass.run/)
