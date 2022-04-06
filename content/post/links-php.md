@@ -26,6 +26,7 @@ draft: false
 
 # Laravel
 * [Laravel Cheatsheet](https://dev.to/ericchapman/my-beloved-laravel-cheat-sheet-3l73)
+* [laravel Cheatsheet 2021 - Laravel 8](https://learninglaravel.net/cheatsheet/)
 * [Laravel Tutorial for Beginners](https://www.guru99.com/laravel-tutorial.html)
 * [Tutorialpoint: Laravel](https://www.tutorialspoint.com/laravel/index.htm)
 * [LaraDock](https://laradock.io) - a docker environment for Laravel like docksal
