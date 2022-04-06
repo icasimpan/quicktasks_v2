@@ -65,3 +65,4 @@ draft: false
 * [Friends of PHP](https://github.com/FriendsOfPHP)
 * [Online PHP shell](https://3v4l.org/) - run code in 300+ PHP versions simultaneously
 * [DB Migration using Phinx](https://phinx.org/)
+* [PHP Docker Extensions](https://github.com/mlocati/docker-php-extension-installer)
