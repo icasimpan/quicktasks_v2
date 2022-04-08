@@ -2,22 +2,46 @@
 
 *What is this*
 
-Is my personal notes on Golang, written with the help of hugo.
+Is my personal notes on technologies I've encountered/used, written with the help of hugo.
 
 *Adding Notes*
-1. Ensure hugo is installed. For details, refer to https://gohugo.io/getting-started/installing/
+1. Ensure hugo is installed. In Ubuntu (tested in WSL2 as well), do it this way:
+```
+~$ curl -OL https://github.com/gohugoio/hugo/releases/download/v0.96.0/hugo_extended_0.96.0_Linux-64bit.deb
+~$ sudo apt-get install ./hugo_extended_0.96.0_Linux-64bit.deb
+```
+Check the latest Hugo releases from https://github.com/gohugoio/hugo/releases
+
+For installation details, refer to https://gohugo.io/getting-started/installing/
+
 2. Clone the project.
 ```
-git clone https://github.com/icasimpan/quicktasks.git
+~$ git clone https://github.com/icasimpan/quicktasks.git
 ```
-3. Add new notes
+
+3. Prep the theme
+```
+~$ git submodule init
+~$ git submodule update
+```
+
+4. Add new notes
 ```
 hugo new posts/your-new-blog-post.md
 ```
-4. Edit your note file in #3
-5. Commit changes to git
+
+5. Edit your note file in #4
+
+6. Test your changes locally
 ```
-git commit "My new awesome note!"
+~$ hugo server
+```
+It will probably be accessible as http://localhost:1313/quicktasks/
+
+7. Commit changes to git
+```
+~$ git commit "My new awesome note!"
+~$ git push
 ```
 
 
