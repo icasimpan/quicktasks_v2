@@ -8,7 +8,7 @@ env:
   - REPO="quicktasks"
   - BUILD_DIR="public"
   - GH_REPO="github.com/${USER}/${REPO}.git"
-  - HUGO_VERSION="0.92.2"
+  - HUGO_VERSION="0.96.0"
   - HUGO_INSTALLER_URL="https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_${HUGO_VERSION}_Linux-64bit.deb"
   - GH_PUBLISH_BRANCH='gh-pages'
 
