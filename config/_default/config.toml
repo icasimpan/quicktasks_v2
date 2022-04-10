@@ -1,6 +1,6 @@
 # set `baseurl` to your root domain
 # if you set it to "/" share icons won't work properly on production
-baseurl = "https://ismael.casimpan.com/qiucktasks/"  # Include trailing slash
+baseurl = "https://ismael.casimpan.com/quicktasks/"  # Include trailing slash
 title = "IT Quicktasks"  # Edit directly from config/_default/languages.toml # alternatively, uncomment this and remove `title` entry from the aforemention file.
 copyright = "Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved"
 # canonifyurls = true
