@@ -64,6 +64,7 @@ enforceLightMode = false
 
 # customize footer icon. see issue https://github.com/chipzoller/hugo-clarity/issues/77
 # footerLogo = "icons/copy.svg"
+footerLogo = "images/icon-quicktasks.png"
 
 # Customize Sidebar Disclaimer Text
 sidebardisclaimer = true
