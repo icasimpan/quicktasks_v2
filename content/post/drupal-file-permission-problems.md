@@ -1,7 +1,6 @@
 ---
-title: "File Permission Problems"
+title: "Drupal File Permission Problems"
 date: "2018-04-08T23:44:45+08:00"
-categories: ["misc"]
 tags: [drupal, files, permission, error]
 draft: "false"
 ---

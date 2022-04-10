@@ -2,8 +2,10 @@
 title: "Links - Web Development"
 date: 2022-02-20T09:18:11+08:00
 tags: [webdev-links, links]
+categories: [bookmarks]
 draft: false
 ---
+Here is a curated links of sites that are I think are useful as I learn or relearn Web Development further. Incomplete of course but there's always the internet. Will add any that are worthy to be linked here. For now, this would suffice. If you think there are links worthy to be added here, let me know in the comment below. Thank you!
 
 # WebDev Environments
 * [Docksal](https://docksal.io/) - best tool for local web development without learning the nitty gritty docker and docker-compose things

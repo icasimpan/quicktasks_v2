@@ -1,7 +1,8 @@
 ---
 title: "View All SSL Cert in a Bundle File"
 date: 2020-07-15T00:20:25+08:00
-tags: [sslcert, tlscert, bundle, oneliner]
+tags: [sslcert, tlscert, bundle]
+series: [oneliner]
 draft: false
 ---
 

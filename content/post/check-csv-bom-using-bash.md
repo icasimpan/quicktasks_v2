@@ -2,6 +2,7 @@
 title: "Check CSV BOM Using Bash"
 date: 2022-03-21T00:20:25+08:00
 tags: [csv, utf8, bom, bash]
+series: [oneliner]
 draft: false
 ---
 

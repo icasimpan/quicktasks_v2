@@ -16,21 +16,15 @@ For installation details, refer to https://gohugo.io/getting-started/installing/
 
 2. Clone the project.
 ```
-~$ git clone https://github.com/icasimpan/quicktasks.git
+~$ git clone --recursive https://github.com/icasimpan/quicktasks.git
 ```
 
-3. Prep the theme
+3. Add new notes
 ```
-~$ git submodule init
-~$ git submodule update
-```
-
-4. Add new notes
-```
-hugo new posts/your-new-blog-post.md
+~$ hugo new post/your-new-blog-post.md
 ```
 
-5. Edit your note file in #4
+5. Edit your note file in #3
 
 6. Test your changes locally
 ```

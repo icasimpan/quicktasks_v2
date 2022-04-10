@@ -1,7 +1,8 @@
 ---
 title: "One Liner CSR Creation"
 date: 2020-06-07T00:20:25+08:00
-tags: [sslcert, tlscert, csr, oneliner]
+tags: [sslcert, tlscert, csr]
+series: [oneliner]
 draft: false
 ---
 

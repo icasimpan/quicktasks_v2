@@ -2,6 +2,7 @@
 title: "Git Latest Hash"
 date: 2022-03-27T23:17:11+08:00
 tags: [git]
+thumbnail: "images/git_logo.png"
 draft: false
 ---
 

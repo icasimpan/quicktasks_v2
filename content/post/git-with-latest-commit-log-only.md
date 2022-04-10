@@ -2,6 +2,7 @@
 title: "Git with Latest Commit Log Only"
 date: 2020-05-26T23:17:11+08:00
 tags: [git, version-control, depth, save-space]
+thumbnail: "images/git_logo.png"
 draft: false
 ---
 

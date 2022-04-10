@@ -2,8 +2,10 @@
 title: "Links - PHP"
 date: 2022-02-19T09:17:11+08:00
 tags: [php-links, php, laravel, symfony]
+categories: [bookmarks]
 draft: false
 ---
+Here is a curated links of sites that are I think are useful as I learn or relearn PHP, Laravel and Symfony further. Incomplete of course but there's always the internet. Will add any that are worthy to be linked here. For now, this would suffice. If you think there are links worthy to be added here, let me know in the comment below. Thank you!
 
 # PHP Official Manual
 * [PHP Language Reference](https://www.php.net/manual/en/langref.php)

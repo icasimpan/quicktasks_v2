@@ -2,6 +2,8 @@
 title: "Git Rebase"
 date: 2022-04-01T06:03:11+08:00
 tags: [git, version-control, rebase]
+featured: true
+thumbnail: "images/git_logo.png"
 draft: false
 ---
 

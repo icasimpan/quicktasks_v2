@@ -2,6 +2,7 @@
 title: "Docker MySQL Backup to Local"
 date: 2022-03-27T00:20:25+08:00
 tags: [docker, container, backup, mysql]
+featured: true
 draft: false
 ---
 
