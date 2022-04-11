@@ -1,6 +1,6 @@
 ---
 title: "Run Command from Container Instead of Locally"
-date: 2021-07-39T11:29:00+08:00
+date: 2021-07-29T11:29:00+08:00
 tags: [docker, container, command]
 draft: false
 ---
