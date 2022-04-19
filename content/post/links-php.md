@@ -37,6 +37,7 @@ Here is a curated links of sites that are I think are useful as I learn or relea
 * [Laracasts: PHP Vars to JS Transformer](https://github.com/laracasts/PHP-Vars-To-Js-Transformer)
 * [Optimization: Laravel Server Timing](https://github.com/beyondcode/laravel-server-timing)
 * [Laravel News](https://laravel-news.com/)
+* [Laravel Tricks](https://laravel-tricks.com/tricks)
 
 ## Laravel 6
 * [How to Send Mail in Laravel 6?](https://www.itsolutionstuff.com/post/how-to-send-mail-in-laravel-6example.html)
