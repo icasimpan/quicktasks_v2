@@ -38,6 +38,7 @@ Here is a curated links of sites that are I think are useful as I learn or relea
 * [Optimization: Laravel Server Timing](https://github.com/beyondcode/laravel-server-timing)
 * [Laravel News](https://laravel-news.com/)
 * [Laravel Tricks](https://laravel-tricks.com/tricks)
+* [Ultimate Guide to Laravel Tinker](https://beyondco.de/blog/the-ultimate-guide-to-php-artisan-tinker)
 
 ## Laravel 6
 * [How to Send Mail in Laravel 6?](https://www.itsolutionstuff.com/post/how-to-send-mail-in-laravel-6example.html)
@@ -71,3 +72,4 @@ Here is a curated links of sites that are I think are useful as I learn or relea
 * [Online PHP shell](https://3v4l.org/) - run code in 300+ PHP versions simultaneously
 * [DB Migration using Phinx](https://phinx.org/)
 * [PHP Docker Extensions](https://github.com/mlocati/docker-php-extension-installer)
+* [PsySH](https://psysh.org) - A runtime developer console, interactive debugger and REPL for PHP.
