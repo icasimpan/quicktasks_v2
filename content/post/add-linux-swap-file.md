@@ -1,7 +1,9 @@
 ---
-title: "Add Swap File"
+title: "Add Linux Swap File"
 date: 2020-07-12T00:20:25+08:00
-tags: ["linux", "swap"]
+categories: [devops]
+series: [linux]
+tags: ["swap"]
 draft: false
 ---
 

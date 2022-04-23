@@ -1,7 +1,9 @@
 ---
 title: "Update Debian PHP 5.5 To 5.6"
 date: 2019-09-30T00:20:25+08:00
-tags: ["debian", "php", "deb", "linux"]
+categories: [devops]
+series: [debian-php]
+tags: ["deb"]
 draft: false
 ---
 

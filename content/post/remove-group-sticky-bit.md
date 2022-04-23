@@ -1,7 +1,9 @@
 ---
 title: "Removing Group Sticky Bit"
 date: 2020-07-12T00:20:25+08:00
-tags: ["linux", "permission", "sticky-bit"]
+categories: [devops]
+series: [linux, oneliner]
+tags: ["permission", "sticky-bit"]
 draft: false
 ---
 

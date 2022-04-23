@@ -1,7 +1,9 @@
 ---
 title: "Updating Debian Kernel Only"
 date: 2019-09-30T00:20:25+08:00
-tags: ["debian", "kernel", "update", "linux"]
+categories: [devops]
+series: [debian-linux]
+tags: ["kernel", "update"]
 draft: false
 ---
 

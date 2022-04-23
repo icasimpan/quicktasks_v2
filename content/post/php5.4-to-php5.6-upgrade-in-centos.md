@@ -1,7 +1,9 @@
 ---
 title: "Upgrade php 5.4 to php 5.6 in CentOS"
 date: 2020-07-12T00:20:25+08:00
-tags: ["centos", "linux", "php", "upgrade"]
+categories: [devops]
+series: [redhat-php]
+tags: ["centos", "upgrade"]
 draft: false
 ---
 

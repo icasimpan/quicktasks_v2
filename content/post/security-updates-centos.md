@@ -1,7 +1,9 @@
 ---
 title: "Security Updates on CentOS"
 date: 2020-07-12T00:20:25+08:00
-tags: ["centos", "linux", "security", "updates"]
+categories: [devops]
+series: [redhat-linux]
+tags: ["centos", "security", "updates"]
 draft: false
 ---
 

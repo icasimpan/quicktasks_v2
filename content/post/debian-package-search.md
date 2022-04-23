@@ -1,7 +1,9 @@
 ---
 title: "Debian Package Search"
 date: 2019-09-30T00:20:25+08:00
-tags: ["debian", "deb", "package", "linux"]
+categories: [devops]
+series: [debian-linux]
+tags: ["deb", "package"]
 draft: false
 ---
 ```

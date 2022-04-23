@@ -1,7 +1,9 @@
 ---
 title: "Upgrade php 5.6 to php 7.0 in CentOS7"
 date: 2020-07-12T00:20:25+08:00
-tags: ["centos", "linux", "php", "upgrade"]
+categories: [devops]
+series: [redhat-linux, redhat-php]
+tags: ["centos", "upgrade"]
 draft: false
 ---
 
