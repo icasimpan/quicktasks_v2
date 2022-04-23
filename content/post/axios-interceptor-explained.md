@@ -1,7 +1,9 @@
 ---
 title: "Axios Interceptor Explained"
 date: 2022-04-22T00:20:25+08:00
-tags: [axios, reactjs, frontend]
+categories: [web-development]
+series: [frontend]
+tags: [axios, reactjs]
 draft: false
 ---
 

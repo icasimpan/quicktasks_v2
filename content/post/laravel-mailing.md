@@ -1,6 +1,8 @@
 ---
 title: "Laravel Mailing"
 date: 2022-04-21T00:20:25+08:00
+categories: [web-development]
+series: [backend]
 tags: [laravel, mail]
 draft: false
 ---
