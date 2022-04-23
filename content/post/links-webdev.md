@@ -45,6 +45,7 @@ Here is a curated links of sites that are I think are useful as I learn or relea
 * [Bare CURL from CLI](https://www.baeldung.com/curl-rest) - For quick testing API without using Postman
 * [Mock Codes](https://mock.codes/) - mock API status codes
 * [Mockoon](https://mockoon.com/) - easily creates mock APIs. Download the package for your OS to create the json file. Is opensource.
+* [Mocky](https://designer.mocky.io/) - opensource for mocking APIs. No signups needed.
 
 # Generic Reference
 * [HTTP Status Codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)
