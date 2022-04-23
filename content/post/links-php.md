@@ -73,3 +73,4 @@ Here is a curated links of sites that are I think are useful as I learn or relea
 * [DB Migration using Phinx](https://phinx.org/)
 * [PHP Docker Extensions](https://github.com/mlocati/docker-php-extension-installer)
 * [PsySH](https://psysh.org) - A runtime developer console, interactive debugger and REPL for PHP.
+* [JSON Placeholder](https://jsonplaceholder.typicode.com/) - Free fake API for testing and prototyping.
