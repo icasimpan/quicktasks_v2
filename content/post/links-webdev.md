@@ -46,6 +46,7 @@ Here is a curated links of sites that are I think are useful as I learn or relea
 * [Mock Codes](https://mock.codes/) - mock API status codes
 * [Mockoon](https://mockoon.com/) - easily creates mock APIs. Download the package for your OS to create the json file. Is opensource.
 * [Mocky](https://designer.mocky.io/) - opensource for mocking APIs. No signups needed.
+* [REQ|RES](https://reqres.in/) - Test your front-end against a real API
 
 # Generic Reference
 * [HTTP Status Codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)
