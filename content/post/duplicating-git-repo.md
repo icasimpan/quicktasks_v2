@@ -1,7 +1,10 @@
 ---
 title: "Duplicating a git repo"
 date: 2018-04-08T23:17:11+08:00
-tags: [git, version-control, repo]
+categories: [devops]
+series: [version-control]
+tags: [git, repo]
+thumbnail: "images/git_logo.png"
 draft: false
 ---
 

@@ -1,7 +1,10 @@
 ---
 title: "Git submodules (similar to svn:externals)"
 date: 2018-04-08T23:17:11+08:00
-tags: [git, version-control, submodules]
+categories: [devops]
+series: [version-control]
+tags: [git, submodules]
+thumbnail: "images/git_logo.png"
 draft: false
 ---
 

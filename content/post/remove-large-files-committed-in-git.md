@@ -1,7 +1,9 @@
 ---
 title: "Remove Large Files Committed in Git"
 date: 2021-03-21T23:17:11+08:00
-tags: [git, version-control, filter-branch]
+categories: [devops]
+series: [version-control]
+tags: [git, filter-branch]
 thumbnail: "images/git_logo.png"
 draft: false
 ---

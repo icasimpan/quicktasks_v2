@@ -1,7 +1,10 @@
 ---
 title: "Pull Request via Github API"
 date: 2020-09-08T23:17:11+08:00
-tags: [git, version-control, github, pull-request, github-api]
+categories: [devops]
+series: [version-control]
+tags: [git, github, pull-request, github-api]
+thumbnail: "images/github_logo.png"
 draft: false
 ---
 

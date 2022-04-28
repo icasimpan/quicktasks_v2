@@ -1,7 +1,10 @@
 ---
 title: "Rename git branch"
 date: 2018-04-08T23:17:11+08:00
-tags: [git, version-control, branch, rename]
+categories: [devops]
+series: [version-control]
+tags: [git, branch]
+thumbnail: "images/git_logo.png"
 draft: false
 ---
 

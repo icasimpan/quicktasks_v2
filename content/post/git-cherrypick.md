@@ -1,7 +1,9 @@
 ---
 title: "Git Cherry-Pick Merge"
 date: 2018-11-23T06:03:11+08:00
-tags: [git, version-control, cherry-pick, merge]
+categories: [devops]
+series: [version-control]
+tags: [git, cherry-pick, merge]
 thumbnail: "images/git_logo.png"
 draft: false
 ---

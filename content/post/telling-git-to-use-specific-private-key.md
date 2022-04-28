@@ -1,7 +1,10 @@
 ---
 title: "Telling git To Use Specific Private Key"
 date: 2020-05-29T23:17:11+08:00
-tags: [git, version-control, public-key]
+categories: [devops]
+series: [version-control]
+tags: [git, public-key]
+thumbnail: "images/git_logo.png"
 draft: false
 ---
 

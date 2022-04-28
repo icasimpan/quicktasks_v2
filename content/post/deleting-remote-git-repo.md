@@ -1,7 +1,10 @@
 ---
 title: "Deleting a remote git repo branch"
 date: 2018-04-08T23:17:11+08:00
-tags: [git, version-control, delete, remote, branch]
+categories: [devops]
+series: [version-control]
+tags: [git, remote, branch]
+thumbnail: "images/git_logo.png"
 draft: false
 ---
 

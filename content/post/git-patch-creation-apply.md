@@ -1,7 +1,10 @@
 ---
 title: "Git Patch Creation/Apply"
 date: 2018-04-08T23:17:11+08:00
-tags: [git, version-control, patch]
+categories: [devops]
+series: [version-control]
+tags: [git, patch]
+thumbnail: "images/git_logo.png"
 draft: false
 ---
 
