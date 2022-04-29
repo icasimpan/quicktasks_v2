@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ansible on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/ansible/</link>
+    <description>Recent content in ansible on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Tue, 06 Oct 2020 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/ansible/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ansible Error: sudo not valid attribute for Play</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/ansible-error-sudo-not-valid-attribute-for-play/</link>
+      <pubDate>Tue, 06 Oct 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/ansible-error-sudo-not-valid-attribute-for-play/</guid>
+      <description>
+        
+          
+            If you see an error such as this:
+1ERROR! &amp;#39;sudo&amp;#39; is not a valid attribute for a Play You need to replace:
+1sudo: yes with
+1become:true See https://stackoverflow.com/questions/60162859/error-sudo-is-not-a-valid-attribute-for-a-play
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Install Jenkins LTS via Ansible</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/install-jenkins-lts-via-ansible/</link>
+      <pubDate>Mon, 06 Jul 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/install-jenkins-lts-via-ansible/</guid>
+      <description>
+        
+          
+            Personally, I&#39;d like to use other&#39;s work as much as possible in its original state. With ansible roles, authors usually name their repos as &#39;ansible-role-java&#39; but internally, it&#39;s something like &#39;geerlingguy.java&#39; which is what they put in dependencies. Now, if you simply clone as is, you will need to change the dependencies name.
+This is the case with Geerlingguy&#39;s jenkins role, where I hit on errors in java due to the name of the dependencies.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Install Jenkins Plugin via Ansible</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/install-jenkins-plugin-via-ansible/</link>
+      <pubDate>Mon, 06 Jul 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/install-jenkins-plugin-via-ansible/</guid>
+      <description>
+        
+          
+            1example@user:/opt/ansible-playbooks$ cat vars/jenkins.yml 2## Search names from https://plugins.jenkins.io/ 3jenkins_plugins: 4- git 5- hipchat 6- log-parser 7- mask-passwords 8- ssh-agent 9- ssh 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Ansible Multiple Conditions Using when ons Single Task.md</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/ansible-multiple-conditions-using-when/</link>
+      <pubDate>Wed, 11 Mar 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/ansible-multiple-conditions-using-when/</guid>
+      <description>
+        
+          
+            There are a lot of ways on doing it. One of it is as follows:
+1tasks: 2- name: &amp;#34;shut down CentOS 6 and Debian 7 systems&amp;#34; 3command: /sbin/shutdown -t now 4when: (ansible_facts[&amp;#39;distribution&amp;#39;] == &amp;#34;CentOS&amp;#34; and ansible_facts[&amp;#39;distribution_major_version&amp;#39;] == &amp;#34;6&amp;#34;) or 5(ansible_facts[&amp;#39;distribution&amp;#39;] == &amp;#34;Debian&amp;#34; and ansible_facts[&amp;#39;distribution_major_version&amp;#39;] == &amp;#34;7&amp;#34;) Read further in Ansible Official Docs.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Curl type download in Ansible</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/curl-type-dowload-in-ansible/</link>
+      <pubDate>Wed, 11 Mar 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/curl-type-dowload-in-ansible/</guid>
+      <description>
+        
+          
+            1- name: Download drush phar file (8.3.0) 2become: yes 3get_url: 4url: https://github.com/drush-ops/drush/releases/download/8.3.0/drush.phar 5dest: /usr/local/bin 6mode: +x 7checksum: sha256:ddfe6d529e44e98c2cf74c143c1fcdf67c927d6f9a5eb2ae10fbe47ef9b8eaf0 8group: root 9owner: root See get_url module in https://docs.ansible.com/ansible/latest/modules/get_url_module.html
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>PHP Remi modules installed outside ansible trick</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/php-remi-modules-installed-outside-ansible/</link>
+      <pubDate>Sat, 28 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/php-remi-modules-installed-outside-ansible/</guid>
+      <description>
+        
+          
+            Remi modules are installed in non-standard location. Geerlingguy&#39;s ansible role harmonizes it and install it in standard locations.
+So, if you&#39;re not familiar with standard locations, just do the following trick
+NOTE: In this case, I installed the memcache module for php7.1 from Remi&#39;s repo.
+1yum install -y php71-php-pecl-memcache.x86_64 Find where the memcache module is located
+1[root@example-staging www]# find / -iname *memcache*.so 2/usr/lib64/httpd/modules/mod_socache_memcache.so 3/opt/remi/php71/root/usr/lib64/php/modules/memcache.so Cross-check with a standard installed php module (you can see which modules via &#39;php -m&#39;)
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>After Upgrading Ansible, pip had an issue SSL_ST_INIT</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/ssl_st_init-pip-issue-ansible-upgrade/</link>
+      <pubDate>Sat, 21 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/ssl_st_init-pip-issue-ansible-upgrade/</guid>
+      <description>
+        
+          
+            1sudo apt-get remove python-openssl 2curl -o ./get-pip.py https://bootstrap.pypa.io/get-pip.py 3sudo python2 ./get-pip.py Replace with yum if in RH-based OS. See https://stackoverflow.com/questions/43267157/python-attributeerror-module-object-has-no-attribute-ssl-st-init for details.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Ansible Best Practices</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/ansible-best-practices/</link>
+      <pubDate>Sat, 21 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/ansible-best-practices/</guid>
+      <description>
+        
+          
+            http://docs.ansible.com/ansible/latest/playbooks_best_practices.html
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Ansible Logs in Controlled Machine</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/ansible-logs-controlled-machine/</link>
+      <pubDate>Sat, 21 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/ansible-logs-controlled-machine/</guid>
+      <description>
+        
+          
+            It&#39;s in syslog. In ubuntu, do the following:
+1grep -i ansible /var/log/syslog See details in https://serverfault.com/questions/531004/where-do-i-find-the-latest-ansible-error-log
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Ansible Vault Tutorials</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/ansible-vault-tutorials/</link>
+      <pubDate>Sat, 21 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/ansible-vault-tutorials/</guid>
+      <description>
+        
+          
+            https://serversforhackers.com/c/how-ansible-vault-works https://gist.github.com/tristanfisher/e5a306144a637dc739e7
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>ansible_os_family Not Found</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/ansible_os_family-not-found/</link>
+      <pubDate>Sat, 21 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/ansible_os_family-not-found/</guid>
+      <description>
+        
+          
+            Ensure &amp;quot;gather_facts&amp;quot; is NOT set to false and it should be fine.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>blockinfline module</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/blockinfline-module/</link>
+      <pubDate>Sat, 21 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/blockinfline-module/</guid>
+      <description>
+        
+          
+            You need to add a &amp;quot;marker&amp;quot; in order NOT to overwrite current content.
+For example usage, see github.com/promet/pstools.git and head over to promet-ansible branch &amp;amp; ansible-promet-apacheconfig/tasks/main.yml
+Syntax guide https://docs.ansible.com/ansible/latest/modules/blockinfile_module.html
+Some tutorial online http://www.mydailytutorials.com/ansible-blockinfile-module-adding-multiple-lines/
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Check All Facts</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/check-all-facts/</link>
+      <pubDate>Sat, 21 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/check-all-facts/</guid>
+      <description>
+        
+          
+            1ansible all -m setup 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Check OS Type</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/check-os-type/</link>
+      <pubDate>Sat, 21 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/check-os-type/</guid>
+      <description>
+        
+          
+            1ansible all -m setup -a &amp;#34;filter=ansible_distribution*&amp;#34; more in https://raymii.org/s/tutorials/Ansible_-_Only_if_on_specific_distribution_or_distribution_version.html
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Copy Files To and From Remote Locations</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/copy-files-to-and-from-remote-locations/</link>
+      <pubDate>Sat, 21 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/copy-files-to-and-from-remote-locations/</guid>
+      <description>
+        
+          
+            1- name: Move foo to bar 2command: mv /path/to/foo /path/to/bar or check first and do a copy if it exist
+1- name: stat foo 2stat: path=/path/to/foo 3register: foo_stat 45- name: Move foo to bar 6command: mv /path/to/foo /path/to/bar 7when: foo_stat.stat.exists and, for ansible 2.0+, you can do:
+1- name: Copy files from foo to bar 2copy: remote_src=True src=https://ismael.casimpan.com/quicktasks/path/to/foo dest=/path/to/bar Details in https://stackoverflow.com/questions/24162996/how-to-move-rename-a-file-using-an-ansible-task-on-a-remote-system
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Create Ansible Playbook Skeleton</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/create-playbook-skeleton/</link>
+      <pubDate>Sat, 21 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/create-playbook-skeleton/</guid>
+      <description>
+        
+          
+            1ansible@example.com:/opt/ansible/roles$ ansible-galaxy init ansible-role-python2 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Create Directory</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/create-directory/</link>
+      <pubDate>Sat, 21 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/create-directory/</guid>
+      <description>
+        
+          
+            1--- 2- hosts: localhost 3become: true 45tasks: 6- name: Create directory 7file: 8path: /tmp/yallo_dir 9state: directory Ref http://docs.ansible.com/ansible/latest/file_module.html
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Create File</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/create-file/</link>
+      <pubDate>Sat, 21 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/create-file/</guid>
+      <description>
+        
+          
+            1--- 2- hosts: localhost 3become: true 45tasks: 6- name: Create file 7file: 8path: /tmp/yallo 9state: touch Ref http://docs.ansible.com/ansible/latest/file_module.html
+An alternative is to use &#39;lineinfile&#39; module. In my example below, Ubuntu 18.x no longer has the /etc/rc.local but it still works. See below
+1## NOTE : /etc/rc.local doesn&amp;#39;t exist in Ubuntu18.x but still runs if executable + has the shebang line 2## See https://www.claudiokuenzler.com/blog/783/ubuntu-18.04-rc.local-file-not-exist-launch-with-systemd-rc-local#.XDYuL88zZTY 3- name: Create executable /etc/rc.local if it doesn&amp;#39;t exist 4lineinfile: 5dest: /etc/rc.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Debugging Ansible</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/debugging-ansible/</link>
+      <pubDate>Sat, 21 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/debugging-ansible/</guid>
+      <description>
+        
+          
+            https://blog.codecentric.de/en/2017/06/debug-ansible-playbooks-like-pro/
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Declaring Children Labels in Hosts File</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/children-labels-hosts-file/</link>
+      <pubDate>Sat, 21 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/children-labels-hosts-file/</guid>
+      <description>
+        
+          
+            12[dev_server] 3... 4... 5... 67[devtools_internal] 8... 9... 10... 1112[dev_needed:children] 13dev_server 14devtools_internal 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Field Loop Error</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/field-loop-error/</link>
+      <pubDate>Sat, 21 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/field-loop-error/</guid>
+      <description>
+        
+          
+            If you see the error below:
+1ERROR! The field &amp;#39;loop&amp;#39; is supposed to be a string type, however the incoming data structure is a &amp;lt;class &amp;#39;ansible.parsing.yaml.objects.AnsibleSequence&amp;#39;&amp;gt; Upgrade your ansible to at least version 2.5. The &#39;loop&#39; keyword is defined starting that version. See https://stackoverflow.com/questions/49680809/ansible-loop-error
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>gz and bz2 Not Supported by unarchive</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/gz-and-bz2-not-supported-by-unarchive/</link>
+      <pubDate>Sat, 21 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/gz-and-bz2-not-supported-by-unarchive/</guid>
+      <description>
+        
+          
+            Encountered this issue:
+1The full traceback is: 2File &amp;#34;/tmp/ansible_f1UXSi/ansible_module_unarchive.py&amp;#34;, line 151, in &amp;lt;module&amp;gt; 3from shlex import quote 45fatal: [206.81.5.18]: FAILED! =&amp;gt; { 6&amp;#34;changed&amp;#34;: false, 7&amp;#34;invocation&amp;#34;: { 8&amp;#34;module_args&amp;#34;: { 9&amp;#34;attributes&amp;#34;: null, 10&amp;#34;backup&amp;#34;: null, 11&amp;#34;content&amp;#34;: null, 12&amp;#34;creates&amp;#34;: null, 13&amp;#34;delimiter&amp;#34;: null, 14&amp;#34;dest&amp;#34;: &amp;#34;/root/&amp;#34;, 15&amp;#34;directory_mode&amp;#34;: null, 16&amp;#34;exclude&amp;#34;: [], 17&amp;#34;extra_opts&amp;#34;: [], 18&amp;#34;follow&amp;#34;: false, 19&amp;#34;force&amp;#34;: null, 20&amp;#34;group&amp;#34;: null, 21&amp;#34;keep_newer&amp;#34;: false, 22&amp;#34;list_files&amp;#34;: false, 23&amp;#34;mode&amp;#34;: null, 24&amp;#34;owner&amp;#34;: null, 25&amp;#34;regexp&amp;#34;: null, 26&amp;#34;remote_src&amp;#34;: true, 27&amp;#34;selevel&amp;#34;: null, 28&amp;#34;serole&amp;#34;: null, 29&amp;#34;setype&amp;#34;: null, 30&amp;#34;seuser&amp;#34;: null, 31&amp;#34;src&amp;#34;: &amp;#34;/root/my-files-2019-07-23.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Install rpm via Ansible</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/install-rpm-in-ansible/</link>
+      <pubDate>Sat, 21 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/install-rpm-in-ansible/</guid>
+      <description>
+        
+          
+            Manual
+1sudo rpm -Uvh https://mirror.webtatic.com/yum/el7/webtatic-release.rpm In Ansible:
+1- name: Add Web Static Repo 2yum: 3name: https://mirror.webtatic.com/yum/el7/webtatic-release.rpm 4state: present 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Install Several Packages in a Loop</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/install-several-packages-in-loop/</link>
+      <pubDate>Sat, 21 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/install-several-packages-in-loop/</guid>
+      <description>
+        
+          
+            Manual
+1sudo yum install -y mod_php71w php71w-cli php71w-common php71w-gd php71w-mbstring php71w-mcrypt php71w-mysqlnd php71w-xml In Ansible:
+1- name: Install needed php7 packages 2yum: 3name={{ item }} 4state=present 5with_items: 6- mod_php71w 7- php71w-cli 8- php71w-common 9- php71w-gd 10- php71w-mbstring 11- php71w-mcrypt 12- php71w-mysqlnd 13- php71w-xml 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Managing Ansible Installation</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/managing-ansible-installation/</link>
+      <pubDate>Sat, 21 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/managing-ansible-installation/</guid>
+      <description>
+        
+          
+            To be able to change versions, it&#39;s best to use pip
+1pip install -I ansible==2.0.2 More details in https://askubuntu.com/questions/820892/how-to-downgrade-ansible-2-1-1-0-to-2-0-2
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Rebooting a Machine via Ansible</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/rebooting-machine-via-ansible/</link>
+      <pubDate>Sat, 21 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/rebooting-machine-via-ansible/</guid>
+      <description>
+        
+          
+            https://www.jeffgeerling.com/blog/2018/reboot-and-wait-reboot-complete-ansible-playbook and https://stackoverflow.com/questions/29955605/how-to-reboot-centos-7-with-ansible
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Replace SSH Connectivity via Paramiko</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/replace-ssh-connectivity-with-paramiko/</link>
+      <pubDate>Sat, 21 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/replace-ssh-connectivity-with-paramiko/</guid>
+      <description>
+        
+          
+            When an issue such as &amp;quot;Timeout, waiting for priviledged escalation&amp;quot; happens
+Run the playbook as follows:
+1ansible-playbook -c paramiko ansible/ansible-usermgr.yml -i &amp;#34;cool.example.com, &amp;#34; -vvv suggested in https://github.com/ansible/ansible/issues/14426
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Run Ansible Playbook</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/run-ansible-playbook/</link>
+      <pubDate>Sat, 21 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/run-ansible-playbook/</guid>
+      <description>
+        
+          
+            1ansible-playbook ansible/web-apache-ubuntu.yml -u root --private-key ~/.ssh/ansible-only.ppk -i &amp;#34;67.217.89.118, &amp;#34; -vvv 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Save shell command output to ansible variable</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/save-shell-command-output-to-ansible-variable/</link>
+      <pubDate>Sat, 21 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/save-shell-command-output-to-ansible-variable/</guid>
+      <description>
+        
+          
+            Test playbook:
+1[root@lampp lampp]# cat test.yml 2--- 3- name: LAMPP Dev (MySQL/CentOS7) 4hosts: 127.0.0.1 5connection: local 6become: true 78tasks: 9- name: Get the mysql root default password 10command: awk &amp;#39;/temporary password/ {print $NF}&amp;#39; /var/log/mysqld.log 11register: command_output 1213- set_fact: 14default_mysqlroot_password: &amp;#34;{{ command_output.stdout }}&amp;#34; 1516## NOTE: debug line below is only to show output in ansible-playbook run 17- debug: msg=&amp;#34;{{ default_mysqlroot_password }}&amp;#34;``` Output
+1[root@lampp lampp]# ansible-playbook test.yml 2[WARNING]: provided hosts list is empty, only localhost is available.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>String manipulation: get characters left in a variable</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/get-characters-left-in-variable/</link>
+      <pubDate>Sat, 21 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/get-characters-left-in-variable/</guid>
+      <description>
+        
+          
+            1- name: Display Result In Loop 2debug: msg=&amp;#34;Version is {{ result.stdout[:5] }}&amp;#34; See https://stackoverflow.com/questions/32091667/ansible-fetch-first-few-character-of-a-register-value
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Variable in a Playbook</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/variable-in-playbook/</link>
+      <pubDate>Sat, 21 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/variable-in-playbook/</guid>
+      <description>
+        
+          
+            ex. Set the &#39;webserver_name&#39; variable as &#39;httpd&#39;
+1- set_fact: 2webserver_name: httpd 
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

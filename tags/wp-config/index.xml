@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>wp-config on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/wp-config/</link>
+    <description>Recent content in wp-config on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Sat, 28 Sep 2019 23:17:11 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/wp-config/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Where is the database config </title>
+      <link>https://ismael.casimpan.com/quicktasks/post/where-is-db-config/</link>
+      <pubDate>Sat, 28 Sep 2019 23:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/where-is-db-config/</guid>
+      <description>
+        
+          
+            1wp-config.php 
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

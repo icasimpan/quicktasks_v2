@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>count on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/count/</link>
+    <description>Recent content in count on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Mon, 15 Oct 2018 12:43:31 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/count/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Count Number of Tables in a MySQL Database</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/count-number-of-tables-in-a-mysql-database/</link>
+      <pubDate>Mon, 15 Oct 2018 12:43:31 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/count-number-of-tables-in-a-mysql-database/</guid>
+      <description>
+        
+          
+            1mysql&amp;gt; select distinct(TABLE_SCHEMA) from information_schema.tables; 2+--------------------+ 3| TABLE_SCHEMA | 4+--------------------+ 5| information_schema | 6| drcongo | 7| mysql | 8| performance_schema | 9| pseademo | 10| pseairaq | 11| sys | 12+--------------------+ 1314mysql&amp;gt; select count(*) from information_schema.tables where TABLE_SCHEMA=&amp;#39;drcongo&amp;#39;; 15+----------+ 16| count(*) | 17+----------+ 18| 333 | 19+----------+ 201 row in set (0.00 sec) 
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

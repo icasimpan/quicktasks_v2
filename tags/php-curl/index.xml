@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>php-curl on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/php-curl/</link>
+    <description>Recent content in php-curl on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Sat, 28 Sep 2019 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/php-curl/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>curl to php code</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/curl-to-php/</link>
+      <pubDate>Sat, 28 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/curl-to-php/</guid>
+      <description>
+        
+          
+            See https://incarnate.github.io/curl-to-php/
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Install php-curl 5.6 (Ubuntu)</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/install-php-curl-56-ubuntu/</link>
+      <pubDate>Sat, 28 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/install-php-curl-56-ubuntu/</guid>
+      <description>
+        
+          
+            1sudo apt-get install php5.6-curl More info in https://stackoverflow.com/questions/40567133/cannot-add-ppa-ppaondrej-php5-5-6
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

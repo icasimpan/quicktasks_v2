@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>psql on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/psql/</link>
+    <description>Recent content in psql on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Wed, 01 Sep 2021 13:46:45 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/psql/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Search Views in Postgresql</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/search-views-in-postgresql/</link>
+      <pubDate>Wed, 01 Sep 2021 13:46:45 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/search-views-in-postgresql/</guid>
+      <description>
+        
+          
+            1psql -c &amp;#34;select table_name from INFORMATION_SCHEMA.views WHERE table_schema = ANY (current_schemas(false));&amp;#34; To filter, just use grep.
+See https://dba.stackexchange.com/questions/23836/how-to-list-all-views-in-sql-in-postgresql
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

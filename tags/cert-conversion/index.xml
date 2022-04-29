@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>cert-conversion on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/cert-conversion/</link>
+    <description>Recent content in cert-conversion on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Sun, 07 Jun 2020 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/cert-conversion/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Converting Certs from Different Formats</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/converting-different-cert-formats/</link>
+      <pubDate>Sun, 07 Jun 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/converting-different-cert-formats/</guid>
+      <description>
+        
+          
+            Convert a DER file (.crt .cer .der) to PEM  1openssl x509 -inform der -in certificate.cer -out certificate.pem  Convert a PEM file to DER  1openssl x509 -outform der -in certificate.pem -out certificate.der  Convert a PKCS#12 file (.pfx .p12) containing a private key and certificates to PEM  1openssl pkcs12 -in keyStore.pfx -out keyStore.pem -nodes  You can add -nocerts to only output the private key or add -nokeys to only output the certificates.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

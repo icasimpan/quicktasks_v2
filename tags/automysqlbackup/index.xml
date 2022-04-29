@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>automysqlbackup on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/automysqlbackup/</link>
+    <description>Recent content in automysqlbackup on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Mon, 15 Oct 2018 12:32:03 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/automysqlbackup/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AUTOMySQLBackup: Looking for .my.cnf in your $HOME instead of in /root</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/automysqlbackup-looking-for-.my.cnf-on-your-home-instead-of-in-root/</link>
+      <pubDate>Mon, 15 Oct 2018 12:32:03 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/automysqlbackup-looking-for-.my.cnf-on-your-home-instead-of-in-root/</guid>
+      <description>
+        
+          
+            1root@rh:~# /usr/local/bin/automysqlbackup /etc/automysqlbackup/rh.conf 2Parsed config file &amp;#34;/etc/automysqlbackup/automysqlbackup.conf&amp;#34; 34grep: /home/icasimpan/.my.cnf: No such file or directory 5grep: /home/icasimpan/.my.cnf: No such file or directory 6# Checking for permissions to write to folders: 7base folder /var/lib ... exists ... ok. 8backup folder /var/lib/automysqlbackup ... exists ... writable? yes. Proceeding. 9checking directory &amp;#34;/var/lib/automysqlbackup/daily&amp;#34; ... exists. 10checking directory &amp;#34;/var/lib/automysqlbackup/weekly&amp;#34; ... exists. 11checking directory &amp;#34;/var/lib/automysqlbackup/monthly&amp;#34; ... exists. 12checking directory &amp;#34;/var/lib/automysqlbackup/latest&amp;#34; ... exists. 13checking directory &amp;#34;/var/lib/automysqlbackup/tmp&amp;#34; ... exists. 14checking directory &amp;#34;/var/lib/automysqlbackup/fullschema&amp;#34; .
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Automysqlbackup Fails Due to Issues in Information_schema</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/automysqlbackup-fails-due-to-issues-in-information_schema/</link>
+      <pubDate>Mon, 15 Oct 2018 12:11:14 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/automysqlbackup-fails-due-to-issues-in-information_schema/</guid>
+      <description>
+        
+          
+            In a machine &#39;rh&#39;, tested automysqlbackup cron job if it would work and got the issue below:
+1[root@rh icasimpan]# /usr/local/bin/automysqlbackup /etc/automysqlbackup/rh.conf 2Parsed config file &amp;#34;/etc/automysqlbackup/automysqlbackup.conf&amp;#34; 34# Checking for permissions to write to folders: 5base folder /var/lib ... exists ... ok. 6backup folder /var/lib/automysqlbackup ... exists ... writable? yes. Proceeding. 7checking directory &amp;#34;/var/lib/automysqlbackup/daily&amp;#34; ... exists. 8checking directory &amp;#34;/var/lib/automysqlbackup/weekly&amp;#34; ... exists. 9checking directory &amp;#34;/var/lib/automysqlbackup/monthly&amp;#34; ... exists. 10checking directory &amp;#34;/var/lib/automysqlbackup/latest&amp;#34; ... exists. 11checking directory &amp;#34;/var/lib/automysqlbackup/tmp&amp;#34; .
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Automysqlbackup: Cannot Use Root Credentials From MySQL CLI</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/automysqlbackup-cannot-use-root-credentials-from-mysql-cli/</link>
+      <pubDate>Mon, 15 Oct 2018 12:00:13 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/automysqlbackup-cannot-use-root-credentials-from-mysql-cli/</guid>
+      <description>
+        
+          
+            1[root@rh icasimpan]# /usr/local/bin/automysqlbackup /etc/automysqlbackup/rh.conf 2Parsed config file &amp;#34;/etc/automysqlbackup/automysqlbackup.conf&amp;#34; 34# Checking for permissions to write to folders: 5base folder /var/lib ... exists ... ok. 6backup folder /var/lib/automysqlbackup ... exists ... writable? yes. Proceeding. 7checking directory &amp;#34;/var/lib/automysqlbackup/daily&amp;#34; ... exists. 8checking directory &amp;#34;/var/lib/automysqlbackup/weekly&amp;#34; ... exists. 9checking directory &amp;#34;/var/lib/automysqlbackup/monthly&amp;#34; ... exists. 10checking directory &amp;#34;/var/lib/automysqlbackup/latest&amp;#34; ... exists. 11checking directory &amp;#34;/var/lib/automysqlbackup/tmp&amp;#34; ... exists. 12checking directory &amp;#34;/var/lib/automysqlbackup/fullschema&amp;#34; ... exists. 13checking directory &amp;#34;/var/lib/automysqlbackup/status&amp;#34; ... exists. 1415# Testing for installed programs 16mysql .
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

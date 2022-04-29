@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>hugo on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/hugo/</link>
+    <description>Recent content in hugo on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Tue, 11 Aug 2020 23:17:11 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hosting Hugo in Netlify</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/hosting-hugo-in-netlify/</link>
+      <pubDate>Tue, 11 Aug 2020 23:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/hosting-hugo-in-netlify/</guid>
+      <description>
+        
+          
+            You need to add in root directory netfily.toml.
+1[build] 2publish = &amp;#34;public&amp;#34; 3command = &amp;#34;hugo --gc --minify&amp;#34; 45[context.production.environment] 6HUGO_VERSION = &amp;#34;0.74.3&amp;#34; 7HUGO_ENV = &amp;#34;production&amp;#34; 8HUGO_ENABLEGITINFO = &amp;#34;true&amp;#34; 910[context.split1] 11command = &amp;#34;hugo --gc --minify --enableGitInfo&amp;#34; 1213[context.split1.environment] 14HUGO_VERSION = &amp;#34;0.74.3&amp;#34; 15HUGO_ENV = &amp;#34;production&amp;#34; 1617[context.deploy-preview] 18command = &amp;#34;hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL&amp;#34; 1920[context.deploy-preview.environment] 21HUGO_VERSION = &amp;#34;0.74.3&amp;#34; 2223[context.branch-deploy] 24command = &amp;#34;hugo --gc --minify -b $DEPLOY_PRIME_URL&amp;#34; 2526[context.branch-deploy.environment] 27HUGO_VERSION = &amp;#34;0.74.3&amp;#34; 2829[context.next.environment] 30HUGO_ENABLEGITINFO = &amp;#34;true&amp;#34; See details in https://gohugo.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Overriding Hugo Theme Files</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/overriding-hugo-theme-files/</link>
+      <pubDate>Tue, 11 Aug 2020 23:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/overriding-hugo-theme-files/</guid>
+      <description>
+        
+          
+            In most cases, themes do not exactly match what you want in your site.
+For instance, you have an old version of jquery is in the theme:
+1/themes/themename/static/js/jquery.min.js Override it by copying the new version as:
+1/static/js/jquery.min.js So as you may already have figured out by now, you just have to remove the path /themes/themename and that&#39;s the override equivalent.
+See details in https://bwaycer.github.io/hugo_tutorial.hugo/themes/customizing/
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Hugo Static Files</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/hugo-static-files/</link>
+      <pubDate>Mon, 30 Sep 2019 23:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/hugo-static-files/</guid>
+      <description>
+        
+          
+             https://tutorialedge.net/golang/hugo/hugo-adding-images-to-posts/ https://gohugo.io/content-management/static-files/  
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Pagination in Hugo</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/hugo-pagination/</link>
+      <pubDate>Sat, 28 Sep 2019 23:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/hugo-pagination/</guid>
+      <description>
+        
+          
+            See https://glennmccomb.com/articles/how-to-build-custom-hugo-pagination/
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Tagcloud with Hugo</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/tag-cloud-hugo/</link>
+      <pubDate>Sat, 28 Sep 2019 23:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/tag-cloud-hugo/</guid>
+      <description>
+        
+          
+            See https://www.sidorenko.io/post/2017/07/nice-tagcloud-with-hugo/
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

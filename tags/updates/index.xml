@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>updates on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/updates/</link>
+    <description>Recent content in updates on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Sun, 12 Jul 2020 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/updates/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Security Updates on CentOS</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/security-updates-centos/</link>
+      <pubDate>Sun, 12 Jul 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/security-updates-centos/</guid>
+      <description>
+        
+          
+            Is best done manually:
+1sudo yum -y update --security 1The problem is that CentOS does not supply the necessary metadata in its yum repositories such that yum-plugin-security can function. In other words, yum-plugin-security does nothing, and the automation of security updates is a lost cause in CentOS. In fact, the CentOS developers go so far as to say this will never work. And yum-cron is no solution as it actually disables security updates from the CentOS repositories completely.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Ubuntu: Automatic Security Updates</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/ubuntu-automatic-security-updates/</link>
+      <pubDate>Mon, 30 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/ubuntu-automatic-security-updates/</guid>
+      <description>
+        
+          
+             https://help.ubuntu.com/community/AutomaticSecurityUpdates http://packages.ubuntu.com/search?keywords=unattended-upgrades  
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

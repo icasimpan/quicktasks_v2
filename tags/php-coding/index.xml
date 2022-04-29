@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>php-coding on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/php-coding/</link>
+    <description>Recent content in php-coding on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Sat, 26 Mar 2022 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/php-coding/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Excel Readable CSV in PHP</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/excel-readable-csv/</link>
+      <pubDate>Sat, 26 Mar 2022 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/excel-readable-csv/</guid>
+      <description>
+        
+          
+            Yes, csv is simple BUT if you want it readable in Excel (at least on Windows), you need to prepend it with a hidden BOM and as UTF8.
+Tried every possible suggestions in stackoverflow that says it works BUT it doesn&#39;t.
+So, try the phpoffice approach. It works for me...
+Install
+1~$ cd /an/isolated/directory 2~$ composer require php-office/phpspreadsheet 3~$ composer install Try this code:
+1&amp;lt;?php 2require &amp;#39;vendor/autoload.php&amp;#39;; 34use PhpOffice\PhpSpreadsheet\Spreadsheet; 5use PhpOffice\PhpSpreadsheet\Writer\Csv; 678const CSV_FILENAME=&amp;#39;csv-example.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Php Anonymous Function</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/php-anonymous-function/</link>
+      <pubDate>Sat, 12 Mar 2022 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/php-anonymous-function/</guid>
+      <description>
+        
+          
+            Overview In contrast to a named function like:
+1&amp;lt;?php 2function multiply($x, $y) 3{ 4return $x * $y; 5} An anonymous or unnamed-function, well has no name:
+1&amp;lt;?php 2function ($x, $y) { 3return $x * $y; 4}; //closing semicolon here is mandatory. NOTE: semicolon after the closing curly bracket is mandatory as it is treated as an expression by php
+Since it is unnamed, you need to store it&#39;s value in a variable and using the variable as function name:
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Php Array_Map Function</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/php-array_map-function/</link>
+      <pubDate>Sat, 12 Mar 2022 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/php-array_map-function/</guid>
+      <description>
+        
+          
+            Suppose that you have an array that holds the lengths of squares:
+1&amp;lt;?php 23$lengths = [10, 20, 30]; To calculate the areas of the squares, you may come up with the foreach loop like this:
+1&amp;lt;?php 23$lengths = [10, 20, 30]; 45// calculate areas 6$areas = []; 78foreach ($lengths as $length) { 9$areas[] = $length * $length; 10} 1112print_r($areas); Output:
+1Array 2( 3[0] =&amp;gt; 100 4[1] =&amp;gt; 400 5[2] =&amp;gt; 900 6) Using array_map() 1&amp;lt;?
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Php Callable Function</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/php-callable-function/</link>
+      <pubDate>Sat, 12 Mar 2022 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/php-callable-function/</guid>
+      <description>
+        
+          
+            Callbacks can be denoted by the &amp;quot;callable&amp;quot; type declaration.
+Example:
+1icasimpan$ nl -ba callable_example.php 21	&amp;lt;?php 32	function printFormatted(callable $format, $str) { 43	echo $format($str); 54	echo &amp;#34;&amp;lt;br&amp;gt;&amp;#34;; 65	} 76	87	function exclaim($str) { return $str . &amp;#34;!&amp;#34;; } 98	printFormatted(&amp;#34;exclaim&amp;#34;, &amp;#34;Hello World&amp;#34;); 109	?&amp;gt; This outputs &amp;quot;Hello World!&amp;quot;.
+ Line 7 is the callable function &amp;quot;exclaim&amp;quot; Line 2 is the function &amp;quot;printFormatted&amp;quot; with callable function parameter Line 8 triggers the function &amp;quot;printFormated&amp;quot; which basically pass the name &#39;in plain string&#39; with the parameter &amp;quot;Hello World&amp;quot;  NOTES
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Php Iterable</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/php-iterable/</link>
+      <pubDate>Sat, 12 Mar 2022 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/php-iterable/</guid>
+      <description>
+        
+          
+            An iterable is any value which can be looped through with a foreach() loop.
+The iterable pseudo-type was introduced in PHP 7.1, and it can be used as a data type for function arguments and function return values.
+Example
+1&amp;lt;?php 2function printIterable(iterable $myIterable) { 3foreach($myIterable as $item) { 4echo &amp;#34;{$item}\n&amp;#34;; 5} 6} 78$arr = [&amp;#34;a&amp;#34;, &amp;#34;b&amp;#34;, &amp;#34;c&amp;#34;]; 9printIterable($arr); 10?&amp;gt; This prints:
+1a 2b 3c Return an iterable:
+1&amp;lt;?php 2function getIterable():iterable { 3return [&amp;#34;a&amp;#34;, &amp;#34;b&amp;#34;, &amp;#34;c&amp;#34;]; 4} 56$myIterable = getIterable(); 7foreach($myIterable as $item) { 8echo $item; 9} 10?
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Php Variable Variables</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/php-variable-variables/</link>
+      <pubDate>Sat, 12 Mar 2022 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/php-variable-variables/</guid>
+      <description>
+        
+          
+            This is quite confusing but as soon as you see the logic, it would make sense.
+Say you have this code:
+1&amp;lt;?php 23$my_var= &amp;#39;title&amp;#39;; 4$$my_var = &amp;#39;PHP variable variables&amp;#39;; // $my_var has a value of &amp;#39;title&amp;#39;. So the 2nd &amp;#39;$&amp;#39; makes it $title 5echo $title; // ...so, YOU see now where you will get the variable $title Output is:
+1PHP variable variables See details in https://www.phptutorial.net/php-tutorial/php-variable-variables/
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Php Data Structure</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/php-data-structure/</link>
+      <pubDate>Wed, 02 Mar 2022 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/php-data-structure/</guid>
+      <description>
+        
+          
+            There&#39;s what is called a &amp;quot;Data Structure&amp;quot; or DS package available in packagist.
+Install
+1~$ cd /an/isolated/directory 2~$ composer require php-ds/php-ds 3~$ composer install Try this code:
+1&amp;lt;?php 2require __DIR__ . &amp;#39;/vendor/autoload.php&amp;#39;; 345$stack = new \Ds\Stack(); 6//$stack = new Stack(); 78$stack-&amp;gt;push(&amp;#34;a&amp;#34;); 9$stack-&amp;gt;push(&amp;#34;b&amp;#34;); 10$stack-&amp;gt;push(&amp;#34;c&amp;#34;); 1112var_dump($stack-&amp;gt;pop()); 13var_dump($stack-&amp;gt;pop()); 14var_dump($stack-&amp;gt;pop()); 15?&amp;gt; See https://www.php.net/manual/en/book.ds.php or https://medium.com/@rtheunissen/efficient-data-structures-for-php-7-9dda7af674cd
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Php Arrow Function</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/php-arrow-function/</link>
+      <pubDate>Mon, 21 Feb 2022 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/php-arrow-function/</guid>
+      <description>
+        
+          
+            As of php7.4, php arrow function was added as a more concise syntax for anonymous functions.
+Basic syntax:
+1fn (arguments) =&amp;gt; expression; Is functionally equivalent to the following anonymous function:
+1function(arguments) { return expression; } Unlike anonymous functions, arrow functions can automatically access variables from their parent scopes.
+1&amp;lt;?php 23function multiplier($x) 4{ 5return fn ($y) =&amp;gt; $x * $y; 6} 78$double = multiplier(2); 910echo $double(10); // 200 See also https://ismael.casimpan.com/quicktasks/php-anonymous-function/
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

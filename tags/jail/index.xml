@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>jail on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/jail/</link>
+    <description>Recent content in jail on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Sat, 28 Sep 2019 23:17:11 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/jail/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Checking status of specific jail</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/check-status-specific-jail/</link>
+      <pubDate>Sat, 28 Sep 2019 23:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/check-status-specific-jail/</guid>
+      <description>
+        
+          
+            1root@example:/var/log# fail2ban-client status sshd 2Status for the jail: sshd 3|- Filter 4| |- Currently failed: 6 5| |- Total failed: 91801 6| `- File list: /var/log/auth.log 7`- Actions 8|- Currently banned: 1 9|- Total banned: 9971 10`- Banned IP list: 51.15.255.133 
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

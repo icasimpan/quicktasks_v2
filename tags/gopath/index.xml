@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>gopath on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/gopath/</link>
+    <description>Recent content in gopath on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Fri, 05 Nov 2021 23:05:11 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/gopath/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Suggested Init Script Before Coding in Golang</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/suggested-init-script-before-coding-in-golang/</link>
+      <pubDate>Fri, 05 Nov 2021 23:05:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/suggested-init-script-before-coding-in-golang/</guid>
+      <description>
+        
+          
+            Suggested Init Script The very basic variable you need to lookout for in go is the environment variable $GOPATH.
+In Unix/Linux-based systems it is by default in ~/go.
+My preference is to put it in a directory where my go code exists. So here&#39;s a short shell script I use:
+1#!/bin/bash 2 3## Enforce calling &amp;#34;init.sh&amp;#34; from within project directory. 4## 5init_call_check=$(dirname $0) 6if [[ &amp;#34;$init_call_check&amp;#34; != &amp;#34;..&amp;#34; ]]; then 7echo &amp;#34;ERROR: &amp;#39;init.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

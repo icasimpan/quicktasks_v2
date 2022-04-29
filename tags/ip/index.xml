@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ip on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/ip/</link>
+    <description>Recent content in ip on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Fri, 10 Jul 2020 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/ip/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Apache 2.4: IP Whitelisting</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/ip-whitelisting-apache2.4/</link>
+      <pubDate>Fri, 10 Jul 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/ip-whitelisting-apache2.4/</guid>
+      <description>
+        
+          
+            1... 2... 3AuthType Basic 4AuthName &amp;#34;Development Area&amp;#34; 5AuthUserFile /var/www/sites/.htpasswd 6&amp;lt;RequireAny&amp;gt; 7Require ip 19.233.95.152 8Require ip 31.169.217.174 9Require ip 33.202.255.41 10Require ip 31.175.111.184 11Require ip 51.209.11.159 12Require ip 129.162.144.55 13Require valid-user 14&amp;lt;/RequireAny&amp;gt; 15... 16... See https://stackoverflow.com/questions/10419592/htaccess-htpasswd-bypass-if-at-a-certain-ip-address
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

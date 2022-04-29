@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>php-mongodb on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/php-mongodb/</link>
+    <description>Recent content in php-mongodb on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Sat, 28 Sep 2019 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/php-mongodb/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Install PHP7.2 MongoDB</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/install-php-mongodb/</link>
+      <pubDate>Sat, 28 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/install-php-mongodb/</guid>
+      <description>
+        
+          
+            1$ git clone https://github.com/mongodb/mongo-php-driver.git 2$ cd mongo-php-driver 3$ git submodule sync &amp;amp;&amp;amp; git submodule update --init 4$ phpize 5$ ./configure 6$ make all -j 5 7$ sudo make install Details in https://www.php.net/manual/en/mongodb.installation.manual.php or https://stackoverflow.com/questions/46276978/install-mongodb-driver-in-cent-os-7-with-php7-1
+In my case, I also had to add to 20-mongodb.ini.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

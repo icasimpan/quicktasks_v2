@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>bad on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/bad/</link>
+    <description>Recent content in bad on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Sun, 05 Apr 2020 18:36:44 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/bad/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bad Configuration Option</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/bad-configuration-option/</link>
+      <pubDate>Sun, 05 Apr 2020 18:36:44 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/bad-configuration-option/</guid>
+      <description>
+        
+          
+            Noticed this one in a compromised machine by a cryptocurrency(monero) miner:
+1icasimpan@example-prod:~$ scp wp.example.com-HTMLonly.tgz icasimpan@another-example.info:~/ 2command-line: line 0: Bad configuration option: PermitLocalCommand 3lost connection Fix was to remove and re-install openssh-server
+1sudo apt-get remove openssh-server 2sudo apg-get install openssh-server Details in https://stackoverflow.com/questions/16182300/scp-error-bad-configuration-option-permitlocalcommand
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Remove Bad Keys From ~/.ssh/known_hosts</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/remove-bad-keys-from-known_hosts/</link>
+      <pubDate>Thu, 02 Apr 2020 18:36:44 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/remove-bad-keys-from-known_hosts/</guid>
+      <description>
+        
+          
+            Sample
+1icasimpan-local:~ icasimpan$ ssh root@99.206.157.36 2@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 3@ WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED! @ 4@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 5IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY! 6Someone could be eavesdropping on you right now (man-in-the-middle attack)! 7It is also possible that a host key has just been changed. 8The fingerprint for the ECDSA key sent by the remote host is 9SHA256:AbJnvQd/cMEDiN0ohMp6gdmBYRhRRp6h8iOBJf0m4Zs. 10Please contact your system administrator. 11Add correct host key in /Users/icasimpan/.ssh/known_hosts to get rid of this message.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

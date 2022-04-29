@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>cluster on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/cluster/</link>
+    <description>Recent content in cluster on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Sun, 28 Jun 2020 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/cluster/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Change Default Cluster in Kubernetes</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/change-default-cluster-in-kubernetes/</link>
+      <pubDate>Sun, 28 Jun 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/change-default-cluster-in-kubernetes/</guid>
+      <description>
+        
+          
+            If you have more than one cluster as illustrated in https://ismael.casimpan.com/quicktasks-k8s/list-nodes-in-kubernetes/, you can change it using command:
+1kubectl config use-context &amp;lt;cluster_name_here&amp;gt; Use this command to verify the change:
+1kubectl config get-contexts 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Get Cluster List in Kubernetes</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/cluster-list-in-kubernetes/</link>
+      <pubDate>Sun, 28 Jun 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/cluster-list-in-kubernetes/</guid>
+      <description>
+        
+          
+            If you have a lot of kubernetes cluster, you will see the following:
+1user@example:~$ kubectl config get-contexts 2CURRENT NAME CLUSTER AUTHINFO NAMESPACE 3* do-nyc1-kubernetes-tutorial do-nyc1-kubernetes-tutorial do-nyc1-kubernetes-tutorial-admin 4do-nyc3-infra do-nyc3-infra do-nyc3-infra-admin 5do-nyc2-devinfra do-nyc2-devinfra do-nyc2-devinfra-admin The one with asterisk (do-nyc1-kubernetes-tutorial) is your current cluster. So &amp;quot;kubectl&amp;quot; commands without specified cluster will default to it.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

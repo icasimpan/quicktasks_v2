@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>doks on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/doks/</link>
+    <description>Recent content in doks on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Sat, 27 Jun 2020 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/doks/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Connection to Server Refused</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/connection-to-server-refused/</link>
+      <pubDate>Sat, 27 Jun 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/connection-to-server-refused/</guid>
+      <description>
+        
+          
+            When you see similar error as below:
+1user@example:~$ kubectl get nodes 2The connection to the server localhost:8080 was refused - did you specify the right host or port? Check for the &amp;quot;$KUBECONFIG&amp;quot; if set and &amp;quot;kubectl config view&amp;quot; output. Chances are, both are empty like below:
+1user@example:~$ echo $KUBECONFIG 1user@example:~$ kubectl config view 2apiVersion: v1 3clusters: null 4contexts: null 5current-context: &amp;#34;&amp;#34; 6kind: Config 7preferences: {} 8users: null In this example, we&#39;re using the DOKS or DigitalOcean Managed Kubernetes.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

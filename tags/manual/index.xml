@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>manual on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/manual/</link>
+    <description>Recent content in manual on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Sun, 07 Jun 2020 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/manual/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Manually generating LetsEncrypt certificate</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/manually-generate-letsencryp-cert/</link>
+      <pubDate>Sun, 07 Jun 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/manually-generate-letsencryp-cert/</guid>
+      <description>
+        
+          
+            In cases where you don&#39;t want to disrupt current production server, this is a good approach
+1mkdir /opt/letsencrypt 2cd /opt/letsencrypt 3wget https://dl.eff.org/certbot-auto 4chmod a+x certbot-auto 5sudo ./certbot-auto --apache certonly Sample run as follows:
+1[root@687elmp01 letsencrypt]# sudo ./certbot-auto --apache certonly 2Saving debug log to /var/log/letsencrypt/letsencrypt.log 3Plugins selected: Authenticator apache, Installer apache 4Enter email address (used for urgent renewal and security notices) (Enter &amp;#39;c&amp;#39; to 5cancel): me@example.com 67------------------------------------------------------------------------------- 8Please read the Terms of Service at 9https://letsencrypt.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

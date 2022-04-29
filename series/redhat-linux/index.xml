@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>redhat-linux on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/series/redhat-linux/</link>
+    <description>Recent content in redhat-linux on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Sun, 12 Jul 2020 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/series/redhat-linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Security Updates on CentOS</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/security-updates-centos/</link>
+      <pubDate>Sun, 12 Jul 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/security-updates-centos/</guid>
+      <description>
+        
+          
+            Is best done manually:
+1sudo yum -y update --security 1The problem is that CentOS does not supply the necessary metadata in its yum repositories such that yum-plugin-security can function. In other words, yum-plugin-security does nothing, and the automation of security updates is a lost cause in CentOS. In fact, the CentOS developers go so far as to say this will never work. And yum-cron is no solution as it actually disables security updates from the CentOS repositories completely.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Upgrade php 5.6 to php 7.0 in CentOS7</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/php5.6-to-php7.0-upgrade-in-centos7/</link>
+      <pubDate>Sun, 12 Jul 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/php5.6-to-php7.0-upgrade-in-centos7/</guid>
+      <description>
+        
+          
+            NOTE: php5.6 and php7.0 is no longer supported.
+1wget https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm 2wget http://rpms.remirepo.net/enterprise/remi-release-7.rpm 3rpm -Uvh remi-release-7.rpm epel-release-latest-7.noarch.rpm Then, enable &amp;quot;remi-php70&amp;quot; in /etc/yum.repos.d/remi-php70.repo
+Then, yum update php.
+Details in https://blog.remirepo.net/post/2016/02/14/Install-PHP-7-on-CentOS-RHEL-Fedora
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

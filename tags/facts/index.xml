@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>facts on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/facts/</link>
+    <description>Recent content in facts on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Sat, 21 Sep 2019 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/facts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ansible_os_family Not Found</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/ansible_os_family-not-found/</link>
+      <pubDate>Sat, 21 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/ansible_os_family-not-found/</guid>
+      <description>
+        
+          
+            Ensure &amp;quot;gather_facts&amp;quot; is NOT set to false and it should be fine.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Check All Facts</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/check-all-facts/</link>
+      <pubDate>Sat, 21 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/check-all-facts/</guid>
+      <description>
+        
+          
+            1ansible all -m setup 
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

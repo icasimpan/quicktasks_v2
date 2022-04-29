@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>theme on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/theme/</link>
+    <description>Recent content in theme on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Tue, 11 Aug 2020 23:17:11 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/theme/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Overriding Hugo Theme Files</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/overriding-hugo-theme-files/</link>
+      <pubDate>Tue, 11 Aug 2020 23:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/overriding-hugo-theme-files/</guid>
+      <description>
+        
+          
+            In most cases, themes do not exactly match what you want in your site.
+For instance, you have an old version of jquery is in the theme:
+1/themes/themename/static/js/jquery.min.js Override it by copying the new version as:
+1/static/js/jquery.min.js So as you may already have figured out by now, you just have to remove the path /themes/themename and that&#39;s the override equivalent.
+See details in https://bwaycer.github.io/hugo_tutorial.hugo/themes/customizing/
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

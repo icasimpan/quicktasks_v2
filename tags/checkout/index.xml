@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>checkout on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/checkout/</link>
+    <description>Recent content in checkout on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Sun, 08 Apr 2018 23:17:11 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/checkout/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pathspec error on tag checkout</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/pathspec-error-pn-tag-checkout/</link>
+      <pubDate>Sun, 08 Apr 2018 23:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/pathspec-error-pn-tag-checkout/</guid>
+      <description>
+        
+          
+            When you see error such as this
+1bash-4.1$ git checkout Brick_Release_2018-06-19 2error: pathspec &amp;#39;Brick_Release_2018-06-19&amp;#39; did not match any file(s) known to git. &#39;git fetch&#39; first and retry to checkout. If it still fails, ensure you&#39;re using the correct branch name.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

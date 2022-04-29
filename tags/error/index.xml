@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>error on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/error/</link>
+    <description>Recent content in error on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Sat, 05 Sep 2020 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/error/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>NMap cannot open a raw socket despite being root</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/nmap-cannot-open-socket-despite-being-root/</link>
+      <pubDate>Sat, 05 Sep 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/nmap-cannot-open-socket-despite-being-root/</guid>
+      <description>
+        
+          
+            If you are seeing this error:
+1~# nmap -Pn www.example.org 2Starting Nmap 7.80 ( https://nmap.org ) at 2020-09-04 20:59 UTC 3Couldn&amp;#39;t open a raw socket. Error: Permission denied (13) Most probably, installation was through Ubuntu&#39;s snap as follows:
+1~# snap install nmap 2nmap 7.80 from Maximiliano Bertacchini (maxiberta) installed Solution is to run below command
+1# snap connect nmap:network-control And re-run nmap command earlier.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Nginx SSL PEM_read_bio End of Line Error</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/nginx-ssl-pem_read_bio-end-of-line-error/</link>
+      <pubDate>Mon, 27 Jul 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/nginx-ssl-pem_read_bio-end-of-line-error/</guid>
+      <description>
+        
+          
+            We had this ssl cert issued by Network Solutions
+1root@www:/etc/nginx/conf.d/ssl/example-2020# unzip -l EXAMPLE.ORG.zip 2Archive: EXAMPLE.ORG.zip 3Length Date Time Name 4--------- ---------- ----- ---- 52150 2020-07-14 16:59 DV_NetworkSolutionsDVServerCA2.crt 6Network Solutions DV Intermediate CA 72093 2020-07-14 16:59 DV_USERTrustRSACertificationAuthority.crt 8Network Solutions DV Intermediate CA 2 92174 2020-07-14 16:59 EXAMPLE.ORG.crt 10Domain certificate 11--------- ------- 126417 3 files I created a bundle as this was for Nginx cat EXAMPLE.ORG.crt DV_NetworkSolutionsDVServerCA2.crt DV_USERTrustRSACertificationAuthority.crt &amp;gt; www.example.org-bundle.crt
+When I tried verifying, I got this error:
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Nginx 502 Bad Gateway</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/nginx-502-bad-gateway/</link>
+      <pubDate>Fri, 10 Jul 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/nginx-502-bad-gateway/</guid>
+      <description>
+        
+          
+             Check if php-fpm service is up Check if being listened to by nginx (for CentOS, look for &amp;quot;listen&amp;quot; in /etc/php-fpm.d/www.conf) Adjust nginx vhost (fastcgi_pass) when necessary (example below)  1fastcgi_pass 127.0.0.1:9000; 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>SSL Connect Error on Git Fetch</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/ssl-connect-error-on-git-fetch/</link>
+      <pubDate>Fri, 12 Jun 2020 23:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/ssl-connect-error-on-git-fetch/</guid>
+      <description>
+        
+          
+            1~$ git fetch 2fatal: unable to access &amp;#39;https://github.com/icasimpan/example.git/&amp;#39;: SSL connect error Fixed by:
+1yum update -y nss curl libcurl 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Failed to open stream: DrupalTemporaryStreamWrapper::stream_open</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/failed-to-open-stream-drupaltemporarystreamwrapperstream/</link>
+      <pubDate>Fri, 17 Apr 2020 23:50:10 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/failed-to-open-stream-drupaltemporarystreamwrapperstream/</guid>
+      <description>
+        
+          
+            From CLI
+This error is shown:
+1failed to open stream: &amp;#34;DrupalTemporaryStreamWrapper::stream_open&amp;#34; call failed file.inc:1983 Solution
+Seems to be an issue with the temp file. Check &amp;quot;drush st&amp;quot; and confirm if the temp file is still accessible.
+This gives some hints on how to set the &amp;quot;temp and private files&amp;quot; in drupal setttings https://www.drupal.org/forum/support/installing-drupal/2011-03-01/failed-to-open-stream-drupaltemporarystreamwrapperstream#comment-4258986
+However, my test showed using &amp;quot;/tmp&amp;quot; doesn&#39;t seem to reflected in drupal. What works is adding the full path, something like this
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Fatal Error: Call to undefined function cache_get()</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/fatal-error-call-to-undefined-function-cache_get/</link>
+      <pubDate>Fri, 17 Apr 2020 23:50:10 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/fatal-error-call-to-undefined-function-cache_get/</guid>
+      <description>
+        
+          
+            From CLI
+1drush st This error is shown:
+1PHP Fatal error: Uncaught Error: Call to undefined function cache_get() in xxxx Solution
+Is always due to php syntax error. What did you add just recently? Perhaps a semicolon is missing in settings.local.php?
+Further information in https://www.drupal.org/forum/support/post-installation/2016-06-23/fatal-error-call-to-undefined-function-cache_get
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Drupal 8: Broken Web UI</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/drupal8-broken-webui/</link>
+      <pubDate>Sat, 21 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/drupal8-broken-webui/</guid>
+      <description>
+        
+          
+            Most probably caused by CSS/JS Aggreggation. Disable it by doing the following:
+Can edit settings.php - add the following:
+1$config[&amp;#39;system.performance&amp;#39;][&amp;#39;css&amp;#39;][&amp;#39;preprocess&amp;#39;] = FALSE; 2$config[&amp;#39;system.performance&amp;#39;][&amp;#39;js&amp;#39;][&amp;#39;preprocess&amp;#39;] = FALSE; In Drupal Admin
+-site-/admin/config/development/performance
+Uncheck two checkboxes:
+ Aggregate CSS files Aggregate JavaScript files  Reference: https://www.drupal.org/forum/support/post-installation/2017-04-02/disabling-caching-cssjs-aggregation
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Drupal 8: Entities neeeds to be deleted before importing error</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/drupal8-entities-needs-deleted-before-import/</link>
+      <pubDate>Sat, 21 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/drupal8-entities-needs-deleted-before-import/</guid>
+      <description>
+        
+          
+            The following was seen during configuration import (drush cim)
+1The import failed due to the following reasons: 2Entities exist of type &amp;lt;em class=&amp;#34;placeholder&amp;#34;&amp;gt;Shortcut link&amp;lt;/em&amp;gt; and &amp;lt;em class=&amp;#34;placeholder&amp;#34;&amp;gt;Shortcut set&amp;lt;/em&amp;gt; &amp;lt;em class=&amp;#34;placeholder&amp;#34;&amp;gt;Default&amp;lt;/em&amp;gt;. These entities need to 3be deleted before importing. Fix by running this:
+1drush ev &amp;#39;\Drupal::entityManager()-&amp;gt;getStorage(&amp;#34;shortcut_set&amp;#34;)-&amp;gt;load(&amp;#34;default&amp;#34;)-&amp;gt;delete();&amp;#39; Reference: https://www.drupal.org/forum/support/post-installation/2015-12-20/problem-during-import-configuration
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Field Loop Error</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/field-loop-error/</link>
+      <pubDate>Sat, 21 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/field-loop-error/</guid>
+      <description>
+        
+          
+            If you see the error below:
+1ERROR! The field &amp;#39;loop&amp;#39; is supposed to be a string type, however the incoming data structure is a &amp;lt;class &amp;#39;ansible.parsing.yaml.objects.AnsibleSequence&amp;#39;&amp;gt; Upgrade your ansible to at least version 2.5. The &#39;loop&#39; keyword is defined starting that version. See https://stackoverflow.com/questions/49680809/ansible-loop-error
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>[InnoDB] Fatal error: cannot allocate memory for the buffer pool</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/innodb-fatal-error-cannot-allocate-memory-buffer-pool/</link>
+      <pubDate>Sat, 29 Dec 2018 09:47:00 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/innodb-fatal-error-cannot-allocate-memory-buffer-pool/</guid>
+      <description>
+        
+          
+            From /var/log/mariadb/mariadb.log, something like
+1150515 12:10:45 InnoDB: Completed initialization of buffer pool 2150515 12:10:45 InnoDB: Fatal error: cannot allocate memory for the buffer pool 3150515 12:10:45 [ERROR] Plugin &amp;#39;InnoDB&amp;#39; init function returned error. 4150515 12:10:45 [ERROR] Plugin &amp;#39;InnoDB&amp;#39; registration as a STORAGE ENGINE failed. 5150515 12:10:45 [ERROR] Unknown/unsupported storage engine: InnoDB 6150515 12:10:45 [ERROR] Aborting Ensure to allocate 50% of max machine RAM. Assuming you have 2GB in the machine, you&#39;ll need
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Undefined Class Constant MYSQL_ATTR_SSL_CA</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/undefined-class-constant-mysql_attr_ssl_ca/</link>
+      <pubDate>Mon, 15 Oct 2018 07:27:21 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/undefined-class-constant-mysql_attr_ssl_ca/</guid>
+      <description>
+        
+          
+            1drupal@ubuntu:/var/www/sites/openedu.localhost/docroot$ drush si site-name=&amp;#39;OpenEDU Testing&amp;#39; --db-url=&amp;#39;mysql://openedu_DBA:openedu_PASS@127.0.0.1/openedu_DB&amp;#39; openedu 2PHP Fatal error: Uncaught Error: Undefined class constant &amp;#39;MYSQL_ATTR_SSL_CA&amp;#39; in /usr/local/share/drush/lib/Drush/Sql/Sqlmysql.php:56 3Stack trace: 4#0 /usr/local/share/drush/lib/Drush/Sql/SqlBase.php(164): Drush\Sql\Sqlmysql-&amp;gt;creds() 5#1 /usr/local/share/drush/lib/Drush/Sql/Sqlmysql.php(107): Drush\Sql\SqlBase-&amp;gt;query(&amp;#39;SELECT 1;&amp;#39;, &amp;#39;/tmp/drush_uX7T...&amp;#39;, &amp;#39;/dev/null&amp;#39;) 6#2 /usr/local/share/drush/commands/core/site_install.drush.inc(146): Drush\Sql\Sqlmysql-&amp;gt;db_exists() 7#3 /usr/local/share/drush/includes/command.inc(422): drush_core_pre_site_install(&amp;#39;site-name=OpenE...&amp;#39;) 8#4 /usr/local/share/drush/includes/command.inc(231): _drush_invoke_hooks(Array, Array) 9#5 /usr/local/share/drush/includes/command.inc(199): drush_command(&amp;#39;site-name=OpenE...&amp;#39;) 10#6 /usr/local/share/drush/lib/Drush/Boot/BaseBoot.php(67): drush_dispatch(Array) 11#7 /usr/local/share/drush/includes/preflight.inc(66): Drush\Boot\BaseBoot-&amp;gt;bootstrap_and_dispatch() 12#8 /usr/local/share/drush/drush.php(12): drush_main() 13#9 {main} 14thrown in /usr/local/share/drush/lib/Drush/Sql/Sqlmysql.php on line 56 15Drush command terminated abnormally due to an unrecoverable error. [error] 16Error: Uncaught Error: Undefined class constant &amp;#39;MYSQL_ATTR_SSL_CA&amp;#39; in /usr/local/share/drush/lib/Drush/Sql/Sqlmysql.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>BASH_FUNC_module error</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/bash_func_module-error/</link>
+      <pubDate>Mon, 09 Apr 2018 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/bash_func_module-error/</guid>
+      <description>
+        
+          
+            This error is seen as follows:
+1sh:module:line1:syntaxerror:unexpectedendoffile2sh:errorimportingfunctiondefinitionfor`BASH_FUNC_module&amp;#39;A lot of discussions has been done about it in https://github.com/drush-ops/drush/issues/2065#issuecomment-227820550 but the fix is made from /etc/php.ini:
+1disable_functions = pcntl_exec 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>error: &#39;drush -fra -y&#39; Failed to Create Directory</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/drush-fra-failed-to-create-directory/</link>
+      <pubDate>Mon, 09 Apr 2018 00:20:23 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/drush-fra-failed-to-create-directory/</guid>
+      <description>
+        
+          
+            1bash-4.1$ /usr/local/bin/drush cc all 2‘all’ cache was cleared. [success] 3bash-4.1$ /usr/local/bin/drush fra -y 4WD print_pdf: Failed to create directory “public://print_pdf/print_pdf_mpdf/ttfontdata” for print_pdf_mpdf. [error] 5WD print_pdf: Failed to create directory “public://print_pdf/print_pdf_mpdf/tmp” for print_pdf_mpdf. [error] 6The following modules will be reverted: content_set_4 7Do you really want to continue? (y/n): y 8Reverted content_set_4.field_group. [ok] 9bash-4.1$ /usr/local/bin/drush fra -y 10The following modules will be reverted: content_set_4 11Do you really want to continue? (y/n): y 12Reverted content_set_4.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Getting Errors with Drush rr not Installed</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/getting-errors-with-drush-rr-not-installed/</link>
+      <pubDate>Mon, 09 Apr 2018 00:12:49 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/getting-errors-with-drush-rr-not-installed/</guid>
+      <description>
+        
+          
+            1drush @none dl registry_rebuild-7.x See https://www.drupal.org/project/registry_rebuild or https://www.deeson.co.uk/labs/drush-registry-rebuild
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Drupal File Permission Problems</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/drupal-file-permission-problems/</link>
+      <pubDate>Sun, 08 Apr 2018 23:44:45 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/drupal-file-permission-problems/</guid>
+      <description>
+        
+          
+            Changing group ownership of the files in &amp;quot;sites/default/files&amp;quot;. More details in https://www.drupal.org/docs/7/install/setting-up-the-files-directory
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Error 1273 (HY000): Unknown collation &#39;utf8mb4_unicode_520_ci</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/error-1273-hy000-unknown-collation-utf8mb4_unicode_520_ci/</link>
+      <pubDate>Sun, 08 Apr 2018 23:28:33 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/error-1273-hy000-unknown-collation-utf8mb4_unicode_520_ci/</guid>
+      <description>
+        
+          
+            Caused by difference in database versions where the latest version you&#39;re running does not support &#39;utf8mb4unicode520_ci&#39;.
+Search and replace it from within the dump file with &#39;utf8mb4_unicode_ci&#39;.
+See details in https://www.digitalocean.com/community/questions/error-1273-hy000-at-line-25-unknown-collation-utf8mb4_unicode_520_ci
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Mysql Not Restarting Nothing in Logs</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/mysql-not-restarting-nothing-in-logs/</link>
+      <pubDate>Sun, 08 Apr 2018 23:24:04 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/mysql-not-restarting-nothing-in-logs/</guid>
+      <description>
+        
+          
+            Check /etc/mysql/my.cnf and examine &amp;quot;datadir&amp;quot; value. If it isn&#39;t valid or you know the disk is bad, change it. Restart service and all will be well.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Mysql Server Has Gone Away Fix</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/mysql-server-has-gone-away-fix/</link>
+      <pubDate>Sun, 08 Apr 2018 22:33:18 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/mysql-server-has-gone-away-fix/</guid>
+      <description>
+        
+          
+            If you see an error like the following:
+1ERROR 2006 (HY000): MySQL server has gone away 2No connection. Trying to reconnect... 3Connection id: 990 4Current database: yourDB Add the the following to /etc/my.cnf, increasing the value if error persists.
+1&amp;#39;max_allowed_packet=64M&amp;#39; See https://stackoverflow.com/questions/7942154/mysql-error-2006-mysql-server-has-gone-away for reference.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

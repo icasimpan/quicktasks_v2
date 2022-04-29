@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>troubleshooting on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/troubleshooting/</link>
+    <description>Recent content in troubleshooting on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Wed, 23 Mar 2022 23:17:11 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/troubleshooting/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>NodeJS Clear Cache</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/nodejs-clear-cache/</link>
+      <pubDate>Wed, 23 Mar 2022 23:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/nodejs-clear-cache/</guid>
+      <description>
+        
+          
+            1npm cache clean --force 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Switch to root account in Docker</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/switch-to-root-account-in-docker/</link>
+      <pubDate>Mon, 21 Mar 2022 23:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/switch-to-root-account-in-docker/</guid>
+      <description>
+        
+          
+            Usually, a docker container has a way to easily switch to root account.
+It can be as easy as &#39;su root&#39; or even root by default when you run a shell such as &#39;bash&#39; within it.
+However, sometimes, it&#39;s not that easy. You need to work hard for it.
+My issues where the following:
+ su command won&#39;t work as it&#39;s just a symlink to busybox:  1~ $ ls -l `which su` 2lrwxrwxrwx 1 root root 12 Oct 21 2020 /bin/su -&amp;gt; /bin/busybox  No known root password or sudo is not possible  Solution  su problem - create a copy of /bin/busybox to somewhere you can modify permissions.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Docker Container Using Volume</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/docker-container-using-volume/</link>
+      <pubDate>Mon, 21 Mar 2022 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/docker-container-using-volume/</guid>
+      <description>
+        
+          
+            Sometimes, you may need to know which container a volume is associated with.
+Use this command:
+1docker ps -a --filter volume=VOLUME_NAME_OR_MOUNT_POINT See https://stackoverflow.com/questions/42857575/how-to-determine-what-containers-use-the-docker-volume
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Check Login Given via Google Chrome Dev Tools</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/check-login-given-chromedevtools/</link>
+      <pubDate>Wed, 02 Mar 2022 06:03:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/check-login-given-chromedevtools/</guid>
+      <description>
+        
+          
+            Sometimes, you would like to know what your input credentials in browser. Do the following via Google Chrome Developer Tools:
+1Chrome DevTools &amp;gt; Network &amp;gt; Fetch/XHR &amp;gt; login &amp;gt; Payload where login refers to something like https://api.myproject.local/v1/login
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Check File Contents of a Docker Image</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/check-file-contents-of-docker-image/</link>
+      <pubDate>Wed, 02 Feb 2022 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/check-file-contents-of-docker-image/</guid>
+      <description>
+        
+          
+            When troubleshooting, you sometimes need to check the contents of a docker image.
+1docker run -it &amp;lt;name_of_image&amp;gt; sh Once you&#39;re in, you can inspect specific files and its content.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>NMap cannot open a raw socket despite being root</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/nmap-cannot-open-socket-despite-being-root/</link>
+      <pubDate>Sat, 05 Sep 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/nmap-cannot-open-socket-despite-being-root/</guid>
+      <description>
+        
+          
+            If you are seeing this error:
+1~# nmap -Pn www.example.org 2Starting Nmap 7.80 ( https://nmap.org ) at 2020-09-04 20:59 UTC 3Couldn&amp;#39;t open a raw socket. Error: Permission denied (13) Most probably, installation was through Ubuntu&#39;s snap as follows:
+1~# snap install nmap 2nmap 7.80 from Maximiliano Bertacchini (maxiberta) installed Solution is to run below command
+1# snap connect nmap:network-control And re-run nmap command earlier.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Zip a Text File using 256-AES Encryption</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/zip-text-file-256aes/</link>
+      <pubDate>Fri, 28 Aug 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/zip-text-file-256aes/</guid>
+      <description>
+        
+          
+            Use the following command:
+17z a -p -mem=AES256 -tzip file.zip source-file1.txt source-file2.txt It will ask for a password but will obviously not be echoed.
+To decrypt:
+17za e file.zip You need to install as well associated tools. Shown are for Redhat-like Linux:
+1sudo yum install p7zip p7zip-plugins Some details https://unix.stackexchange.com/questions/182573/how-strong-is-the-encryption-of-a-zip-file-in-linux-mint and https://www.2daygeek.com/zip-7zip-encrypt-decrypt-password-protect-files-folders-linux/
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Wireless Interface TXPower Error</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/wireless-interface-txpower-error/</link>
+      <pubDate>Sun, 23 Aug 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/wireless-interface-txpower-error/</guid>
+      <description>
+        
+          
+            I turned-off my built-in wireless network interface using the command:
+1iwconfig wlan0 txpower off Howerver, I can no longer turn-it back on. Logic says just change &amp;quot;off&amp;quot; to &amp;quot;on&amp;quot; but instead, I get this error.
+1root@raspberrypi:/home/pi# iwconfig wlan0 txpower on 2Error for wireless request &amp;#34;Set Tx Power&amp;#34; (8B27) : 3GET failed on device wlan0 ; Input/output error. Current status of the wireless interface looks like:
+1root@raspberrypi:/home/pi# iwconfig wlan0 2wlan0 IEEE 802.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Detecting USB Devices in Linux</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/detecting-usb-device-in-linux/</link>
+      <pubDate>Sat, 22 Aug 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/detecting-usb-device-in-linux/</guid>
+      <description>
+        
+          
+            I did buy a wifi donggle in Lazada but I didn&#39;t know if it can be detected in my Raspberry pi using Rasbian. Command to use: lsusb. Example:
+1root@raspberrypi:/home/pi# lsusb 2Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub 3Bus 001 Device 003: ID 148f:7601 Ralink Technology, Corp. MT7601U Wireless Adapter 4Bus 001 Device 004: ID 0000:3825 5Bus 001 Device 002: ID 2109:3431 VIA Labs, Inc. Hub 6Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Check Low Voltage Indication in Raspberry PI</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/check-low-voltage-in-raspberrypi/</link>
+      <pubDate>Mon, 17 Aug 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/check-low-voltage-in-raspberrypi/</guid>
+      <description>
+        
+          
+            When a pi gets under voltage below 4.63V (+/-5%), a thunderbolt icon is shown in the monitor like in https://www.raspberrypi.org/documentation/configuration/warning-icons.md It will then get throttled to get back to desired voltage.
+From command line, here&#39;s what you can use to check:
+1vcgencmd get_throttled with some important information regarding low voltage:
+ 0x50000 - throttled at least once due to low voltage 0x50005 - currently throttled due to low voltage  Some more interesting information in https://raspberrypi.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>SSH to Docker Container</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/ssh-to-docker-container/</link>
+      <pubDate>Thu, 13 Aug 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/ssh-to-docker-container/</guid>
+      <description>
+        
+          
+            Check first the names of your container:
+1docker ps Technically though, it&#39;s just running a shell, so run as follows:
+1docker exec -it &amp;lt;container-name&amp;gt; /bin/bash In case you see this error:
+1OCI runtime exec failed: exec failed: container_linux.go:349: starting container process caused &amp;#34;exec: \&amp;#34;/bin/bash\&amp;#34;: stat /bin/bash: no such file or directory&amp;#34;: unknown You can probe a little and check any available shell. Run:
+1docker exec -it &amp;lt;container-name&amp;gt; ls -l /bin/ You may recognize a few shell like:
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Reliable Remote Laptop Connections using tmate</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/reliable-remote-laptop-connections-using-tmate/</link>
+      <pubDate>Fri, 31 Jul 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/reliable-remote-laptop-connections-using-tmate/</guid>
+      <description>
+        
+          
+            If you even have a need to connect to a remote laptop, tmate is the solution. Had tried this personally in MacOS Catalina (10.15.5) and it works fine.
+1brew install tmate I encountered this error though after installation:
+1$ tmux 2dyld: Library not loaded: /usr/local/lib/libevent-2.0.5.dylib 3Referenced from: /usr/local/bin/tmate 4Reason: image not found 5Trace/BPT trap: 5 Solution is to uninstall and re-install
+1brew uninstall --force tmate 2brew install tmate So in summary, one installs tmux and the other simply connects to it via ssh.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Nginx SSL PEM_read_bio End of Line Error</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/nginx-ssl-pem_read_bio-end-of-line-error/</link>
+      <pubDate>Mon, 27 Jul 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/nginx-ssl-pem_read_bio-end-of-line-error/</guid>
+      <description>
+        
+          
+            We had this ssl cert issued by Network Solutions
+1root@www:/etc/nginx/conf.d/ssl/example-2020# unzip -l EXAMPLE.ORG.zip 2Archive: EXAMPLE.ORG.zip 3Length Date Time Name 4--------- ---------- ----- ---- 52150 2020-07-14 16:59 DV_NetworkSolutionsDVServerCA2.crt 6Network Solutions DV Intermediate CA 72093 2020-07-14 16:59 DV_USERTrustRSACertificationAuthority.crt 8Network Solutions DV Intermediate CA 2 92174 2020-07-14 16:59 EXAMPLE.ORG.crt 10Domain certificate 11--------- ------- 126417 3 files I created a bundle as this was for Nginx cat EXAMPLE.ORG.crt DV_NetworkSolutionsDVServerCA2.crt DV_USERTrustRSACertificationAuthority.crt &amp;gt; www.example.org-bundle.crt
+When I tried verifying, I got this error:
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Clear Nginx Cache</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/clear-nginx-cache/</link>
+      <pubDate>Fri, 10 Jul 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/clear-nginx-cache/</guid>
+      <description>
+        
+          
+             bruteforce method - remove and replace /etc/nginx-cache Tool (untested) - https://github.com/perusio/nginx-cache-purge  
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Comodo SSL Verification in Nginx</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/comodo-ssl-verification-in-nginx/</link>
+      <pubDate>Fri, 10 Jul 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/comodo-ssl-verification-in-nginx/</guid>
+      <description>
+        
+          
+            Add the following to the vhost:
+1location ^~ /.well-known/ { 2log_not_found off; 3} 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Nginx 502 Bad Gateway</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/nginx-502-bad-gateway/</link>
+      <pubDate>Fri, 10 Jul 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/nginx-502-bad-gateway/</guid>
+      <description>
+        
+          
+             Check if php-fpm service is up Check if being listened to by nginx (for CentOS, look for &amp;quot;listen&amp;quot; in /etc/php-fpm.d/www.conf) Adjust nginx vhost (fastcgi_pass) when necessary (example below)  1fastcgi_pass 127.0.0.1:9000; 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Nginx: Request Entity Too Large</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/nginx-request-entity-too-large/</link>
+      <pubDate>Fri, 10 Jul 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/nginx-request-entity-too-large/</guid>
+      <description>
+        
+          
+            Solution: In server block, add &amp;quot;client_max_body_size&amp;quot; directive like the following
+1server { 2listen 8080; 3client_max_body_size 100M; 4... 5... 6} See details in https://www.cyberciti.biz/faq/linux-unix-bsd-nginx-413-request-entity-too-large/
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Connection to Server Refused</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/connection-to-server-refused/</link>
+      <pubDate>Sat, 27 Jun 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/connection-to-server-refused/</guid>
+      <description>
+        
+          
+            When you see similar error as below:
+1user@example:~$ kubectl get nodes 2The connection to the server localhost:8080 was refused - did you specify the right host or port? Check for the &amp;quot;$KUBECONFIG&amp;quot; if set and &amp;quot;kubectl config view&amp;quot; output. Chances are, both are empty like below:
+1user@example:~$ echo $KUBECONFIG 1user@example:~$ kubectl config view 2apiVersion: v1 3clusters: null 4contexts: null 5current-context: &amp;#34;&amp;#34; 6kind: Config 7preferences: {} 8users: null In this example, we&#39;re using the DOKS or DigitalOcean Managed Kubernetes.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>SSL Connect Error on Git Fetch</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/ssl-connect-error-on-git-fetch/</link>
+      <pubDate>Fri, 12 Jun 2020 23:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/ssl-connect-error-on-git-fetch/</guid>
+      <description>
+        
+          
+            1~$ git fetch 2fatal: unable to access &amp;#39;https://github.com/icasimpan/example.git/&amp;#39;: SSL connect error Fixed by:
+1yum update -y nss curl libcurl 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Check SSL Connection</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/check-ssl-connection/</link>
+      <pubDate>Sun, 07 Jun 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/check-ssl-connection/</guid>
+      <description>
+        
+          
+            All the certificates (including Intermediates) should be displayed
+1openssl s_client -connect www.google.com:443 Web UI checking possible in https://www.sslshopper.com/ssl-checker.html
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Cross-check Certificate with Private Key and CSR</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/cross-check-certificate-with-csr-and-private-key/</link>
+      <pubDate>Sun, 07 Jun 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/cross-check-certificate-with-csr-and-private-key/</guid>
+      <description>
+        
+          
+            1openssl x509 -noout -modulus -in certificate.crt | openssl md5 2openssl rsa -noout -modulus -in privateKey.key | openssl md5 3openssl req -noout -modulus -in CSR.csr | openssl md5 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Formerly using nginx, Moving to Apache won&#39;t Renew Cert</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/renew-from-nginx-to-apache/</link>
+      <pubDate>Sun, 07 Jun 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/renew-from-nginx-to-apache/</guid>
+      <description>
+        
+          
+            It&#39;s quite expected that certificate won&#39;t renew as the automation has been broken. What you can do is install the apache version of certbot
+1yum install python-certbot-apache and re-issue the certificate
+1sudo certbot --apache -d www.example.org 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>ssllabs.com test says that there&#39;s chain issues (Incorrect order, Extra certs)</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/chain-issues-ssllabs/</link>
+      <pubDate>Sun, 07 Jun 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/chain-issues-ssllabs/</guid>
+      <description>
+        
+          
+            This could be an incorrect use of certificates. Make sure to use the following (translate to nginx if you&#39;re not using apache)
+1SSLCertificateFile /etc/letsencrypt/live/example.com/cert.pem 2SSLCertificateKeyFile /etc/letsencrypt/live/example.com/privkey.pem 3Include /etc/letsencrypt/options-ssl-apache.conf 4SSLCertificateChainFile /etc/letsencrypt/live/example.com/chain.pem In my case, the issue was on SSLCertificateChainFile. Instead of using &amp;quot;chain.pem&amp;quot;, I incorrectly used &amp;quot;fullchain.pem&amp;quot;.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>key_value table missing</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/key_value-missing/</link>
+      <pubDate>Sat, 06 Jun 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/key_value-missing/</guid>
+      <description>
+        
+          
+            You just received a D8 database dump and it is said to be complete. However, you see this error:
+1[notice] Missing database table: key_value Said table is part of drupal8 so it can&#39;t go missing. It could be that the table names for this site has prefix. Check using the command: {code} drush sql-drush &amp;quot;show tables;&amp;quot;|grep -i key_value {code}
+If you see something like: {code} bash-4.2$ drush sql-query &amp;quot;show tables;&amp;quot;|grep -i key_value kb_key_value kb_key_value_expire {code}
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Acquia: Troubleshooting Site Downtime</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/troubleshooting-acquia-site-downtime/</link>
+      <pubDate>Fri, 05 Jun 2020 00:20:31 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/troubleshooting-acquia-site-downtime/</guid>
+      <description>
+        
+          
+            Below are some common performance-impacting issues that your environment(s) may be experiencing:
+ Traffic: Increased traffic to your environment(s) may be causing service to be interrupted on those environments. Apache access logs: https://docs.acquia.com/acquia-cloud/monitor/logs/ Insight: https://docs.acquia.com/acquia-cloud/insight/ Stack Metrics: https://docs.acquia.com/acquia-cloud/monitor/stackmetrics/application/ Out of memory issues: Check Stack Metrics for out of memory errors: https://docs.acquia.com/acquia-cloud/monitor/stackmetrics/ Learn to find and resolve memory related errors: https://support.acquia.com/hc/en-us/articles/360005248674-Finding-Resolving-Memory-Related-PHP-errors-in-Acquia-Cloud Application issues - Did you deploy code recently? If so, try reverting code to a previous tag that works properly.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Bad Configuration Option</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/bad-configuration-option/</link>
+      <pubDate>Sun, 05 Apr 2020 18:36:44 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/bad-configuration-option/</guid>
+      <description>
+        
+          
+            Noticed this one in a compromised machine by a cryptocurrency(monero) miner:
+1icasimpan@example-prod:~$ scp wp.example.com-HTMLonly.tgz icasimpan@another-example.info:~/ 2command-line: line 0: Bad configuration option: PermitLocalCommand 3lost connection Fix was to remove and re-install openssh-server
+1sudo apt-get remove openssh-server 2sudo apg-get install openssh-server Details in https://stackoverflow.com/questions/16182300/scp-error-bad-configuration-option-permitlocalcommand
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Remove Bad Keys From ~/.ssh/known_hosts</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/remove-bad-keys-from-known_hosts/</link>
+      <pubDate>Thu, 02 Apr 2020 18:36:44 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/remove-bad-keys-from-known_hosts/</guid>
+      <description>
+        
+          
+            Sample
+1icasimpan-local:~ icasimpan$ ssh root@99.206.157.36 2@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 3@ WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED! @ 4@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 5IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY! 6Someone could be eavesdropping on you right now (man-in-the-middle attack)! 7It is also possible that a host key has just been changed. 8The fingerprint for the ECDSA key sent by the remote host is 9SHA256:AbJnvQd/cMEDiN0ohMp6gdmBYRhRRp6h8iOBJf0m4Zs. 10Please contact your system administrator. 11Add correct host key in /Users/icasimpan/.ssh/known_hosts to get rid of this message.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Cannot Send Email To Own Domain in Postfix</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/cannot-send-email-to-own-domain/</link>
+      <pubDate>Sat, 28 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/cannot-send-email-to-own-domain/</guid>
+      <description>
+        
+          
+            vi /etc/postfix/main.cf remove the domain  1... 2... 3#mydestination = example.com, localhost.com, localhost 4mydestination = localhost 5... 6... Then restart postfix:
+1/etc/init.d/postix restart See some further discussion in https://www.digitalocean.com/community/questions/why-won-t-postfix-deliver-mail-to-own-domain
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Drupal 8: Broken Web UI</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/drupal8-broken-webui/</link>
+      <pubDate>Sat, 21 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/drupal8-broken-webui/</guid>
+      <description>
+        
+          
+            Most probably caused by CSS/JS Aggreggation. Disable it by doing the following:
+Can edit settings.php - add the following:
+1$config[&amp;#39;system.performance&amp;#39;][&amp;#39;css&amp;#39;][&amp;#39;preprocess&amp;#39;] = FALSE; 2$config[&amp;#39;system.performance&amp;#39;][&amp;#39;js&amp;#39;][&amp;#39;preprocess&amp;#39;] = FALSE; In Drupal Admin
+-site-/admin/config/development/performance
+Uncheck two checkboxes:
+ Aggregate CSS files Aggregate JavaScript files  Reference: https://www.drupal.org/forum/support/post-installation/2017-04-02/disabling-caching-cssjs-aggregation
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Drupal 8: Entities neeeds to be deleted before importing error</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/drupal8-entities-needs-deleted-before-import/</link>
+      <pubDate>Sat, 21 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/drupal8-entities-needs-deleted-before-import/</guid>
+      <description>
+        
+          
+            The following was seen during configuration import (drush cim)
+1The import failed due to the following reasons: 2Entities exist of type &amp;lt;em class=&amp;#34;placeholder&amp;#34;&amp;gt;Shortcut link&amp;lt;/em&amp;gt; and &amp;lt;em class=&amp;#34;placeholder&amp;#34;&amp;gt;Shortcut set&amp;lt;/em&amp;gt; &amp;lt;em class=&amp;#34;placeholder&amp;#34;&amp;gt;Default&amp;lt;/em&amp;gt;. These entities need to 3be deleted before importing. Fix by running this:
+1drush ev &amp;#39;\Drupal::entityManager()-&amp;gt;getStorage(&amp;#34;shortcut_set&amp;#34;)-&amp;gt;load(&amp;#34;default&amp;#34;)-&amp;gt;delete();&amp;#39; Reference: https://www.drupal.org/forum/support/post-installation/2015-12-20/problem-during-import-configuration
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

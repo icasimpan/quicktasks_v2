@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>permission on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/permission/</link>
+    <description>Recent content in permission on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Sun, 12 Jul 2020 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/permission/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Removing Group Sticky Bit</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/remove-group-sticky-bit/</link>
+      <pubDate>Sun, 12 Jul 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/remove-group-sticky-bit/</guid>
+      <description>
+        
+          
+            1chmod g-s &amp;lt;dirname_here&amp;gt; More details in https://serverfault.com/questions/238962/how-do-i-clear-the-s-permission-on-a-directory-in-linux
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>MySQL/MariaDB with Credentials File</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/mysql-with-credentials-file/</link>
+      <pubDate>Tue, 12 May 2020 23:11:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/mysql-with-credentials-file/</guid>
+      <description>
+        
+          
+            Using a configuration file for mysql is a good practice as you don&#39;t immediately expose credentials. Below, you are going to mysql cli and immediately using the db named dbName.
+1mysql --defaults-file=/path/to/credentials.ini dbName where credentials.ini has this format:
+1[client] 2host=&amp;lt;replace_with_servername_or_ip&amp;gt; 3user=&amp;lt;replace_with_db_user&amp;gt; 4password=&amp;lt;replace_with_db_password&amp;gt; Of course, there are other security precautions you could take, not just the above but it&#39;s a good start. See further info on securing mysql in https://dev.mysql.com/doc/refman/8.0/en/password-security-user.html
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Cannot write pid file</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/cannot-create-pid-file/</link>
+      <pubDate>Wed, 19 Feb 2020 23:11:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/cannot-create-pid-file/</guid>
+      <description>
+        
+          
+            MariaDB seems to have this issue and can&#39;t start as shown in /var/log/mariadb/mariadb.log
+12020-02-19 15:18:49 0 [ERROR] mysqld: Can&amp;#39;t create/write to file &amp;#39;/var/run/mariadb/mariadb.pid&amp;#39; (Errcode: 2 &amp;#34;No such file or directory&amp;#34;) I was able to fix one instance of this issue by doing:
+1sudo mkdir /var/run/mariadb 2sudo chown mysql.mysql /var/run/mariadb Then afterwards, starting the mariadb service went fine.
+Some possible solutions in case my solution doesn&#39;t work https://stackoverflow.com/questions/15408643/cant-connect-to-mysql-server-cant-create-write-the-pid-file
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>error: &#39;drush -fra -y&#39; Failed to Create Directory</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/drush-fra-failed-to-create-directory/</link>
+      <pubDate>Mon, 09 Apr 2018 00:20:23 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/drush-fra-failed-to-create-directory/</guid>
+      <description>
+        
+          
+            1bash-4.1$ /usr/local/bin/drush cc all 2‘all’ cache was cleared. [success] 3bash-4.1$ /usr/local/bin/drush fra -y 4WD print_pdf: Failed to create directory “public://print_pdf/print_pdf_mpdf/ttfontdata” for print_pdf_mpdf. [error] 5WD print_pdf: Failed to create directory “public://print_pdf/print_pdf_mpdf/tmp” for print_pdf_mpdf. [error] 6The following modules will be reverted: content_set_4 7Do you really want to continue? (y/n): y 8Reverted content_set_4.field_group. [ok] 9bash-4.1$ /usr/local/bin/drush fra -y 10The following modules will be reverted: content_set_4 11Do you really want to continue? (y/n): y 12Reverted content_set_4.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Drupal File Permission Problems</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/drupal-file-permission-problems/</link>
+      <pubDate>Sun, 08 Apr 2018 23:44:45 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/drupal-file-permission-problems/</guid>
+      <description>
+        
+          
+            Changing group ownership of the files in &amp;quot;sites/default/files&amp;quot;. More details in https://www.drupal.org/docs/7/install/setting-up-the-files-directory
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Create DB with ACL</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/create-db-with-acl/</link>
+      <pubDate>Sun, 08 Apr 2018 23:15:37 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/create-db-with-acl/</guid>
+      <description>
+        
+          
+            1create database yourDB; 2CREATE USER &amp;#39;yourDBA&amp;#39;@&amp;#39;localhost&amp;#39; IDENTIFIED BY &amp;#39;yourPASS&amp;#39;; 3GRANT ALL PRIVILEGES ON yourDB.* TO &amp;#39;yourDBA&amp;#39;@&amp;#39;localhost&amp;#39;; 4FLUSH PRIVILEGES; 
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

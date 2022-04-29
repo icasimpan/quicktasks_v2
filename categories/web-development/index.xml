@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>web-development on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/categories/web-development/</link>
+    <description>Recent content in web-development on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Fri, 22 Apr 2022 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/categories/web-development/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Axios Interceptor Explained</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/axios-interceptor-explained/</link>
+      <pubDate>Fri, 22 Apr 2022 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/axios-interceptor-explained/</guid>
+      <description>
+        
+          
+            Excerpt from https://stackoverflow.com/questions/52737078/how-can-you-use-axios-interceptors
+1To talk in simple terms, it is more of a checkpoint for every HTTP action. Every API call that has been made, is passed through this interceptor. 23So, why two interceptors? 45An API call is made up of two halves, a request, and a response. Since it behaves like a checkpoint, the request and the response have separate interceptors. 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Get ReactJS Version</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/get-reactjs-version/</link>
+      <pubDate>Fri, 22 Apr 2022 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/get-reactjs-version/</guid>
+      <description>
+        
+          
+            From Command Line: Do it something like this:
+1~$ npm view react version And you get the version directly:
+1~$ npm view react version 218.0.0 Other means, see https://stackoverflow.com/questions/36994564/how-can-one-tell-the-version-of-react-running-at-runtime-in-the-browser
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Laravel Mailing</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/laravel-mailing/</link>
+      <pubDate>Thu, 21 Apr 2022 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/laravel-mailing/</guid>
+      <description>
+        
+          
+            Single Email With Multiple Recipients 1$emailRecipient = [&amp;#39;email01@example.com&amp;#39;, &amp;#39;email02@example.com&amp;#39;]; 2Mail::to($emailRecipient)-&amp;gt;send(new MailOnServiceFailure($logTimestamp, $failedContent)); 3Log::info(&amp;#34;Service Failure Mail Alert sent successfully to &amp;#34; . json_encode($emailRecipient)); Single Email Per Recipients 1$emailRecipient = [&amp;#39;email01@example.com&amp;#39;, &amp;#39;email02@example.com&amp;#39;]; 2foreach ($emailRecipient as $eachEmail) { 3Mail::to($eachEmail)-&amp;gt;send(new MailOnServiceFailure($logTimestamp, $failedContent); 4Log::info(&amp;#34;Service Failure Mail Alert sent successfully to {$eachEmail}.&amp;#34;); 5} 
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

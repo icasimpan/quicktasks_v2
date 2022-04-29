@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>go-links on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/go-links/</link>
+    <description>Recent content in go-links on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Fri, 18 Feb 2022 09:18:11 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/go-links/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Links - Go</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/links-go/</link>
+      <pubDate>Fri, 18 Feb 2022 09:18:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/links-go/</guid>
+      <description>
+        
+          
+            Go Official Documentation  Go Doc Go Standard Library Go Package Search  Learn Go   Go By Example
+  Learn Go in Y Minutes
+  Go Web by Example - simple web development examples using golang
+  TutorialEdge: Basic Golang
+  Gophercises
+  Golang Weekly
+  Go Collectives on StackOverflow
+  GoLang Mobile
+  Go101 - best tutorial site so far, and offline mode is possible too.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

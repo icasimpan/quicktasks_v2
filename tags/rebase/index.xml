@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>rebase on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/rebase/</link>
+    <description>Recent content in rebase on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Fri, 01 Apr 2022 06:03:11 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/rebase/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Git Rebase</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/git-rebase/</link>
+      <pubDate>Fri, 01 Apr 2022 06:03:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/git-rebase/</guid>
+      <description>
+        
+          
+            Rebase is used in merging two or more commits into one. Per experience, you can only rebase to an older commit.
+Say, in these commits
+1~$ git log -2 --pretty=oneline 2a0dd6b55000399c5f8b5f0f55286e167725e51c2 (HEAD -&amp;gt; v0.2.x_wip, origin/v0.2.x_wip) docktie_cli getx: Tested working implementation for #17. 3fb8f1de0cf1af7b447dfc9275878c516384f3a0d docktie_cli getx: initial implementation wip for #17 Older one is fb8f1de0cf1af7b447dfc9275878c516384f3a0d
+Run:
+1~$ git rebase --interactive HEAD~2 You&#39;ll be in an interactive mode (in an editor)
+1pick fb8f1de docktie_cli getx: Implementation for #17.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

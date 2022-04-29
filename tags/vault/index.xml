@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>vault on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/vault/</link>
+    <description>Recent content in vault on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Sat, 21 Sep 2019 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/vault/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ansible Vault Tutorials</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/ansible-vault-tutorials/</link>
+      <pubDate>Sat, 21 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/ansible-vault-tutorials/</guid>
+      <description>
+        
+          
+            https://serversforhackers.com/c/how-ansible-vault-works https://gist.github.com/tristanfisher/e5a306144a637dc739e7
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

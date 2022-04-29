@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>hosting on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/hosting/</link>
+    <description>Recent content in hosting on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Tue, 11 Aug 2020 23:17:11 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/hosting/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hosting Hugo in Netlify</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/hosting-hugo-in-netlify/</link>
+      <pubDate>Tue, 11 Aug 2020 23:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/hosting-hugo-in-netlify/</guid>
+      <description>
+        
+          
+            You need to add in root directory netfily.toml.
+1[build] 2publish = &amp;#34;public&amp;#34; 3command = &amp;#34;hugo --gc --minify&amp;#34; 45[context.production.environment] 6HUGO_VERSION = &amp;#34;0.74.3&amp;#34; 7HUGO_ENV = &amp;#34;production&amp;#34; 8HUGO_ENABLEGITINFO = &amp;#34;true&amp;#34; 910[context.split1] 11command = &amp;#34;hugo --gc --minify --enableGitInfo&amp;#34; 1213[context.split1.environment] 14HUGO_VERSION = &amp;#34;0.74.3&amp;#34; 15HUGO_ENV = &amp;#34;production&amp;#34; 1617[context.deploy-preview] 18command = &amp;#34;hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL&amp;#34; 1920[context.deploy-preview.environment] 21HUGO_VERSION = &amp;#34;0.74.3&amp;#34; 2223[context.branch-deploy] 24command = &amp;#34;hugo --gc --minify -b $DEPLOY_PRIME_URL&amp;#34; 2526[context.branch-deploy.environment] 27HUGO_VERSION = &amp;#34;0.74.3&amp;#34; 2829[context.next.environment] 30HUGO_ENABLEGITINFO = &amp;#34;true&amp;#34; See details in https://gohugo.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Credentials to Pantheon.io git</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/credentials-pantheon-git/</link>
+      <pubDate>Sun, 08 Apr 2018 23:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/credentials-pantheon-git/</guid>
+      <description>
+        
+          
+            Add the email to the Project&#39;s Team. The login credentials is the access to git as well. NOTE: If using Google login, make sure to change password.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

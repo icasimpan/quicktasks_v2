@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>k8s on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/k8s/</link>
+    <description>Recent content in k8s on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Wed, 19 Aug 2020 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/k8s/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Shell into Kubernetes Pod</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/shell-into-kubernetes-pod/</link>
+      <pubDate>Wed, 19 Aug 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/shell-into-kubernetes-pod/</guid>
+      <description>
+        
+          
+            Syntax:
+1kubectl exec --stdin --tty &amp;lt;pod_name&amp;gt; -- /bin/bash Example, with the following pods
+1me@example:~$ kubectl get pod 2NAME READY STATUS RESTARTS AGE 3cert-manager-cainjector-68c88cc858-c2rhx 1/1 Running 0 109m 4cert-manager-d76d644df-pgqn9 1/1 Running 0 109m 5cert-manager-webhook-6dd68c6fbc-rzcln 1/1 Running 0 109m 6my-first-vanilla-drupal-6f6dd66b94-xldj7 1/1 Running 0 108m 7my-first-vanilla-drupal-mariadb-0 1/1 Running 0 108m 8traffic-cop-nginx-ingress-controller-5d685cfd59-pjfdg 1/1 Running 0 144m 9traffic-cop-nginx-ingress-default-backend-55f6bcb48-brg6b 1/1 Running 0 144m Run this to go to the drupal pod my-first-vanilla-drupal-6f6dd66b94-xldj7
+1kubectl exec --stdin --tty my-first-vanilla-drupal-6f6dd66b94-xldj7 -- /bin/bash It&#39;s just like any docker container or linux machine when you&#39;re in:
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Adding Helm Repo</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/adding-helm-repo/</link>
+      <pubDate>Sun, 28 Jun 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/adding-helm-repo/</guid>
+      <description>
+        
+          
+            A Helm Repo that&#39;s in https://github.com/codecentric/helm-charts has a corresponding repo URL. Add it as follows:
+1user@example:~$ helm repo add codecentric https://codecentric.github.io/helm-charts 2&amp;#34;codecentric&amp;#34; has been added to your repositories 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Change Default Cluster in Kubernetes</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/change-default-cluster-in-kubernetes/</link>
+      <pubDate>Sun, 28 Jun 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/change-default-cluster-in-kubernetes/</guid>
+      <description>
+        
+          
+            If you have more than one cluster as illustrated in https://ismael.casimpan.com/quicktasks-k8s/list-nodes-in-kubernetes/, you can change it using command:
+1kubectl config use-context &amp;lt;cluster_name_here&amp;gt; Use this command to verify the change:
+1kubectl config get-contexts 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Checking PersistentVolumeClaims</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/checking-pvc/</link>
+      <pubDate>Sun, 28 Jun 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/checking-pvc/</guid>
+      <description>
+        
+          
+            1user@example:~$ kubectl get pvc --all-namespaces 2NAMESPACE NAME STATUS VOLUME CAPACITY ACCESS MODES STORAGECLASS AGE 3testing-icasimpan-com vol-mysql-mysql-0 Bound pvc-bd199911-e0e5-4327-885d-4902a599ebe2 10Gi RWO do-block-storage 12m 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Get Cluster List in Kubernetes</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/cluster-list-in-kubernetes/</link>
+      <pubDate>Sun, 28 Jun 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/cluster-list-in-kubernetes/</guid>
+      <description>
+        
+          
+            If you have a lot of kubernetes cluster, you will see the following:
+1user@example:~$ kubectl config get-contexts 2CURRENT NAME CLUSTER AUTHINFO NAMESPACE 3* do-nyc1-kubernetes-tutorial do-nyc1-kubernetes-tutorial do-nyc1-kubernetes-tutorial-admin 4do-nyc3-infra do-nyc3-infra do-nyc3-infra-admin 5do-nyc2-devinfra do-nyc2-devinfra do-nyc2-devinfra-admin The one with asterisk (do-nyc1-kubernetes-tutorial) is your current cluster. So &amp;quot;kubectl&amp;quot; commands without specified cluster will default to it.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Get List of Nodes in Kubernetes</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/list-nodes-in-kubernetes/</link>
+      <pubDate>Sun, 28 Jun 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/list-nodes-in-kubernetes/</guid>
+      <description>
+        
+          
+            1user@example:~$ kubectl get nodes 2NAME STATUS ROLES AGE VERSION 3pool-78osxtl1e3-3f4qg Ready &amp;lt;none&amp;gt; 72m v1.17.5 4pool-78osxtl1e3-3f4qw Ready &amp;lt;none&amp;gt; 71m v1.17.5 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Installing Software using Helm</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/install-using-helm/</link>
+      <pubDate>Sun, 28 Jun 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/install-using-helm/</guid>
+      <description>
+        
+          
+            Say you want install jenkins and corresponding repo already added.
+1user@example:~$ helm install jenkins codecentric/jenkins 2NAME: jenkins 3LAST DEPLOYED: Sun Jun 28 09:59:52 2020 4NAMESPACE: default 5STATUS: deployed 6REVISION: 1 7TEST SUITE: None 8NOTES: 9************************************************************************ 10* * 11* Jenkins Helm Chart by codecentric AG * 12* * 13************************************************************************ 1415In case the chart was installed with the default configuration and you did not 16configure an admin user, Jenkins creates one per default.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Connection to Server Refused</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/connection-to-server-refused/</link>
+      <pubDate>Sat, 27 Jun 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/connection-to-server-refused/</guid>
+      <description>
+        
+          
+            When you see similar error as below:
+1user@example:~$ kubectl get nodes 2The connection to the server localhost:8080 was refused - did you specify the right host or port? Check for the &amp;quot;$KUBECONFIG&amp;quot; if set and &amp;quot;kubectl config view&amp;quot; output. Chances are, both are empty like below:
+1user@example:~$ echo $KUBECONFIG 1user@example:~$ kubectl config view 2apiVersion: v1 3clusters: null 4contexts: null 5current-context: &amp;#34;&amp;#34; 6kind: Config 7preferences: {} 8users: null In this example, we&#39;re using the DOKS or DigitalOcean Managed Kubernetes.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>redirects on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/redirects/</link>
+    <description>Recent content in redirects on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Sun, 08 Apr 2018 23:17:11 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/redirects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pantheon site redirects</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/pantheon-site-redirects/</link>
+      <pubDate>Sun, 08 Apr 2018 23:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/pantheon-site-redirects/</guid>
+      <description>
+        
+          
+            Pantheon.io hosted sites don&#39;t use htaccess. But there&#39;s an equivalent implementation via php. See https://pantheon.io/docs/redirects/
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

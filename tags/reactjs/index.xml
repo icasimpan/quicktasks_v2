@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>reactjs on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/reactjs/</link>
+    <description>Recent content in reactjs on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Fri, 22 Apr 2022 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/reactjs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Axios Interceptor Explained</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/axios-interceptor-explained/</link>
+      <pubDate>Fri, 22 Apr 2022 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/axios-interceptor-explained/</guid>
+      <description>
+        
+          
+            Excerpt from https://stackoverflow.com/questions/52737078/how-can-you-use-axios-interceptors
+1To talk in simple terms, it is more of a checkpoint for every HTTP action. Every API call that has been made, is passed through this interceptor. 23So, why two interceptors? 45An API call is made up of two halves, a request, and a response. Since it behaves like a checkpoint, the request and the response have separate interceptors. 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Get ReactJS Version</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/get-reactjs-version/</link>
+      <pubDate>Fri, 22 Apr 2022 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/get-reactjs-version/</guid>
+      <description>
+        
+          
+            From Command Line: Do it something like this:
+1~$ npm view react version And you get the version directly:
+1~$ npm view react version 218.0.0 Other means, see https://stackoverflow.com/questions/36994564/how-can-one-tell-the-version-of-react-running-at-runtime-in-the-browser
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

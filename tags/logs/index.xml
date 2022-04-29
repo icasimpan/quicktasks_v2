@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>logs on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/logs/</link>
+    <description>Recent content in logs on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Tue, 24 Sep 2019 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/logs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Check Logs of a Container</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/check-logs-of-container/</link>
+      <pubDate>Tue, 24 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/check-logs-of-container/</guid>
+      <description>
+        
+          
+            1docker logs &amp;lt;friendly-name|container-id&amp;gt; You can tail it much like tailing ordinary logs:
+1docker logs -f --tail=5 &amp;lt;friendly-name|container-id&amp;gt; which means: &amp;quot;start tailing at current last 5 entries of the logs&amp;quot;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Ansible Logs in Controlled Machine</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/ansible-logs-controlled-machine/</link>
+      <pubDate>Sat, 21 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/ansible-logs-controlled-machine/</guid>
+      <description>
+        
+          
+            It&#39;s in syslog. In ubuntu, do the following:
+1grep -i ansible /var/log/syslog See details in https://serverfault.com/questions/531004/where-do-i-find-the-latest-ansible-error-log
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Slow Query Logs</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/slow-query-logs/</link>
+      <pubDate>Tue, 12 Feb 2019 22:47:36 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/slow-query-logs/</guid>
+      <description>
+        
+          
+            1slow_query_log = 1 2long_query_time = 1 3slow_query_log_file = /var/log/mariadb/slow-query.log 4log_queries_not_using_indexes See details in https://www.cyberciti.biz/faq/how-to-set-and-enable-mariadb-slow-query-log-linux-unix/
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Trace New Relic App from Logs</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/trace-newrelic-app-from-logs/</link>
+      <pubDate>Mon, 21 Jan 2019 23:41:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/trace-newrelic-app-from-logs/</guid>
+      <description>
+        
+          
+            In /var/logs/newrelic
+1[root@example.com newrelic]# grep -i newrelic.com newrelic-daemon.log 22019/01/21 06:09:53.115267 (12209) Info: Reporting to: https://rpm.newrelic.com/accounts/76083/applications/159251100 32019/01/21 06:37:43.147116 (12209) Info: Reporting to: https://rpm.newrelic.com/accounts/76083/applications/159251100 42019/01/21 07:07:22.072717 (12209) Info: Reporting to: https://rpm.newrelic.com/accounts/76083/applications/159251100 52019/01/21 09:12:03.655458 (12209) Info: Reporting to: https://rpm.newrelic.com/accounts/76083/applications/159251100 62019/01/21 09:40:53.506475 (12209) Info: Reporting to: https://rpm.newrelic.com/accounts/76083/applications/159251100 72019/01/21 10:48:51.453005 (12209) Info: Reporting to: https://rpm.newrelic.com/accounts/76083/applications/159251100 82019/01/21 11:08:14.956574 (12209) Info: Reporting to: https://rpm.newrelic.com/accounts/76083/applications/159251100 92019/01/21 11:32:53.766170 (12209) Info: Reporting to: https://rpm.newrelic.com/accounts/76083/applications/159251100 102019/01/21 12:02:22.397894 (12209) Info: Reporting to: https://rpm.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>[InnoDB] Fatal error: cannot allocate memory for the buffer pool</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/innodb-fatal-error-cannot-allocate-memory-buffer-pool/</link>
+      <pubDate>Sat, 29 Dec 2018 09:47:00 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/innodb-fatal-error-cannot-allocate-memory-buffer-pool/</guid>
+      <description>
+        
+          
+            From /var/log/mariadb/mariadb.log, something like
+1150515 12:10:45 InnoDB: Completed initialization of buffer pool 2150515 12:10:45 InnoDB: Fatal error: cannot allocate memory for the buffer pool 3150515 12:10:45 [ERROR] Plugin &amp;#39;InnoDB&amp;#39; init function returned error. 4150515 12:10:45 [ERROR] Plugin &amp;#39;InnoDB&amp;#39; registration as a STORAGE ENGINE failed. 5150515 12:10:45 [ERROR] Unknown/unsupported storage engine: InnoDB 6150515 12:10:45 [ERROR] Aborting Ensure to allocate 50% of max machine RAM. Assuming you have 2GB in the machine, you&#39;ll need
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Undefined Class Constant MYSQL_ATTR_SSL_CA</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/undefined-class-constant-mysql_attr_ssl_ca/</link>
+      <pubDate>Mon, 15 Oct 2018 07:27:21 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/undefined-class-constant-mysql_attr_ssl_ca/</guid>
+      <description>
+        
+          
+            1drupal@ubuntu:/var/www/sites/openedu.localhost/docroot$ drush si site-name=&amp;#39;OpenEDU Testing&amp;#39; --db-url=&amp;#39;mysql://openedu_DBA:openedu_PASS@127.0.0.1/openedu_DB&amp;#39; openedu 2PHP Fatal error: Uncaught Error: Undefined class constant &amp;#39;MYSQL_ATTR_SSL_CA&amp;#39; in /usr/local/share/drush/lib/Drush/Sql/Sqlmysql.php:56 3Stack trace: 4#0 /usr/local/share/drush/lib/Drush/Sql/SqlBase.php(164): Drush\Sql\Sqlmysql-&amp;gt;creds() 5#1 /usr/local/share/drush/lib/Drush/Sql/Sqlmysql.php(107): Drush\Sql\SqlBase-&amp;gt;query(&amp;#39;SELECT 1;&amp;#39;, &amp;#39;/tmp/drush_uX7T...&amp;#39;, &amp;#39;/dev/null&amp;#39;) 6#2 /usr/local/share/drush/commands/core/site_install.drush.inc(146): Drush\Sql\Sqlmysql-&amp;gt;db_exists() 7#3 /usr/local/share/drush/includes/command.inc(422): drush_core_pre_site_install(&amp;#39;site-name=OpenE...&amp;#39;) 8#4 /usr/local/share/drush/includes/command.inc(231): _drush_invoke_hooks(Array, Array) 9#5 /usr/local/share/drush/includes/command.inc(199): drush_command(&amp;#39;site-name=OpenE...&amp;#39;) 10#6 /usr/local/share/drush/lib/Drush/Boot/BaseBoot.php(67): drush_dispatch(Array) 11#7 /usr/local/share/drush/includes/preflight.inc(66): Drush\Boot\BaseBoot-&amp;gt;bootstrap_and_dispatch() 12#8 /usr/local/share/drush/drush.php(12): drush_main() 13#9 {main} 14thrown in /usr/local/share/drush/lib/Drush/Sql/Sqlmysql.php on line 56 15Drush command terminated abnormally due to an unrecoverable error. [error] 16Error: Uncaught Error: Undefined class constant &amp;#39;MYSQL_ATTR_SSL_CA&amp;#39; in /usr/local/share/drush/lib/Drush/Sql/Sqlmysql.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Acquia Logs</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/acquia-logs/</link>
+      <pubDate>Mon, 09 Apr 2018 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/acquia-logs/</guid>
+      <description>
+        
+          
+            https://docs.acquia.com/acquia-cloud/files/system-files
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Drupal Logs</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/drupal-logs/</link>
+      <pubDate>Sun, 08 Apr 2018 23:50:10 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/drupal-logs/</guid>
+      <description>
+        
+          
+            From Web Browser:
+generate &#39;drush uli&#39; Go to /admin/reports/dblog From CLI:
+1drush watchdog-show See https://drupal.stackexchange.com/questions/48645/how-to-show-admin-reports-dblog-in-terminal-cli
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Mysql Not Restarting Nothing in Logs</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/mysql-not-restarting-nothing-in-logs/</link>
+      <pubDate>Sun, 08 Apr 2018 23:24:04 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/mysql-not-restarting-nothing-in-logs/</guid>
+      <description>
+        
+          
+            Check /etc/mysql/my.cnf and examine &amp;quot;datadir&amp;quot; value. If it isn&#39;t valid or you know the disk is bad, change it. Restart service and all will be well.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

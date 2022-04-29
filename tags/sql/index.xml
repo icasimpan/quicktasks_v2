@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>sql on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/sql/</link>
+    <description>Recent content in sql on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Mon, 09 Apr 2018 00:21:46 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/sql/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Drush: Drop Mysql Tables Without Deleting Database</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/drush-drop-mysql-tables-without-deleting-database/</link>
+      <pubDate>Mon, 09 Apr 2018 00:21:46 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/drush-drop-mysql-tables-without-deleting-database/</guid>
+      <description>
+        
+          
+            In drupal root:
+1drush sql-drop 
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

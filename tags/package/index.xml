@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>package on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/package/</link>
+    <description>Recent content in package on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Mon, 30 Sep 2019 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/package/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Check Debian Installed Packages</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/check-for-installed-packages/</link>
+      <pubDate>Mon, 30 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/check-for-installed-packages/</guid>
+      <description>
+        
+          
+            1apt list --installed See https://askubuntu.com/questions/17823/how-to-list-all-installed-packages
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Check Debian Package Content</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/check-debian-package-content/</link>
+      <pubDate>Mon, 30 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/check-debian-package-content/</guid>
+      <description>
+        
+          
+            1dpkg-query -L &amp;lt;package_name&amp;gt; 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Check Debian Package List</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/check-debian-package-list/</link>
+      <pubDate>Mon, 30 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/check-debian-package-list/</guid>
+      <description>
+        
+          
+            1apt-cache pkgnames 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Check Debian Package Source</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/check-debian-package-source/</link>
+      <pubDate>Mon, 30 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/check-debian-package-source/</guid>
+      <description>
+        
+          
+            1dpkg -s &amp;lt;package&amp;gt; 2apt-cache showpkg &amp;lt;package&amp;gt; See details in https://askubuntu.com/questions/8560/how-do-i-find-out-which-repository-a-package-comes-from
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Check Debian Specific Package Update Info</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/check-specific-debian-package-update-info/</link>
+      <pubDate>Mon, 30 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/check-specific-debian-package-update-info/</guid>
+      <description>
+        
+          
+            1alaa@aa-lu:~$ apt-cache policy vlc 2vlc: 3Installed: 2.0.8-0ubuntu0.13.04.1 4Candidate: 2.0.8-0ubuntu0.13.04.1 5Version table: 6*** 2.0.8-0ubuntu0.13.04.1 0 7500 http://ae.archive.ubuntu.com/ubuntu/ raring-updates/universe i386 Packages 8500 http://security.ubuntu.com/ubuntu/ raring-security/universe i386 Packages 9100 /var/lib/dpkg/status 102.0.6-1 0 11500 http://ae.archive.ubuntu.com/ubuntu/ raring/universe i386 Packages See https://askubuntu.com/questions/340530/how-can-i-check-the-available-version-of-a-package-in-the-repositories
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Debian Package List To Be Updated</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/debian-package-list-to-be-updated/</link>
+      <pubDate>Mon, 30 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/debian-package-list-to-be-updated/</guid>
+      <description>
+        
+          
+            1/usr/lib/update-notifier/apt-check -p 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Debian Package Search</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/debian-package-search/</link>
+      <pubDate>Mon, 30 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/debian-package-search/</guid>
+      <description>
+        
+          
+            1root@jenkins3:~# apt-cache search chromedriver 2chromium-chromedriver - WebDriver driver for the Chromium Browser 3chromium-chromedriver-dbg - chromium-chromedriver debug symbols 4oxideqt-chromedriver - Web browser engine for Qt (transitional package) 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Debian Package Uninstall</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/debian-package-uninstall/</link>
+      <pubDate>Mon, 30 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/debian-package-uninstall/</guid>
+      <description>
+        
+          
+            1sudo apt-get remove &amp;lt;application_name&amp;gt; some details in https://askubuntu.com/questions/1143/how-can-i-uninstall-software
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Debian Summary of Package For Update</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/debian-summary-of-package-for-update/</link>
+      <pubDate>Mon, 30 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/debian-summary-of-package-for-update/</guid>
+      <description>
+        
+          
+            1/usr/lib/update-notifier/apt-check --human-readable 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Debian: Show package information</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/debian-show-package-information/</link>
+      <pubDate>Mon, 30 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/debian-show-package-information/</guid>
+      <description>
+        
+          
+            1root@jenkins3:~# apt-cache showpkg chromium-chromedriver 2Package: chromium-chromedriver 3Versions: 462.0.3202.62-0ubuntu0.14.04.1204 (/var/lib/apt/lists/mirrors.digitalocean.com_ubuntu_dists_trusty-updates_universe_binary-amd64_Packages) (/var/lib/apt/lists/security.ubuntu.com_ubuntu_dists_trusty-security_universe_binary-amd64_Packages) 5Description Language: 6File: /var/lib/apt/lists/mirrors.digitalocean.com_ubuntu_dists_trusty_universe_binary-amd64_Packages 7MD5: 2e6e3c36fa55c5630ac7d648c44010d7 8Description Language: en 9File: /var/lib/apt/lists/mirrors.digitalocean.com_ubuntu_dists_trusty_universe_i18n_Translation-en 10MD5: 2e6e3c36fa55c5630ac7d648c44010d7 111234.0.1847.116-0ubuntu2 (/var/lib/apt/lists/mirrors.digitalocean.com_ubuntu_dists_trusty_universe_binary-amd64_Packages) 13Description Language: 14File: /var/lib/apt/lists/mirrors.digitalocean.com_ubuntu_dists_trusty_universe_binary-amd64_Packages 15MD5: 2e6e3c36fa55c5630ac7d648c44010d7 16Description Language: en 17File: /var/lib/apt/lists/mirrors.digitalocean.com_ubuntu_dists_trusty_universe_i18n_Translation-en 18MD5: 2e6e3c36fa55c5630ac7d648c44010d7 192021Reverse Depends: 22chromium-chromedriver:i386,chromium-chromedriver 23chromium-chromedriver-dbg,chromium-chromedriver 51.0.2704.79-0ubuntu0.14.04.1.1121 24chromium-chromedriver:i386,chromium-chromedriver 25chromium-chromedriver-dbg,chromium-chromedriver 34.0.1847.116-0ubuntu2 26Dependencies: 2762.0.3202.62-0ubuntu0.14.04.1204 - libc6 (2 2.15) libfontconfig1 (2 2.9.0) libgcc1 (2 1:4.1.1) libglib2.0-0 (2 2.12.0) libnspr4 (18 2:4.9-2~) libnspr4-0d (2 1.8.0.10) libnss3 (18 2:3.13.4-2~) libnss3-1d (2 3.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Inventory of packages installed/de-installed</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/debian-packages-inventory/</link>
+      <pubDate>Mon, 30 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/debian-packages-inventory/</guid>
+      <description>
+        
+          
+            1dpkg --get-selections 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Locations of PPA in Ubuntu</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/locations-of-ppa-ubuntu/</link>
+      <pubDate>Mon, 30 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/locations-of-ppa-ubuntu/</guid>
+      <description>
+        
+          
+            PPA or Personal Package Archive are unofficial and may therefore harm your system. It is always recommended to use official sources. Nevertheless, if you know what you&#39;re doing, proceed.
+It is in:
+1/etc/apt/sources.list.d/ More info in https://askubuntu.com/questions/57326/where-is-the-ppa-sources-config-file
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Upgrade Debian to Higher LTS</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/upgrade-debian-to-higher-lts/</link>
+      <pubDate>Mon, 30 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/upgrade-debian-to-higher-lts/</guid>
+      <description>
+        
+          
+            1do-release-upgrade See https://help.ubuntu.com/lts/serverguide/installing-upgrading.html
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Upgrade Single Debian Package Source</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/upgrade-single-debian-package/</link>
+      <pubDate>Mon, 30 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/upgrade-single-debian-package/</guid>
+      <description>
+        
+          
+            1apt-get install --only-upgrade &amp;lt;packagename&amp;gt; See details in https://askubuntu.com/questions/44122/how-to-upgrade-a-single-package-using-apt-get
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Install Several Packages in a Loop</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/install-several-packages-in-loop/</link>
+      <pubDate>Sat, 21 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/install-several-packages-in-loop/</guid>
+      <description>
+        
+          
+            Manual
+1sudo yum install -y mod_php71w php71w-cli php71w-common php71w-gd php71w-mbstring php71w-mcrypt php71w-mysqlnd php71w-xml In Ansible:
+1- name: Install needed php7 packages 2yum: 3name={{ item }} 4state=present 5with_items: 6- mod_php71w 7- php71w-cli 8- php71w-common 9- php71w-gd 10- php71w-mbstring 11- php71w-mcrypt 12- php71w-mysqlnd 13- php71w-xml 
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

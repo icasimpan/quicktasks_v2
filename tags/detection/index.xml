@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>detection on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/detection/</link>
+    <description>Recent content in detection on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Sat, 22 Aug 2020 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/detection/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Detecting USB Devices in Linux</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/detecting-usb-device-in-linux/</link>
+      <pubDate>Sat, 22 Aug 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/detecting-usb-device-in-linux/</guid>
+      <description>
+        
+          
+            I did buy a wifi donggle in Lazada but I didn&#39;t know if it can be detected in my Raspberry pi using Rasbian. Command to use: lsusb. Example:
+1root@raspberrypi:/home/pi# lsusb 2Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub 3Bus 001 Device 003: ID 148f:7601 Ralink Technology, Corp. MT7601U Wireless Adapter 4Bus 001 Device 004: ID 0000:3825 5Bus 001 Device 002: ID 2109:3431 VIA Labs, Inc. Hub 6Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

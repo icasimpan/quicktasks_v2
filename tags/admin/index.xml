@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>admin on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/admin/</link>
+    <description>Recent content in admin on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Mon, 09 Apr 2018 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/admin/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Create drupal super admin user via drush</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/create-drupal-super-admin-via-drush/</link>
+      <pubDate>Mon, 09 Apr 2018 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/create-drupal-super-admin-via-drush/</guid>
+      <description>
+        
+          
+            1drush user-create prometadmin &amp;#34;letmein&amp;#34; 2drush user-add-role super_admin prometadmin 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Nginx 404 when in Drupal Admin</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/nginx-404-when-in-drupal-admin/</link>
+      <pubDate>Mon, 09 Apr 2018 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/nginx-404-when-in-drupal-admin/</guid>
+      <description>
+        
+          
+            This lacks URL rewriting. See https://www.nginx.com/resources/wiki/start/topics/recipes/drupal/
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Phpinfo in Drupaladmin</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/phpinfo-in-drupaladmin/</link>
+      <pubDate>Mon, 09 Apr 2018 00:15:59 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/phpinfo-in-drupaladmin/</guid>
+      <description>
+        
+          
+            It can be found in
+1http://&amp;lt;site_url&amp;gt;/admin/reports/status/php 
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

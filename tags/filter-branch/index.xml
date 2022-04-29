@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>filter-branch on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/filter-branch/</link>
+    <description>Recent content in filter-branch on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Sun, 21 Mar 2021 23:17:11 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/filter-branch/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Remove Large Files Committed in Git</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/remove-large-files-committed-in-git/</link>
+      <pubDate>Sun, 21 Mar 2021 23:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/remove-large-files-committed-in-git/</guid>
+      <description>
+        
+          
+            It&#39;s quite annoying when you committed large files to git specially if it&#39;s something that&#39;s something confidential.
+We&#39;ll relatively easy to do that. Just use the &#39;filter-branch&#39; command in git as follows:
+1git filter-branch --force --index-filter \ 2&amp;gt; &amp;#39;git rm --cached --ignore-unmatch path/to/huge-file.mp4&amp;#39; \ 3&amp;gt; --prune-empty --tag-name-filter cat -- --all You should be seeing something like below:
+1~$ git filter-branch --force --index-filter \ 2&amp;gt; &amp;#39;git rm --cached --ignore-unmatch content/sync/files/public/2020-04/Bad_Luck.mp4&amp;#39; \ 3&amp;gt; --prune-empty --tag-name-filter cat -- --all 4Rewrite 8dfc744d18880f14dbc8fcd09f50c4bc3ede71 (1049/1091)rm &amp;#39;content/sync/files/public/2020-04/Bad_Luck.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

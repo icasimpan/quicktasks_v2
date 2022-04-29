@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>mail on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/mail/</link>
+    <description>Recent content in mail on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Thu, 21 Apr 2022 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/mail/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Laravel Mailing</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/laravel-mailing/</link>
+      <pubDate>Thu, 21 Apr 2022 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/laravel-mailing/</guid>
+      <description>
+        
+          
+            Single Email With Multiple Recipients 1$emailRecipient = [&amp;#39;email01@example.com&amp;#39;, &amp;#39;email02@example.com&amp;#39;]; 2Mail::to($emailRecipient)-&amp;gt;send(new MailOnServiceFailure($logTimestamp, $failedContent)); 3Log::info(&amp;#34;Service Failure Mail Alert sent successfully to &amp;#34; . json_encode($emailRecipient)); Single Email Per Recipients 1$emailRecipient = [&amp;#39;email01@example.com&amp;#39;, &amp;#39;email02@example.com&amp;#39;]; 2foreach ($emailRecipient as $eachEmail) { 3Mail::to($eachEmail)-&amp;gt;send(new MailOnServiceFailure($logTimestamp, $failedContent); 4Log::info(&amp;#34;Service Failure Mail Alert sent successfully to {$eachEmail}.&amp;#34;); 5} 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>php mailsender</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/php-test-mailsender/</link>
+      <pubDate>Sat, 28 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/php-test-mailsender/</guid>
+      <description>
+        
+          
+            A quick way to test mail sending via php:
+1&amp;lt;?php 2ini_set( &amp;#39;display_errors&amp;#39;, 1 ); 3error_reporting( E_ALL ); 4$from = &amp;#34;webmaster@example.com&amp;#34;; 5$to = &amp;#34;me@example.com&amp;#34;; 6$subject = &amp;#34;PHP Mail Test script&amp;#34;; 7$message = &amp;#34;This is a test to check the PHP Mail functionality&amp;#34;; 8$headers = &amp;#34;From:&amp;#34; . $from; 9mail($to,$subject,$message, $headers); 10echo &amp;#34;Test email sent&amp;#34;; 11?&amp;gt; 
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

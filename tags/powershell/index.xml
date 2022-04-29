@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>powershell on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/powershell/</link>
+    <description>Recent content in powershell on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Sun, 06 Feb 2022 23:17:12 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/powershell/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Check Windows Uptime</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/check-windows-uptime/</link>
+      <pubDate>Sun, 06 Feb 2022 23:17:12 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/check-windows-uptime/</guid>
+      <description>
+        
+          
+            Sometimes, you need to check the uptime of a Windows machine. Here&#39;s the Powershell command for that:
+1PS C:\&amp;gt; systeminfo|find &amp;#34;System Boot Time&amp;#34; This was tested working under Windows 10 Pro and worth noting that it also works in the old cmd.
+For other methods, see this article.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Reboot Linux under WSL</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/reboot-linux-in-wsl/</link>
+      <pubDate>Sun, 06 Feb 2022 23:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/reboot-linux-in-wsl/</guid>
+      <description>
+        
+          
+            Linux systemcmd or init way of rebooting will not work in a Windows Subsystem for Linux or wsl-run Linux. You need to use the Powershell command below:
+1wsl --shutdown For other methods, see this article.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Processing each powershell array value</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/processing-each-powershell-array-value/</link>
+      <pubDate>Sat, 03 Jul 2021 00:56:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/processing-each-powershell-array-value/</guid>
+      <description>
+        
+          
+            Using the example in variable assignment
+And you want to do something to each variable, you may do the following:
+1foreach ($i in $container_ids) { 2$i 3} So for instance, you want to delete all the containers:
+1foreach ($i in $container_ids) { 2docker rm $i 3} 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Assign Command Output to Powershell Array</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/assign-command-output-to-powershell-array/</link>
+      <pubDate>Sat, 03 Jul 2021 00:55:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/assign-command-output-to-powershell-array/</guid>
+      <description>
+        
+          
+            From powershell CLI;
+1$container_ids=docker ps -qa 2$container_ids In the command above, 1st line does the assignment. 2nd line prints the values. You will then have an output such as the following:
+16fc00bc6a 2ba3c76ca3 3a9b4e46eb 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Check if Windows is 64-bit Using Powershell</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/check-windows-64bit/</link>
+      <pubDate>Sun, 12 Jul 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/check-windows-64bit/</guid>
+      <description>
+        
+          
+            1PS C:\&amp;gt; [Environment]::Is64BitProcess 2PS C:\&amp;gt; [Environment]::Is64BitOperatingSystem both will return &amp;quot;True&amp;quot; if you&#39;re on a 64 bit Windows. See https://stackoverflow.com/questions/31977657/determining-32-64-bit-in-powershell
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Get Current Computer Name in Powershell</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/get-current-computer-name-using-powershell/</link>
+      <pubDate>Sun, 12 Jul 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/get-current-computer-name-using-powershell/</guid>
+      <description>
+        
+          
+            1PS C:\&amp;gt; $env:COMPUTERNAME See https://blogs.technet.microsoft.com/heyscriptingguy/2015/06/20/powertip-use-powershell-to-get-computer-name/
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Get MD5 of a File using Powershell</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/get-md5-of-file/</link>
+      <pubDate>Sun, 12 Jul 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/get-md5-of-file/</guid>
+      <description>
+        
+          
+            1PS C:\&amp;gt; Get-FileHash -Path $file -Algorithm MD5 See https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/get-filehash?view=powershell-6
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Get Powershell Version</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/powershell-version/</link>
+      <pubDate>Sun, 12 Jul 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/powershell-version/</guid>
+      <description>
+        
+          
+            1PS /Users/example&amp;gt; $PSVersionTable 23Name Value 4---- ----- 5PSVersion 7.0.2 6PSEdition Core 7GitCommitId 7.0.2 8OS Darwin 19.5.0 Darwin Kernel Version 19.5.0: Tue May 26 20:41:44 PDT 2020; root:xnu-6153.121.2~2/RELEASE_X86_64 9Platform Unix 10PSCompatibleVersions {1.0, 2.0, 3.0, 4.0…} 11PSRemotingProtocolVersion 2.3 12SerializationVersion 1.1.0.1 13WSManStackVersion 3.0 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Get System Path via Powershell</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/get-system-path/</link>
+      <pubDate>Sun, 12 Jul 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/get-system-path/</guid>
+      <description>
+        
+          
+            1PS C:\&amp;gt; $env:PATH See https://blogs.technet.microsoft.com/heyscriptingguy/2011/07/23/use-powershell-to-modify-your-environmental-path/
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Install Powershell in Mac</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/install-powershell-in-mac/</link>
+      <pubDate>Sun, 12 Jul 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/install-powershell-in-mac/</guid>
+      <description>
+        
+          
+            Install
+1brew cask install powershell Run
+1pwsh To update/upgrade later on:
+1brew update 2brew cask upgrade powershell See https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-macos?view=powershell-7
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Unix2Dows using Powershell</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/unix2dos-in-powershell/</link>
+      <pubDate>Sun, 12 Jul 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/unix2dos-in-powershell/</guid>
+      <description>
+        
+          
+            1get-content&amp;lt;filename&amp;gt;|%{$_.replace(&amp;#34;`n&amp;#34;,&amp;#34;`r`n&amp;#34;)}|out-file-filepath&amp;lt;newfilename&amp;gt;More explanation in https://sus42.wordpress.com/2013/01/21/unix2dos-using-powershell/
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

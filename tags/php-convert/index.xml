@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>php-convert on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/php-convert/</link>
+    <description>Recent content in php-convert on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Sat, 28 Sep 2019 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/php-convert/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Convert command not found</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/convert-command-not-found/</link>
+      <pubDate>Sat, 28 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/convert-command-not-found/</guid>
+      <description>
+        
+          
+            I was seeing this error from drupal logs:
+1User error: ImageMagick error 127: sh: convert: command not found in _imagemagick_convert_exec() (line 522 of /var/www/example.com/docroot/sites/all/modules/contrib/imagemagick/imagemagick.module). Which indicates that package ImageMagick wasn&#39;t installed. Since the machine in questions was CentOS7, I installed it as follows:
+1~$ sudo yum install ImageMagick -y Ref:
+ https://www.experts-exchange.com/questions/27962692/Drupal-7-error-ImageMagick-error-127.html https://www.drupal.org/node/153310 https://syslint.com/blog/tutorial/install-imagemagick-in-centos7/  
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

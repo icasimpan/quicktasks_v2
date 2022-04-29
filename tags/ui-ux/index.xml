@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ui-ux on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/ui-ux/</link>
+    <description>Recent content in ui-ux on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Sat, 21 Sep 2019 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/ui-ux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Drupal 8: Broken Web UI</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/drupal8-broken-webui/</link>
+      <pubDate>Sat, 21 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/drupal8-broken-webui/</guid>
+      <description>
+        
+          
+            Most probably caused by CSS/JS Aggreggation. Disable it by doing the following:
+Can edit settings.php - add the following:
+1$config[&amp;#39;system.performance&amp;#39;][&amp;#39;css&amp;#39;][&amp;#39;preprocess&amp;#39;] = FALSE; 2$config[&amp;#39;system.performance&amp;#39;][&amp;#39;js&amp;#39;][&amp;#39;preprocess&amp;#39;] = FALSE; In Drupal Admin
+-site-/admin/config/development/performance
+Uncheck two checkboxes:
+ Aggregate CSS files Aggregate JavaScript files  Reference: https://www.drupal.org/forum/support/post-installation/2017-04-02/disabling-caching-cssjs-aggregation
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

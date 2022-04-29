@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>sticky-bit on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/sticky-bit/</link>
+    <description>Recent content in sticky-bit on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Sun, 12 Jul 2020 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/sticky-bit/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Removing Group Sticky Bit</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/remove-group-sticky-bit/</link>
+      <pubDate>Sun, 12 Jul 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/remove-group-sticky-bit/</guid>
+      <description>
+        
+          
+            1chmod g-s &amp;lt;dirname_here&amp;gt; More details in https://serverfault.com/questions/238962/how-do-i-clear-the-s-permission-on-a-directory-in-linux
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

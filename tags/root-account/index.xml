@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>root-account on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/root-account/</link>
+    <description>Recent content in root-account on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Mon, 21 Mar 2022 23:17:11 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/root-account/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Switch to root account in Docker</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/switch-to-root-account-in-docker/</link>
+      <pubDate>Mon, 21 Mar 2022 23:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/switch-to-root-account-in-docker/</guid>
+      <description>
+        
+          
+            Usually, a docker container has a way to easily switch to root account.
+It can be as easy as &#39;su root&#39; or even root by default when you run a shell such as &#39;bash&#39; within it.
+However, sometimes, it&#39;s not that easy. You need to work hard for it.
+My issues where the following:
+ su command won&#39;t work as it&#39;s just a symlink to busybox:  1~ $ ls -l `which su` 2lrwxrwxrwx 1 root root 12 Oct 21 2020 /bin/su -&amp;gt; /bin/busybox  No known root password or sudo is not possible  Solution  su problem - create a copy of /bin/busybox to somewhere you can modify permissions.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

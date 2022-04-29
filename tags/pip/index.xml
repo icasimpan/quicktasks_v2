@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>pip on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/pip/</link>
+    <description>Recent content in pip on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Sat, 21 Sep 2019 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/pip/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>After Upgrading Ansible, pip had an issue SSL_ST_INIT</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/ssl_st_init-pip-issue-ansible-upgrade/</link>
+      <pubDate>Sat, 21 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/ssl_st_init-pip-issue-ansible-upgrade/</guid>
+      <description>
+        
+          
+            1sudo apt-get remove python-openssl 2curl -o ./get-pip.py https://bootstrap.pypa.io/get-pip.py 3sudo python2 ./get-pip.py Replace with yum if in RH-based OS. See https://stackoverflow.com/questions/43267157/python-attributeerror-module-object-has-no-attribute-ssl-st-init for details.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

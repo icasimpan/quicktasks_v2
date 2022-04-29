@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>wildcard on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/wildcard/</link>
+    <description>Recent content in wildcard on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Sun, 07 Jun 2020 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/wildcard/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Wildcard LetsEncrypt</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/wildcard-letsencrypt/</link>
+      <pubDate>Sun, 07 Jun 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/wildcard-letsencrypt/</guid>
+      <description>
+        
+          
+            1yum install certbot.noarch -y 234certbot -d *.example.com \ 5--manual \ 6--preferred-challenges \ 7dns certonly \ 8--server https://acme-v02.api.letsencrypt.org/directory 910... 11... 12create the TXT DNS record NOTE: In creating the cert, make sure to wait for 5minutes or better check in another terminal session if the txt record is now visible. Otherwise, cert creation will fail.
+Some details in https://wicowen.github.io/2018-0315-1400-Enable-Lets-encrypt-wildcard-certificate-in-CentOS-7/
+In Ubuntu/Debian check https://medium.com/@saurabh6790/generate-wildcard-ssl-certificate-using-lets-encrypt-certbot-273e432794d7
+130 2 * * * /usr/bin/certbot renew &amp;gt;&amp;gt; /var/log/letsencrypt-renew.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

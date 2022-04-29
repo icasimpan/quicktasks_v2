@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>key_value on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/key_value/</link>
+    <description>Recent content in key_value on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Sat, 06 Jun 2020 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/key_value/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>key_value table missing</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/key_value-missing/</link>
+      <pubDate>Sat, 06 Jun 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/key_value-missing/</guid>
+      <description>
+        
+          
+            You just received a D8 database dump and it is said to be complete. However, you see this error:
+1[notice] Missing database table: key_value Said table is part of drupal8 so it can&#39;t go missing. It could be that the table names for this site has prefix. Check using the command: {code} drush sql-drush &amp;quot;show tables;&amp;quot;|grep -i key_value {code}
+If you see something like: {code} bash-4.2$ drush sql-query &amp;quot;show tables;&amp;quot;|grep -i key_value kb_key_value kb_key_value_expire {code}
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

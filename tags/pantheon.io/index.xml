@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>pantheon.io on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/pantheon.io/</link>
+    <description>Recent content in pantheon.io on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Mon, 09 Apr 2018 00:20:29 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/pantheon.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>pantheon.io: Developer need to be able to deploy for a site</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/pantheon-developer-need-deploy-site/</link>
+      <pubDate>Mon, 09 Apr 2018 00:20:29 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/pantheon-developer-need-deploy-site/</guid>
+      <description>
+        
+          
+            He/she needs to be added to the sites &amp;quot;Team&amp;quot; as &amp;quot;Team Member&amp;quot;. See details in https://pantheon.io/docs/change-management/
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>pantheon.io: Can&#39;t see drush aliases to some sites (despite having organization access)</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/pantheon-cannot-see-drush-aliases-despite-org-access/</link>
+      <pubDate>Mon, 09 Apr 2018 00:20:27 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/pantheon-cannot-see-drush-aliases-despite-org-access/</guid>
+      <description>
+        
+          
+            You need to be part of the &amp;quot;Team&amp;quot;. Access the site name and go to &amp;quot;Team&amp;quot; and add yourself(assuming you have access). Check back the aliases and you should have it now.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>pantheon.io: drush aliases download</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/pantheon-drush-aliases-download/</link>
+      <pubDate>Mon, 09 Apr 2018 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/pantheon-drush-aliases-download/</guid>
+      <description>
+        
+          
+            Your Username &amp;gt; Dashboard &amp;gt; Drush Aliases
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>pantheon.io: drush via terminus</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/pantheon-drush-via-terminus/</link>
+      <pubDate>Mon, 09 Apr 2018 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/pantheon-drush-via-terminus/</guid>
+      <description>
+        
+          
+            See https://pantheon.io/docs/terminus/
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Credentials to Pantheon.io git</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/credentials-pantheon-git/</link>
+      <pubDate>Sun, 08 Apr 2018 23:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/credentials-pantheon-git/</guid>
+      <description>
+        
+          
+            Add the email to the Project&#39;s Team. The login credentials is the access to git as well. NOTE: If using Google login, make sure to change password.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Getting drush uli in a Pantheon site</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/drush-uli-pantheon-site/</link>
+      <pubDate>Sun, 08 Apr 2018 23:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/drush-uli-pantheon-site/</guid>
+      <description>
+        
+          
+            See https://pantheon.io/blog/five-steps-feeling-drupal-drush
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Pantheon site redirects</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/pantheon-site-redirects/</link>
+      <pubDate>Sun, 08 Apr 2018 23:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/pantheon-site-redirects/</guid>
+      <description>
+        
+          
+            Pantheon.io hosted sites don&#39;t use htaccess. But there&#39;s an equivalent implementation via php. See https://pantheon.io/docs/redirects/
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

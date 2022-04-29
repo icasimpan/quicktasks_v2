@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>include on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/include/</link>
+    <description>Recent content in include on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Mon, 09 Apr 2018 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/include/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>settings.php: Adding reference to settings.local.php</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/settings-php-including-settings-local/</link>
+      <pubDate>Mon, 09 Apr 2018 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/settings-php-including-settings-local/</guid>
+      <description>
+        
+          
+            1/** 2* Load local development override configuration, if available. 3* 4* Use settings.local.php to override variables on secondary (staging, 5* development, etc) installations of this site. Typically used to disable 6* caching, JavaScript/CSS compression, re-routing of outgoing emails, and 7* other things that should not happen on development and testing sites. 8* 9* Keep this code block at the end of this file to take full effect. 10*/ 11if (file_exists(__DIR__ .
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

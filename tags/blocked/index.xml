@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>blocked on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/blocked/</link>
+    <description>Recent content in blocked on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Tue, 16 Jun 2020 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/blocked/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Drupal User Blocked in D7</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/drupal-user-blocked-in-d7/</link>
+      <pubDate>Tue, 16 Jun 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/drupal-user-blocked-in-d7/</guid>
+      <description>
+        
+          
+            How to reset user after being blocked (d7 and works in D8 as well).
+1MySQL&amp;gt; delete from flood where identifier=&amp;lt;uid&amp;gt;; To get the uid, search as follows:
+1MySQL&amp;gt; select uid, name from users where name like &amp;#39;%NameHere%&amp;#39;\G; Details in https://www.drupal.org/node/1023440
+NOTE: Observed to work as well in D8 with some adjustments to checking the uid which seems to be in users_data already.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

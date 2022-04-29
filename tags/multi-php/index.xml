@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>multi-php on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/multi-php/</link>
+    <description>Recent content in multi-php on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Sat, 28 Sep 2019 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/multi-php/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Multi-php installation</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/multi-php-installation/</link>
+      <pubDate>Sat, 28 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/multi-php-installation/</guid>
+      <description>
+        
+          
+             https://pehapkari.cz/blog/2017/03/27/multiple-php-versions-the-easy-way/ https://github.com/oerdnj/deb.sury.org/wiki/Managing-Multiple-Versions  
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

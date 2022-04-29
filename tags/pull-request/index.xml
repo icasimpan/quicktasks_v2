@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>pull-request on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/pull-request/</link>
+    <description>Recent content in pull-request on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Tue, 08 Sep 2020 23:17:11 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/pull-request/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pull Request via Github API</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/pull-request-via-github-api/</link>
+      <pubDate>Tue, 08 Sep 2020 23:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/pull-request-via-github-api/</guid>
+      <description>
+        
+          
+            From the example in https://docs.github.com/en/rest/reference/pulls#create-a-pull-request, it seems quite easy:
+1curl \ 2-X POST \ 3-H &amp;#34;Accept: application/vnd.github.v3+json&amp;#34; \ 4https://api.github.com/repos/octocat/hello-world/pulls \ 5-d &amp;#39;{&amp;#34;title&amp;#34;:&amp;#34;title&amp;#34;,&amp;#34;head&amp;#34;:&amp;#34;head&amp;#34;,&amp;#34;base&amp;#34;:&amp;#34;base&amp;#34;}&amp;#39; The above means, create a pull request with title &amp;quot;title&amp;quot; with code in branch &amp;quot;head&amp;quot; against the branch in &amp;quot;base&amp;quot; for the repo https://github.com/octocat/hello-world.git
+In case you need to authenticate, add
+1-u &amp;lt;user&amp;gt;:&amp;lt;GITHUB_TOKEN&amp;gt; before the -H
+1curl \ 2-X POST \ 3-u your_user:DEFINED_GITHUB_TOKEN_HERE 4-H &amp;#34;Accept: application/vnd.github.v3+json&amp;#34; \ 5https://api.github.com/repos/octocat/hello-world/pulls \ 6-d &amp;#39;{&amp;#34;title&amp;#34;:&amp;#34;title&amp;#34;,&amp;#34;head&amp;#34;:&amp;#34;head&amp;#34;,&amp;#34;base&amp;#34;:&amp;#34;base&amp;#34;}&amp;#39; You can also use a payload json file for this value:
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

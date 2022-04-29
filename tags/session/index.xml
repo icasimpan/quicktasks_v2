@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>session on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/session/</link>
+    <description>Recent content in session on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Tue, 11 Feb 2020 00:18:01 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/session/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Weird session issue in drupal</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/weird-session-issue/</link>
+      <pubDate>Tue, 11 Feb 2020 00:18:01 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/weird-session-issue/</guid>
+      <description>
+        
+          
+            Was seeing some session issue as follows:
+1[me@example default]$ cd /var/www/example.com/docroot 2[me@example docroot]$ drush st 34session_set_save_handler(): Cannot change save handler when headers already sent session.inc:242 [warning] 5session_id(): Cannot change session id when headers already sent session.inc:266 [warning] 6session_name(): Cannot change session name when headers already sent in drupal_settings_initialize() (line 831 of [warning] 7/var/www/example.com/docroot/includes/bootstrap.inc). 8Drupal version : 7.69 9Site URI : http://default 10Database driver : mysql 11Database hostname : localhost 12Database username : &amp;lt;REDACTED&amp;gt; 13Database name : &amp;lt;REDACTED&amp;gt; 14Database : Connected 15Drupal bootstrap : Successful 16Drupal user : 17Default theme : bootstrap_examplesite 18Administration theme : seven 19PHP configuration : /etc/php.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

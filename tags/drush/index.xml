@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>drush on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/drush/</link>
+    <description>Recent content in drush on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Tue, 04 Aug 2020 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/drush/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Install Specific Drupal Module Version via Drush</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/install-specific-drupal-module-version-via-drush/</link>
+      <pubDate>Tue, 04 Aug 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/install-specific-drupal-module-version-via-drush/</guid>
+      <description>
+        
+          
+            1drush dl og-7.x-1.3 2drush en og-7.x-1.4 More details in https://www.drupal.org/node/1499548
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Create Drupal Admin User via Drush</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/create-drupal-admin-user-via-drush/</link>
+      <pubDate>Sun, 24 May 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/create-drupal-admin-user-via-drush/</guid>
+      <description>
+        
+          
+            1## Generate drupal admin access. 2## 3drush user:create admin --mail=&amp;#34;admin.NOREPLY@example.com&amp;#34; --password=&amp;#34;admin&amp;#34; 4drush user:role:add &amp;#34;administrator&amp;#34; admin 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Change drupal user credential</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/change-drupal-credential/</link>
+      <pubDate>Mon, 30 Mar 2020 00:14:45 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/change-drupal-credential/</guid>
+      <description>
+        
+          
+            Go to drupal root, then:
+1drush upwd --password=&amp;#34;newPassword_here&amp;#34; &amp;#34;the_user&amp;#34; More info in https://www.drupal.org/node/44164
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Drush: Drop Mysql Tables Without Deleting Database</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/drush-drop-mysql-tables-without-deleting-database/</link>
+      <pubDate>Mon, 09 Apr 2018 00:21:46 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/drush-drop-mysql-tables-without-deleting-database/</guid>
+      <description>
+        
+          
+            In drupal root:
+1drush sql-drop 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>pantheon.io: Can&#39;t see drush aliases to some sites (despite having organization access)</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/pantheon-cannot-see-drush-aliases-despite-org-access/</link>
+      <pubDate>Mon, 09 Apr 2018 00:20:27 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/pantheon-cannot-see-drush-aliases-despite-org-access/</guid>
+      <description>
+        
+          
+            You need to be part of the &amp;quot;Team&amp;quot;. Access the site name and go to &amp;quot;Team&amp;quot; and add yourself(assuming you have access). Check back the aliases and you should have it now.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Create drupal super admin user via drush</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/create-drupal-super-admin-via-drush/</link>
+      <pubDate>Mon, 09 Apr 2018 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/create-drupal-super-admin-via-drush/</guid>
+      <description>
+        
+          
+            1drush user-create prometadmin &amp;#34;letmein&amp;#34; 2drush user-add-role super_admin prometadmin 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Drupal maintenance mode (turn-off) via drush</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/drupal-maintenance-mode-via-drush/</link>
+      <pubDate>Mon, 09 Apr 2018 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/drupal-maintenance-mode-via-drush/</guid>
+      <description>
+        
+          
+            Drupal 8 1drush sset system.maintenance_mode FALSE Drupal 7 1drush vset maintenance_mode 0 You may need to clear cache for it to work.
+See details and some other options if it doesn&#39;t work in https://drupal.stackexchange.com/questions/100771/how-do-i-turn-off-maintenance-mode
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Drupal7 install via drush</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/drupal7-install-via-drush/</link>
+      <pubDate>Mon, 09 Apr 2018 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/drupal7-install-via-drush/</guid>
+      <description>
+        
+          
+            1cd /var/www/sites 2drush dl drupal-7 --destination=yoursite.example.com --drupal-project-rename=www -y 3cd yoursite.example.com/www 4drush site-install standard --account-name=admin --account-pass=admin --db-url=mysql://myDBA:myDBPASS@localhost/myDB -y See http://www.coderintherye.com/install-drupal-7-using-drush
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Drush Features Diff (drupal7)</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/drupal7-drush-features-diff/</link>
+      <pubDate>Mon, 09 Apr 2018 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/drupal7-drush-features-diff/</guid>
+      <description>
+        
+          
+            Enable diff module  1drush en diff -y Show all features  1[root@yoursite.example.com docroot]# drush fd 2BEF Test Content bef_test_content Disabled 7.x-3.5 3Keystone Media News content_keystone_media Enabled 7.x-1.0-alpha10 4Content Set #1 content_set_1 Enabled 7.x-1.0-alpha9m 5Content Set #2 content_set_2 Enabled 7.x-1.0-alpha16m 6Content Set #3 content_set_3 Enabled 7.x-1.0-alpha80 Overridden 7Content Set #4 content_set_4 Enabled 7.x-1.0-alpha26 8Date Migration Example date_migrate_example Disabled 7.x-2.10 9Features Tests features_test Disabled 7.x-2.10 10Feeds Import feeds_import Enabled 7.x-2.0-beta4 11Feeds News feeds_news Disabled 7.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Drush for non-composer drupal</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/drush-for-non-composer-drupal/</link>
+      <pubDate>Mon, 09 Apr 2018 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/drush-for-non-composer-drupal/</guid>
+      <description>
+        
+          
+            1#install composer and Drush 2curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer 3wget -O drush.phar https://github.com/drush-ops/drush-launcher/releases/download/0.6.0/drush.phar 4chmod +x drush.phar 5sudo mv drush.phar /usr/local/bin/drush 6cd drupal 7cat &amp;gt; composer.json&amp;lt;&amp;lt;&amp;#39;EOF&amp;#39; 8{ 9&amp;#34;require&amp;#34;: { 10&amp;#34;drush/drush&amp;#34;: &amp;#34;8.*&amp;#34; 11}, 12&amp;#34;extra&amp;#34;: { 13&amp;#34;installer-paths&amp;#34;: { 14&amp;#34;core&amp;#34;: [&amp;#34;type:drupal-core&amp;#34;] 15} 16} 17} 18EOF 19composer install Details from https://github.com/dbjpanda/digitalocean-drupal/blob/7.x/install.sh and https://github.com/drush-ops/drush-launcher/issues/33
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Drush ULI: disable automatic open in browser</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/drush-uli-disable-automatic-open-in-browser/</link>
+      <pubDate>Mon, 09 Apr 2018 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/drush-uli-disable-automatic-open-in-browser/</guid>
+      <description>
+        
+          
+            1drush uli --no-browser 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Example Setup for stage_file_proxy</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/example-setup-stage_file_proxy/</link>
+      <pubDate>Mon, 09 Apr 2018 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/example-setup-stage_file_proxy/</guid>
+      <description>
+        
+          
+            1[me@common-dev default]$ drush pm-download stage_file_proxy 2Project stage_file_proxy (7.x-1.8) downloaded to /var/www/sites/project.example.com/www/sites/all/modules/contrib/stage_file_proxy. [success] 3[me@common-dev default]$ drush pm-enable --yes stage_file_proxy 4The following module has moved within the file system: &amp;lt;em class=&amp;#34;placeholder&amp;#34;&amp;gt;stage_file_proxy&amp;lt;/em&amp;gt;. In order to fix this, clear caches or put the module back in its [warning] 5original location. For more information, see &amp;lt;a href=&amp;#34;https://www.drupal.org/node/2487215&amp;#34;&amp;gt;the documentation page&amp;lt;/a&amp;gt;. bootstrap.inc:1143 6The following extensions will be enabled: stage_file_proxy 7Do you really want to continue? (y/n): y 8stage_file_proxy was enabled successfully.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Install and switch between different drush versions</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/install-and-switch-between-drush-versions/</link>
+      <pubDate>Mon, 09 Apr 2018 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/install-and-switch-between-drush-versions/</guid>
+      <description>
+        
+          
+            See https://www.lullabot.com/articles/switching-drush-versions
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>pantheon.io: drush via terminus</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/pantheon-drush-via-terminus/</link>
+      <pubDate>Mon, 09 Apr 2018 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/pantheon-drush-via-terminus/</guid>
+      <description>
+        
+          
+            See https://pantheon.io/docs/terminus/
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Restore Database via Drush</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/restore-database-via-drush/</link>
+      <pubDate>Mon, 09 Apr 2018 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/restore-database-via-drush/</guid>
+      <description>
+        
+          
+            1drush sqlc &amp;lt; database.sql 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Search Index via drush</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/search-index-via-drush/</link>
+      <pubDate>Mon, 09 Apr 2018 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/search-index-via-drush/</guid>
+      <description>
+        
+          
+            1drush sapi-i ## or drush search-api-index 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Drush Installation</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/drush-installation/</link>
+      <pubDate>Mon, 09 Apr 2018 00:18:01 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/drush-installation/</guid>
+      <description>
+        
+          
+            Go to your drupal root composer require drush/drush  See http://docs.drush.org/en/master/install/ for details.
+Then install drupal launcher -&amp;gt; https://github.com/drush-ops/drush-launcher
+ cd ~ wget -O drush.phar https://github.com/drush-ops/drush-launcher/releases/download/0.3.1/drush.phar chmod ug+x drush.phar sudo chown www-data:www-data drush.phar sudo mv drush.phar /usr/local/bin/drush  Further readings in https://www.dx-experts.nl/site-specific-local-drush-and-drupal-console
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>DB Credentials via Drush</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/db-credentials-via-drush/</link>
+      <pubDate>Mon, 09 Apr 2018 00:14:45 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/db-credentials-via-drush/</guid>
+      <description>
+        
+          
+            Go to drupal root, then:
+1drush st --show-passwords database In drush 9.7.2 (may also work for other sub-versions of drush 9), the following command should be used:
+1drush st DB 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Getting Errors with Drush rr not Installed</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/getting-errors-with-drush-rr-not-installed/</link>
+      <pubDate>Mon, 09 Apr 2018 00:12:49 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/getting-errors-with-drush-rr-not-installed/</guid>
+      <description>
+        
+          
+            1drush @none dl registry_rebuild-7.x See https://www.drupal.org/project/registry_rebuild or https://www.deeson.co.uk/labs/drush-registry-rebuild
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Drupal8 Install via Composer</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/drupal8-install-via-composer/</link>
+      <pubDate>Mon, 09 Apr 2018 00:09:39 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/drupal8-install-via-composer/</guid>
+      <description>
+        
+          
+            NOTE:
+ Noticed some memory issue during installation on a VM with 2GB RAM, so if it happens to you, just augment with swap file.  1cd /var/www/sites 2composer create-project drupal-composer/drupal-project:8.x yoursite.example.com --stability dev --no-interaction 3../vendor/bin/drush site-install --site-name=&amp;#34;Drupal Title Here&amp;#34; --db-url=mysql://yourDBA:yourPASS@localhost/yourDB --account-mail=admin@example.com --account-pass=acountPassw0RD -y 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Drupal8 Manual Install via Drush</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/drupal8-manual-install-via-drush/</link>
+      <pubDate>Mon, 09 Apr 2018 00:09:39 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/drupal8-manual-install-via-drush/</guid>
+      <description>
+        
+          
+            NOTE:
+ Per https://www.drupal.org/project/drupal/releases/8.4.0, drupal8.4.x needs drush 8.1.12+ Method works but has theme issue. Better to use composer method instead.   cd /var/www/sites/yourdrupal.com/ drush dl drupal-8 mv drupal-8.4.5 docroot composer install composer update composer require drush/drush drush si --db-url=&#39;mysql://yourDBA:yourPASS@127.0.0.1/yourDB&#39;  Steps 4, 5, 6 are mandatory per site. Some reference for drush install of drupal8 in https://drupal.stackexchange.com/questions/130680/downloading-core-via-command-line
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Drupal Logs</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/drupal-logs/</link>
+      <pubDate>Sun, 08 Apr 2018 23:50:10 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/drupal-logs/</guid>
+      <description>
+        
+          
+            From Web Browser:
+generate &#39;drush uli&#39; Go to /admin/reports/dblog From CLI:
+1drush watchdog-show See https://drupal.stackexchange.com/questions/48645/how-to-show-admin-reports-dblog-in-terminal-cli
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Clear Drupal Cache Outside Drush</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/clear-drupal-cache-outside-drush/</link>
+      <pubDate>Sun, 08 Apr 2018 23:45:58 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/clear-drupal-cache-outside-drush/</guid>
+      <description>
+        
+          
+            From drupal admin UI: Administration &amp;gt; Configuration &amp;gt; Development &amp;gt; Performance
+But will work only if you have drupal admin login. Otherwise, you need to install drush instead and do the &#39;drush cc all&#39; from there. Some other options -&amp;gt; https://www.drupal.org/docs/7/administering-drupal-7-site/clearing-or-rebuilding-drupals-cache
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Getting drush uli in a Pantheon site</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/drush-uli-pantheon-site/</link>
+      <pubDate>Sun, 08 Apr 2018 23:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/drush-uli-pantheon-site/</guid>
+      <description>
+        
+          
+            See https://pantheon.io/blog/five-steps-feeling-drupal-drush
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

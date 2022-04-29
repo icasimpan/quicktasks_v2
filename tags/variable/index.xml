@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>variable on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/variable/</link>
+    <description>Recent content in variable on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Sat, 21 Sep 2019 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/variable/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Save shell command output to ansible variable</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/save-shell-command-output-to-ansible-variable/</link>
+      <pubDate>Sat, 21 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/save-shell-command-output-to-ansible-variable/</guid>
+      <description>
+        
+          
+            Test playbook:
+1[root@lampp lampp]# cat test.yml 2--- 3- name: LAMPP Dev (MySQL/CentOS7) 4hosts: 127.0.0.1 5connection: local 6become: true 78tasks: 9- name: Get the mysql root default password 10command: awk &amp;#39;/temporary password/ {print $NF}&amp;#39; /var/log/mysqld.log 11register: command_output 1213- set_fact: 14default_mysqlroot_password: &amp;#34;{{ command_output.stdout }}&amp;#34; 1516## NOTE: debug line below is only to show output in ansible-playbook run 17- debug: msg=&amp;#34;{{ default_mysqlroot_password }}&amp;#34;``` Output
+1[root@lampp lampp]# ansible-playbook test.yml 2[WARNING]: provided hosts list is empty, only localhost is available.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Variable in a Playbook</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/variable-in-playbook/</link>
+      <pubDate>Sat, 21 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/variable-in-playbook/</guid>
+      <description>
+        
+          
+            ex. Set the &#39;webserver_name&#39; variable as &#39;httpd&#39;
+1- set_fact: 2webserver_name: httpd 
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

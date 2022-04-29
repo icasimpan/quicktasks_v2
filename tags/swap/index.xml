@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>swap on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/swap/</link>
+    <description>Recent content in swap on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Sun, 12 Jul 2020 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/swap/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Add Linux Swap File</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/add-linux-swap-file/</link>
+      <pubDate>Sun, 12 Jul 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/add-linux-swap-file/</guid>
+      <description>
+        
+          
+            1sudo dd if=/dev/zero of=/mnt/file.swap bs=1M count=512 2sudo mkswap /mnt/file.swap 3sudo chmod 0600 /mnt/file.swap 4sudo swapon /mnt/file.swap 5echo &amp;#34;/mnt/file.swap none swap sw 0 0&amp;#34; &amp;gt;&amp;gt; /etc/fstab See details in https://www.garron.me/en/linux/increase-swap-memory-linux.html
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

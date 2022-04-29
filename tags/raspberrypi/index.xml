@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>raspberrypi on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/raspberrypi/</link>
+    <description>Recent content in raspberrypi on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Sun, 23 Aug 2020 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/raspberrypi/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Wireless Interface TXPower Error</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/wireless-interface-txpower-error/</link>
+      <pubDate>Sun, 23 Aug 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/wireless-interface-txpower-error/</guid>
+      <description>
+        
+          
+            I turned-off my built-in wireless network interface using the command:
+1iwconfig wlan0 txpower off Howerver, I can no longer turn-it back on. Logic says just change &amp;quot;off&amp;quot; to &amp;quot;on&amp;quot; but instead, I get this error.
+1root@raspberrypi:/home/pi# iwconfig wlan0 txpower on 2Error for wireless request &amp;#34;Set Tx Power&amp;#34; (8B27) : 3GET failed on device wlan0 ; Input/output error. Current status of the wireless interface looks like:
+1root@raspberrypi:/home/pi# iwconfig wlan0 2wlan0 IEEE 802.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Check Low Voltage Indication in Raspberry PI</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/check-low-voltage-in-raspberrypi/</link>
+      <pubDate>Mon, 17 Aug 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/check-low-voltage-in-raspberrypi/</guid>
+      <description>
+        
+          
+            When a pi gets under voltage below 4.63V (+/-5%), a thunderbolt icon is shown in the monitor like in https://www.raspberrypi.org/documentation/configuration/warning-icons.md It will then get throttled to get back to desired voltage.
+From command line, here&#39;s what you can use to check:
+1vcgencmd get_throttled with some important information regarding low voltage:
+ 0x50000 - throttled at least once due to low voltage 0x50005 - currently throttled due to low voltage  Some more interesting information in https://raspberrypi.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Basic Sony TV switch on or Off using HDMI-CEC</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/basic-sony-tv-switch-on-or-off-using-hdmi-cec/</link>
+      <pubDate>Sat, 15 Aug 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/basic-sony-tv-switch-on-or-off-using-hdmi-cec/</guid>
+      <description>
+        
+          
+            Install needed package:
+1sudo apt install cec-utils Check connected devices
+1pi@raspberrypi:~ $ echo &amp;#39;scan&amp;#39; | cec-client -s -d 1 2opening a connection to the CEC adapter... 3requesting CEC bus information ... 4CEC bus information 5=================== 6device #0: TV 7address: 0.0.0.0 8active source: no 9vendor: Sony 10osd string: TV 11CEC version: 1.4 12power status: on 13language: eng 141516device #1: Recorder 1 17address: 3.0.0.0 18active source: no 19vendor: Pulse Eight 20osd string: CECTester 21CEC version: 1.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Headless Raspbery pi</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/headless-raspberrypi/</link>
+      <pubDate>Fri, 14 Aug 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/headless-raspberrypi/</guid>
+      <description>
+        
+          
+            Tested on a RaspberryPI 4 B 2GB.
+ Setup Raspbian OS on the disk In a Mac for example, create a wpa_supplicant.conf in /Volumes/boot. Just replace with your country, ssid and psk  1country=US 2ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev 3update_config=1 45network={ 6ssid=&amp;#34;NETWORK-NAME&amp;#34; 7psk=&amp;#34;NETWORK-PASSWORD&amp;#34; 8} Add blank file ssh to /Volumes/boot Use the disk to boot the pi.  More details in https://desertbot.io/blog/headless-raspberry-pi-4-ssh-wifi-setup
+Additional Info: https://www.raspberrypi.org/blog/a-security-update-for-raspbian-pixel/
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>BerryBoot</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/berryserver/</link>
+      <pubDate>Mon, 10 Aug 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/berryserver/</guid>
+      <description>
+        
+          
+            https://berryboot.alexgoldcheidt.com/
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

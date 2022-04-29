@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>rvm on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/rvm/</link>
+    <description>Recent content in rvm on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Tue, 15 Feb 2022 11:17:11 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/rvm/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Rails errors GemNotFoundException</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/rails-error-gemnotfoundexception/</link>
+      <pubDate>Tue, 15 Feb 2022 11:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/rails-error-gemnotfoundexception/</guid>
+      <description>
+        
+          
+            You recently installed rails but since you&#39;re still learning, you did a lot of stuffs. One day, you got the following error:
+1~$ rails --version 2Traceback (most recent call last): 32: from /usr/local/bin/rails:23:in `&amp;lt;main&amp;gt;&amp;#39; 41: from /usr/lib/ruby/2.7.0/rubygems.rb:294:in `activate_bin_path&amp;#39; 5/usr/lib/ruby/2.7.0/rubygems.rb:275:in `find_spec_for_exe&amp;#39;: can&amp;#39;t find gem railties (&amp;gt;= 0.a) with executable rails (Gem::GemNotFoundException) Probably, you forgot that you switched gemset?
+Check contents of your gemdir 1~$ cd `rvm gemdir` 2~$ pwd 3/home/user/.rvm/gems/ruby-2.7.2@newname 4~$ ll 5total 24 6drwxr-xr-x 5 user user 4096 Feb 16 11:54 .
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Uninstall RVM</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/uninstall-rvm/</link>
+      <pubDate>Tue, 15 Feb 2022 10:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/uninstall-rvm/</guid>
+      <description>
+        
+          
+            If you no longer wish to use RVM, you can uninstall it by first removing the script calls in your .bashrc file and then removing the RVM files.
+First, remove the script calls with a text editor like nano:
+1~$ nano ~/.bashrc Scroll down to where you see the RVM lines of your ~/.bashrc file:
+1... 2# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>perl on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/perl/</link>
+    <description>Recent content in perl on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Sun, 13 Feb 2022 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/perl/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>First Perl Program</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/first-perl-program/</link>
+      <pubDate>Sun, 13 Feb 2022 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/first-perl-program/</guid>
+      <description>
+        
+          
+            Code Let&#39;s call it first.pl
+1~$ nl -ba first.pl 21	#!/usr/bin/env perl 32	43	use strict; # important pragma 54	use warnings; # important pragma 65	76	print &amp;#34;What is your username? &amp;#34;; # print out the question 87	my $username = &amp;lt;STDIN&amp;gt;; # ask for username 98	chomp($username); # remove “new line” 109	print &amp;#34;Hello, $username.\n&amp;#34;; # print out the greeting Check syntax Make it a habit when coding in Perl.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

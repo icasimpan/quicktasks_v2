@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>golang on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/golang/</link>
+    <description>Recent content in golang on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Fri, 18 Feb 2022 09:18:11 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/golang/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Links - Go</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/links-go/</link>
+      <pubDate>Fri, 18 Feb 2022 09:18:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/links-go/</guid>
+      <description>
+        
+          
+            Go Official Documentation  Go Doc Go Standard Library Go Package Search  Learn Go   Go By Example
+  Learn Go in Y Minutes
+  Go Web by Example - simple web development examples using golang
+  TutorialEdge: Basic Golang
+  Gophercises
+  Golang Weekly
+  Go Collectives on StackOverflow
+  GoLang Mobile
+  Go101 - best tutorial site so far, and offline mode is possible too.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Golang Local Module with OOP</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/golang-local-module-with-oop/</link>
+      <pubDate>Wed, 16 Feb 2022 23:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/golang-local-module-with-oop/</guid>
+      <description>
+        
+          
+            Create location of your go code 1~$ mkdir /mnt/c/learning/go Get the suggested golang init script It is in separate post in my quicktasks
+and don&#39;t forget to make it executable. For this quicktask, I assume you named it init.sh as well.
+Create and go to project directory 1~$ mkdir local_module_example 2~$ cd local_module_example Initialize Go environment 1../init.sh Create module location directory 1~$ mkdir -p example.local/person Create the module This is module person
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Suggested Init Script Before Coding in Golang</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/suggested-init-script-before-coding-in-golang/</link>
+      <pubDate>Fri, 05 Nov 2021 23:05:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/suggested-init-script-before-coding-in-golang/</guid>
+      <description>
+        
+          
+            Suggested Init Script The very basic variable you need to lookout for in go is the environment variable $GOPATH.
+In Unix/Linux-based systems it is by default in ~/go.
+My preference is to put it in a directory where my go code exists. So here&#39;s a short shell script I use:
+1#!/bin/bash 2 3## Enforce calling &amp;#34;init.sh&amp;#34; from within project directory. 4## 5init_call_check=$(dirname $0) 6if [[ &amp;#34;$init_call_check&amp;#34; != &amp;#34;..&amp;#34; ]]; then 7echo &amp;#34;ERROR: &amp;#39;init.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>GoDoc in Local</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/godoc-in-local/</link>
+      <pubDate>Fri, 05 Nov 2021 10:05:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/godoc-in-local/</guid>
+      <description>
+        
+          
+            In your preferred directory, initialize GOPATH using the short script in Suggested GoLang Init Script.
+Then, do the following steps:
+ Install godoc  1~$ go install golang.org/x/tools/cmd/godoc@latest 2go: downloading golang.org/x/tools v0.1.7 3go: downloading golang.org/x/sys v0.0.0-20210809222454-d867a43fc93e 4go: downloading golang.org/x/xerrors v0.0.0-20200804184101-5ec99f83aff1 5go: downloading golang.org/x/net v0.0.0-20210805182204-aaa1db679c0d 6go: downloading github.com/yuin/goldmark v1.4.0 7go: downloading golang.org/x/mod v0.4.2 Run godoc  1~$ godoc 2using module mode; GOMOD=/dev/null It defaults to using port 6060.
+If default port has a conflict, replace it by using parameter -http=:NNNN where NNNN is your port number.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Golang Module</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/golang-module/</link>
+      <pubDate>Mon, 01 Nov 2021 23:05:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/golang-module/</guid>
+      <description>
+        
+          
+            1~$ mkdir greetings 2~$ cd greetings 3~$ go mod init example.com/greetings In a text editor, create greetings.go with the following content:
+1package greetings 23import &amp;#34;fmt&amp;#34; 45// Hello returns a greeting for the named person. 6func Hello(name string) string { 7// Return a greeting that embeds the name in a message. 8 message := fmt.Sprintf(&amp;#34;Hi, %v. Welcome!&amp;#34;, name) 9return message 10} Call it from another module
+1~$ cd .. 2~$ mkdir hello 3~$ cd hello 4~$ go mod init example.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

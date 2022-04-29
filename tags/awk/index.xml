@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>awk on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/awk/</link>
+    <description>Recent content in awk on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Thu, 19 Aug 2021 10:49:05 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/awk/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Human Readable Numbers</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/human-readable-numbers/</link>
+      <pubDate>Thu, 19 Aug 2021 10:49:05 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/human-readable-numbers/</guid>
+      <description>
+        
+          
+            https://unix.stackexchange.com/questions/44040/a-standard-tool-to-convert-a-byte-count-into-human-kib-mib-etc-like-du-ls1
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Human Readable Numbers Using Awk</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/human-readable-numbers-using-awk/</link>
+      <pubDate>Thu, 19 Aug 2021 10:49:05 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/human-readable-numbers-using-awk/</guid>
+      <description>
+        
+          
+            https://unix.stackexchange.com/questions/44040/a-standard-tool-to-convert-a-byte-count-into-human-kib-mib-etc-like-du-ls1
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

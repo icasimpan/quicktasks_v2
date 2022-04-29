@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>acl on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/acl/</link>
+    <description>Recent content in acl on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Sun, 08 Apr 2018 23:17:11 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/acl/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Delete User</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/delete-user/</link>
+      <pubDate>Sun, 08 Apr 2018 23:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/delete-user/</guid>
+      <description>
+        
+          
+            1DROP USER &amp;#39;yourDBA&amp;#39;@&amp;#39;localhost&amp;#39; 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Create DB with ACL</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/create-db-with-acl/</link>
+      <pubDate>Sun, 08 Apr 2018 23:15:37 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/create-db-with-acl/</guid>
+      <description>
+        
+          
+            1create database yourDB; 2CREATE USER &amp;#39;yourDBA&amp;#39;@&amp;#39;localhost&amp;#39; IDENTIFIED BY &amp;#39;yourPASS&amp;#39;; 3GRANT ALL PRIVILEGES ON yourDB.* TO &amp;#39;yourDBA&amp;#39;@&amp;#39;localhost&amp;#39;; 4FLUSH PRIVILEGES; 
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

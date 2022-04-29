@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>drupal9 on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/drupal9/</link>
+    <description>Recent content in drupal9 on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Wed, 03 Jun 2020 23:50:10 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/drupal9/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Drupal9 Migration</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/drupal9/</link>
+      <pubDate>Wed, 03 Jun 2020 23:50:10 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/drupal9/</guid>
+      <description>
+        
+          
+            See:
+ https://www.acquia.com/sites/acquia.com/files/documents/2020-03/Acquia%20Ultimate%20Guide%20to%20Drupal%209.pdf https://dev.acquia.com/drupal9 https://github.com/mglaman/drupal-check https://phpstan.org/user-guide/getting-started  
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

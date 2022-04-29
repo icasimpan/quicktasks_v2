@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>submodules on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/submodules/</link>
+    <description>Recent content in submodules on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Wed, 26 Feb 2020 23:17:11 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/submodules/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cloning Repos with Submodules</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/cloning-repo-with-submodules/</link>
+      <pubDate>Wed, 26 Feb 2020 23:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/cloning-repo-with-submodules/</guid>
+      <description>
+        
+          
+            Submodules is quite a pain to manage. To make it easy, just use this command:
+1git clone --recursive &amp;lt;repo_full_path&amp;gt; Failure to use --recursive would mean using a lot of commands later.
+See detailed git submodules commands in https://www.vogella.com/tutorials/GitSubmodules/article.html
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Git submodules (similar to svn:externals)</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/git-submodules/</link>
+      <pubDate>Sun, 08 Apr 2018 23:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/git-submodules/</guid>
+      <description>
+        
+          
+            See https://chrisjean.com/git-submodules-adding-using-removing-and-updating/
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

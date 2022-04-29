@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>pvc on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/pvc/</link>
+    <description>Recent content in pvc on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Sun, 28 Jun 2020 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/pvc/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Checking PersistentVolumeClaims</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/checking-pvc/</link>
+      <pubDate>Sun, 28 Jun 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/checking-pvc/</guid>
+      <description>
+        
+          
+            1user@example:~$ kubectl get pvc --all-namespaces 2NAMESPACE NAME STATUS VOLUME CAPACITY ACCESS MODES STORAGECLASS AGE 3testing-icasimpan-com vol-mysql-mysql-0 Bound pvc-bd199911-e0e5-4327-885d-4902a599ebe2 10Gi RWO do-block-storage 12m 
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

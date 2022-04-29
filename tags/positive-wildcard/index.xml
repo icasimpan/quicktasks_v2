@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>positive-wildcard on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/positive-wildcard/</link>
+    <description>Recent content in positive-wildcard on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Sun, 07 Jun 2020 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/positive-wildcard/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cert Chain for Positive wildcard multi-domain</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/cert-chain-positive-wildcard-multidomain/</link>
+      <pubDate>Sun, 07 Jun 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/cert-chain-positive-wildcard-multidomain/</guid>
+      <description>
+        
+          
+            Given this list of files given by Comodo
+1Root CA Certificate - AddTrustExternalCARoot.crt 2Intermediate CA Certificate - USERTrustRSAAddTrustCA.crt 3Intermediate CA Certificate - SectigoRSADomainValidationSecureServerCA.crt 4Your PositiveSSL Multi-Domain Certificate - 285695299.crt Do the following:
+1cat 285695299.crt SectigoRSADomainValidationSecureServerCA.crt USERTrustRSAAddTrustCA.crt AddTrustExternalCARoot.crt &amp;gt;&amp;gt; cert-chain.pem 
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

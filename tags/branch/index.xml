@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>branch on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/branch/</link>
+    <description>Recent content in branch on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Sun, 08 Apr 2018 23:17:11 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/branch/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Deleting a remote git repo branch</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/deleting-remote-git-repo/</link>
+      <pubDate>Sun, 08 Apr 2018 23:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/deleting-remote-git-repo/</guid>
+      <description>
+        
+          
+            1me@mysite:/var/www/sites/mysite.local$ git push origin :release-redesign 2To git@git-server:mysite.git 3- [deleted] release-redesign 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Rename git branch</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/rename-git-branch/</link>
+      <pubDate>Sun, 08 Apr 2018 23:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/rename-git-branch/</guid>
+      <description>
+        
+          
+            If on a branch you want renamed
+1git branch -m new-name If on a different branch
+1git branch -m old-name new-name 
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

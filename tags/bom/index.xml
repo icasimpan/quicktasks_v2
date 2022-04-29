@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>bom on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/bom/</link>
+    <description>Recent content in bom on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Mon, 21 Mar 2022 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/bom/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Check CSV BOM Using Bash</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/check-csv-bom-using-bash/</link>
+      <pubDate>Mon, 21 Mar 2022 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/check-csv-bom-using-bash/</guid>
+      <description>
+        
+          
+            BOM or Byte-Order-Mark is needed by a UTF-8 CSV in order to be opened in Excel (at least for Windows).
+How to check if said BOM exist using bash? See below:
+1~$ head -c3 samplefile.csv | hexdump -C 200000000 ef bb bf |...| 300000003 
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

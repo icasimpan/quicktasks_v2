@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>performance on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/performance/</link>
+    <description>Recent content in performance on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Mon, 15 Oct 2018 12:39:54 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/performance/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Some MySQL Tweaking Tips</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/some-mysql-tweaking-tips/</link>
+      <pubDate>Mon, 15 Oct 2018 12:39:54 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/some-mysql-tweaking-tips/</guid>
+      <description>
+        
+          
+            See https://serverfault.com/questions/42789/how-to-increase-memory-usage-in-mysql-server-to-improve-speed
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Clear Drupal Cache Outside Drush</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/clear-drupal-cache-outside-drush/</link>
+      <pubDate>Sun, 08 Apr 2018 23:45:58 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/clear-drupal-cache-outside-drush/</guid>
+      <description>
+        
+          
+            From drupal admin UI: Administration &amp;gt; Configuration &amp;gt; Development &amp;gt; Performance
+But will work only if you have drupal admin login. Otherwise, you need to install drush instead and do the &#39;drush cc all&#39; from there. Some other options -&amp;gt; https://www.drupal.org/docs/7/administering-drupal-7-site/clearing-or-rebuilding-drupals-cache
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

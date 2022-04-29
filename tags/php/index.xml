@@ -1,0 +1,596 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>php on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/php/</link>
+    <description>Recent content in php on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Sat, 26 Mar 2022 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/php/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Excel Readable CSV in PHP</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/excel-readable-csv/</link>
+      <pubDate>Sat, 26 Mar 2022 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/excel-readable-csv/</guid>
+      <description>
+        
+          
+            Yes, csv is simple BUT if you want it readable in Excel (at least on Windows), you need to prepend it with a hidden BOM and as UTF8.
+Tried every possible suggestions in stackoverflow that says it works BUT it doesn&#39;t.
+So, try the phpoffice approach. It works for me...
+Install
+1~$ cd /an/isolated/directory 2~$ composer require php-office/phpspreadsheet 3~$ composer install Try this code:
+1&amp;lt;?php 2require &amp;#39;vendor/autoload.php&amp;#39;; 34use PhpOffice\PhpSpreadsheet\Spreadsheet; 5use PhpOffice\PhpSpreadsheet\Writer\Csv; 678const CSV_FILENAME=&amp;#39;csv-example.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Php Anonymous Function</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/php-anonymous-function/</link>
+      <pubDate>Sat, 12 Mar 2022 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/php-anonymous-function/</guid>
+      <description>
+        
+          
+            Overview In contrast to a named function like:
+1&amp;lt;?php 2function multiply($x, $y) 3{ 4return $x * $y; 5} An anonymous or unnamed-function, well has no name:
+1&amp;lt;?php 2function ($x, $y) { 3return $x * $y; 4}; //closing semicolon here is mandatory. NOTE: semicolon after the closing curly bracket is mandatory as it is treated as an expression by php
+Since it is unnamed, you need to store it&#39;s value in a variable and using the variable as function name:
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Php Array_Map Function</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/php-array_map-function/</link>
+      <pubDate>Sat, 12 Mar 2022 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/php-array_map-function/</guid>
+      <description>
+        
+          
+            Suppose that you have an array that holds the lengths of squares:
+1&amp;lt;?php 23$lengths = [10, 20, 30]; To calculate the areas of the squares, you may come up with the foreach loop like this:
+1&amp;lt;?php 23$lengths = [10, 20, 30]; 45// calculate areas 6$areas = []; 78foreach ($lengths as $length) { 9$areas[] = $length * $length; 10} 1112print_r($areas); Output:
+1Array 2( 3[0] =&amp;gt; 100 4[1] =&amp;gt; 400 5[2] =&amp;gt; 900 6) Using array_map() 1&amp;lt;?
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Php Callable Function</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/php-callable-function/</link>
+      <pubDate>Sat, 12 Mar 2022 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/php-callable-function/</guid>
+      <description>
+        
+          
+            Callbacks can be denoted by the &amp;quot;callable&amp;quot; type declaration.
+Example:
+1icasimpan$ nl -ba callable_example.php 21	&amp;lt;?php 32	function printFormatted(callable $format, $str) { 43	echo $format($str); 54	echo &amp;#34;&amp;lt;br&amp;gt;&amp;#34;; 65	} 76	87	function exclaim($str) { return $str . &amp;#34;!&amp;#34;; } 98	printFormatted(&amp;#34;exclaim&amp;#34;, &amp;#34;Hello World&amp;#34;); 109	?&amp;gt; This outputs &amp;quot;Hello World!&amp;quot;.
+ Line 7 is the callable function &amp;quot;exclaim&amp;quot; Line 2 is the function &amp;quot;printFormatted&amp;quot; with callable function parameter Line 8 triggers the function &amp;quot;printFormated&amp;quot; which basically pass the name &#39;in plain string&#39; with the parameter &amp;quot;Hello World&amp;quot;  NOTES
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Php Iterable</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/php-iterable/</link>
+      <pubDate>Sat, 12 Mar 2022 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/php-iterable/</guid>
+      <description>
+        
+          
+            An iterable is any value which can be looped through with a foreach() loop.
+The iterable pseudo-type was introduced in PHP 7.1, and it can be used as a data type for function arguments and function return values.
+Example
+1&amp;lt;?php 2function printIterable(iterable $myIterable) { 3foreach($myIterable as $item) { 4echo &amp;#34;{$item}\n&amp;#34;; 5} 6} 78$arr = [&amp;#34;a&amp;#34;, &amp;#34;b&amp;#34;, &amp;#34;c&amp;#34;]; 9printIterable($arr); 10?&amp;gt; This prints:
+1a 2b 3c Return an iterable:
+1&amp;lt;?php 2function getIterable():iterable { 3return [&amp;#34;a&amp;#34;, &amp;#34;b&amp;#34;, &amp;#34;c&amp;#34;]; 4} 56$myIterable = getIterable(); 7foreach($myIterable as $item) { 8echo $item; 9} 10?
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Php Variable Variables</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/php-variable-variables/</link>
+      <pubDate>Sat, 12 Mar 2022 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/php-variable-variables/</guid>
+      <description>
+        
+          
+            This is quite confusing but as soon as you see the logic, it would make sense.
+Say you have this code:
+1&amp;lt;?php 23$my_var= &amp;#39;title&amp;#39;; 4$$my_var = &amp;#39;PHP variable variables&amp;#39;; // $my_var has a value of &amp;#39;title&amp;#39;. So the 2nd &amp;#39;$&amp;#39; makes it $title 5echo $title; // ...so, YOU see now where you will get the variable $title Output is:
+1PHP variable variables See details in https://www.phptutorial.net/php-tutorial/php-variable-variables/
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Php Data Structure</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/php-data-structure/</link>
+      <pubDate>Wed, 02 Mar 2022 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/php-data-structure/</guid>
+      <description>
+        
+          
+            There&#39;s what is called a &amp;quot;Data Structure&amp;quot; or DS package available in packagist.
+Install
+1~$ cd /an/isolated/directory 2~$ composer require php-ds/php-ds 3~$ composer install Try this code:
+1&amp;lt;?php 2require __DIR__ . &amp;#39;/vendor/autoload.php&amp;#39;; 345$stack = new \Ds\Stack(); 6//$stack = new Stack(); 78$stack-&amp;gt;push(&amp;#34;a&amp;#34;); 9$stack-&amp;gt;push(&amp;#34;b&amp;#34;); 10$stack-&amp;gt;push(&amp;#34;c&amp;#34;); 1112var_dump($stack-&amp;gt;pop()); 13var_dump($stack-&amp;gt;pop()); 14var_dump($stack-&amp;gt;pop()); 15?&amp;gt; See https://www.php.net/manual/en/book.ds.php or https://medium.com/@rtheunissen/efficient-data-structures-for-php-7-9dda7af674cd
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Php Arrow Function</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/php-arrow-function/</link>
+      <pubDate>Mon, 21 Feb 2022 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/php-arrow-function/</guid>
+      <description>
+        
+          
+            As of php7.4, php arrow function was added as a more concise syntax for anonymous functions.
+Basic syntax:
+1fn (arguments) =&amp;gt; expression; Is functionally equivalent to the following anonymous function:
+1function(arguments) { return expression; } Unlike anonymous functions, arrow functions can automatically access variables from their parent scopes.
+1&amp;lt;?php 23function multiplier($x) 4{ 5return fn ($y) =&amp;gt; $x * $y; 6} 78$double = multiplier(2); 910echo $double(10); // 200 See also https://ismael.casimpan.com/quicktasks/php-anonymous-function/
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Links - PHP</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/links-php/</link>
+      <pubDate>Sat, 19 Feb 2022 09:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/links-php/</guid>
+      <description>
+        
+          
+            Here is a curated links of sites that are I think are useful as I learn or relearn PHP, Laravel and Symfony further. Incomplete of course but there&#39;s always the internet. Will add any that are worthy to be linked here. For now, this would suffice. If you think there are links worthy to be added here, let me know in the comment below. Thank you!
+PHP Official Manual  PHP Language Reference PHP Function Reference PHP Features PHP Security  PHP Object Oriented  Object Oriented PHP OOP from php.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Remove package in composer</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/remove-package-in-composer/</link>
+      <pubDate>Fri, 31 Jul 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/remove-package-in-composer/</guid>
+      <description>
+        
+          
+            1composer remove Vendor/Package_Name See https://stackoverflow.com/questions/23126562/how-to-remove-a-package-from-laravel-using-composer
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Weird session issue in drupal</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/weird-session-issue/</link>
+      <pubDate>Tue, 11 Feb 2020 00:18:01 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/weird-session-issue/</guid>
+      <description>
+        
+          
+            Was seeing some session issue as follows:
+1[me@example default]$ cd /var/www/example.com/docroot 2[me@example docroot]$ drush st 34session_set_save_handler(): Cannot change save handler when headers already sent session.inc:242 [warning] 5session_id(): Cannot change session id when headers already sent session.inc:266 [warning] 6session_name(): Cannot change session name when headers already sent in drupal_settings_initialize() (line 831 of [warning] 7/var/www/example.com/docroot/includes/bootstrap.inc). 8Drupal version : 7.69 9Site URI : http://default 10Database driver : mysql 11Database hostname : localhost 12Database username : &amp;lt;REDACTED&amp;gt; 13Database name : &amp;lt;REDACTED&amp;gt; 14Database : Connected 15Drupal bootstrap : Successful 16Drupal user : 17Default theme : bootstrap_examplesite 18Administration theme : seven 19PHP configuration : /etc/php.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>PHP Fatal Error: Maximum Execution time exceeded</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/maximum-execution-time-exceeded/</link>
+      <pubDate>Fri, 07 Feb 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/maximum-execution-time-exceeded/</guid>
+      <description>
+        
+          
+            If you&#39;re seeing an error in your log:
+1PHP Fatal error: Maximum execution time of 240 seconds exceeded in &amp;lt;/path/to/any_file.php&amp;gt; on line xx Then you may need to edit your php.ini and update the variable &#39;maximum_execution_time&#39;. Don&#39;t forget to restart your web service.
+If issue persist, then overrides is being done in code. Search it as follows and fix accordingly:
+1grep -Ri max_execution_time ./* 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Checking for php memory exhaustion &#43; possible fix</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/check-php-memory-exhaustion-and-fix/</link>
+      <pubDate>Sat, 28 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/check-php-memory-exhaustion-and-fix/</guid>
+      <description>
+        
+          
+            1me@web-13940:/var/log/sites/web.prod/logs/web-13940$ zgrep -c &amp;#39;Allowed memory size of&amp;#39; php-errors.log php-errors.log-201712* 2php-errors.log:11 3php-errors.log-20171222.gz:4 1me@web-13940:/var/log/sites/web.prod/logs/web-13940$ zgrep &amp;#39;Allowed memory size of&amp;#39; php-errors.log* | grep -o &amp;#39;request_id=&amp;#34;[^&amp;#34;]*&amp;#39; | awk -F&amp;#39;&amp;#34;&amp;#39; &amp;#39;{print $2}&amp;#39; | xargs -I{} zgrep {} access.log* | awk &amp;#39;{print $6&amp;#34; &amp;#34;$7}&amp;#39; | cut -c2- | sort | uniq -c | sort -nr 26 GET /admin/content 33 POST /system/ajax 43 POST /admin/content 51 POST /views/ajax 61 POST /admin/content?title=budget&amp;amp;type=resource&amp;amp;author=&amp;amp;status=All&amp;amp;vid=All 71 GET /agendas/items/all Conditional fix in https://docs.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Convert command not found</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/convert-command-not-found/</link>
+      <pubDate>Sat, 28 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/convert-command-not-found/</guid>
+      <description>
+        
+          
+            I was seeing this error from drupal logs:
+1User error: ImageMagick error 127: sh: convert: command not found in _imagemagick_convert_exec() (line 522 of /var/www/example.com/docroot/sites/all/modules/contrib/imagemagick/imagemagick.module). Which indicates that package ImageMagick wasn&#39;t installed. Since the machine in questions was CentOS7, I installed it as follows:
+1~$ sudo yum install ImageMagick -y Ref:
+ https://www.experts-exchange.com/questions/27962692/Drupal-7-error-ImageMagick-error-127.html https://www.drupal.org/node/153310 https://syslint.com/blog/tutorial/install-imagemagick-in-centos7/  
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Create separate php log file</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/create-separate-php-logfile/</link>
+      <pubDate>Sat, 28 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/create-separate-php-logfile/</guid>
+      <description>
+        
+          
+            Update php.ini, example
+1error_log = /tmp/error_php Then restart apache
+Details in https://www.redips.net/php/log-errors-separate-file/
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>curl to php code</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/curl-to-php/</link>
+      <pubDate>Sat, 28 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/curl-to-php/</guid>
+      <description>
+        
+          
+            See https://incarnate.github.io/curl-to-php/
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>How do you know the php.ini used via CLI</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/php.ini-path-via-cli/</link>
+      <pubDate>Sat, 28 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/php.ini-path-via-cli/</guid>
+      <description>
+        
+          
+            1&amp;lt;?php 2$inipath = php_ini_loaded_file(); 3if ($inipath) { 4echo &amp;#39;Loaded php.ini: &amp;#39; . $inipath; 5} else { 6echo &amp;#39;A php.ini file is not loaded&amp;#39;; 7} 8?&amp;gt; or
+1[icasimpan!@example.org ~]$ php -i |grep php.ini 2Configuration File (php.ini) Path =&amp;gt; /etc 3Loaded Configuration File =&amp;gt; /etc/php.ini But not that server and CLI used php.ini could be different. Details in https://stackoverflow.com/questions/14558150/how-to-know-which-php-ini-is-used
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Install php-curl 5.6 (Ubuntu)</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/install-php-curl-56-ubuntu/</link>
+      <pubDate>Sat, 28 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/install-php-curl-56-ubuntu/</guid>
+      <description>
+        
+          
+            1sudo apt-get install php5.6-curl More info in https://stackoverflow.com/questions/40567133/cannot-add-ppa-ppaondrej-php5-5-6
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Install PHP7.2 MongoDB</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/install-php-mongodb/</link>
+      <pubDate>Sat, 28 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/install-php-mongodb/</guid>
+      <description>
+        
+          
+            1$ git clone https://github.com/mongodb/mongo-php-driver.git 2$ cd mongo-php-driver 3$ git submodule sync &amp;amp;&amp;amp; git submodule update --init 4$ phpize 5$ ./configure 6$ make all -j 5 7$ sudo make install Details in https://www.php.net/manual/en/mongodb.installation.manual.php or https://stackoverflow.com/questions/46276978/install-mongodb-driver-in-cent-os-7-with-php7-1
+In my case, I also had to add to 20-mongodb.ini.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Installing mcrypt in php7.1 (Ubuntu)</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/install-mcrypt-php71-ubuntu/</link>
+      <pubDate>Sat, 28 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/install-mcrypt-php71-ubuntu/</guid>
+      <description>
+        
+          
+            1sudo add-apt-repository ppa:ondrej/php 2sudo apt-get update 3sudo apt-get install mcrypt php7.1-mcrypt 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Mcrypt error when running &#39;composer install&#39; from CLI</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/mcrypt-error-composer-install-from-cli/</link>
+      <pubDate>Sat, 28 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/mcrypt-error-composer-install-from-cli/</guid>
+      <description>
+        
+          
+            Verify if mcypt is really installed
+1php -m|grep -i mcrypt Counter-check from phpmyadmin. If it say installed there, issue is that php-cli can&#39;t see mcrypt as a module. Find the mcrypt definition and symlink similar to below:
+1ln -s /etc/php5/mods-available/mcrypt.ini /etc/php5/cli/conf.d/20-mcrypt.ini See details in https://stackoverflow.com/questions/16830405/laravel-requires-the-mcrypt-php-extension
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Multi-php installation</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/multi-php-installation/</link>
+      <pubDate>Sat, 28 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/multi-php-installation/</guid>
+      <description>
+        
+          
+             https://pehapkari.cz/blog/2017/03/27/multiple-php-versions-the-easy-way/ https://github.com/oerdnj/deb.sury.org/wiki/Managing-Multiple-Versions  
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>PHP Class &#39;DOMDocument&#39; not found</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/php-class-domdocument-not-found/</link>
+      <pubDate>Sat, 28 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/php-class-domdocument-not-found/</guid>
+      <description>
+        
+          
+            Sample error
+1[Wed Jan 10 14:56:38.031846 2018] [:error] [pid 9378] [client 115.85.11.98:23443] PHP Fatal error: Class &amp;#39;DOMDocument&amp;#39; not found in /var/www/sites/site.example.com/docroot/core/lib/Drupal/Component/Utility/Html.php on line 286 Solution:
+1apt-get install php5.6-dom See details in https://stackoverflow.com/questions/14395239/class-domdocument-not-found
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>php mailsender</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/php-test-mailsender/</link>
+      <pubDate>Sat, 28 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/php-test-mailsender/</guid>
+      <description>
+        
+          
+            A quick way to test mail sending via php:
+1&amp;lt;?php 2ini_set( &amp;#39;display_errors&amp;#39;, 1 ); 3error_reporting( E_ALL ); 4$from = &amp;#34;webmaster@example.com&amp;#34;; 5$to = &amp;#34;me@example.com&amp;#34;; 6$subject = &amp;#34;PHP Mail Test script&amp;#34;; 7$message = &amp;#34;This is a test to check the PHP Mail functionality&amp;#34;; 8$headers = &amp;#34;From:&amp;#34; . $from; 9mail($to,$subject,$message, $headers); 10echo &amp;#34;Test email sent&amp;#34;; 11?&amp;gt; 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>php max upload size</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/php-max-upload-size/</link>
+      <pubDate>Sat, 28 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/php-max-upload-size/</guid>
+      <description>
+        
+          
+             Check first where php.ini is (create a page that dumps &amp;quot;phpinfo()&amp;quot;) Edit upload_max_filesize=10M (assuming 10M is the requested limit) 2.1 Given that &#39;upload_max_filesize &amp;gt; 8M&#39; edit as well &amp;quot;post_max_size&amp;quot; Restart apache (reload doesn&#39;t change the setting)  
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>php modules location</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/php-modules-location/</link>
+      <pubDate>Sat, 28 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/php-modules-location/</guid>
+      <description>
+        
+          
+            1Check the current extension directory with: 23php-config --extension-dir 4and you can change it by setting extension_dir in php.ini: 56extension_dir=&amp;#34;/usr/lib64/php/modules&amp;#34; 7Don&amp;#39;t forget to restart Apache. See https://serverfault.com/questions/316156/change-php-modules-directory
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>PHP Remi modules installed outside ansible trick</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/php-remi-modules-installed-outside-ansible/</link>
+      <pubDate>Sat, 28 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/php-remi-modules-installed-outside-ansible/</guid>
+      <description>
+        
+          
+            Remi modules are installed in non-standard location. Geerlingguy&#39;s ansible role harmonizes it and install it in standard locations.
+So, if you&#39;re not familiar with standard locations, just do the following trick
+NOTE: In this case, I installed the memcache module for php7.1 from Remi&#39;s repo.
+1yum install -y php71-php-pecl-memcache.x86_64 Find where the memcache module is located
+1[root@example-staging www]# find / -iname *memcache*.so 2/usr/lib64/httpd/modules/mod_socache_memcache.so 3/opt/remi/php71/root/usr/lib64/php/modules/memcache.so Cross-check with a standard installed php module (you can see which modules via &#39;php -m&#39;)
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>php seem to not get installed when accessing a site</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/php-seems-not-installed-accessing-site/</link>
+      <pubDate>Sat, 28 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/php-seems-not-installed-accessing-site/</guid>
+      <description>
+        
+          
+            1apt-get install libapache2-mod-php 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>php7.1 memcache install in CentOS7</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/php7.1-memcache-install-centos7/</link>
+      <pubDate>Sat, 28 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/php7.1-memcache-install-centos7/</guid>
+      <description>
+        
+          
+            1yum install -y memcached libmemcached php71-php-pecl-memcache.x86_64 Harden memcached by at least making it listed only on loopback. Config is in /etc/sysonfig/memcached
+1PORT=&amp;#34;11211&amp;#34; 2USER=&amp;#34;memcached&amp;#34; 3MAXCONN=&amp;#34;1024&amp;#34; 4CACHESIZE=&amp;#34;64&amp;#34; 5OPTIONS=&amp;#34;-l 127.0.0.1 -U 0&amp;#34; Details in https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-memcached-on-centos-7
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Server used php.ini from CLI</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/server-php.ini-path/</link>
+      <pubDate>Sat, 28 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/server-php.ini-path/</guid>
+      <description>
+        
+          
+            1echo &amp;#39;&amp;lt;?php phpinfo(); ?&amp;gt;&amp;#39;|php 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>GD PHP Module Installation Error</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/php-gd-dependency-error-during-installation/</link>
+      <pubDate>Sat, 21 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/php-gd-dependency-error-during-installation/</guid>
+      <description>
+        
+          
+            It says something like &amp;quot;gd-last&amp;quot; needed but not found.
+Solution:
+Add remi-safe repo to your repository.
+See https://centos.org/forums/viewtopic.php?t=63158
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>BASH_FUNC_module error</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/bash_func_module-error/</link>
+      <pubDate>Mon, 09 Apr 2018 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/bash_func_module-error/</guid>
+      <description>
+        
+          
+            This error is seen as follows:
+1sh:module:line1:syntaxerror:unexpectedendoffile2sh:errorimportingfunctiondefinitionfor`BASH_FUNC_module&amp;#39;A lot of discussions has been done about it in https://github.com/drush-ops/drush/issues/2065#issuecomment-227820550 but the fix is made from /etc/php.ini:
+1disable_functions = pcntl_exec 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Phpinfo in Drupaladmin</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/phpinfo-in-drupaladmin/</link>
+      <pubDate>Mon, 09 Apr 2018 00:15:59 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/phpinfo-in-drupaladmin/</guid>
+      <description>
+        
+          
+            It can be found in
+1http://&amp;lt;site_url&amp;gt;/admin/reports/status/php 
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

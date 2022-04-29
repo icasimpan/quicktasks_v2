@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tweaks on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/tweaks/</link>
+    <description>Recent content in tweaks on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Mon, 15 Oct 2018 12:39:54 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/tweaks/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Some MySQL Tweaking Tips</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/some-mysql-tweaking-tips/</link>
+      <pubDate>Mon, 15 Oct 2018 12:39:54 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/some-mysql-tweaking-tips/</guid>
+      <description>
+        
+          
+            See https://serverfault.com/questions/42789/how-to-increase-memory-usage-in-mysql-server-to-improve-speed
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

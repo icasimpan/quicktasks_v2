@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>pod on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/pod/</link>
+    <description>Recent content in pod on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Wed, 19 Aug 2020 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/pod/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Shell into Kubernetes Pod</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/shell-into-kubernetes-pod/</link>
+      <pubDate>Wed, 19 Aug 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/shell-into-kubernetes-pod/</guid>
+      <description>
+        
+          
+            Syntax:
+1kubectl exec --stdin --tty &amp;lt;pod_name&amp;gt; -- /bin/bash Example, with the following pods
+1me@example:~$ kubectl get pod 2NAME READY STATUS RESTARTS AGE 3cert-manager-cainjector-68c88cc858-c2rhx 1/1 Running 0 109m 4cert-manager-d76d644df-pgqn9 1/1 Running 0 109m 5cert-manager-webhook-6dd68c6fbc-rzcln 1/1 Running 0 109m 6my-first-vanilla-drupal-6f6dd66b94-xldj7 1/1 Running 0 108m 7my-first-vanilla-drupal-mariadb-0 1/1 Running 0 108m 8traffic-cop-nginx-ingress-controller-5d685cfd59-pjfdg 1/1 Running 0 144m 9traffic-cop-nginx-ingress-default-backend-55f6bcb48-brg6b 1/1 Running 0 144m Run this to go to the drupal pod my-first-vanilla-drupal-6f6dd66b94-xldj7
+1kubectl exec --stdin --tty my-first-vanilla-drupal-6f6dd66b94-xldj7 -- /bin/bash It&#39;s just like any docker container or linux machine when you&#39;re in:
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

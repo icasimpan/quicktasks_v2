@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>locale on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/locale/</link>
+    <description>Recent content in locale on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Thu, 19 Aug 2021 12:10:45 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/locale/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Fix Garbage in Windows Japanese Locale</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/fix-garbage-in-windows-japanese-locale/</link>
+      <pubDate>Thu, 19 Aug 2021 12:10:45 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/fix-garbage-in-windows-japanese-locale/</guid>
+      <description>
+        
+          
+            If you see garbage characters instead of the expected non-English language, fix is easy.
+ Install corresponding language pack (Japanese in this case) https://support.microsoft.com/en-us/windows/language-packs-for-windows-a5094319-a92d-18de-5b53-1cfc697cfca8 Set the locale for non-unicode programs. See https://www.digitalcitizen.life/changing-display-language-used-non-unicode-programs/  
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

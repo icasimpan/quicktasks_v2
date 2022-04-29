@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>url-change on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/url-change/</link>
+    <description>Recent content in url-change on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Sat, 28 Sep 2019 23:17:11 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/url-change/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Wordpress URL change upon migration to another domain</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/wordpress-url-change-migration-to-another-domain/</link>
+      <pubDate>Sat, 28 Sep 2019 23:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/wordpress-url-change-migration-to-another-domain/</guid>
+      <description>
+        
+          
+            The easiest is to add it to &amp;quot;wp-config.php&amp;quot;. Something like:
+1define(&amp;#39;WP_HOME&amp;#39;,&amp;#39;http://NEW_DOMAIN.com/&amp;#39;); 2define(&amp;#39;WP_SITEURL&amp;#39;,&amp;#39;http://NEW_DOMAIN.com/&amp;#39;); You can test it in curl and see if it works:
+1curl -IL http://NEW_DOMAIN.com URL change can be done via wp-cli. Do the following:
+1wp search-replace &amp;#39;OLD_DOMAIN.com&amp;#39; &amp;#39;NEW_DOMAIN.com&amp;#39; --dry-run Note that the above is a dry-run or practice only. If x in not zero in the bottom statement of &#39;x replacements&#39;:
+1~$ wp search-replace &amp;#39;http://OLD_DOMAIN.com&amp;#39; &amp;#39;http://NEW_DOMAIN.com&amp;#39; --dry-run 2+------------------+-----------------------+--------------+------+ 3| Table | Column | Replacements | Type | 4+------------------+-----------------------+--------------+------+ 5| wp_commentmeta | meta_key | 0 | SQL | 6| wp_commentmeta | meta_value | 0 | SQL | 7| wp_comments | comment_author | 0 | SQL | 8| wp_comments | comment_author_email | 0 | SQL | 9| wp_comments | comment_author_url | 0 | SQL | 10| wp_comments | comment_author_IP | 0 | SQL | 11| wp_comments | comment_content | 0 | SQL | 12| wp_comments | comment_approved | 0 | SQL | 13| wp_comments | comment_agent | 0 | SQL | 14| wp_comments | comment_type | 0 | SQL | 15| wp_links | link_url | 0 | SQL | 16| wp_links | link_name | 0 | SQL | 17| wp_links | link_image | 0 | SQL | 18| wp_links | link_target | 0 | SQL | 19| wp_links | link_description | 0 | SQL | 20| wp_links | link_visible | 0 | SQL | 21| wp_links | link_rel | 0 | SQL | 22| wp_links | link_notes | 0 | SQL | 23| wp_links | link_rss | 0 | SQL | 24| wp_options | option_name | 0 | SQL | 25| wp_options | option_value | 2 | PHP | 26| wp_options | autoload | 0 | SQL | 27| wp_postmeta | meta_key | 0 | SQL | 28| wp_postmeta | meta_value | 0 | SQL | 29| wp_posts | post_content | 2 | SQL | 30| wp_posts | post_title | 0 | SQL | 31| wp_posts | post_excerpt | 0 | SQL | 32| wp_posts | post_status | 0 | SQL | 33| wp_posts | comment_status | 0 | SQL | 34| wp_posts | ping_status | 0 | SQL | 35| wp_posts | post_password | 0 | SQL | 36| wp_posts | post_name | 0 | SQL | 37| wp_posts | to_ping | 0 | SQL | 38| wp_posts | pinged | 0 | SQL | 39| wp_posts | post_content_filtered | 0 | SQL | 40| wp_posts | guid | 3 | SQL | 41| wp_posts | post_type | 0 | SQL | 42| wp_posts | post_mime_type | 0 | SQL | 43| wp_term_taxonomy | taxonomy | 0 | SQL | 44| wp_term_taxonomy | description | 0 | SQL | 45| wp_termmeta | meta_key | 0 | SQL | 46| wp_termmeta | meta_value | 0 | SQL | 47| wp_terms | name | 0 | SQL | 48| wp_terms | slug | 0 | SQL | 49| wp_usermeta | meta_key | 0 | SQL | 50| wp_usermeta | meta_value | 0 | PHP | 51| wp_users | user_login | 0 | SQL | 52| wp_users | user_nicename | 0 | SQL | 53| wp_users | user_email | 0 | SQL | 54| wp_users | user_url | 1 | SQL | 55| wp_users | user_activation_key | 0 | SQL | 56| wp_users | display_name | 0 | SQL | 57+------------------+-----------------------+--------------+------+ 58Success: 8 replacements to be made.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

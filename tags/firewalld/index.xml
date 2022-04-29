@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>firewalld on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/firewalld/</link>
+    <description>Recent content in firewalld on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Sat, 28 Sep 2019 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/firewalld/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>FirewallD Reading Materials</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/firewalld-reading-materials/</link>
+      <pubDate>Sat, 28 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/firewalld-reading-materials/</guid>
+      <description>
+        
+          
+             https://www.certdepot.net/rhel7-get-started-firewalld/ https://www.linuxjournal.com/content/understanding-firewalld-multi-zone-configurations https://computingforgeeks.com/install-and-use-firewalld-on-ubuntu-18-04-ubuntu-16-04/  
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Specific IP Connection to SSH Using Firewalld Rich Rules</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/specific-ip-connection-to-ssh-using-firewalld-rich-rules/</link>
+      <pubDate>Sat, 28 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/specific-ip-connection-to-ssh-using-firewalld-rich-rules/</guid>
+      <description>
+        
+          
+            1sudo firewall-cmd --add-rich-rule &amp;#39;rule family=&amp;#34;ipv4&amp;#34; source address=&amp;#34;192.168.10.9&amp;#34; service name=&amp;#34;ssh&amp;#34; accept&amp;#39; --permanent 2sudo firewall-cmd --remove-service ssh --permanent ## needed, otherwise ssh will still be allowed for all 3sudo systemctl reload firewalld See details in https://access.redhat.com/discussions/1342573
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

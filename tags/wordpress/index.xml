@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>wordpress on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/wordpress/</link>
+    <description>Recent content in wordpress on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Sat, 28 Sep 2019 23:17:11 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/wordpress/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Basic Wordpress Setup</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/basic-wordpress-setup/</link>
+      <pubDate>Sat, 28 Sep 2019 23:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/basic-wordpress-setup/</guid>
+      <description>
+        
+          
+            1cd /path/to/wordpress/docroot 2wp-cli db export ../backups/example.org_prodDB-icasimpan-2019.02.07.sql 34## On new SITE (example.net) 5cd /path/to/new-wordpress/docroot 6## update &amp;#39;wp-config.php&amp;#39; if needed 7wp-cli db clean 8wp-cli db import /path/to/wordpress/docroot/backups/site_prodDB-icasimpan-2019.02.07.sql 9rsync -avz /path/to/wordpress/docroot/wp-content/ /path/to/new-wordpress/docroot/wp-content/ 10wp-cli search-replace example.org example.net ## PUT &amp;#39;--dry-run&amp;#39; to test first 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>DB Backup via wp_cli</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/db-backup-in-wp_cli/</link>
+      <pubDate>Sat, 28 Sep 2019 23:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/db-backup-in-wp_cli/</guid>
+      <description>
+        
+          
+            1cd /path/to/wordpress 2wp db export backups/name-of-db-backup.sql 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Errors in Project NAMI (wordpress on mssql)</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/errors-in-project-nami-wp-on-mssql/</link>
+      <pubDate>Sat, 28 Sep 2019 23:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/errors-in-project-nami-wp-on-mssql/</guid>
+      <description>
+        
+          
+            1Warning: file_put_contents(C:/inetpub/sites/example-wimp13/wp-includes/fields_map.parsed_types.php): failed to open stream: Permission denied in C:\inetpub\sites\example-wimp13\wp-includes\fields_map.php on line 202 2Warning: include(C:\inetpub\sites\error_page.php): failed to open stream: No such file or directory in C:\inetpub\sites\example-wimp13\wp-includes\fields_map.php on line 209 3Warning: include(): Failed opening &amp;#39;C:\inetpub\sites\error_page.php&amp;#39; for inclusion (include_path=&amp;#39;.;C:\php\pear&amp;#39;) in C:\inetpub\sites\example-wimp13\wp-includes\fields_map.php on line 209 Fix is to add the file &amp;quot;wp-includes\fields_map.parsed_types.php&amp;quot; with content
+1&amp;lt;?php return array ( &amp;#39;&amp;#39; =&amp;gt; array ( ), ) ?&amp;gt; and add write permission to IUSR. See details in https://github.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Install wp_cli</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/install-wp_cli/</link>
+      <pubDate>Sat, 28 Sep 2019 23:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/install-wp_cli/</guid>
+      <description>
+        
+          
+            1curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar 2php wp-cli.phar --info ## check if it&amp;#39;s working. 3chmod +x wp-cli.phar 4sudo mv wp-cli.phar /usr/local/bin/wp 5wp --info ## re-check if it&amp;#39;s working as &amp;#39;wp&amp;#39; Details in https://wp-cli.org/
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Plugin install without FTP Credentials</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/plugin-install-without-ftp-credentials/</link>
+      <pubDate>Sat, 28 Sep 2019 23:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/plugin-install-without-ftp-credentials/</guid>
+      <description>
+        
+          
+            Normal behavior of Wordpress when installing plugin is to ask for FTP credentials. So to fix the problem, just add this line to wp-config.php (of course, make sure permission are fine).
+1define(&amp;#39;FS_METHOD&amp;#39;,&amp;#39;direct&amp;#39;); More troubleshooting details in https://www.digitalocean.com/community/questions/wordpress-asking-for-ftp-credentials
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Where is the database config </title>
+      <link>https://ismael.casimpan.com/quicktasks/post/where-is-db-config/</link>
+      <pubDate>Sat, 28 Sep 2019 23:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/where-is-db-config/</guid>
+      <description>
+        
+          
+            1wp-config.php 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Wordpress URL change</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/wordpress-url-change/</link>
+      <pubDate>Sat, 28 Sep 2019 23:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/wordpress-url-change/</guid>
+      <description>
+        
+          
+            1in database/wp_options (&amp;#39;siteurl&amp;#39;) 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Wordpress URL change upon migration to another domain</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/wordpress-url-change-migration-to-another-domain/</link>
+      <pubDate>Sat, 28 Sep 2019 23:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/wordpress-url-change-migration-to-another-domain/</guid>
+      <description>
+        
+          
+            The easiest is to add it to &amp;quot;wp-config.php&amp;quot;. Something like:
+1define(&amp;#39;WP_HOME&amp;#39;,&amp;#39;http://NEW_DOMAIN.com/&amp;#39;); 2define(&amp;#39;WP_SITEURL&amp;#39;,&amp;#39;http://NEW_DOMAIN.com/&amp;#39;); You can test it in curl and see if it works:
+1curl -IL http://NEW_DOMAIN.com URL change can be done via wp-cli. Do the following:
+1wp search-replace &amp;#39;OLD_DOMAIN.com&amp;#39; &amp;#39;NEW_DOMAIN.com&amp;#39; --dry-run Note that the above is a dry-run or practice only. If x in not zero in the bottom statement of &#39;x replacements&#39;:
+1~$ wp search-replace &amp;#39;http://OLD_DOMAIN.com&amp;#39; &amp;#39;http://NEW_DOMAIN.com&amp;#39; --dry-run 2+------------------+-----------------------+--------------+------+ 3| Table | Column | Replacements | Type | 4+------------------+-----------------------+--------------+------+ 5| wp_commentmeta | meta_key | 0 | SQL | 6| wp_commentmeta | meta_value | 0 | SQL | 7| wp_comments | comment_author | 0 | SQL | 8| wp_comments | comment_author_email | 0 | SQL | 9| wp_comments | comment_author_url | 0 | SQL | 10| wp_comments | comment_author_IP | 0 | SQL | 11| wp_comments | comment_content | 0 | SQL | 12| wp_comments | comment_approved | 0 | SQL | 13| wp_comments | comment_agent | 0 | SQL | 14| wp_comments | comment_type | 0 | SQL | 15| wp_links | link_url | 0 | SQL | 16| wp_links | link_name | 0 | SQL | 17| wp_links | link_image | 0 | SQL | 18| wp_links | link_target | 0 | SQL | 19| wp_links | link_description | 0 | SQL | 20| wp_links | link_visible | 0 | SQL | 21| wp_links | link_rel | 0 | SQL | 22| wp_links | link_notes | 0 | SQL | 23| wp_links | link_rss | 0 | SQL | 24| wp_options | option_name | 0 | SQL | 25| wp_options | option_value | 2 | PHP | 26| wp_options | autoload | 0 | SQL | 27| wp_postmeta | meta_key | 0 | SQL | 28| wp_postmeta | meta_value | 0 | SQL | 29| wp_posts | post_content | 2 | SQL | 30| wp_posts | post_title | 0 | SQL | 31| wp_posts | post_excerpt | 0 | SQL | 32| wp_posts | post_status | 0 | SQL | 33| wp_posts | comment_status | 0 | SQL | 34| wp_posts | ping_status | 0 | SQL | 35| wp_posts | post_password | 0 | SQL | 36| wp_posts | post_name | 0 | SQL | 37| wp_posts | to_ping | 0 | SQL | 38| wp_posts | pinged | 0 | SQL | 39| wp_posts | post_content_filtered | 0 | SQL | 40| wp_posts | guid | 3 | SQL | 41| wp_posts | post_type | 0 | SQL | 42| wp_posts | post_mime_type | 0 | SQL | 43| wp_term_taxonomy | taxonomy | 0 | SQL | 44| wp_term_taxonomy | description | 0 | SQL | 45| wp_termmeta | meta_key | 0 | SQL | 46| wp_termmeta | meta_value | 0 | SQL | 47| wp_terms | name | 0 | SQL | 48| wp_terms | slug | 0 | SQL | 49| wp_usermeta | meta_key | 0 | SQL | 50| wp_usermeta | meta_value | 0 | PHP | 51| wp_users | user_login | 0 | SQL | 52| wp_users | user_nicename | 0 | SQL | 53| wp_users | user_email | 0 | SQL | 54| wp_users | user_url | 1 | SQL | 55| wp_users | user_activation_key | 0 | SQL | 56| wp_users | display_name | 0 | SQL | 57+------------------+-----------------------+--------------+------+ 58Success: 8 replacements to be made.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

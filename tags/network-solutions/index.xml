@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>network-solutions on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/network-solutions/</link>
+    <description>Recent content in network-solutions on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Mon, 27 Jul 2020 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/network-solutions/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Nginx SSL PEM_read_bio End of Line Error</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/nginx-ssl-pem_read_bio-end-of-line-error/</link>
+      <pubDate>Mon, 27 Jul 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/nginx-ssl-pem_read_bio-end-of-line-error/</guid>
+      <description>
+        
+          
+            We had this ssl cert issued by Network Solutions
+1root@www:/etc/nginx/conf.d/ssl/example-2020# unzip -l EXAMPLE.ORG.zip 2Archive: EXAMPLE.ORG.zip 3Length Date Time Name 4--------- ---------- ----- ---- 52150 2020-07-14 16:59 DV_NetworkSolutionsDVServerCA2.crt 6Network Solutions DV Intermediate CA 72093 2020-07-14 16:59 DV_USERTrustRSACertificationAuthority.crt 8Network Solutions DV Intermediate CA 2 92174 2020-07-14 16:59 EXAMPLE.ORG.crt 10Domain certificate 11--------- ------- 126417 3 files I created a bundle as this was for Nginx cat EXAMPLE.ORG.crt DV_NetworkSolutionsDVServerCA2.crt DV_USERTrustRSACertificationAuthority.crt &amp;gt; www.example.org-bundle.crt
+When I tried verifying, I got this error:
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

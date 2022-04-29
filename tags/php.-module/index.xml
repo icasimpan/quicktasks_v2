@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>php. module on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/php.-module/</link>
+    <description>Recent content in php. module on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Sat, 28 Sep 2019 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/php.-module/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Unable to load dynamic library &#39;/usr/lib/php5/20131226/curl.so&#39;</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/unable-to-load-dynamic-library-curl.so/</link>
+      <pubDate>Sat, 28 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/unable-to-load-dynamic-library-curl.so/</guid>
+      <description>
+        
+          
+            Full error as follows:
+1PHP Warning: PHP Startup: Unable to load dynamic library &amp;#39;/usr/lib/php5/20131226/curl.so&amp;#39; - /usr/lib/php5/20131226/curl.so: undefined symbol: zend_unset_property in Unknown on line 0 Solution: See https://ismael.casimpan.com/quicktasks-php/install-php-curl-56-ubuntu/
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

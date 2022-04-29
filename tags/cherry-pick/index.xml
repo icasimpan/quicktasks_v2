@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>cherry-pick on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/cherry-pick/</link>
+    <description>Recent content in cherry-pick on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Fri, 23 Nov 2018 06:03:11 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/cherry-pick/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Git Cherry-Pick Merge</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/git-cherrypick/</link>
+      <pubDate>Fri, 23 Nov 2018 06:03:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/git-cherrypick/</guid>
+      <description>
+        
+          
+            Cherry Picking in Git is quite easy: For single commit
+1git checkout &amp;lt;destination_branch&amp;gt; 2git cherry-pick &amp;lt;hash-here&amp;gt; See https://swsblog.stanford.edu/blog/cherry-picking-small-git-lesson
+Multiple commit NOTE: only the commits between &#39;initial_commit_hash&#39; and &#39;terminal_commit_hash&#39; are merged.
+1git checkout &amp;lt;destination_branch&amp;gt; 2git cherry-pick &amp;lt;initial_commit_hash&amp;gt;..&amp;lt;terminal_commit_hash&amp;gt; To include the &#39;initial_commit_hash&#39; and &#39;terminal_commit_hash&#39;, use the following:
+1git cherry-pick &amp;lt;initial_commit_hash&amp;gt;^..&amp;lt;terminal_commit_hash&amp;gt; Note that conflicts would pause cherry-picking and ask to resolve the conflict. You can then continue as follows:
+1git cherry-pick --continue See details in https://medium.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

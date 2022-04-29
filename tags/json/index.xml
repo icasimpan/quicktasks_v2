@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>json on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/json/</link>
+    <description>Recent content in json on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Tue, 26 Apr 2022 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/json/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>JSON Basics</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/json-basics/</link>
+      <pubDate>Tue, 26 Apr 2022 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/json-basics/</guid>
+      <description>
+        
+          
+            JSON or JavaScript Object Notation is a data representation standard shown in a key:value pair, just like a traditional JavaScript object.
+Here&#39;s the key info you need to know about it:
+ All the data in the file must be surrounded by curly braces if you&#39;re representing it as an object, and in square brackets if it is an array. Single quotes are not allowed The key in each JSON must be unique and must be in double quotes Numbers must not be enclosed in double-quotes, otherwise they will be treated as strings.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

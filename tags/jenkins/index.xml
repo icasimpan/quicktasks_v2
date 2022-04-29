@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>jenkins on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/jenkins/</link>
+    <description>Recent content in jenkins on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Mon, 06 Jul 2020 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/jenkins/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Fix Jenkins Access Problem</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/fix-jenkins-access-problem/</link>
+      <pubDate>Mon, 06 Jul 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/fix-jenkins-access-problem/</guid>
+      <description>
+        
+          
+             Manage Jenkins &amp;gt; Configure Global Security In &amp;quot;Authorization&amp;quot;, change to &amp;quot;Logged-in users can do anything&amp;quot; but uncheck &amp;quot;Allow anonymous read access&amp;quot;  
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Install Jenkins LTS via Ansible</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/install-jenkins-lts-via-ansible/</link>
+      <pubDate>Mon, 06 Jul 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/install-jenkins-lts-via-ansible/</guid>
+      <description>
+        
+          
+            Personally, I&#39;d like to use other&#39;s work as much as possible in its original state. With ansible roles, authors usually name their repos as &#39;ansible-role-java&#39; but internally, it&#39;s something like &#39;geerlingguy.java&#39; which is what they put in dependencies. Now, if you simply clone as is, you will need to change the dependencies name.
+This is the case with Geerlingguy&#39;s jenkins role, where I hit on errors in java due to the name of the dependencies.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Install Jenkins Plugin via Ansible</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/install-jenkins-plugin-via-ansible/</link>
+      <pubDate>Mon, 06 Jul 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/install-jenkins-plugin-via-ansible/</guid>
+      <description>
+        
+          
+            1example@user:/opt/ansible-playbooks$ cat vars/jenkins.yml 2## Search names from https://plugins.jenkins.io/ 3jenkins_plugins: 4- git 5- hipchat 6- log-parser 7- mask-passwords 8- ssh-agent 9- ssh 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Jenkins Gmail SMTP</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/jenkins-gmail-smtp/</link>
+      <pubDate>Mon, 06 Jul 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/jenkins-gmail-smtp/</guid>
+      <description>
+        
+          
+            Manage Jenkins &amp;gt; Configure System &amp;gt; E-mail Notification Input your gmail address (also works for Domains with gmail backends) Check &amp;quot;Use SSL&amp;quot; SMTP Port 465  Then, you should receive an email to confirm. Configure and allow sending.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Migrate Jenkins Jobs to New Server</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/migrate-jenkins-jobs-new-server/</link>
+      <pubDate>Mon, 06 Jul 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/migrate-jenkins-jobs-new-server/</guid>
+      <description>
+        
+          
+            https://staxmanade.com/2015/01/how-to-migrate-a-jenkins-job-to-new-jenkins-server/
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

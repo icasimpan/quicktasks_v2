@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>restore on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/restore/</link>
+    <description>Recent content in restore on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Fri, 30 Jul 2021 12:42:45 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/restore/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Restore Pgsql File</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/restore-pgsql-file/</link>
+      <pubDate>Fri, 30 Jul 2021 12:42:45 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/restore-pgsql-file/</guid>
+      <description>
+        
+          
+            1psql -h db -U mduser md &amp;lt; sqlfile.sql 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Retrieve SSH Public Key From Private Key</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/retrieve-ssh-public-key-from-private-key/</link>
+      <pubDate>Thu, 02 Apr 2020 18:36:44 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/retrieve-ssh-public-key-from-private-key/</guid>
+      <description>
+        
+          
+            1ssh-keygen -y -f ~/.ssh/id_rsa &amp;gt; ~/.ssh/id_rsa.pub See details in https://askubuntu.com/questions/53553/how-do-i-retrieve-the-public-key-from-a-ssh-private-key
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Restore Database via Drush</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/restore-database-via-drush/</link>
+      <pubDate>Mon, 09 Apr 2018 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/restore-database-via-drush/</guid>
+      <description>
+        
+          
+            1drush sqlc &amp;lt; database.sql 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Restore One Table</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/restore-one-table/</link>
+      <pubDate>Sun, 08 Apr 2018 23:22:49 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/restore-one-table/</guid>
+      <description>
+        
+          
+            1mysql -u root -p your_DB &amp;lt; ./your_system.sql More details in https://stackoverflow.com/questions/9696249/restoring-a-mysql-table-back-to-the-database
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

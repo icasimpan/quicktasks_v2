@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>configuration on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/configuration/</link>
+    <description>Recent content in configuration on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Sat, 21 Sep 2019 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/configuration/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Drupal 8: Entities neeeds to be deleted before importing error</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/drupal8-entities-needs-deleted-before-import/</link>
+      <pubDate>Sat, 21 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/drupal8-entities-needs-deleted-before-import/</guid>
+      <description>
+        
+          
+            The following was seen during configuration import (drush cim)
+1The import failed due to the following reasons: 2Entities exist of type &amp;lt;em class=&amp;#34;placeholder&amp;#34;&amp;gt;Shortcut link&amp;lt;/em&amp;gt; and &amp;lt;em class=&amp;#34;placeholder&amp;#34;&amp;gt;Shortcut set&amp;lt;/em&amp;gt; &amp;lt;em class=&amp;#34;placeholder&amp;#34;&amp;gt;Default&amp;lt;/em&amp;gt;. These entities need to 3be deleted before importing. Fix by running this:
+1drush ev &amp;#39;\Drupal::entityManager()-&amp;gt;getStorage(&amp;#34;shortcut_set&amp;#34;)-&amp;gt;load(&amp;#34;default&amp;#34;)-&amp;gt;delete();&amp;#39; Reference: https://www.drupal.org/forum/support/post-installation/2015-12-20/problem-during-import-configuration
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>[InnoDB] Fatal error: cannot allocate memory for the buffer pool</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/innodb-fatal-error-cannot-allocate-memory-buffer-pool/</link>
+      <pubDate>Sat, 29 Dec 2018 09:47:00 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/innodb-fatal-error-cannot-allocate-memory-buffer-pool/</guid>
+      <description>
+        
+          
+            From /var/log/mariadb/mariadb.log, something like
+1150515 12:10:45 InnoDB: Completed initialization of buffer pool 2150515 12:10:45 InnoDB: Fatal error: cannot allocate memory for the buffer pool 3150515 12:10:45 [ERROR] Plugin &amp;#39;InnoDB&amp;#39; init function returned error. 4150515 12:10:45 [ERROR] Plugin &amp;#39;InnoDB&amp;#39; registration as a STORAGE ENGINE failed. 5150515 12:10:45 [ERROR] Unknown/unsupported storage engine: InnoDB 6150515 12:10:45 [ERROR] Aborting Ensure to allocate 50% of max machine RAM. Assuming you have 2GB in the machine, you&#39;ll need
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Check Current Character Set Settings in MySQL</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/check-current-character-set-settings-in-mysql/</link>
+      <pubDate>Mon, 15 Oct 2018 07:46:36 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/check-current-character-set-settings-in-mysql/</guid>
+      <description>
+        
+          
+            1mysql&amp;gt; SHOW VARIABLES WHERE Variable_name LIKE &amp;#39;character\_set\_%&amp;#39; OR Variable_name LIKE &amp;#39;collation%&amp;#39;; Sample output as follows: Image not found  a.warning-link { color: inherit !important; font-weight: inherit !important; text-decoration: underline !important; border-bottom: none !important; }  Web path: https://ismael.casimpan.com/img/check-mysql-charset-settings.png
+Disk path: static/img/check-mysql-charset-settings.png
+Using Page Bundles: false
+ 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Checking Supported Character Set</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/checking-supported-character-set/</link>
+      <pubDate>Mon, 15 Oct 2018 07:41:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/checking-supported-character-set/</guid>
+      <description>
+        
+          
+            1mysql&amp;gt; SHOW CHARACTER SET; 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>settings.php: Few Ways to Add Changes</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/settings-php-few-ways-add-changes/</link>
+      <pubDate>Mon, 09 Apr 2018 00:20:33 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/settings-php-few-ways-add-changes/</guid>
+      <description>
+        
+          
+            Method 1 (env.json) in drupalroot/sites/default/env.json
+1{ 2&amp;#34;conf_dir&amp;#34;: &amp;#34;/etc/drupal/site_identifier_here/default&amp;#34; 3} in /etc/drupal/site_identifier_here/default, there is then a file globals.conf.d/globals.default.json with content:
+1{ 2&amp;#34;id&amp;#34;: &amp;#34;default&amp;#34;, 3&amp;#34;databases&amp;#34;: { 4&amp;#34;default&amp;#34;: { 5&amp;#34;default&amp;#34;: { 6&amp;#34;database&amp;#34;: &amp;#34;yourDB&amp;#34;, 7&amp;#34;username&amp;#34;: &amp;#34;yourDBA&amp;#34;, 8&amp;#34;password&amp;#34;: &amp;#34;yourPASS&amp;#34;, 9&amp;#34;host&amp;#34;: &amp;#34;127.0.0.1&amp;#34;, 10&amp;#34;driver&amp;#34;: &amp;#34;mysql&amp;#34; 11} 12} 13}, 14&amp;#34;uri&amp;#34;: &amp;#34;example.com&amp;#34;, 15&amp;#34;doc_root&amp;#34;: &amp;#34;www&amp;#34;, 16&amp;#34;chef_type&amp;#34;: &amp;#34;data_bag_item&amp;#34;, 17&amp;#34;data_bag&amp;#34;: &amp;#34;drupal&amp;#34; 18} 1920*Method 2: Referenced from settings.php* 2122See https://ismael.casimpan.com/quicktasks-drupal/post/settings-php-including-settings-local/ 2324With sample settings.local.php in https://ismael.casimpan.com/quicktasks-drupal/post/settings-php-sample-settings-local/ 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>BASH_FUNC_module error</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/bash_func_module-error/</link>
+      <pubDate>Mon, 09 Apr 2018 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/bash_func_module-error/</guid>
+      <description>
+        
+          
+            This error is seen as follows:
+1sh:module:line1:syntaxerror:unexpectedendoffile2sh:errorimportingfunctiondefinitionfor`BASH_FUNC_module&amp;#39;A lot of discussions has been done about it in https://github.com/drush-ops/drush/issues/2065#issuecomment-227820550 but the fix is made from /etc/php.ini:
+1disable_functions = pcntl_exec 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Drupal 8: Site UUID in source storage does not match the target storage</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/drupal8-site-uuid-in-source-storage-does-not-match-the-target-storage/</link>
+      <pubDate>Mon, 09 Apr 2018 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/drupal8-site-uuid-in-source-storage-does-not-match-the-target-storage/</guid>
+      <description>
+        
+          
+            Problem
+You encountered this error when running &#39;drush cim&#39;:
+1Site UUID in source storage does not match the target storage. As mentioned, UUID no longer match. To fix, get the UUID in config/sync directory, something like below:
+1awk &amp;#39;{for (I=1;I&amp;lt;=NF;I++) if ($I == &amp;#34;uuid:&amp;#34;) {print $(I+1)};}&amp;#39; sites/default/config/sync/system.site.yml and assuming you get this value:
+1d5835485-ed5e-433a-b782-41eca3ef7727 Set that to current installation as follows:
+1drush cset system.site uuid d5835485-ed5e-433a-b782-41eca3ef7727 -y Rerun &#39;drush cim&#39;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>pantheon.io: drush aliases download</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/pantheon-drush-aliases-download/</link>
+      <pubDate>Mon, 09 Apr 2018 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/pantheon-drush-aliases-download/</guid>
+      <description>
+        
+          
+            Your Username &amp;gt; Dashboard &amp;gt; Drush Aliases
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>settings.php: Adding reference to settings.local.php</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/settings-php-including-settings-local/</link>
+      <pubDate>Mon, 09 Apr 2018 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/settings-php-including-settings-local/</guid>
+      <description>
+        
+          
+            1/** 2* Load local development override configuration, if available. 3* 4* Use settings.local.php to override variables on secondary (staging, 5* development, etc) installations of this site. Typically used to disable 6* caching, JavaScript/CSS compression, re-routing of outgoing emails, and 7* other things that should not happen on development and testing sites. 8* 9* Keep this code block at the end of this file to take full effect. 10*/ 11if (file_exists(__DIR__ .
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Clear Drupal Cache Outside Drush</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/clear-drupal-cache-outside-drush/</link>
+      <pubDate>Sun, 08 Apr 2018 23:45:58 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/clear-drupal-cache-outside-drush/</guid>
+      <description>
+        
+          
+            From drupal admin UI: Administration &amp;gt; Configuration &amp;gt; Development &amp;gt; Performance
+But will work only if you have drupal admin login. Otherwise, you need to install drush instead and do the &#39;drush cc all&#39; from there. Some other options -&amp;gt; https://www.drupal.org/docs/7/administering-drupal-7-site/clearing-or-rebuilding-drupals-cache
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

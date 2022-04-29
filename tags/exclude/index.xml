@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>exclude on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/exclude/</link>
+    <description>Recent content in exclude on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Thu, 25 Oct 2018 09:24:00 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/exclude/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Rsync Excluding Inner Folders</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/rsync-excluding-inner-folders/</link>
+      <pubDate>Thu, 25 Oct 2018 09:24:00 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/rsync-excluding-inner-folders/</guid>
+      <description>
+        
+          
+            In this example, we want to sync example.com except &#39;example.com/temp_uploads&#39;
+1rsync -avz --exclude &amp;#39;example.com/temp_uploads&amp;#39; example.com /var/www_backups NOTE:
+ exclude files are always relative to current directory. to exclude multiple directories, just use an additional &#39;--exclude&#39; statement.  details in https://www.thegeekstuff.com/2011/01/rsync-exclude-files-and-folders
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

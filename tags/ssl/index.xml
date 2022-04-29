@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ssl on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/ssl/</link>
+    <description>Recent content in ssl on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Fri, 12 Jun 2020 23:17:11 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/ssl/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SSL Connect Error on Git Fetch</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/ssl-connect-error-on-git-fetch/</link>
+      <pubDate>Fri, 12 Jun 2020 23:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/ssl-connect-error-on-git-fetch/</guid>
+      <description>
+        
+          
+            1~$ git fetch 2fatal: unable to access &amp;#39;https://github.com/icasimpan/example.git/&amp;#39;: SSL connect error Fixed by:
+1yum update -y nss curl libcurl 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>After Upgrading Ansible, pip had an issue SSL_ST_INIT</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/ssl_st_init-pip-issue-ansible-upgrade/</link>
+      <pubDate>Sat, 21 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/ssl_st_init-pip-issue-ansible-upgrade/</guid>
+      <description>
+        
+          
+            1sudo apt-get remove python-openssl 2curl -o ./get-pip.py https://bootstrap.pypa.io/get-pip.py 3sudo python2 ./get-pip.py Replace with yum if in RH-based OS. See https://stackoverflow.com/questions/43267157/python-attributeerror-module-object-has-no-attribute-ssl-st-init for details.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

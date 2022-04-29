@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>update on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/update/</link>
+    <description>Recent content in update on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Mon, 30 Sep 2019 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/update/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Updating Debian Kernel Only</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/updating-debian-kernel-only/</link>
+      <pubDate>Mon, 30 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/updating-debian-kernel-only/</guid>
+      <description>
+        
+          
+            1sudo apt-get update 2sudo apt-get install linux-virtual See details in https://www.digitalocean.com/community/tutorials/how-to-update-a-digitalocean-server-s-kernel#upgrading-only-the-latest-kernel
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Fix the identity used for a commit</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/fix-identity-used-in-commit/</link>
+      <pubDate>Sun, 08 Apr 2018 23:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/fix-identity-used-in-commit/</guid>
+      <description>
+        
+          
+            1git commit --amend --reset-author 
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

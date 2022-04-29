@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>postgresql on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/postgresql/</link>
+    <description>Recent content in postgresql on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Mon, 06 Sep 2021 09:28:45 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/postgresql/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Copy Tables to Backup Tables in Postgresql</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/copy-tables-to-backup-table-in-postgresql/</link>
+      <pubDate>Mon, 06 Sep 2021 09:28:45 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/copy-tables-to-backup-table-in-postgresql/</guid>
+      <description>
+        
+          
+            Copy tables to an _old as backup 1CREATE TABLE new_table AS 2TABLE existing_table; See details in https://www.postgresqltutorial.com/postgresql-copy-table/
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Verify Table Descriptions in Postgresql Via Psql</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/verify-table-descriptions-in-postgresql-via-psql/</link>
+      <pubDate>Mon, 06 Sep 2021 09:28:45 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/verify-table-descriptions-in-postgresql-via-psql/</guid>
+      <description>
+        
+          
+            1\d+ &amp;lt;table_name&amp;gt; Without the &amp;quot;+&amp;quot;, only normal table descriptions will be shown.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Rename An Index in Postgresql</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/rename-index-in-postgresql/</link>
+      <pubDate>Mon, 06 Sep 2021 09:27:45 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/rename-index-in-postgresql/</guid>
+      <description>
+        
+          
+            Rename an Index 1ALTER INDEX the_oldtablename_idx01 RENAME TO thenewtablename_idx01 NOTE: This has similar syntax for renaming primary key. The only difference noted is that for primary key, the suffix is always _pkey. In index, it&#39;s either idxNN or idexNN (where NN is a nunber, e.g. &#39;01&#39;)
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Update Table Column Comments in Postgresql</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/update-table-column-comments-in-postgresql/</link>
+      <pubDate>Mon, 06 Sep 2021 09:27:45 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/update-table-column-comments-in-postgresql/</guid>
+      <description>
+        
+          
+            Update comments on table columns 1COMMENT ON COLUMN &amp;lt;table_name&amp;gt;.&amp;lt;column_name&amp;gt; IS &amp;#39;&amp;lt;new_comment_here&amp;gt;&amp;#39;; See Stackoverflow reference and Postgres.org reference
+NOTE: Comment cannot be altered or dropped.
+To remove comment, set it to NULL as follows:
+1COMMENT ON COLUMN &amp;lt;table_name&amp;gt;.&amp;lt;column_name&amp;gt; IS NULL; 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Rename Primary Key in Postgresql</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/rename-primary-key-in-postgresql/</link>
+      <pubDate>Mon, 06 Sep 2021 09:26:45 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/rename-primary-key-in-postgresql/</guid>
+      <description>
+        
+          
+            Rename a Primary Key 1ALTER INDEX the_oldtablename_pkey RENAME TO thenewtablename_pkey 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Search Views in Postgresql</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/search-views-in-postgresql/</link>
+      <pubDate>Wed, 01 Sep 2021 13:46:45 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/search-views-in-postgresql/</guid>
+      <description>
+        
+          
+            1psql -c &amp;#34;select table_name from INFORMATION_SCHEMA.views WHERE table_schema = ANY (current_schemas(false));&amp;#34; To filter, just use grep.
+See https://dba.stackexchange.com/questions/23836/how-to-list-all-views-in-sql-in-postgresql
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Query Postgresql from Bash Command Line</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/query-pgsql-from-bash-cli/</link>
+      <pubDate>Thu, 12 Aug 2021 09:34:45 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/query-pgsql-from-bash-cli/</guid>
+      <description>
+        
+          
+            1psql -c &amp;#34;&amp;lt;your_query_here&amp;gt;&amp;#34; Example, to show tables list:
+1psql -c &amp;#34;\dt+&amp;#34; 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Restore Pgsql File</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/restore-pgsql-file/</link>
+      <pubDate>Fri, 30 Jul 2021 12:42:45 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/restore-pgsql-file/</guid>
+      <description>
+        
+          
+            1psql -h db -U mduser md &amp;lt; sqlfile.sql 
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

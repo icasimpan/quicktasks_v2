@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>wsl-links on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/wsl-links/</link>
+    <description>Recent content in wsl-links on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Wed, 23 Mar 2022 09:20:11 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/wsl-links/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Links - WSL (Windows Subsystem For Linux)</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/links-wsl/</link>
+      <pubDate>Wed, 23 Mar 2022 09:20:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/links-wsl/</guid>
+      <description>
+        
+          
+            Here is a curated links of sites that are I think are useful as I learn or relearn WSL. Incomplete of course but there&#39;s always the internet. Will add any that are worthy to be linked here. For now, this would suffice. If you think there are links worthy to be added here, let me know in the comment below. Thank you!
+ WSL Utilities  
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

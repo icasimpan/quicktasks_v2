@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>files on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/files/</link>
+    <description>Recent content in files on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Mon, 18 May 2020 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/files/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Finding Large Files Uncacheable in Acquia Varnish</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/finding-large-files-uncacheable-in-acquia-varnish/</link>
+      <pubDate>Mon, 18 May 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/finding-large-files-uncacheable-in-acquia-varnish/</guid>
+      <description>
+        
+          
+            Acquia varnish cannot cache files &amp;gt;10MB as per https://docs.acquia.com/acquia-cloud/performance/varnish/files/
+To find for those &amp;gt;10MB files, search from the sites/default/files:
+1find ./ -type f -size +10M -exec du -sh &amp;#39;{}&amp;#39; \; -print|grep -v ^\./| sort -n 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Drupal File Permission Problems</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/drupal-file-permission-problems/</link>
+      <pubDate>Sun, 08 Apr 2018 23:44:45 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/drupal-file-permission-problems/</guid>
+      <description>
+        
+          
+            Changing group ownership of the files in &amp;quot;sites/default/files&amp;quot;. More details in https://www.drupal.org/docs/7/install/setting-up-the-files-directory
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

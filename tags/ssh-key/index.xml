@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ssh-key on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/ssh-key/</link>
+    <description>Recent content in ssh-key on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Sun, 05 Apr 2020 18:36:44 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/ssh-key/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Force ssh client to use ssh-key and not password to authenticate</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/forced-use-ssh-key-not-password/</link>
+      <pubDate>Sun, 05 Apr 2020 18:36:44 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/forced-use-ssh-key-not-password/</guid>
+      <description>
+        
+          
+            1ssh -i ./server-keys.ppk -o PubkeyAuthentication=yes -o PasswordAuthentication=no deps@104.129.111.150 Some details in https://unix.stackexchange.com/questions/15138/how-to-force-ssh-client-to-use-only-password-auth
+Tested in:
+ OpenSSH_7.4p1, OpenSSL 1.0.2k-fips  
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

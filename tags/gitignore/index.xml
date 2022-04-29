@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>gitignore on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/gitignore/</link>
+    <description>Recent content in gitignore on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Sun, 08 Apr 2018 23:17:11 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/gitignore/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Negating contents of .gitignore</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/negating-contents-of-gitignore/</link>
+      <pubDate>Sun, 08 Apr 2018 23:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/negating-contents-of-gitignore/</guid>
+      <description>
+        
+          
+            See https://stackoverflow.com/questions/5533050/gitignore-exclude-folder-but-include-specific-subfolder
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

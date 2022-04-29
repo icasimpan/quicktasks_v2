@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>backups on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/backups/</link>
+    <description>Recent content in backups on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Mon, 09 Apr 2018 00:20:31 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/backups/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Acquia: Full Path to Database Backups Made via GUI</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/acquia-full-path-to-database-backups/</link>
+      <pubDate>Mon, 09 Apr 2018 00:20:31 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/acquia-full-path-to-database-backups/</guid>
+      <description>
+        
+          
+            From CLI, ssh to specific server and go to:
+1/mnt/files/[site].[dev | test | prod]/backups/ 
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

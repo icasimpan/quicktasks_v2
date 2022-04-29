@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>copy on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/copy/</link>
+    <description>Recent content in copy on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Sat, 21 Sep 2019 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/copy/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Copy Files To and From Remote Locations</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/copy-files-to-and-from-remote-locations/</link>
+      <pubDate>Sat, 21 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/copy-files-to-and-from-remote-locations/</guid>
+      <description>
+        
+          
+            1- name: Move foo to bar 2command: mv /path/to/foo /path/to/bar or check first and do a copy if it exist
+1- name: stat foo 2stat: path=/path/to/foo 3register: foo_stat 45- name: Move foo to bar 6command: mv /path/to/foo /path/to/bar 7when: foo_stat.stat.exists and, for ansible 2.0+, you can do:
+1- name: Copy files from foo to bar 2copy: remote_src=True src=https://ismael.casimpan.com/quicktasks/path/to/foo dest=/path/to/bar Details in https://stackoverflow.com/questions/24162996/how-to-move-rename-a-file-using-an-ansible-task-on-a-remote-system
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

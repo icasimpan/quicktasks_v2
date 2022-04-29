@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>modified-files on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/modified-files/</link>
+    <description>Recent content in modified-files on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Wed, 19 Feb 2020 23:17:11 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/modified-files/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Checking Modified Files in a Commit</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/check-modified-files/</link>
+      <pubDate>Wed, 19 Feb 2020 23:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/check-modified-files/</guid>
+      <description>
+        
+          
+            Get the commit-hash (e.g. of last commit)
+1git log -1 Show the files changed only in commit
+1git show --stat &amp;lt;commit-hash&amp;gt; See details in https://stackoverflow.com/questions/424071/how-to-list-all-the-files-in-a-commit
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

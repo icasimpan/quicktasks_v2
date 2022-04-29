@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>nginx on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/nginx/</link>
+    <description>Recent content in nginx on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Mon, 27 Jul 2020 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/nginx/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Nginx SSL PEM_read_bio End of Line Error</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/nginx-ssl-pem_read_bio-end-of-line-error/</link>
+      <pubDate>Mon, 27 Jul 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/nginx-ssl-pem_read_bio-end-of-line-error/</guid>
+      <description>
+        
+          
+            We had this ssl cert issued by Network Solutions
+1root@www:/etc/nginx/conf.d/ssl/example-2020# unzip -l EXAMPLE.ORG.zip 2Archive: EXAMPLE.ORG.zip 3Length Date Time Name 4--------- ---------- ----- ---- 52150 2020-07-14 16:59 DV_NetworkSolutionsDVServerCA2.crt 6Network Solutions DV Intermediate CA 72093 2020-07-14 16:59 DV_USERTrustRSACertificationAuthority.crt 8Network Solutions DV Intermediate CA 2 92174 2020-07-14 16:59 EXAMPLE.ORG.crt 10Domain certificate 11--------- ------- 126417 3 files I created a bundle as this was for Nginx cat EXAMPLE.ORG.crt DV_NetworkSolutionsDVServerCA2.crt DV_USERTrustRSACertificationAuthority.crt &amp;gt; www.example.org-bundle.crt
+When I tried verifying, I got this error:
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Clear Nginx Cache</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/clear-nginx-cache/</link>
+      <pubDate>Fri, 10 Jul 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/clear-nginx-cache/</guid>
+      <description>
+        
+          
+             bruteforce method - remove and replace /etc/nginx-cache Tool (untested) - https://github.com/perusio/nginx-cache-purge  
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Comodo SSL Verification in Nginx</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/comodo-ssl-verification-in-nginx/</link>
+      <pubDate>Fri, 10 Jul 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/comodo-ssl-verification-in-nginx/</guid>
+      <description>
+        
+          
+            Add the following to the vhost:
+1location ^~ /.well-known/ { 2log_not_found off; 3} 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Nginx 502 Bad Gateway</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/nginx-502-bad-gateway/</link>
+      <pubDate>Fri, 10 Jul 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/nginx-502-bad-gateway/</guid>
+      <description>
+        
+          
+             Check if php-fpm service is up Check if being listened to by nginx (for CentOS, look for &amp;quot;listen&amp;quot; in /etc/php-fpm.d/www.conf) Adjust nginx vhost (fastcgi_pass) when necessary (example below)  1fastcgi_pass 127.0.0.1:9000; 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Nginx HSTS</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/nginx-hsts/</link>
+      <pubDate>Fri, 10 Jul 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/nginx-hsts/</guid>
+      <description>
+        
+          
+            Update the following line of code in config file’s server Block.
+1add_header Strict-Transport-Security “max-age=63072000; includeSubdomains; “; Restart the NGINX server.
+More details in https://medium.com/@sslsecurity/how-to-enable-hsts-on-apache-nginx-and-lighttpd-8b0c64155911
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Nginx Proxying/Buffering</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/nginx-proxying-buffering/</link>
+      <pubDate>Fri, 10 Jul 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/nginx-proxying-buffering/</guid>
+      <description>
+        
+          
+            https://www.digitalocean.com/community/tutorials/understanding-nginx-http-proxying-load-balancing-buffering-and-caching
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Nginx: Request Entity Too Large</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/nginx-request-entity-too-large/</link>
+      <pubDate>Fri, 10 Jul 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/nginx-request-entity-too-large/</guid>
+      <description>
+        
+          
+            Solution: In server block, add &amp;quot;client_max_body_size&amp;quot; directive like the following
+1server { 2listen 8080; 3client_max_body_size 100M; 4... 5... 6} See details in https://www.cyberciti.biz/faq/linux-unix-bsd-nginx-413-request-entity-too-large/
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>OCSP Stapling in Nginx</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/ocsp-stapling-in-nginx/</link>
+      <pubDate>Fri, 10 Jul 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/ocsp-stapling-in-nginx/</guid>
+      <description>
+        
+          
+            https://raymii.org/s/tutorials/OCSP_Stapling_on_nginx.html
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Quick Install Nginx in CentOS7 &#43; 301 Redirect</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/quick-install-nginx-in-centos7-301-redirect/</link>
+      <pubDate>Fri, 10 Jul 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/quick-install-nginx-in-centos7-301-redirect/</guid>
+      <description>
+        
+          
+            1sudo yum install epel-release 2sudo yum install nginx 3sudo systemctl start nginx 4... 5... 6edit /etc/nginx/nginx.conf 78... 9... 10#add this line in bottom of &amp;#39;server&amp;#39; block: 11Redirect 301 https://your_domain_here/$request_uri; 1213sudo systemctl restart nginx 14sudo systemctl enable nginx 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Setup Default Virtualhost in Nginx</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/setup-default-virtualhost-in-nginx/</link>
+      <pubDate>Fri, 10 Jul 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/setup-default-virtualhost-in-nginx/</guid>
+      <description>
+        
+          
+            1server { 23listen 80 default_server; 4server_name _; 56root /var/www/default; 78} details in https://serverfault.com/questions/527156/setting-nginx-to-catch-all-unhandled-vhosts
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Some Tweaks to Improve Nginx</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/tweaks-improve-nginx/</link>
+      <pubDate>Fri, 10 Jul 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/tweaks-improve-nginx/</guid>
+      <description>
+        
+          
+            https://scaron.info/blog/improve-your-nginx-ssl-configuration.html
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Formerly using nginx, Moving to Apache won&#39;t Renew Cert</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/renew-from-nginx-to-apache/</link>
+      <pubDate>Sun, 07 Jun 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/renew-from-nginx-to-apache/</guid>
+      <description>
+        
+          
+            It&#39;s quite expected that certificate won&#39;t renew as the automation has been broken. What you can do is install the apache version of certbot
+1yum install python-certbot-apache and re-issue the certificate
+1sudo certbot --apache -d www.example.org 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Nginx 404 when in Drupal Admin</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/nginx-404-when-in-drupal-admin/</link>
+      <pubDate>Mon, 09 Apr 2018 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/nginx-404-when-in-drupal-admin/</guid>
+      <description>
+        
+          
+            This lacks URL rewriting. See https://www.nginx.com/resources/wiki/start/topics/recipes/drupal/
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

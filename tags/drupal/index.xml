@@ -1,0 +1,1060 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>drupal on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/drupal/</link>
+    <description>Recent content in drupal on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Thu, 08 Oct 2020 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/drupal/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Check for Active Drupal Contrib Modules</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/check-active-drupal-contrib-modules/</link>
+      <pubDate>Thu, 08 Oct 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/check-active-drupal-contrib-modules/</guid>
+      <description>
+        
+          
+            Use the command:
+1~$ drush pml --no-core --status=Enabled See sample below:
+1~$ drush pml --no-core --status=Enabled 2----------------------------- ----------------------------------------------------------- --------- ----------------- 3Package Name Status Version 4----------------------------- ----------------------------------------------------------- --------- ----------------- 5Field types Address (address) Enabled 8.x-1.8 6Administration Admin Toolbar (admin_toolbar) Enabled 8.x-2.3 7Administration Admin Toolbar Extra Tools (admin_toolbar_tools) Enabled 8.x-2.3 8Spam control Antibot (antibot) Enabled 8.x-1.4 9Entity Automatic Entity Labels (auto_entitylabel) Enabled 8.x-3.0-beta3 10Content Display Calendar Link (calendar_link) Enabled 8.x-1.1 11Other Component Libraries (components) Enabled 8.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>CSS/JS Aggregation in Drupal</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/css-js-aggregation-drupal/</link>
+      <pubDate>Fri, 18 Sep 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/css-js-aggregation-drupal/</guid>
+      <description>
+        
+          
+            When you&#39;re doing development, most of the time, you don&#39;t want to minify css/js. Here&#39;s how you the respective settings:
+settings.local.php (drupal 7)
+1$conf[&amp;#39;preprocess_css&amp;#39;] = FALSE; 2$conf[&amp;#39;preprocess_js&amp;#39;] = FALSE; settings.local.php (drupal 8 &amp;amp; 9)
+1$config[&amp;#39;system.performance&amp;#39;][&amp;#39;css&amp;#39;][&amp;#39;preprocess&amp;#39;] = FALSE; 2$config[&amp;#39;system.performance&amp;#39;][&amp;#39;js&amp;#39;][&amp;#39;preprocess&amp;#39;] = FALSE; drush (drupal 7)
+1drush vset preprocess_js 0 --yes 2drush vset preprocess_css 0 --yes drush (drupal 8 &amp;amp; 9)
+1drush -y config-set system.performance css.preprocess 0 2drush -y config-set system.performance js.preprocess 0 See https://drupal.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Modules for Drupal Audit</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/modules-for-drupal-audit/</link>
+      <pubDate>Sat, 05 Sep 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/modules-for-drupal-audit/</guid>
+      <description>
+        
+          
+            The following modules are needed:
+1drush en site_audit -y 2drush en hacked -y 3drush en diff -y 4drush en seo_checklist -y 5drush en security_review -y 6drush en unused_modules -y  All of the resulting reports will be in Admin &amp;gt; Reports. Exception is &amp;quot;Unused Modules&amp;quot; where you need to go to Admin &amp;gt; Configuration &amp;gt; Development  
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Install Specific Drupal Module Version via Drush</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/install-specific-drupal-module-version-via-drush/</link>
+      <pubDate>Tue, 04 Aug 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/install-specific-drupal-module-version-via-drush/</guid>
+      <description>
+        
+          
+            1drush dl og-7.x-1.3 2drush en og-7.x-1.4 More details in https://www.drupal.org/node/1499548
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Drupal User Blocked in D7</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/drupal-user-blocked-in-d7/</link>
+      <pubDate>Tue, 16 Jun 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/drupal-user-blocked-in-d7/</guid>
+      <description>
+        
+          
+            How to reset user after being blocked (d7 and works in D8 as well).
+1MySQL&amp;gt; delete from flood where identifier=&amp;lt;uid&amp;gt;; To get the uid, search as follows:
+1MySQL&amp;gt; select uid, name from users where name like &amp;#39;%NameHere%&amp;#39;\G; Details in https://www.drupal.org/node/1023440
+NOTE: Observed to work as well in D8 with some adjustments to checking the uid which seems to be in users_data already.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>What are the Tasks in Drupal Cron</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/tasks-in-drupal-cron/</link>
+      <pubDate>Tue, 16 Jun 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/tasks-in-drupal-cron/</guid>
+      <description>
+        
+          
+            Wondering what sort of tasks are in drupal cron? I need to know what those tasks are. You can start by searching your codebase for _cron functions.
+Remember:
+1All *_cron() functions in a site will be run on cron. 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>key_value table missing</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/key_value-missing/</link>
+      <pubDate>Sat, 06 Jun 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/key_value-missing/</guid>
+      <description>
+        
+          
+            You just received a D8 database dump and it is said to be complete. However, you see this error:
+1[notice] Missing database table: key_value Said table is part of drupal8 so it can&#39;t go missing. It could be that the table names for this site has prefix. Check using the command: {code} drush sql-drush &amp;quot;show tables;&amp;quot;|grep -i key_value {code}
+If you see something like: {code} bash-4.2$ drush sql-query &amp;quot;show tables;&amp;quot;|grep -i key_value kb_key_value kb_key_value_expire {code}
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Acquia: Troubleshooting Site Downtime</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/troubleshooting-acquia-site-downtime/</link>
+      <pubDate>Fri, 05 Jun 2020 00:20:31 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/troubleshooting-acquia-site-downtime/</guid>
+      <description>
+        
+          
+            Below are some common performance-impacting issues that your environment(s) may be experiencing:
+ Traffic: Increased traffic to your environment(s) may be causing service to be interrupted on those environments. Apache access logs: https://docs.acquia.com/acquia-cloud/monitor/logs/ Insight: https://docs.acquia.com/acquia-cloud/insight/ Stack Metrics: https://docs.acquia.com/acquia-cloud/monitor/stackmetrics/application/ Out of memory issues: Check Stack Metrics for out of memory errors: https://docs.acquia.com/acquia-cloud/monitor/stackmetrics/ Learn to find and resolve memory related errors: https://support.acquia.com/hc/en-us/articles/360005248674-Finding-Resolving-Memory-Related-PHP-errors-in-Acquia-Cloud Application issues - Did you deploy code recently? If so, try reverting code to a previous tag that works properly.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Drupal9 Migration</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/drupal9/</link>
+      <pubDate>Wed, 03 Jun 2020 23:50:10 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/drupal9/</guid>
+      <description>
+        
+          
+            See:
+ https://www.acquia.com/sites/acquia.com/files/documents/2020-03/Acquia%20Ultimate%20Guide%20to%20Drupal%209.pdf https://dev.acquia.com/drupal9 https://github.com/mglaman/drupal-check https://phpstan.org/user-guide/getting-started  
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Drupal7 Extended Support</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/drupal7-extended-support/</link>
+      <pubDate>Wed, 03 Jun 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/drupal7-extended-support/</guid>
+      <description>
+        
+          
+            Acquia is one of those that would provide extended support beyond EOL of Nov 2021 https://support.acquia.com/hc/en-us/articles/360034121053-Drupal-7-x-Extended-Support
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Create Drupal Admin User via Drush</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/create-drupal-admin-user-via-drush/</link>
+      <pubDate>Sun, 24 May 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/create-drupal-admin-user-via-drush/</guid>
+      <description>
+        
+          
+            1## Generate drupal admin access. 2## 3drush user:create admin --mail=&amp;#34;admin.NOREPLY@example.com&amp;#34; --password=&amp;#34;admin&amp;#34; 4drush user:role:add &amp;#34;administrator&amp;#34; admin 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Finding Large Files Uncacheable in Acquia Varnish</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/finding-large-files-uncacheable-in-acquia-varnish/</link>
+      <pubDate>Mon, 18 May 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/finding-large-files-uncacheable-in-acquia-varnish/</guid>
+      <description>
+        
+          
+            Acquia varnish cannot cache files &amp;gt;10MB as per https://docs.acquia.com/acquia-cloud/performance/varnish/files/
+To find for those &amp;gt;10MB files, search from the sites/default/files:
+1find ./ -type f -size +10M -exec du -sh &amp;#39;{}&amp;#39; \; -print|grep -v ^\./| sort -n 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Drupal Login Not Found</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/drupal-login-404/</link>
+      <pubDate>Fri, 01 May 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/drupal-login-404/</guid>
+      <description>
+        
+          
+            When you login to drupal via https://example.com/user and it is not found, try to check for the following:
+ Does it have .htaccess if in an apache web server? If in nginx, is the correct virtualhost rules in place? Does documentroot in apache have the needed directives to activate .htaccess?  Answer that and you will fix the issue. If you feel stuck, read https://www.drupal.org/docs/7/configuring-clean-urls/enable-clean-urls
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Failed to open stream: DrupalTemporaryStreamWrapper::stream_open</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/failed-to-open-stream-drupaltemporarystreamwrapperstream/</link>
+      <pubDate>Fri, 17 Apr 2020 23:50:10 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/failed-to-open-stream-drupaltemporarystreamwrapperstream/</guid>
+      <description>
+        
+          
+            From CLI
+This error is shown:
+1failed to open stream: &amp;#34;DrupalTemporaryStreamWrapper::stream_open&amp;#34; call failed file.inc:1983 Solution
+Seems to be an issue with the temp file. Check &amp;quot;drush st&amp;quot; and confirm if the temp file is still accessible.
+This gives some hints on how to set the &amp;quot;temp and private files&amp;quot; in drupal setttings https://www.drupal.org/forum/support/installing-drupal/2011-03-01/failed-to-open-stream-drupaltemporarystreamwrapperstream#comment-4258986
+However, my test showed using &amp;quot;/tmp&amp;quot; doesn&#39;t seem to reflected in drupal. What works is adding the full path, something like this
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Fatal Error: Call to undefined function cache_get()</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/fatal-error-call-to-undefined-function-cache_get/</link>
+      <pubDate>Fri, 17 Apr 2020 23:50:10 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/fatal-error-call-to-undefined-function-cache_get/</guid>
+      <description>
+        
+          
+            From CLI
+1drush st This error is shown:
+1PHP Fatal error: Uncaught Error: Call to undefined function cache_get() in xxxx Solution
+Is always due to php syntax error. What did you add just recently? Perhaps a semicolon is missing in settings.local.php?
+Further information in https://www.drupal.org/forum/support/post-installation/2016-06-23/fatal-error-call-to-undefined-function-cache_get
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Change drupal user credential</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/change-drupal-credential/</link>
+      <pubDate>Mon, 30 Mar 2020 00:14:45 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/change-drupal-credential/</guid>
+      <description>
+        
+          
+            Go to drupal root, then:
+1drush upwd --password=&amp;#34;newPassword_here&amp;#34; &amp;#34;the_user&amp;#34; More info in https://www.drupal.org/node/44164
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Drupal Can&#39;t Connect to Local Solr Server</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/drupal-cant-connect-solr-server/</link>
+      <pubDate>Fri, 21 Feb 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/drupal-cant-connect-solr-server/</guid>
+      <description>
+        
+          
+            Solr is already up and accessible from browser and within the drupal server but when connected through proper drupal admin settings, it says cannot connect to server.
+Solution is to create solr core. See https://ismael.casimpan.com/quicktasks-solr/post/create-solr-core-with-config/ or https://ismael.casimpan.com/quicktasks-solr/post/creating-solr-core/ depending on your situation.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Weird session issue in drupal</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/weird-session-issue/</link>
+      <pubDate>Tue, 11 Feb 2020 00:18:01 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/weird-session-issue/</guid>
+      <description>
+        
+          
+            Was seeing some session issue as follows:
+1[me@example default]$ cd /var/www/example.com/docroot 2[me@example docroot]$ drush st 34session_set_save_handler(): Cannot change save handler when headers already sent session.inc:242 [warning] 5session_id(): Cannot change session id when headers already sent session.inc:266 [warning] 6session_name(): Cannot change session name when headers already sent in drupal_settings_initialize() (line 831 of [warning] 7/var/www/example.com/docroot/includes/bootstrap.inc). 8Drupal version : 7.69 9Site URI : http://default 10Database driver : mysql 11Database hostname : localhost 12Database username : &amp;lt;REDACTED&amp;gt; 13Database name : &amp;lt;REDACTED&amp;gt; 14Database : Connected 15Drupal bootstrap : Successful 16Drupal user : 17Default theme : bootstrap_examplesite 18Administration theme : seven 19PHP configuration : /etc/php.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Drupal 8 Error Code 1 in Drupal Entity Updates</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/error-code1-in-drupal-entity-updates/</link>
+      <pubDate>Sat, 18 Jan 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/error-code1-in-drupal-entity-updates/</guid>
+      <description>
+        
+          
+            At the end of composer install, the following was shown:
+1In UpdateDBCommands.php line 109: 23Drupal removed its automatic entity-updates API in 8.7. See https://www.dru 4pal.org/node/3034742. 567entity:updates [--cache-clear [CACHE-CLEAR]] [--no-cache-clear] [-h|--help] [-q|--quiet] [-v|vv|vvv|--verbose] [-V|--version] [--ansi] [--no-ansi] [-n|--no-interaction] [-d|--debug] [-y|--yes] [--no] [--remote-host REMOTE-HOST] [--remote-user REMOTE-USER] [-r|--root ROOT] [-l|--uri URI] [--simulate] [--pipe] [-D|--define DEFINE] [--notify [NOTIFY]] [--druplicon] [--xh-link XH-LINK] [--] &amp;lt;command&amp;gt; 89Script sh scripts/composer/updates.sh handling the drupal-updates event returned with error code 1 10Script @drupal-updates was called via post-install-cmd This is just a info message and not an error.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Reindex Solr in Drupal</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/reindex-solr-in-drupal/</link>
+      <pubDate>Wed, 25 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/reindex-solr-in-drupal/</guid>
+      <description>
+        
+          
+            In Drupal Admin, do the following:
+Config &amp;gt; Search and Metadata &amp;gt; Search API
+Click on the index name (e.g. Events)
+ Image not found  a.warning-link { color: inherit !important; font-weight: inherit !important; text-decoration: underline !important; border-bottom: none !important; }  Web path: https://ismael.casimpan.com/reindex-solr-drupal/01_search-api.png
+Disk path: static/reindex-solr-drupal/01_search-api.png
+Using Page Bundles: false
+ 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Drupal 8: Broken Web UI</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/drupal8-broken-webui/</link>
+      <pubDate>Sat, 21 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/drupal8-broken-webui/</guid>
+      <description>
+        
+          
+            Most probably caused by CSS/JS Aggreggation. Disable it by doing the following:
+Can edit settings.php - add the following:
+1$config[&amp;#39;system.performance&amp;#39;][&amp;#39;css&amp;#39;][&amp;#39;preprocess&amp;#39;] = FALSE; 2$config[&amp;#39;system.performance&amp;#39;][&amp;#39;js&amp;#39;][&amp;#39;preprocess&amp;#39;] = FALSE; In Drupal Admin
+-site-/admin/config/development/performance
+Uncheck two checkboxes:
+ Aggregate CSS files Aggregate JavaScript files  Reference: https://www.drupal.org/forum/support/post-installation/2017-04-02/disabling-caching-cssjs-aggregation
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Drupal 8: Entities neeeds to be deleted before importing error</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/drupal8-entities-needs-deleted-before-import/</link>
+      <pubDate>Sat, 21 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/drupal8-entities-needs-deleted-before-import/</guid>
+      <description>
+        
+          
+            The following was seen during configuration import (drush cim)
+1The import failed due to the following reasons: 2Entities exist of type &amp;lt;em class=&amp;#34;placeholder&amp;#34;&amp;gt;Shortcut link&amp;lt;/em&amp;gt; and &amp;lt;em class=&amp;#34;placeholder&amp;#34;&amp;gt;Shortcut set&amp;lt;/em&amp;gt; &amp;lt;em class=&amp;#34;placeholder&amp;#34;&amp;gt;Default&amp;lt;/em&amp;gt;. These entities need to 3be deleted before importing. Fix by running this:
+1drush ev &amp;#39;\Drupal::entityManager()-&amp;gt;getStorage(&amp;#34;shortcut_set&amp;#34;)-&amp;gt;load(&amp;#34;default&amp;#34;)-&amp;gt;delete();&amp;#39; Reference: https://www.drupal.org/forum/support/post-installation/2015-12-20/problem-during-import-configuration
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Drush: Drop Mysql Tables Without Deleting Database</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/drush-drop-mysql-tables-without-deleting-database/</link>
+      <pubDate>Mon, 09 Apr 2018 00:21:46 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/drush-drop-mysql-tables-without-deleting-database/</guid>
+      <description>
+        
+          
+            In drupal root:
+1drush sql-drop 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>settings.php: Few Ways to Add Changes</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/settings-php-few-ways-add-changes/</link>
+      <pubDate>Mon, 09 Apr 2018 00:20:33 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/settings-php-few-ways-add-changes/</guid>
+      <description>
+        
+          
+            Method 1 (env.json) in drupalroot/sites/default/env.json
+1{ 2&amp;#34;conf_dir&amp;#34;: &amp;#34;/etc/drupal/site_identifier_here/default&amp;#34; 3} in /etc/drupal/site_identifier_here/default, there is then a file globals.conf.d/globals.default.json with content:
+1{ 2&amp;#34;id&amp;#34;: &amp;#34;default&amp;#34;, 3&amp;#34;databases&amp;#34;: { 4&amp;#34;default&amp;#34;: { 5&amp;#34;default&amp;#34;: { 6&amp;#34;database&amp;#34;: &amp;#34;yourDB&amp;#34;, 7&amp;#34;username&amp;#34;: &amp;#34;yourDBA&amp;#34;, 8&amp;#34;password&amp;#34;: &amp;#34;yourPASS&amp;#34;, 9&amp;#34;host&amp;#34;: &amp;#34;127.0.0.1&amp;#34;, 10&amp;#34;driver&amp;#34;: &amp;#34;mysql&amp;#34; 11} 12} 13}, 14&amp;#34;uri&amp;#34;: &amp;#34;example.com&amp;#34;, 15&amp;#34;doc_root&amp;#34;: &amp;#34;www&amp;#34;, 16&amp;#34;chef_type&amp;#34;: &amp;#34;data_bag_item&amp;#34;, 17&amp;#34;data_bag&amp;#34;: &amp;#34;drupal&amp;#34; 18} 1920*Method 2: Referenced from settings.php* 2122See https://ismael.casimpan.com/quicktasks-drupal/post/settings-php-including-settings-local/ 2324With sample settings.local.php in https://ismael.casimpan.com/quicktasks-drupal/post/settings-php-sample-settings-local/ 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Acquia: Full Path to Database Backups Made via GUI</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/acquia-full-path-to-database-backups/</link>
+      <pubDate>Mon, 09 Apr 2018 00:20:31 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/acquia-full-path-to-database-backups/</guid>
+      <description>
+        
+          
+            From CLI, ssh to specific server and go to:
+1/mnt/files/[site].[dev | test | prod]/backups/ 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>pantheon.io: Developer need to be able to deploy for a site</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/pantheon-developer-need-deploy-site/</link>
+      <pubDate>Mon, 09 Apr 2018 00:20:29 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/pantheon-developer-need-deploy-site/</guid>
+      <description>
+        
+          
+            He/she needs to be added to the sites &amp;quot;Team&amp;quot; as &amp;quot;Team Member&amp;quot;. See details in https://pantheon.io/docs/change-management/
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>pantheon.io: Can&#39;t see drush aliases to some sites (despite having organization access)</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/pantheon-cannot-see-drush-aliases-despite-org-access/</link>
+      <pubDate>Mon, 09 Apr 2018 00:20:27 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/pantheon-cannot-see-drush-aliases-despite-org-access/</guid>
+      <description>
+        
+          
+            You need to be part of the &amp;quot;Team&amp;quot;. Access the site name and go to &amp;quot;Team&amp;quot; and add yourself(assuming you have access). Check back the aliases and you should have it now.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Acquia Logs</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/acquia-logs/</link>
+      <pubDate>Mon, 09 Apr 2018 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/acquia-logs/</guid>
+      <description>
+        
+          
+            https://docs.acquia.com/acquia-cloud/files/system-files
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>BASH_FUNC_module error</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/bash_func_module-error/</link>
+      <pubDate>Mon, 09 Apr 2018 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/bash_func_module-error/</guid>
+      <description>
+        
+          
+            This error is seen as follows:
+1sh:module:line1:syntaxerror:unexpectedendoffile2sh:errorimportingfunctiondefinitionfor`BASH_FUNC_module&amp;#39;A lot of discussions has been done about it in https://github.com/drush-ops/drush/issues/2065#issuecomment-227820550 but the fix is made from /etc/php.ini:
+1disable_functions = pcntl_exec 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Create drupal super admin user via drush</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/create-drupal-super-admin-via-drush/</link>
+      <pubDate>Mon, 09 Apr 2018 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/create-drupal-super-admin-via-drush/</guid>
+      <description>
+        
+          
+            1drush user-create prometadmin &amp;#34;letmein&amp;#34; 2drush user-add-role super_admin prometadmin 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Drupal 8: Site UUID in source storage does not match the target storage</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/drupal8-site-uuid-in-source-storage-does-not-match-the-target-storage/</link>
+      <pubDate>Mon, 09 Apr 2018 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/drupal8-site-uuid-in-source-storage-does-not-match-the-target-storage/</guid>
+      <description>
+        
+          
+            Problem
+You encountered this error when running &#39;drush cim&#39;:
+1Site UUID in source storage does not match the target storage. As mentioned, UUID no longer match. To fix, get the UUID in config/sync directory, something like below:
+1awk &amp;#39;{for (I=1;I&amp;lt;=NF;I++) if ($I == &amp;#34;uuid:&amp;#34;) {print $(I+1)};}&amp;#39; sites/default/config/sync/system.site.yml and assuming you get this value:
+1d5835485-ed5e-433a-b782-41eca3ef7727 Set that to current installation as follows:
+1drush cset system.site uuid d5835485-ed5e-433a-b782-41eca3ef7727 -y Rerun &#39;drush cim&#39;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Drupal maintenance mode (turn-off) via drush</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/drupal-maintenance-mode-via-drush/</link>
+      <pubDate>Mon, 09 Apr 2018 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/drupal-maintenance-mode-via-drush/</guid>
+      <description>
+        
+          
+            Drupal 8 1drush sset system.maintenance_mode FALSE Drupal 7 1drush vset maintenance_mode 0 You may need to clear cache for it to work.
+See details and some other options if it doesn&#39;t work in https://drupal.stackexchange.com/questions/100771/how-do-i-turn-off-maintenance-mode
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Drupal Memcache</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/drupal-memcache/</link>
+      <pubDate>Mon, 09 Apr 2018 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/drupal-memcache/</guid>
+      <description>
+        
+          
+            Had to install as follows (need to be php7.x):
+1pecl install memcached Dependencies may need to be installed
+1# yum groupinstall &amp;#34;Development tools&amp;#34; 2# yum install zlib zlib-devel 3# yum install php php-devel php-pear 4echo &amp;#34;extension=memcache.so&amp;#34; &amp;gt;&amp;gt; /etc/php.d/memcache.ini See https://tecadmin.net/install-memcached-with-pecl-memcache-on-centos-rhel/
+For Ubuntu 16.x (with php5.6.x)
+1apt-get install memcached 2apt-get install php-memcache 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Drupal7 install via drush</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/drupal7-install-via-drush/</link>
+      <pubDate>Mon, 09 Apr 2018 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/drupal7-install-via-drush/</guid>
+      <description>
+        
+          
+            1cd /var/www/sites 2drush dl drupal-7 --destination=yoursite.example.com --drupal-project-rename=www -y 3cd yoursite.example.com/www 4drush site-install standard --account-name=admin --account-pass=admin --db-url=mysql://myDBA:myDBPASS@localhost/myDB -y See http://www.coderintherye.com/install-drupal-7-using-drush
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Drush Features Diff (drupal7)</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/drupal7-drush-features-diff/</link>
+      <pubDate>Mon, 09 Apr 2018 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/drupal7-drush-features-diff/</guid>
+      <description>
+        
+          
+            Enable diff module  1drush en diff -y Show all features  1[root@yoursite.example.com docroot]# drush fd 2BEF Test Content bef_test_content Disabled 7.x-3.5 3Keystone Media News content_keystone_media Enabled 7.x-1.0-alpha10 4Content Set #1 content_set_1 Enabled 7.x-1.0-alpha9m 5Content Set #2 content_set_2 Enabled 7.x-1.0-alpha16m 6Content Set #3 content_set_3 Enabled 7.x-1.0-alpha80 Overridden 7Content Set #4 content_set_4 Enabled 7.x-1.0-alpha26 8Date Migration Example date_migrate_example Disabled 7.x-2.10 9Features Tests features_test Disabled 7.x-2.10 10Feeds Import feeds_import Enabled 7.x-2.0-beta4 11Feeds News feeds_news Disabled 7.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Drush for non-composer drupal</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/drush-for-non-composer-drupal/</link>
+      <pubDate>Mon, 09 Apr 2018 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/drush-for-non-composer-drupal/</guid>
+      <description>
+        
+          
+            1#install composer and Drush 2curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer 3wget -O drush.phar https://github.com/drush-ops/drush-launcher/releases/download/0.6.0/drush.phar 4chmod +x drush.phar 5sudo mv drush.phar /usr/local/bin/drush 6cd drupal 7cat &amp;gt; composer.json&amp;lt;&amp;lt;&amp;#39;EOF&amp;#39; 8{ 9&amp;#34;require&amp;#34;: { 10&amp;#34;drush/drush&amp;#34;: &amp;#34;8.*&amp;#34; 11}, 12&amp;#34;extra&amp;#34;: { 13&amp;#34;installer-paths&amp;#34;: { 14&amp;#34;core&amp;#34;: [&amp;#34;type:drupal-core&amp;#34;] 15} 16} 17} 18EOF 19composer install Details from https://github.com/dbjpanda/digitalocean-drupal/blob/7.x/install.sh and https://github.com/drush-ops/drush-launcher/issues/33
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Drush ULI: disable automatic open in browser</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/drush-uli-disable-automatic-open-in-browser/</link>
+      <pubDate>Mon, 09 Apr 2018 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/drush-uli-disable-automatic-open-in-browser/</guid>
+      <description>
+        
+          
+            1drush uli --no-browser 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Example Setup for stage_file_proxy</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/example-setup-stage_file_proxy/</link>
+      <pubDate>Mon, 09 Apr 2018 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/example-setup-stage_file_proxy/</guid>
+      <description>
+        
+          
+            1[me@common-dev default]$ drush pm-download stage_file_proxy 2Project stage_file_proxy (7.x-1.8) downloaded to /var/www/sites/project.example.com/www/sites/all/modules/contrib/stage_file_proxy. [success] 3[me@common-dev default]$ drush pm-enable --yes stage_file_proxy 4The following module has moved within the file system: &amp;lt;em class=&amp;#34;placeholder&amp;#34;&amp;gt;stage_file_proxy&amp;lt;/em&amp;gt;. In order to fix this, clear caches or put the module back in its [warning] 5original location. For more information, see &amp;lt;a href=&amp;#34;https://www.drupal.org/node/2487215&amp;#34;&amp;gt;the documentation page&amp;lt;/a&amp;gt;. bootstrap.inc:1143 6The following extensions will be enabled: stage_file_proxy 7Do you really want to continue? (y/n): y 8stage_file_proxy was enabled successfully.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Force http to https</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/force-http-to-https/</link>
+      <pubDate>Mon, 09 Apr 2018 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/force-http-to-https/</guid>
+      <description>
+        
+          
+            1root@example.com:/var/www/sites/yoursite.example.com/www# git diff .htaccess 2diff --git a/www/.htaccess b/www/.htaccess 3index 440cabc..968f601 100644 4--- a/www/.htaccess 5+++ b/www/.htaccess 6@@ -93,6 +93,12 @@ DirectoryIndex index.php index.html index.htm 7# RewriteCond %{HTTP_HOST} !^www\. [NC] 8# RewriteRule ^ http%{ENV:protossl}://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301] 9# 10+ 11+ # Redirect HTTP to HTTPS 12+ RewriteCond %{HTTPS} off 13+ RewriteCond %{HTTP:X-Forwarded-Proto} !https 14+ RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301] 15+ 16# To redirect all users to access the site WITHOUT the &amp;#39;www.&amp;#39; prefix, 17# (http://www.example.com/... will be redirected to http://example.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Install and switch between different drush versions</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/install-and-switch-between-drush-versions/</link>
+      <pubDate>Mon, 09 Apr 2018 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/install-and-switch-between-drush-versions/</guid>
+      <description>
+        
+          
+            See https://www.lullabot.com/articles/switching-drush-versions
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Install Composer</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/install-composer/</link>
+      <pubDate>Mon, 09 Apr 2018 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/install-composer/</guid>
+      <description>
+        
+          
+            1curl -sS https://getcomposer.org/installer | php 2mv composer.phar /usr/local/bin/composer 3ln -s /usr/local/bin/composer /usr/bin/composer 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Nginx 404 when in Drupal Admin</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/nginx-404-when-in-drupal-admin/</link>
+      <pubDate>Mon, 09 Apr 2018 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/nginx-404-when-in-drupal-admin/</guid>
+      <description>
+        
+          
+            This lacks URL rewriting. See https://www.nginx.com/resources/wiki/start/topics/recipes/drupal/
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>pantheon.io: drush aliases download</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/pantheon-drush-aliases-download/</link>
+      <pubDate>Mon, 09 Apr 2018 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/pantheon-drush-aliases-download/</guid>
+      <description>
+        
+          
+            Your Username &amp;gt; Dashboard &amp;gt; Drush Aliases
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>pantheon.io: drush via terminus</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/pantheon-drush-via-terminus/</link>
+      <pubDate>Mon, 09 Apr 2018 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/pantheon-drush-via-terminus/</guid>
+      <description>
+        
+          
+            See https://pantheon.io/docs/terminus/
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Restore Database via Drush</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/restore-database-via-drush/</link>
+      <pubDate>Mon, 09 Apr 2018 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/restore-database-via-drush/</guid>
+      <description>
+        
+          
+            1drush sqlc &amp;lt; database.sql 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Search Index via drush</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/search-index-via-drush/</link>
+      <pubDate>Mon, 09 Apr 2018 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/search-index-via-drush/</guid>
+      <description>
+        
+          
+            1drush sapi-i ## or drush search-api-index 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>settings.php: Adding reference to settings.local.php</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/settings-php-including-settings-local/</link>
+      <pubDate>Mon, 09 Apr 2018 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/settings-php-including-settings-local/</guid>
+      <description>
+        
+          
+            1/** 2* Load local development override configuration, if available. 3* 4* Use settings.local.php to override variables on secondary (staging, 5* development, etc) installations of this site. Typically used to disable 6* caching, JavaScript/CSS compression, re-routing of outgoing emails, and 7* other things that should not happen on development and testing sites. 8* 9* Keep this code block at the end of this file to take full effect. 10*/ 11if (file_exists(__DIR__ .
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>settings.php: Sample settings.local.php</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/settings-php-sample-settings-local/</link>
+      <pubDate>Mon, 09 Apr 2018 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/settings-php-sample-settings-local/</guid>
+      <description>
+        
+          
+            1&amp;lt;?php 2$databases[&amp;#39;default&amp;#39;][&amp;#39;default&amp;#39;] = array ( 3&amp;#39;database&amp;#39; =&amp;gt; &amp;#39;yourDB&amp;#39;, 4&amp;#39;username&amp;#39; =&amp;gt; &amp;#39;yourDBA&amp;#39;, 5&amp;#39;password&amp;#39; =&amp;gt; &amp;#39;yourDBPASS&amp;#39;, 6&amp;#39;prefix&amp;#39; =&amp;gt; &amp;#39;&amp;#39;, 7&amp;#39;host&amp;#39; =&amp;gt; &amp;#39;localhost&amp;#39;, 8&amp;#39;port&amp;#39; =&amp;gt; &amp;#39;3306&amp;#39;, 9&amp;#39;namespace&amp;#39; =&amp;gt; &amp;#39;Drupal\\Core\\Database\\Driver\\mysql&amp;#39;, 10&amp;#39;driver&amp;#39; =&amp;gt; &amp;#39;mysql&amp;#39;, 11); EDIT: Updated to reflect new learning in https://ismael.casimpan.com/quicktasks-drupal/post/weird-session-issue/
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>error: &#39;drush -fra -y&#39; Failed to Create Directory</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/drush-fra-failed-to-create-directory/</link>
+      <pubDate>Mon, 09 Apr 2018 00:20:23 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/drush-fra-failed-to-create-directory/</guid>
+      <description>
+        
+          
+            1bash-4.1$ /usr/local/bin/drush cc all 2‘all’ cache was cleared. [success] 3bash-4.1$ /usr/local/bin/drush fra -y 4WD print_pdf: Failed to create directory “public://print_pdf/print_pdf_mpdf/ttfontdata” for print_pdf_mpdf. [error] 5WD print_pdf: Failed to create directory “public://print_pdf/print_pdf_mpdf/tmp” for print_pdf_mpdf. [error] 6The following modules will be reverted: content_set_4 7Do you really want to continue? (y/n): y 8Reverted content_set_4.field_group. [ok] 9bash-4.1$ /usr/local/bin/drush fra -y 10The following modules will be reverted: content_set_4 11Do you really want to continue? (y/n): y 12Reverted content_set_4.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Custom Site Title Per Drupal Installation (d8)</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/custom-title-per-drupal-installation/</link>
+      <pubDate>Mon, 09 Apr 2018 00:18:01 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/custom-title-per-drupal-installation/</guid>
+      <description>
+        
+          
+            Do you have several drupal installation in a test server that you want to distinguish which is which? Add this to settings.local.php and it will override whatever is in database.
+1$config[&amp;#39;system.site&amp;#39;][&amp;#39;name&amp;#39;] = &amp;#34;Example Site (Fixes)&amp;#34;; 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Drush Installation</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/drush-installation/</link>
+      <pubDate>Mon, 09 Apr 2018 00:18:01 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/drush-installation/</guid>
+      <description>
+        
+          
+            Go to your drupal root composer require drush/drush  See http://docs.drush.org/en/master/install/ for details.
+Then install drupal launcher -&amp;gt; https://github.com/drush-ops/drush-launcher
+ cd ~ wget -O drush.phar https://github.com/drush-ops/drush-launcher/releases/download/0.3.1/drush.phar chmod ug+x drush.phar sudo chown www-data:www-data drush.phar sudo mv drush.phar /usr/local/bin/drush  Further readings in https://www.dx-experts.nl/site-specific-local-drush-and-drupal-console
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Phpinfo in Drupaladmin</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/phpinfo-in-drupaladmin/</link>
+      <pubDate>Mon, 09 Apr 2018 00:15:59 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/phpinfo-in-drupaladmin/</guid>
+      <description>
+        
+          
+            It can be found in
+1http://&amp;lt;site_url&amp;gt;/admin/reports/status/php 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>DB Credentials via Drush</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/db-credentials-via-drush/</link>
+      <pubDate>Mon, 09 Apr 2018 00:14:45 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/db-credentials-via-drush/</guid>
+      <description>
+        
+          
+            Go to drupal root, then:
+1drush st --show-passwords database In drush 9.7.2 (may also work for other sub-versions of drush 9), the following command should be used:
+1drush st DB 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Getting Errors with Drush rr not Installed</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/getting-errors-with-drush-rr-not-installed/</link>
+      <pubDate>Mon, 09 Apr 2018 00:12:49 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/getting-errors-with-drush-rr-not-installed/</guid>
+      <description>
+        
+          
+            1drush @none dl registry_rebuild-7.x See https://www.drupal.org/project/registry_rebuild or https://www.deeson.co.uk/labs/drush-registry-rebuild
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Reinstall Drupal8</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/reinstall-drupal8/</link>
+      <pubDate>Mon, 09 Apr 2018 00:12:49 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/reinstall-drupal8/</guid>
+      <description>
+        
+          
+            Empty the files directory. Replace the settings.php file with a copy of the default.settings.php file. Add write permissions to the settings.php file. Drop all tables in the database. Reinstall the site on http://yoursite.com/core/install.php.  Ref http://dribbit.eu/drupal-8/reinstall-drupal-8
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Drupal8 Install via Composer</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/drupal8-install-via-composer/</link>
+      <pubDate>Mon, 09 Apr 2018 00:09:39 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/drupal8-install-via-composer/</guid>
+      <description>
+        
+          
+            NOTE:
+ Noticed some memory issue during installation on a VM with 2GB RAM, so if it happens to you, just augment with swap file.  1cd /var/www/sites 2composer create-project drupal-composer/drupal-project:8.x yoursite.example.com --stability dev --no-interaction 3../vendor/bin/drush site-install --site-name=&amp;#34;Drupal Title Here&amp;#34; --db-url=mysql://yourDBA:yourPASS@localhost/yourDB --account-mail=admin@example.com --account-pass=acountPassw0RD -y 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Drupal8 Manual Install via Drush</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/drupal8-manual-install-via-drush/</link>
+      <pubDate>Mon, 09 Apr 2018 00:09:39 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/drupal8-manual-install-via-drush/</guid>
+      <description>
+        
+          
+            NOTE:
+ Per https://www.drupal.org/project/drupal/releases/8.4.0, drupal8.4.x needs drush 8.1.12+ Method works but has theme issue. Better to use composer method instead.   cd /var/www/sites/yourdrupal.com/ drush dl drupal-8 mv drupal-8.4.5 docroot composer install composer update composer require drush/drush drush si --db-url=&#39;mysql://yourDBA:yourPASS@127.0.0.1/yourDB&#39;  Steps 4, 5, 6 are mandatory per site. Some reference for drush install of drupal8 in https://drupal.stackexchange.com/questions/130680/downloading-core-via-command-line
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Drupal Logs</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/drupal-logs/</link>
+      <pubDate>Sun, 08 Apr 2018 23:50:10 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/drupal-logs/</guid>
+      <description>
+        
+          
+            From Web Browser:
+generate &#39;drush uli&#39; Go to /admin/reports/dblog From CLI:
+1drush watchdog-show See https://drupal.stackexchange.com/questions/48645/how-to-show-admin-reports-dblog-in-terminal-cli
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Clear Drupal Cache Outside Drush</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/clear-drupal-cache-outside-drush/</link>
+      <pubDate>Sun, 08 Apr 2018 23:45:58 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/clear-drupal-cache-outside-drush/</guid>
+      <description>
+        
+          
+            From drupal admin UI: Administration &amp;gt; Configuration &amp;gt; Development &amp;gt; Performance
+But will work only if you have drupal admin login. Otherwise, you need to install drush instead and do the &#39;drush cc all&#39; from there. Some other options -&amp;gt; https://www.drupal.org/docs/7/administering-drupal-7-site/clearing-or-rebuilding-drupals-cache
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Drupal File Permission Problems</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/drupal-file-permission-problems/</link>
+      <pubDate>Sun, 08 Apr 2018 23:44:45 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/drupal-file-permission-problems/</guid>
+      <description>
+        
+          
+            Changing group ownership of the files in &amp;quot;sites/default/files&amp;quot;. More details in https://www.drupal.org/docs/7/install/setting-up-the-files-directory
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Getting drush uli in a Pantheon site</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/drush-uli-pantheon-site/</link>
+      <pubDate>Sun, 08 Apr 2018 23:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/drush-uli-pantheon-site/</guid>
+      <description>
+        
+          
+            See https://pantheon.io/blog/five-steps-feeling-drupal-drush
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

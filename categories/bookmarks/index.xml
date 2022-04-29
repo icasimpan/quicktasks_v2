@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>bookmarks on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/categories/bookmarks/</link>
+    <description>Recent content in bookmarks on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Wed, 23 Mar 2022 09:20:11 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/categories/bookmarks/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Links - WSL (Windows Subsystem For Linux)</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/links-wsl/</link>
+      <pubDate>Wed, 23 Mar 2022 09:20:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/links-wsl/</guid>
+      <description>
+        
+          
+            Here is a curated links of sites that are I think are useful as I learn or relearn WSL. Incomplete of course but there&#39;s always the internet. Will add any that are worthy to be linked here. For now, this would suffice. If you think there are links worthy to be added here, let me know in the comment below. Thank you!
+ WSL Utilities  
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Links - Web Development</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/links-webdev/</link>
+      <pubDate>Sun, 20 Feb 2022 09:18:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/links-webdev/</guid>
+      <description>
+        
+          
+            Here is a curated links of sites that are I think are useful as I learn or relearn Web Development further. Incomplete of course but there&#39;s always the internet. Will add any that are worthy to be linked here. For now, this would suffice. If you think there are links worthy to be added here, let me know in the comment below. Thank you!
+WebDev Environments  Docksal - best tool for local web development without learning the nitty gritty docker and docker-compose things Provus - Promet&#39;s opensource framework for Drupal 8/9.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Links - Perl</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/links-perl/</link>
+      <pubDate>Sat, 19 Feb 2022 09:20:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/links-perl/</guid>
+      <description>
+        
+          
+            Here is a curated links of sites that are I think are useful as I learn or relearn Perl further. Incomplete of course but there&#39;s always the internet. Will add any that are worthy to be linked here. For now, this would suffice. If you think there are links worthy to be added here, let me know in the comment below. Thank you!
+ Perl Official Website Perl CPAN Searcheable CPAN Perl Tutorial Perl Maven - A lot of info about Perl from Gábor Szabó Curl to Perl  
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Links - Javascript</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/links-js/</link>
+      <pubDate>Sat, 19 Feb 2022 09:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/links-js/</guid>
+      <description>
+        
+          
+            Here is a curated links of sites that are I think are useful as I learn or relearn Javacript further. Incomplete of course but there&#39;s always the internet. Will add any that are worthy to be linked here. For now, this would suffice. If you think there are links worthy to be added here, let me know in the comment below. Thank you!
+ ExploringJS JavaScript.info - Learn Modern Javascript, easy to understand tutorial.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Links - PHP</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/links-php/</link>
+      <pubDate>Sat, 19 Feb 2022 09:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/links-php/</guid>
+      <description>
+        
+          
+            Here is a curated links of sites that are I think are useful as I learn or relearn PHP, Laravel and Symfony further. Incomplete of course but there&#39;s always the internet. Will add any that are worthy to be linked here. For now, this would suffice. If you think there are links worthy to be added here, let me know in the comment below. Thank you!
+PHP Official Manual  PHP Language Reference PHP Function Reference PHP Features PHP Security  PHP Object Oriented  Object Oriented PHP OOP from php.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Links - Bash</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/links-bash/</link>
+      <pubDate>Fri, 18 Feb 2022 09:20:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/links-bash/</guid>
+      <description>
+        
+          
+            Here is a curated links of sites that are I think are useful as I learn or relearn Bash or shell scripting further. Incomplete of course but there&#39;s always the internet. Will add any that are worthy to be linked here. For now, this would suffice. If you think there are links worthy to be added here, let me know in the comment below. Thank you!
+Bash scripting  LinuxCommand.org - best concise tutorial to shell scripting shellscript.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Links - Ruby</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/links-ruby/</link>
+      <pubDate>Fri, 18 Feb 2022 09:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/links-ruby/</guid>
+      <description>
+        
+          
+            Here is a curated links of sites that are I think are useful as I learn or relearn Ruby and Rails further. Incomplete of course but there&#39;s always the internet. Will add any that are worthy to be linked here. For now, this would suffice. If you think there are links worthy to be added here, let me know in the comment below. Thank you!
+Ruby Official Documentation  Ruby Documentation 1 Ruby Documentation 2 Ruby Documentation 3  Learn Ruby  150 Ruby Articles by Jesus Castello Idiosyncratic Ruby - Documenting All Ruby Specialities The Definitive Ruby Tutorial For Complete Beginners Launch School: Intro to Programming with Ruby Launch School: OOP with Ruby Launch School: Core Ruby Tools  Learn Rails  Boring Rails - Direct to the point articles about rails Launch School: Demystifying Rails  Ruby Tools  Curl to Ruby Ruby Cheetsheet  
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

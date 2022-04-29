@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>perl-links on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/perl-links/</link>
+    <description>Recent content in perl-links on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Sat, 19 Feb 2022 09:20:11 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/perl-links/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Links - Perl</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/links-perl/</link>
+      <pubDate>Sat, 19 Feb 2022 09:20:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/links-perl/</guid>
+      <description>
+        
+          
+            Here is a curated links of sites that are I think are useful as I learn or relearn Perl further. Incomplete of course but there&#39;s always the internet. Will add any that are worthy to be linked here. For now, this would suffice. If you think there are links worthy to be added here, let me know in the comment below. Thank you!
+ Perl Official Website Perl CPAN Searcheable CPAN Perl Tutorial Perl Maven - A lot of info about Perl from Gábor Szabó Curl to Perl  
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

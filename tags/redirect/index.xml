@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>redirect on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/redirect/</link>
+    <description>Recent content in redirect on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Fri, 10 Jul 2020 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/redirect/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Apache Redirect for http to https via .htaccess</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/redirect-http-to-https-in-htaccess/</link>
+      <pubDate>Fri, 10 Jul 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/redirect-http-to-https-in-htaccess/</guid>
+      <description>
+        
+          
+            Generic way to do it but would result into duplicate URLs, e.g. https://example.com &amp;amp; https://www.example.com
+1RewriteCond %{HTTPS} off 2RewriteCond %{HTTP:X-Forwarded-Proto} !https 3RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301] To avoid the duplicate URLs, do the following:
+1## 1. Redirect all non-https except www to https://www 2RewriteCond %{HTTP_HOST} !foo\.example\.com [NC] # exclude foo.example.com domain 3RewriteCond %{HTTP_HOST} !bar\.example\.net [NC] # exclude foo.example.net domain 4RewriteCond %{HTTP_HOST} . 5RewriteCond %{HTTP_HOST} !^www\. [NC] 6RewriteCond %{HTTP:X-Forwarded-Proto} !https 7RewriteRule ^ https://www.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Quick Install Nginx in CentOS7 &#43; 301 Redirect</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/quick-install-nginx-in-centos7-301-redirect/</link>
+      <pubDate>Fri, 10 Jul 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/quick-install-nginx-in-centos7-301-redirect/</guid>
+      <description>
+        
+          
+            1sudo yum install epel-release 2sudo yum install nginx 3sudo systemctl start nginx 4... 5... 6edit /etc/nginx/nginx.conf 78... 9... 10#add this line in bottom of &amp;#39;server&amp;#39; block: 11Redirect 301 https://your_domain_here/$request_uri; 1213sudo systemctl restart nginx 14sudo systemctl enable nginx 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Redirect Via Varnish</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/redirect-via-varnish/</link>
+      <pubDate>Tue, 01 Oct 2019 23:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/redirect-via-varnish/</guid>
+      <description>
+        
+          
+             https://www.rsreese.com/redirect-http-to-https-using-varnish/ https://varnish-cache.org/tips/vcl/redirect.html https://www.dmsp.de/system-administration/varnish-cache-vcl-301-redirect/  
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>encryption on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/encryption/</link>
+    <description>Recent content in encryption on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Fri, 28 Aug 2020 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/encryption/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Zip a Text File using 256-AES Encryption</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/zip-text-file-256aes/</link>
+      <pubDate>Fri, 28 Aug 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/zip-text-file-256aes/</guid>
+      <description>
+        
+          
+            Use the following command:
+17z a -p -mem=AES256 -tzip file.zip source-file1.txt source-file2.txt It will ask for a password but will obviously not be echoed.
+To decrypt:
+17za e file.zip You need to install as well associated tools. Shown are for Redhat-like Linux:
+1sudo yum install p7zip p7zip-plugins Some details https://unix.stackexchange.com/questions/182573/how-strong-is-the-encryption-of-a-zip-file-in-linux-mint and https://www.2daygeek.com/zip-7zip-encrypt-decrypt-password-protect-files-folders-linux/
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Mail Encryption in Postfix</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/mail-encryption/</link>
+      <pubDate>Sat, 28 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/mail-encryption/</guid>
+      <description>
+        
+          
+            in /etc/postfix/main.cf, add:
+1smtpd_tls_security_level = may 2smtp_tls_security_level = may 3smtp_tls_loglevel = 1 4smtpd_tls_loglevel = 1 Details from From http://blog.snapdragon.cc/2013/07/07/setting-postfix-to-encrypt-all-traffic-when-talking-to-other-mailservers/
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

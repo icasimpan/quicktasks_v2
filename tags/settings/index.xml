@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>settings on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/settings/</link>
+    <description>Recent content in settings on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Fri, 18 Sep 2020 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/settings/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CSS/JS Aggregation in Drupal</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/css-js-aggregation-drupal/</link>
+      <pubDate>Fri, 18 Sep 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/css-js-aggregation-drupal/</guid>
+      <description>
+        
+          
+            When you&#39;re doing development, most of the time, you don&#39;t want to minify css/js. Here&#39;s how you the respective settings:
+settings.local.php (drupal 7)
+1$conf[&amp;#39;preprocess_css&amp;#39;] = FALSE; 2$conf[&amp;#39;preprocess_js&amp;#39;] = FALSE; settings.local.php (drupal 8 &amp;amp; 9)
+1$config[&amp;#39;system.performance&amp;#39;][&amp;#39;css&amp;#39;][&amp;#39;preprocess&amp;#39;] = FALSE; 2$config[&amp;#39;system.performance&amp;#39;][&amp;#39;js&amp;#39;][&amp;#39;preprocess&amp;#39;] = FALSE; drush (drupal 7)
+1drush vset preprocess_js 0 --yes 2drush vset preprocess_css 0 --yes drush (drupal 8 &amp;amp; 9)
+1drush -y config-set system.performance css.preprocess 0 2drush -y config-set system.performance js.preprocess 0 See https://drupal.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Failed to open stream: DrupalTemporaryStreamWrapper::stream_open</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/failed-to-open-stream-drupaltemporarystreamwrapperstream/</link>
+      <pubDate>Fri, 17 Apr 2020 23:50:10 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/failed-to-open-stream-drupaltemporarystreamwrapperstream/</guid>
+      <description>
+        
+          
+            From CLI
+This error is shown:
+1failed to open stream: &amp;#34;DrupalTemporaryStreamWrapper::stream_open&amp;#34; call failed file.inc:1983 Solution
+Seems to be an issue with the temp file. Check &amp;quot;drush st&amp;quot; and confirm if the temp file is still accessible.
+This gives some hints on how to set the &amp;quot;temp and private files&amp;quot; in drupal setttings https://www.drupal.org/forum/support/installing-drupal/2011-03-01/failed-to-open-stream-drupaltemporarystreamwrapperstream#comment-4258986
+However, my test showed using &amp;quot;/tmp&amp;quot; doesn&#39;t seem to reflected in drupal. What works is adding the full path, something like this
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Check Current Character Set Settings in MySQL</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/check-current-character-set-settings-in-mysql/</link>
+      <pubDate>Mon, 15 Oct 2018 07:46:36 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/check-current-character-set-settings-in-mysql/</guid>
+      <description>
+        
+          
+            1mysql&amp;gt; SHOW VARIABLES WHERE Variable_name LIKE &amp;#39;character\_set\_%&amp;#39; OR Variable_name LIKE &amp;#39;collation%&amp;#39;; Sample output as follows: Image not found  a.warning-link { color: inherit !important; font-weight: inherit !important; text-decoration: underline !important; border-bottom: none !important; }  Web path: https://ismael.casimpan.com/img/check-mysql-charset-settings.png
+Disk path: static/img/check-mysql-charset-settings.png
+Using Page Bundles: false
+ 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>settings.php: Few Ways to Add Changes</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/settings-php-few-ways-add-changes/</link>
+      <pubDate>Mon, 09 Apr 2018 00:20:33 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/settings-php-few-ways-add-changes/</guid>
+      <description>
+        
+          
+            Method 1 (env.json) in drupalroot/sites/default/env.json
+1{ 2&amp;#34;conf_dir&amp;#34;: &amp;#34;/etc/drupal/site_identifier_here/default&amp;#34; 3} in /etc/drupal/site_identifier_here/default, there is then a file globals.conf.d/globals.default.json with content:
+1{ 2&amp;#34;id&amp;#34;: &amp;#34;default&amp;#34;, 3&amp;#34;databases&amp;#34;: { 4&amp;#34;default&amp;#34;: { 5&amp;#34;default&amp;#34;: { 6&amp;#34;database&amp;#34;: &amp;#34;yourDB&amp;#34;, 7&amp;#34;username&amp;#34;: &amp;#34;yourDBA&amp;#34;, 8&amp;#34;password&amp;#34;: &amp;#34;yourPASS&amp;#34;, 9&amp;#34;host&amp;#34;: &amp;#34;127.0.0.1&amp;#34;, 10&amp;#34;driver&amp;#34;: &amp;#34;mysql&amp;#34; 11} 12} 13}, 14&amp;#34;uri&amp;#34;: &amp;#34;example.com&amp;#34;, 15&amp;#34;doc_root&amp;#34;: &amp;#34;www&amp;#34;, 16&amp;#34;chef_type&amp;#34;: &amp;#34;data_bag_item&amp;#34;, 17&amp;#34;data_bag&amp;#34;: &amp;#34;drupal&amp;#34; 18} 1920*Method 2: Referenced from settings.php* 2122See https://ismael.casimpan.com/quicktasks-drupal/post/settings-php-including-settings-local/ 2324With sample settings.local.php in https://ismael.casimpan.com/quicktasks-drupal/post/settings-php-sample-settings-local/ 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>settings.php: Adding reference to settings.local.php</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/settings-php-including-settings-local/</link>
+      <pubDate>Mon, 09 Apr 2018 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/settings-php-including-settings-local/</guid>
+      <description>
+        
+          
+            1/** 2* Load local development override configuration, if available. 3* 4* Use settings.local.php to override variables on secondary (staging, 5* development, etc) installations of this site. Typically used to disable 6* caching, JavaScript/CSS compression, re-routing of outgoing emails, and 7* other things that should not happen on development and testing sites. 8* 9* Keep this code block at the end of this file to take full effect. 10*/ 11if (file_exists(__DIR__ .
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>settings.php: Sample settings.local.php</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/settings-php-sample-settings-local/</link>
+      <pubDate>Mon, 09 Apr 2018 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/settings-php-sample-settings-local/</guid>
+      <description>
+        
+          
+            1&amp;lt;?php 2$databases[&amp;#39;default&amp;#39;][&amp;#39;default&amp;#39;] = array ( 3&amp;#39;database&amp;#39; =&amp;gt; &amp;#39;yourDB&amp;#39;, 4&amp;#39;username&amp;#39; =&amp;gt; &amp;#39;yourDBA&amp;#39;, 5&amp;#39;password&amp;#39; =&amp;gt; &amp;#39;yourDBPASS&amp;#39;, 6&amp;#39;prefix&amp;#39; =&amp;gt; &amp;#39;&amp;#39;, 7&amp;#39;host&amp;#39; =&amp;gt; &amp;#39;localhost&amp;#39;, 8&amp;#39;port&amp;#39; =&amp;gt; &amp;#39;3306&amp;#39;, 9&amp;#39;namespace&amp;#39; =&amp;gt; &amp;#39;Drupal\\Core\\Database\\Driver\\mysql&amp;#39;, 10&amp;#39;driver&amp;#39; =&amp;gt; &amp;#39;mysql&amp;#39;, 11); EDIT: Updated to reflect new learning in https://ismael.casimpan.com/quicktasks-drupal/post/weird-session-issue/
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Custom Site Title Per Drupal Installation (d8)</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/custom-title-per-drupal-installation/</link>
+      <pubDate>Mon, 09 Apr 2018 00:18:01 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/custom-title-per-drupal-installation/</guid>
+      <description>
+        
+          
+            Do you have several drupal installation in a test server that you want to distinguish which is which? Add this to settings.local.php and it will override whatever is in database.
+1$config[&amp;#39;system.site&amp;#39;][&amp;#39;name&amp;#39;] = &amp;#34;Example Site (Fixes)&amp;#34;; 
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

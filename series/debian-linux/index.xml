@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>debian-linux on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/series/debian-linux/</link>
+    <description>Recent content in debian-linux on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Mon, 30 Sep 2019 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/series/debian-linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Build an Ubuntu Kernel</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/build-ubuntu-kernel/</link>
+      <pubDate>Mon, 30 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/build-ubuntu-kernel/</guid>
+      <description>
+        
+          
+            See https://wiki.ubuntu.com/Kernel/BuildYourOwnKernel
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Check Debian Installed Packages</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/check-for-installed-packages/</link>
+      <pubDate>Mon, 30 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/check-for-installed-packages/</guid>
+      <description>
+        
+          
+            1apt list --installed See https://askubuntu.com/questions/17823/how-to-list-all-installed-packages
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Check Debian Package Content</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/check-debian-package-content/</link>
+      <pubDate>Mon, 30 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/check-debian-package-content/</guid>
+      <description>
+        
+          
+            1dpkg-query -L &amp;lt;package_name&amp;gt; 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Check Debian Package List</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/check-debian-package-list/</link>
+      <pubDate>Mon, 30 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/check-debian-package-list/</guid>
+      <description>
+        
+          
+            1apt-cache pkgnames 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Check Debian Package Source</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/check-debian-package-source/</link>
+      <pubDate>Mon, 30 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/check-debian-package-source/</guid>
+      <description>
+        
+          
+            1dpkg -s &amp;lt;package&amp;gt; 2apt-cache showpkg &amp;lt;package&amp;gt; See details in https://askubuntu.com/questions/8560/how-do-i-find-out-which-repository-a-package-comes-from
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Check Debian Specific Package Update Info</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/check-specific-debian-package-update-info/</link>
+      <pubDate>Mon, 30 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/check-specific-debian-package-update-info/</guid>
+      <description>
+        
+          
+            1alaa@aa-lu:~$ apt-cache policy vlc 2vlc: 3Installed: 2.0.8-0ubuntu0.13.04.1 4Candidate: 2.0.8-0ubuntu0.13.04.1 5Version table: 6*** 2.0.8-0ubuntu0.13.04.1 0 7500 http://ae.archive.ubuntu.com/ubuntu/ raring-updates/universe i386 Packages 8500 http://security.ubuntu.com/ubuntu/ raring-security/universe i386 Packages 9100 /var/lib/dpkg/status 102.0.6-1 0 11500 http://ae.archive.ubuntu.com/ubuntu/ raring/universe i386 Packages See https://askubuntu.com/questions/340530/how-can-i-check-the-available-version-of-a-package-in-the-repositories
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Debian Package List To Be Updated</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/debian-package-list-to-be-updated/</link>
+      <pubDate>Mon, 30 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/debian-package-list-to-be-updated/</guid>
+      <description>
+        
+          
+            1/usr/lib/update-notifier/apt-check -p 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Debian Package Search</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/debian-package-search/</link>
+      <pubDate>Mon, 30 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/debian-package-search/</guid>
+      <description>
+        
+          
+            1root@jenkins3:~# apt-cache search chromedriver 2chromium-chromedriver - WebDriver driver for the Chromium Browser 3chromium-chromedriver-dbg - chromium-chromedriver debug symbols 4oxideqt-chromedriver - Web browser engine for Qt (transitional package) 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Updating an Debian/Ubuntu OS that is no longer supported</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/upgrading-unsupported-debian-os/</link>
+      <pubDate>Mon, 30 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/upgrading-unsupported-debian-os/</guid>
+      <description>
+        
+          
+            In our example, we have Debian Squeeze (6.0) and it&#39;s been unsupported since Feb 2016. We can no longer install nor update the packages until you point it to another source...the archives.
+So, in /etc/apt/sources.list, add you will see:
+1deb http://ftp.us.debian.org/debian/ squeeze main 2deb-src http://ftp.us.debian.org/debian/ squeeze main Replace it with:
+1deb http://archive.debian.org/debian squeeze main 2deb http://archive.debian.org/debian squeeze-lts main and you can now access &#39;apt-get&#39; or &#39;dpkg&#39; as before (but limited to what&#39;s in the archive).
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Updating Debian Kernel Only</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/updating-debian-kernel-only/</link>
+      <pubDate>Mon, 30 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/updating-debian-kernel-only/</guid>
+      <description>
+        
+          
+            1sudo apt-get update 2sudo apt-get install linux-virtual See details in https://www.digitalocean.com/community/tutorials/how-to-update-a-digitalocean-server-s-kernel#upgrading-only-the-latest-kernel
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Upgrade Debian to Higher LTS</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/upgrade-debian-to-higher-lts/</link>
+      <pubDate>Mon, 30 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/upgrade-debian-to-higher-lts/</guid>
+      <description>
+        
+          
+            1do-release-upgrade See https://help.ubuntu.com/lts/serverguide/installing-upgrading.html
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Upgrade Single Debian Package Source</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/upgrade-single-debian-package/</link>
+      <pubDate>Mon, 30 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/upgrade-single-debian-package/</guid>
+      <description>
+        
+          
+            1apt-get install --only-upgrade &amp;lt;packagename&amp;gt; See details in https://askubuntu.com/questions/44122/how-to-upgrade-a-single-package-using-apt-get
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

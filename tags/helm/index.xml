@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>helm on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/helm/</link>
+    <description>Recent content in helm on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Sun, 28 Jun 2020 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/helm/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Adding Helm Repo</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/adding-helm-repo/</link>
+      <pubDate>Sun, 28 Jun 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/adding-helm-repo/</guid>
+      <description>
+        
+          
+            A Helm Repo that&#39;s in https://github.com/codecentric/helm-charts has a corresponding repo URL. Add it as follows:
+1user@example:~$ helm repo add codecentric https://codecentric.github.io/helm-charts 2&amp;#34;codecentric&amp;#34; has been added to your repositories 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Installing Software using Helm</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/install-using-helm/</link>
+      <pubDate>Sun, 28 Jun 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/install-using-helm/</guid>
+      <description>
+        
+          
+            Say you want install jenkins and corresponding repo already added.
+1user@example:~$ helm install jenkins codecentric/jenkins 2NAME: jenkins 3LAST DEPLOYED: Sun Jun 28 09:59:52 2020 4NAMESPACE: default 5STATUS: deployed 6REVISION: 1 7TEST SUITE: None 8NOTES: 9************************************************************************ 10* * 11* Jenkins Helm Chart by codecentric AG * 12* * 13************************************************************************ 1415In case the chart was installed with the default configuration and you did not 16configure an admin user, Jenkins creates one per default.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

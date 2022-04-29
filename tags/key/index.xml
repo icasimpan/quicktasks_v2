@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>key on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/key/</link>
+    <description>Recent content in key on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Mon, 30 Sep 2019 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/key/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>gpg key expired when doing &#39;apt-get update&#39;</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/gpg-key-expired-apt-get-update/</link>
+      <pubDate>Mon, 30 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/gpg-key-expired-apt-get-update/</guid>
+      <description>
+        
+          
+            If you&#39;re seeing something like this:
+1W: An error occurred during the signature verification. The repository is not updated and the previous index files will be used. GPG error: https://packagecloud.io/github/git-lfs/ubuntu xenial InRelease: The following signatures couldn&amp;#39;t be verified because the public key is not available: NO_PUBKEY 6B05F25D762E3157 2W: Failed to fetch https://packagecloud.io/github/git-lfs/ubuntu/dists/xenial/InRelease The following signatures couldn&amp;#39;t be verified because the public key is not available: NO_PUBKEY 6B05F25D762E3157 3W: Some index files failed to download.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Rsync With Specific Key</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/rsync-with-specific-key/</link>
+      <pubDate>Thu, 25 Oct 2018 09:20:07 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/rsync-with-specific-key/</guid>
+      <description>
+        
+          
+            1rsync -Pav -e &amp;#34;ssh -i $HOME/.ssh/somekey&amp;#34; username@hostname:/from/dir/ /to/dir/ 
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

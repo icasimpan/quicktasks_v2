@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>hidden on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/hidden/</link>
+    <description>Recent content in hidden on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Sat, 06 Jun 2020 09:21:14 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/hidden/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Rsync including hidden files</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/rsync-including-hidden/</link>
+      <pubDate>Sat, 06 Jun 2020 09:21:14 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/rsync-including-hidden/</guid>
+      <description>
+        
+          
+            If you need to rsync those hidden directories or files starting with dot, do it something like below (note the trailing /)
+1rsync -avz -e ssh --progress user@source-server:/somedirA/ somedirB/ See https://stackoverflow.com/questions/9046749/rsync-not-synchronizing-htaccess-file
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>contrib on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/contrib/</link>
+    <description>Recent content in contrib on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Thu, 08 Oct 2020 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/contrib/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Check for Active Drupal Contrib Modules</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/check-active-drupal-contrib-modules/</link>
+      <pubDate>Thu, 08 Oct 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/check-active-drupal-contrib-modules/</guid>
+      <description>
+        
+          
+            Use the command:
+1~$ drush pml --no-core --status=Enabled See sample below:
+1~$ drush pml --no-core --status=Enabled 2----------------------------- ----------------------------------------------------------- --------- ----------------- 3Package Name Status Version 4----------------------------- ----------------------------------------------------------- --------- ----------------- 5Field types Address (address) Enabled 8.x-1.8 6Administration Admin Toolbar (admin_toolbar) Enabled 8.x-2.3 7Administration Admin Toolbar Extra Tools (admin_toolbar_tools) Enabled 8.x-2.3 8Spam control Antibot (antibot) Enabled 8.x-1.4 9Entity Automatic Entity Labels (auto_entitylabel) Enabled 8.x-3.0-beta3 10Content Display Calendar Link (calendar_link) Enabled 8.x-1.1 11Other Component Libraries (components) Enabled 8.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

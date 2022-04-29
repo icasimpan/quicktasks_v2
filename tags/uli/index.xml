@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>uli on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/uli/</link>
+    <description>Recent content in uli on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Mon, 09 Apr 2018 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/uli/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Drush ULI: disable automatic open in browser</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/drush-uli-disable-automatic-open-in-browser/</link>
+      <pubDate>Mon, 09 Apr 2018 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/drush-uli-disable-automatic-open-in-browser/</guid>
+      <description>
+        
+          
+            1drush uli --no-browser 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Getting drush uli in a Pantheon site</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/drush-uli-pantheon-site/</link>
+      <pubDate>Sun, 08 Apr 2018 23:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/drush-uli-pantheon-site/</guid>
+      <description>
+        
+          
+            See https://pantheon.io/blog/five-steps-feeling-drupal-drush
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

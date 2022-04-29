@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>cloudflare on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/cloudflare/</link>
+    <description>Recent content in cloudflare on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Fri, 10 Jul 2020 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/cloudflare/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Logging Cloudflare Country Code in Apache Backend</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/logging-cloudflare-countrycode-apache-backend/</link>
+      <pubDate>Fri, 10 Jul 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/logging-cloudflare-countrycode-apache-backend/</guid>
+      <description>
+        
+          
+            1... 2... 3LogFormat &amp;#34;%h %l %u %t \&amp;#34;%r\&amp;#34; %&amp;gt;s %b \&amp;#34;%{Referer}i\&amp;#34; \&amp;#34;%{User-Agent}i\&amp;#34; %{cf-ipcountry}i&amp;#34; cloudflare_custom 4CustomLog /var/log/httpd/site.example.com-cloudflare_custom.log cloudflare_custom 5... 6... See details in https://support.cloudflare.com/hc/en-us/articles/200168236-What-does-Cloudflare-IP-Geolocation-do-
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

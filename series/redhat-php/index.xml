@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>redhat-php on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/series/redhat-php/</link>
+    <description>Recent content in redhat-php on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Sun, 12 Jul 2020 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/series/redhat-php/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Upgrade php 5.4 to php 5.6 in CentOS</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/php5.4-to-php5.6-upgrade-in-centos/</link>
+      <pubDate>Sun, 12 Jul 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/php5.4-to-php5.6-upgrade-in-centos/</guid>
+      <description>
+        
+          
+            NOTE: php5.4 and php5.6 is no longer supported.
+https://www.mojowill.com/geek/howto-install-php-5-4-5-5-or-5-6-on-centos-6-and-centos-7/
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Upgrade php 5.6 to php 7.0 in CentOS7</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/php5.6-to-php7.0-upgrade-in-centos7/</link>
+      <pubDate>Sun, 12 Jul 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/php5.6-to-php7.0-upgrade-in-centos7/</guid>
+      <description>
+        
+          
+            NOTE: php5.6 and php7.0 is no longer supported.
+1wget https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm 2wget http://rpms.remirepo.net/enterprise/remi-release-7.rpm 3rpm -Uvh remi-release-7.rpm epel-release-latest-7.noarch.rpm Then, enable &amp;quot;remi-php70&amp;quot; in /etc/yum.repos.d/remi-php70.repo
+Then, yum update php.
+Details in https://blog.remirepo.net/post/2016/02/14/Install-PHP-7-on-CentOS-RHEL-Fedora
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>cross-check on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/cross-check/</link>
+    <description>Recent content in cross-check on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Sun, 07 Jun 2020 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/cross-check/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cross-check Certificate with Private Key and CSR</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/cross-check-certificate-with-csr-and-private-key/</link>
+      <pubDate>Sun, 07 Jun 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/cross-check-certificate-with-csr-and-private-key/</guid>
+      <description>
+        
+          
+            1openssl x509 -noout -modulus -in certificate.crt | openssl md5 2openssl rsa -noout -modulus -in privateKey.key | openssl md5 3openssl req -noout -modulus -in CSR.csr | openssl md5 
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

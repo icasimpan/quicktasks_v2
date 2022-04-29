@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>linux on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/series/linux/</link>
+    <description>Recent content in linux on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Sun, 12 Jul 2020 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/series/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Add Linux Swap File</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/add-linux-swap-file/</link>
+      <pubDate>Sun, 12 Jul 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/add-linux-swap-file/</guid>
+      <description>
+        
+          
+            1sudo dd if=/dev/zero of=/mnt/file.swap bs=1M count=512 2sudo mkswap /mnt/file.swap 3sudo chmod 0600 /mnt/file.swap 4sudo swapon /mnt/file.swap 5echo &amp;#34;/mnt/file.swap none swap sw 0 0&amp;#34; &amp;gt;&amp;gt; /etc/fstab See details in https://www.garron.me/en/linux/increase-swap-memory-linux.html
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Removing Group Sticky Bit</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/remove-group-sticky-bit/</link>
+      <pubDate>Sun, 12 Jul 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/remove-group-sticky-bit/</guid>
+      <description>
+        
+          
+            1chmod g-s &amp;lt;dirname_here&amp;gt; More details in https://serverfault.com/questions/238962/how-do-i-clear-the-s-permission-on-a-directory-in-linux
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

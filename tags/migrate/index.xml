@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>migrate on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/migrate/</link>
+    <description>Recent content in migrate on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Mon, 06 Jul 2020 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/migrate/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Migrate Jenkins Jobs to New Server</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/migrate-jenkins-jobs-new-server/</link>
+      <pubDate>Mon, 06 Jul 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/migrate-jenkins-jobs-new-server/</guid>
+      <description>
+        
+          
+            https://staxmanade.com/2015/01/how-to-migrate-a-jenkins-job-to-new-jenkins-server/
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Move a directory in one git repo to another (preserving history)</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/move-directory-in-git-to-another-repo/</link>
+      <pubDate>Sun, 08 Apr 2018 23:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/move-directory-in-git-to-another-repo/</guid>
+      <description>
+        
+          
+            See http://gbayer.com/development/moving-files-from-one-git-repository-to-another-preserving-history/
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

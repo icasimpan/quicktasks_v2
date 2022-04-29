@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>playbook on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/playbook/</link>
+    <description>Recent content in playbook on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Tue, 06 Oct 2020 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/playbook/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ansible Error: sudo not valid attribute for Play</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/ansible-error-sudo-not-valid-attribute-for-play/</link>
+      <pubDate>Tue, 06 Oct 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/ansible-error-sudo-not-valid-attribute-for-play/</guid>
+      <description>
+        
+          
+            If you see an error such as this:
+1ERROR! &amp;#39;sudo&amp;#39; is not a valid attribute for a Play You need to replace:
+1sudo: yes with
+1become:true See https://stackoverflow.com/questions/60162859/error-sudo-is-not-a-valid-attribute-for-a-play
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Create Ansible Playbook Skeleton</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/create-playbook-skeleton/</link>
+      <pubDate>Sat, 21 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/create-playbook-skeleton/</guid>
+      <description>
+        
+          
+            1ansible@example.com:/opt/ansible/roles$ ansible-galaxy init ansible-role-python2 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Run Ansible Playbook</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/run-ansible-playbook/</link>
+      <pubDate>Sat, 21 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/run-ansible-playbook/</guid>
+      <description>
+        
+          
+            1ansible-playbook ansible/web-apache-ubuntu.yml -u root --private-key ~/.ssh/ansible-only.ppk -i &amp;#34;67.217.89.118, &amp;#34; -vvv 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Variable in a Playbook</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/variable-in-playbook/</link>
+      <pubDate>Sat, 21 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/variable-in-playbook/</guid>
+      <description>
+        
+          
+            ex. Set the &#39;webserver_name&#39; variable as &#39;httpd&#39;
+1- set_fact: 2webserver_name: httpd 
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

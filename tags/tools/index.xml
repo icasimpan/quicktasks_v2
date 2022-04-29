@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tools on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/tools/</link>
+    <description>Recent content in tools on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Fri, 31 Jul 2020 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/tools/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Reliable Remote Laptop Connections using tmate</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/reliable-remote-laptop-connections-using-tmate/</link>
+      <pubDate>Fri, 31 Jul 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/reliable-remote-laptop-connections-using-tmate/</guid>
+      <description>
+        
+          
+            If you even have a need to connect to a remote laptop, tmate is the solution. Had tried this personally in MacOS Catalina (10.15.5) and it works fine.
+1brew install tmate I encountered this error though after installation:
+1$ tmux 2dyld: Library not loaded: /usr/local/lib/libevent-2.0.5.dylib 3Referenced from: /usr/local/bin/tmate 4Reason: image not found 5Trace/BPT trap: 5 Solution is to uninstall and re-install
+1brew uninstall --force tmate 2brew install tmate So in summary, one installs tmux and the other simply connects to it via ssh.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

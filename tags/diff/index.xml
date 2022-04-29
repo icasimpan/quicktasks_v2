@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>diff on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/diff/</link>
+    <description>Recent content in diff on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Mon, 09 Apr 2018 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/diff/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Drush Features Diff (drupal7)</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/drupal7-drush-features-diff/</link>
+      <pubDate>Mon, 09 Apr 2018 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/drupal7-drush-features-diff/</guid>
+      <description>
+        
+          
+            Enable diff module  1drush en diff -y Show all features  1[root@yoursite.example.com docroot]# drush fd 2BEF Test Content bef_test_content Disabled 7.x-3.5 3Keystone Media News content_keystone_media Enabled 7.x-1.0-alpha10 4Content Set #1 content_set_1 Enabled 7.x-1.0-alpha9m 5Content Set #2 content_set_2 Enabled 7.x-1.0-alpha16m 6Content Set #3 content_set_3 Enabled 7.x-1.0-alpha80 Overridden 7Content Set #4 content_set_4 Enabled 7.x-1.0-alpha26 8Date Migration Example date_migrate_example Disabled 7.x-2.10 9Features Tests features_test Disabled 7.x-2.10 10Feeds Import feeds_import Enabled 7.x-2.0-beta4 11Feeds News feeds_news Disabled 7.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Compare tags contents in github</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/compare-tag-contents-github/</link>
+      <pubDate>Sun, 08 Apr 2018 23:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/compare-tag-contents-github/</guid>
+      <description>
+        
+          
+            Example https://github.com/icasimpan/shcf/compare/shcf-v0.2.0...shcf-v0.3.0
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

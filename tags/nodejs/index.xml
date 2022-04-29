@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>nodejs on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/nodejs/</link>
+    <description>Recent content in nodejs on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Wed, 23 Mar 2022 23:17:11 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/nodejs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>NodeJS Clear Cache</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/nodejs-clear-cache/</link>
+      <pubDate>Wed, 23 Mar 2022 23:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/nodejs-clear-cache/</guid>
+      <description>
+        
+          
+            1npm cache clean --force 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>NodeJS Install in WSL</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/nodejs-install-in-wsl/</link>
+      <pubDate>Sun, 13 Feb 2022 23:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/nodejs-install-in-wsl/</guid>
+      <description>
+        
+          
+            NodeJS 14+ is needed in WSL. Usual installation via apt in Ubuntu doesn&#39;t work. This one works so far:
+1curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash - 2sudo apt-get install -y nodejs 
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

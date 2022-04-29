@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>version on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/version/</link>
+    <description>Recent content in version on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Fri, 22 Apr 2022 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/version/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Get ReactJS Version</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/get-reactjs-version/</link>
+      <pubDate>Fri, 22 Apr 2022 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/get-reactjs-version/</guid>
+      <description>
+        
+          
+            From Command Line: Do it something like this:
+1~$ npm view react version And you get the version directly:
+1~$ npm view react version 218.0.0 Other means, see https://stackoverflow.com/questions/36994564/how-can-one-tell-the-version-of-react-running-at-runtime-in-the-browser
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Get Powershell Version</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/powershell-version/</link>
+      <pubDate>Sun, 12 Jul 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/powershell-version/</guid>
+      <description>
+        
+          
+            1PS /Users/example&amp;gt; $PSVersionTable 23Name Value 4---- ----- 5PSVersion 7.0.2 6PSEdition Core 7GitCommitId 7.0.2 8OS Darwin 19.5.0 Darwin Kernel Version 19.5.0: Tue May 26 20:41:44 PDT 2020; root:xnu-6153.121.2~2/RELEASE_X86_64 9Platform Unix 10PSCompatibleVersions {1.0, 2.0, 3.0, 4.0…} 11PSRemotingProtocolVersion 2.3 12SerializationVersion 1.1.0.1 13WSManStackVersion 3.0 
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

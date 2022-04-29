@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>docker-compose on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/docker-compose/</link>
+    <description>Recent content in docker-compose on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Tue, 24 Sep 2019 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/docker-compose/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Install Docker Compose</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/install-docker-compose/</link>
+      <pubDate>Tue, 24 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/install-docker-compose/</guid>
+      <description>
+        
+          
+            1sudo yum install epel-release 2sudo yum install -y python-pip 3sudo pip install docker-compose Further details in https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-compose-on-centos-7
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

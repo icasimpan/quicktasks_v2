@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>optimization on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/optimization/</link>
+    <description>Recent content in optimization on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Sun, 24 Nov 2019 23:15:37 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/optimization/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Shrink Huge ibdata1</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/shrink-huge-ibdata1/</link>
+      <pubDate>Sun, 24 Nov 2019 23:15:37 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/shrink-huge-ibdata1/</guid>
+      <description>
+        
+          
+            Best way is to make one file per table and not use default which baloons to a huge file and never shrinks when some tables are removed and unused. See https://www.thegeekstuff.com/2016/02/mysql-innodb-file-per-table
+Some other reference:
+ https://www.percona.com/blog/2013/08/20/why-is-the-ibdata1-file-continuously-growing-in-mysql/ https://www.percona.com/blog/2013/09/25/how-to-reclaim-space-in-innodb-when-innodb_file_per_table-is-on/ https://www.percona.com/blog/2014/08/21/the-mysql-ibdata1-disk-space-issue-and-big-tables-part-1/  
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Some MySQL Tweaking Tips</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/some-mysql-tweaking-tips/</link>
+      <pubDate>Mon, 15 Oct 2018 12:39:54 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/some-mysql-tweaking-tips/</guid>
+      <description>
+        
+          
+            See https://serverfault.com/questions/42789/how-to-increase-memory-usage-in-mysql-server-to-improve-speed
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>python-links on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/python-links/</link>
+    <description>Recent content in python-links on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Fri, 18 Feb 2022 09:19:11 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/python-links/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Links - Python</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/links-python/</link>
+      <pubDate>Fri, 18 Feb 2022 09:19:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/links-python/</guid>
+      <description>
+        
+          
+            Python Official Documentation  Python Package Index or PyPI Python3 Standard Library Python3 Docs  Learn Python  PyNative Learn Python in Y minutes  Python Frameworks  Django Project Flask Bottle  Others  Beautiful Soup - HTML &amp;amp; XML web scraping Stackoverflow: Other alternatives to venv Build REST API with Django REST Framework in 30mis  
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

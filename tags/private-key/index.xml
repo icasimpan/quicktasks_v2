@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>private-key on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/private-key/</link>
+    <description>Recent content in private-key on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Sun, 07 Jun 2020 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/private-key/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Generate CSR from Existing Private Key</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/generate-csr-from-existing-private-key/</link>
+      <pubDate>Sun, 07 Jun 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/generate-csr-from-existing-private-key/</guid>
+      <description>
+        
+          
+            1openssl req -out CSR.csr -key privateKey.key -new 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Remove Passphrase from Private Key</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/remove-passphrase-from-private-key/</link>
+      <pubDate>Sun, 07 Jun 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/remove-passphrase-from-private-key/</guid>
+      <description>
+        
+          
+            1openssl rsa -in privateKey.pem -out newPrivateKey.pem 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Unencrypt Private Key</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/unencrypt-private-key/</link>
+      <pubDate>Sun, 07 Jun 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/unencrypt-private-key/</guid>
+      <description>
+        
+          
+            1openssl rsa -in encrypted-private.key -out non-encrypted-private.key 2Enter pass phrase for encrypted-private.key: 3writing RSA key See https://knowledge.digicert.com/solution/SO5292.html
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Add Passphrase to Existing SSH Key</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/add-passphrase-to-existing-ssh-key/</link>
+      <pubDate>Sun, 05 Apr 2020 18:36:44 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/add-passphrase-to-existing-ssh-key/</guid>
+      <description>
+        
+          
+            1$ openssl rsa -aes256 -in ./id_rsa -out ./id_rsa.hashed 2writing RSA key 3Enter PEM pass phrase: 4Verifying - Enter PEM pass phrase: You should then use &#39;./id_rsa.hashed&#39; as your private key. See https://security.stackexchange.com/questions/59136/can-i-add-a-password-to-an-existing-private-key for details.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Retrieve SSH Public Key From Private Key</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/retrieve-ssh-public-key-from-private-key/</link>
+      <pubDate>Thu, 02 Apr 2020 18:36:44 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/retrieve-ssh-public-key-from-private-key/</guid>
+      <description>
+        
+          
+            1ssh-keygen -y -f ~/.ssh/id_rsa &amp;gt; ~/.ssh/id_rsa.pub See details in https://askubuntu.com/questions/53553/how-do-i-retrieve-the-public-key-from-a-ssh-private-key
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

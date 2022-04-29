@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>csr on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/csr/</link>
+    <description>Recent content in csr on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Sun, 07 Jun 2020 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/csr/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cert Chain for a multi-domain Comondo Positive SSL</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/cert-chain-multidomain-comodo-positive-ssl/</link>
+      <pubDate>Sun, 07 Jun 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/cert-chain-multidomain-comodo-positive-ssl/</guid>
+      <description>
+        
+          
+            1cat AddTrustExternalCARoot.crt COMODORSAAddTrustCA.crt COMODORSADomainValidationSecureServerCA.crt &amp;gt;&amp;gt; cert-chain.pem NOTE: This is the inverse of &amp;quot;Creating an SSL Bundle out of Comodo Positive SSL&amp;quot; which seems valid as well. Not sure if it&#39;s valid in any order.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Cert Chain for Positive wildcard multi-domain</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/cert-chain-positive-wildcard-multidomain/</link>
+      <pubDate>Sun, 07 Jun 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/cert-chain-positive-wildcard-multidomain/</guid>
+      <description>
+        
+          
+            Given this list of files given by Comodo
+1Root CA Certificate - AddTrustExternalCARoot.crt 2Intermediate CA Certificate - USERTrustRSAAddTrustCA.crt 3Intermediate CA Certificate - SectigoRSADomainValidationSecureServerCA.crt 4Your PositiveSSL Multi-Domain Certificate - 285695299.crt Do the following:
+1cat 285695299.crt SectigoRSADomainValidationSecureServerCA.crt USERTrustRSAAddTrustCA.crt AddTrustExternalCARoot.crt &amp;gt;&amp;gt; cert-chain.pem 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Check Certificates Info</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/check-certificates-info/</link>
+      <pubDate>Sun, 07 Jun 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/check-certificates-info/</guid>
+      <description>
+        
+          
+            Check a Certificate Signing Request (CSR)  1openssl req -text -noout -verify -in CSR.csr  Check a private key  1openssl rsa -in privateKey.key -check  Check a certificate  1openssl x509 -in certificate.crt -text -noout  Check a PKCS#12 file (.pfx or .p12)  1openssl pkcs12 -info -in keyStore.p12 See https://www.sslshopper.com/csr-decoder.html or https://www.sslshopper.com/certificate-decoder.html
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Creating an SSL Bundle out of Comodo Positive SSL</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/creating-ssl-bundle-from-comodo-positive-ssl/</link>
+      <pubDate>Sun, 07 Jun 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/creating-ssl-bundle-from-comodo-positive-ssl/</guid>
+      <description>
+        
+          
+            1www.example.org.crt COMODORSADomainValidationSecureServerCA.crt COMODORSAAddTrustCA.crt AddTrustExternalCARoot.crt &amp;gt;&amp;gt; www.example.org-bundle.crt See details in https://helpdesk.ssls.com/hc/en-us/articles/203427642-How-to-install-a-SSL-certificate-on-a-NGINX-server
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Generate CSR from Existing Cert</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/generate-csr-from-existing-cert/</link>
+      <pubDate>Sun, 07 Jun 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/generate-csr-from-existing-cert/</guid>
+      <description>
+        
+          
+            1openssl x509 -x509toreq -in certificate.crt -out CSR.csr -signkey privateKey.key 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Generate CSR from Existing Private Key</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/generate-csr-from-existing-private-key/</link>
+      <pubDate>Sun, 07 Jun 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/generate-csr-from-existing-private-key/</guid>
+      <description>
+        
+          
+            1openssl req -out CSR.csr -key privateKey.key -new 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Generate CSR from Private Key</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/generate-csr-from-private-key/</link>
+      <pubDate>Sun, 07 Jun 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/generate-csr-from-private-key/</guid>
+      <description>
+        
+          
+            1openssl req -out CSR.csr -key privateKey.key -new 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>One Liner CSR Creation</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/one-liner-csr-creation/</link>
+      <pubDate>Sun, 07 Jun 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/one-liner-csr-creation/</guid>
+      <description>
+        
+          
+            1openssl req -new -newkey rsa:2048 -nodes -out this.example.com.csr -keyout this.example.com.key -subj &amp;#34;/C=PH/ST=Cebu/L=Cebu/O=Example Organization Cebu/OU=IT Department/CN=this.example.com&amp;#34; What to use in the &amp;quot;-subj&#39; as per https://www.endpoint.com/blog/2014/10/30/openssl-csr-with-alternative-names-one
+ C = Country ST = State/Province L = City O = Organization OU = Organizational Unit CN = Common Name (main domain the certificate would cover  
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Remove Passphrase from Private Key</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/remove-passphrase-from-private-key/</link>
+      <pubDate>Sun, 07 Jun 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/remove-passphrase-from-private-key/</guid>
+      <description>
+        
+          
+            1openssl rsa -in privateKey.pem -out newPrivateKey.pem 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Weak Deffie-Hellman and a B rating in SSL Labs Test</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/weak-deffie-hellman-ratedb-ssllabs/</link>
+      <pubDate>Sun, 07 Jun 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/weak-deffie-hellman-ratedb-ssllabs/</guid>
+      <description>
+        
+          
+            You can fix it by creating .a &#39;dhparam&#39; file as follows in nginx:
+1cd /etc/ssl/certs 2openssl dhparam -dsaparam -out ./dhparam.pem 4096 NOTE: &amp;quot;-dsaparam&amp;quot; is significant. Otherwise, it would take creation of dhparam.pem almost 24hours or more. See https://security.stackexchange.com/questions/95178/diffie-hellman-parameters-still-calculating-after-24-hours
+then add this to nginx config
+1ssl_dhparam /etc/ssl/certs/dhparam.pem; 
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

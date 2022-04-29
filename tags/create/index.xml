@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>create on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/create/</link>
+    <description>Recent content in create on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Wed, 25 Sep 2019 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/create/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Create Solr Core with Config</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/create-solr-core-with-config/</link>
+      <pubDate>Wed, 25 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/create-solr-core-with-config/</guid>
+      <description>
+        
+          
+            In the example below, &amp;quot;drupal_solr_conf&amp;quot; is in /var/www/sites/example.com
+1sudo su solr 2cd /var/www/sites/example.com 3/opt/solr/bin/solr create_core -c upd_event -d drupal_solr_conf 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Create DB with ACL</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/create-db-with-acl/</link>
+      <pubDate>Sun, 08 Apr 2018 23:15:37 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/create-db-with-acl/</guid>
+      <description>
+        
+          
+            1create database yourDB; 2CREATE USER &amp;#39;yourDBA&amp;#39;@&amp;#39;localhost&amp;#39; IDENTIFIED BY &amp;#39;yourPASS&amp;#39;; 3GRANT ALL PRIVILEGES ON yourDB.* TO &amp;#39;yourDBA&amp;#39;@&amp;#39;localhost&amp;#39;; 4FLUSH PRIVILEGES; 
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

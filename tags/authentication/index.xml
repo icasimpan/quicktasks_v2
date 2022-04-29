@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>authentication on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/authentication/</link>
+    <description>Recent content in authentication on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Tue, 12 May 2020 23:11:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/authentication/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MySQL/MariaDB with Credentials File</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/mysql-with-credentials-file/</link>
+      <pubDate>Tue, 12 May 2020 23:11:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/mysql-with-credentials-file/</guid>
+      <description>
+        
+          
+            Using a configuration file for mysql is a good practice as you don&#39;t immediately expose credentials. Below, you are going to mysql cli and immediately using the db named dbName.
+1mysql --defaults-file=/path/to/credentials.ini dbName where credentials.ini has this format:
+1[client] 2host=&amp;lt;replace_with_servername_or_ip&amp;gt; 3user=&amp;lt;replace_with_db_user&amp;gt; 4password=&amp;lt;replace_with_db_password&amp;gt; Of course, there are other security precautions you could take, not just the above but it&#39;s a good start. See further info on securing mysql in https://dev.mysql.com/doc/refman/8.0/en/password-security-user.html
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Curl with Credentials File</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/curl-with-credentials-file/</link>
+      <pubDate>Tue, 12 May 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/curl-with-credentials-file/</guid>
+      <description>
+        
+          
+            1curl --config /path/to/config-file &amp;lt;url_here&amp;gt; where config-file has this format:
+1-u username:password 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Curl with Authentication Credentials</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/curl-with-authentication-credentials/</link>
+      <pubDate>Sat, 21 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/curl-with-authentication-credentials/</guid>
+      <description>
+        
+          
+            1curl -u user:password &amp;lt;url_here&amp;gt; 
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

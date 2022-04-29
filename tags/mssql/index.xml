@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>mssql on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/mssql/</link>
+    <description>Recent content in mssql on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Sat, 28 Sep 2019 23:17:11 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/mssql/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Errors in Project NAMI (wordpress on mssql)</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/errors-in-project-nami-wp-on-mssql/</link>
+      <pubDate>Sat, 28 Sep 2019 23:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/errors-in-project-nami-wp-on-mssql/</guid>
+      <description>
+        
+          
+            1Warning: file_put_contents(C:/inetpub/sites/example-wimp13/wp-includes/fields_map.parsed_types.php): failed to open stream: Permission denied in C:\inetpub\sites\example-wimp13\wp-includes\fields_map.php on line 202 2Warning: include(C:\inetpub\sites\error_page.php): failed to open stream: No such file or directory in C:\inetpub\sites\example-wimp13\wp-includes\fields_map.php on line 209 3Warning: include(): Failed opening &amp;#39;C:\inetpub\sites\error_page.php&amp;#39; for inclusion (include_path=&amp;#39;.;C:\php\pear&amp;#39;) in C:\inetpub\sites\example-wimp13\wp-includes\fields_map.php on line 209 Fix is to add the file &amp;quot;wp-includes\fields_map.parsed_types.php&amp;quot; with content
+1&amp;lt;?php return array ( &amp;#39;&amp;#39; =&amp;gt; array ( ), ) ?&amp;gt; and add write permission to IUSR. See details in https://github.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

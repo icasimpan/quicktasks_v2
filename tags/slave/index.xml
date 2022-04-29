@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>slave on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/slave/</link>
+    <description>Recent content in slave on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Mon, 15 Oct 2018 12:45:19 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/slave/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Get Number of Seconds Slave Is Behind Master</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/get-number-of-seconds-slave-is-behind-master/</link>
+      <pubDate>Mon, 15 Oct 2018 12:45:19 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/get-number-of-seconds-slave-is-behind-master/</guid>
+      <description>
+        
+          
+            Get replication status, and look for &amp;quot;Seconds_Behind_Master&amp;quot;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Get Replication Status in Slave</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/get-replication-status-in-slave/</link>
+      <pubDate>Mon, 15 Oct 2018 12:44:45 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/get-replication-status-in-slave/</guid>
+      <description>
+        
+          
+            1mysql&amp;gt; show slave status\G; 
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>computer on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/computer/</link>
+    <description>Recent content in computer on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Sun, 12 Jul 2020 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/computer/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Get Current Computer Name in Powershell</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/get-current-computer-name-using-powershell/</link>
+      <pubDate>Sun, 12 Jul 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/get-current-computer-name-using-powershell/</guid>
+      <description>
+        
+          
+            1PS C:\&amp;gt; $env:COMPUTERNAME See https://blogs.technet.microsoft.com/heyscriptingguy/2015/06/20/powertip-use-powershell-to-get-computer-name/
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Get System Path via Powershell</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/get-system-path/</link>
+      <pubDate>Sun, 12 Jul 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/get-system-path/</guid>
+      <description>
+        
+          
+            1PS C:\&amp;gt; $env:PATH See https://blogs.technet.microsoft.com/heyscriptingguy/2011/07/23/use-powershell-to-modify-your-environmental-path/
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

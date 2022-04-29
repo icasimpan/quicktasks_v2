@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>image on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/image/</link>
+    <description>Recent content in image on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Wed, 02 Feb 2022 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/image/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Check File Contents of a Docker Image</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/check-file-contents-of-docker-image/</link>
+      <pubDate>Wed, 02 Feb 2022 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/check-file-contents-of-docker-image/</guid>
+      <description>
+        
+          
+            When troubleshooting, you sometimes need to check the contents of a docker image.
+1docker run -it &amp;lt;name_of_image&amp;gt; sh Once you&#39;re in, you can inspect specific files and its content.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

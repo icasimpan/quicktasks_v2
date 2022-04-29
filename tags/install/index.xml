@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>install on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/install/</link>
+    <description>Recent content in install on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Sun, 13 Mar 2022 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/install/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Install Unsupported PHP using Brew</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/install-unsupported-php-using-brew/</link>
+      <pubDate>Sun, 13 Mar 2022 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/install-unsupported-php-using-brew/</guid>
+      <description>
+        
+          
+            Brew by default doesn&#39;t install unsupported software versions. Like at this time, php7.3 was no longer supported.
+Installing it disables it and install instead the latest version (8.1.3 at this time).
+1~$ brew install php@7.3 2Running `brew update --preinstall`... 3==&amp;gt; Auto-updated Homebrew! 4Updated 2 taps (homebrew/core and homebrew/cask). 5==&amp;gt; Updated Formulae 6Updated 2 formulae. 7==&amp;gt; Updated Casks 8Updated 6 casks. 910Error: php@7.3 has been disabled because it is a versioned formula!
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Install Specific Ruby Version via RVM</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/install-specific-ruby-version-via-rvm/</link>
+      <pubDate>Tue, 15 Feb 2022 23:18:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/install-specific-ruby-version-via-rvm/</guid>
+      <description>
+        
+          
+            Check list of known versions 1~$ rvm list known Install specific version 1~$ rvm install ruby-2.7.2 Check installed version 1~$ rvm list 2=* ruby-2.7.2 [ x86_64 ] 3ruby-3.0.0 [ x86_64 ] 45# =&amp;gt; - current 6# =* - current &amp;amp;&amp;amp; default 7# * - default Switch versions 1~$ rvm use ruby-3.0.0 2Using /home/user/.rvm/gems/ruby-3.0.0 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Install Ruby on Rails</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/install-ruby-on-rails/</link>
+      <pubDate>Tue, 15 Feb 2022 23:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/install-ruby-on-rails/</guid>
+      <description>
+        
+          
+            Install RVM + Rails Manage Ruby versions (production or not using RVM). Trust me, been there and installing it otherwise is not a walk in the park...
+1~$ gpg2 --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB 2~$ curl -sSL https://get.rvm.io | bash -s stable 3~$ curl -sSL https://get.rvm.io | bash -s stable --rails RVM Already Installed But Without Rails Make sure gem is installed under ~/.rvm. You should see something like below:
+1~$ which gem 2/home/user/.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Install Ruby and Rails on a Gemset</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/install-ruby-and-rails-on-gemset/</link>
+      <pubDate>Tue, 15 Feb 2022 09:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/install-ruby-and-rails-on-gemset/</guid>
+      <description>
+        
+          
+            Gems Ruby applications or libraries. In Rails, you install gems so you would write less code.
+Creating Gemset To make it easy to manage, create gemset. Think of it as a group of libraries that you can switch to depending on situation.
+1~$ rvm gemset list 23gemsets for ruby-2.7.0 (found in /home/user/.rvm/gems/ruby-2.7.0) 4=&amp;gt; (default) 5global 6learning_ror Check location of your gemset(s) 1~$ rvm gemdir 2/home/user/.rvm/gems/ruby-2.7.0 Switch gemset 1~$ rvm gemset use learning_ror 2Using ruby-2.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Install Java8 in CentOS6</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/java8-in-centos6/</link>
+      <pubDate>Sun, 12 Jul 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/java8-in-centos6/</guid>
+      <description>
+        
+          
+            NOTE: CentOS6 is ending support by end of 2020.
+https://tecadmin.net/install-java-8-on-centos-rhel-and-fedora/
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Install Powershell in Mac</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/install-powershell-in-mac/</link>
+      <pubDate>Sun, 12 Jul 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/install-powershell-in-mac/</guid>
+      <description>
+        
+          
+            Install
+1brew cask install powershell Run
+1pwsh To update/upgrade later on:
+1brew update 2brew cask upgrade powershell See https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-macos?view=powershell-7
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Quick Install Nginx in CentOS7 &#43; 301 Redirect</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/quick-install-nginx-in-centos7-301-redirect/</link>
+      <pubDate>Fri, 10 Jul 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/quick-install-nginx-in-centos7-301-redirect/</guid>
+      <description>
+        
+          
+            1sudo yum install epel-release 2sudo yum install nginx 3sudo systemctl start nginx 4... 5... 6edit /etc/nginx/nginx.conf 78... 9... 10#add this line in bottom of &amp;#39;server&amp;#39; block: 11Redirect 301 https://your_domain_here/$request_uri; 1213sudo systemctl restart nginx 14sudo systemctl enable nginx 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Install Jenkins LTS via Ansible</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/install-jenkins-lts-via-ansible/</link>
+      <pubDate>Mon, 06 Jul 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/install-jenkins-lts-via-ansible/</guid>
+      <description>
+        
+          
+            Personally, I&#39;d like to use other&#39;s work as much as possible in its original state. With ansible roles, authors usually name their repos as &#39;ansible-role-java&#39; but internally, it&#39;s something like &#39;geerlingguy.java&#39; which is what they put in dependencies. Now, if you simply clone as is, you will need to change the dependencies name.
+This is the case with Geerlingguy&#39;s jenkins role, where I hit on errors in java due to the name of the dependencies.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Install Jenkins Plugin via Ansible</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/install-jenkins-plugin-via-ansible/</link>
+      <pubDate>Mon, 06 Jul 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/install-jenkins-plugin-via-ansible/</guid>
+      <description>
+        
+          
+            1example@user:/opt/ansible-playbooks$ cat vars/jenkins.yml 2## Search names from https://plugins.jenkins.io/ 3jenkins_plugins: 4- git 5- hipchat 6- log-parser 7- mask-passwords 8- ssh-agent 9- ssh 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Install wp_cli</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/install-wp_cli/</link>
+      <pubDate>Sat, 28 Sep 2019 23:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/install-wp_cli/</guid>
+      <description>
+        
+          
+            1curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar 2php wp-cli.phar --info ## check if it&amp;#39;s working. 3chmod +x wp-cli.phar 4sudo mv wp-cli.phar /usr/local/bin/wp 5wp --info ## re-check if it&amp;#39;s working as &amp;#39;wp&amp;#39; Details in https://wp-cli.org/
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Plugin install without FTP Credentials</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/plugin-install-without-ftp-credentials/</link>
+      <pubDate>Sat, 28 Sep 2019 23:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/plugin-install-without-ftp-credentials/</guid>
+      <description>
+        
+          
+            Normal behavior of Wordpress when installing plugin is to ask for FTP credentials. So to fix the problem, just add this line to wp-config.php (of course, make sure permission are fine).
+1define(&amp;#39;FS_METHOD&amp;#39;,&amp;#39;direct&amp;#39;); More troubleshooting details in https://www.digitalocean.com/community/questions/wordpress-asking-for-ftp-credentials
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Convert command not found</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/convert-command-not-found/</link>
+      <pubDate>Sat, 28 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/convert-command-not-found/</guid>
+      <description>
+        
+          
+            I was seeing this error from drupal logs:
+1User error: ImageMagick error 127: sh: convert: command not found in _imagemagick_convert_exec() (line 522 of /var/www/example.com/docroot/sites/all/modules/contrib/imagemagick/imagemagick.module). Which indicates that package ImageMagick wasn&#39;t installed. Since the machine in questions was CentOS7, I installed it as follows:
+1~$ sudo yum install ImageMagick -y Ref:
+ https://www.experts-exchange.com/questions/27962692/Drupal-7-error-ImageMagick-error-127.html https://www.drupal.org/node/153310 https://syslint.com/blog/tutorial/install-imagemagick-in-centos7/  
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Install php-curl 5.6 (Ubuntu)</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/install-php-curl-56-ubuntu/</link>
+      <pubDate>Sat, 28 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/install-php-curl-56-ubuntu/</guid>
+      <description>
+        
+          
+            1sudo apt-get install php5.6-curl More info in https://stackoverflow.com/questions/40567133/cannot-add-ppa-ppaondrej-php5-5-6
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Installing mcrypt in php7.1 (Ubuntu)</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/install-mcrypt-php71-ubuntu/</link>
+      <pubDate>Sat, 28 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/install-mcrypt-php71-ubuntu/</guid>
+      <description>
+        
+          
+            1sudo add-apt-repository ppa:ondrej/php 2sudo apt-get update 3sudo apt-get install mcrypt php7.1-mcrypt 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Mcrypt error when running &#39;composer install&#39; from CLI</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/mcrypt-error-composer-install-from-cli/</link>
+      <pubDate>Sat, 28 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/mcrypt-error-composer-install-from-cli/</guid>
+      <description>
+        
+          
+            Verify if mcypt is really installed
+1php -m|grep -i mcrypt Counter-check from phpmyadmin. If it say installed there, issue is that php-cli can&#39;t see mcrypt as a module. Find the mcrypt definition and symlink similar to below:
+1ln -s /etc/php5/mods-available/mcrypt.ini /etc/php5/cli/conf.d/20-mcrypt.ini See details in https://stackoverflow.com/questions/16830405/laravel-requires-the-mcrypt-php-extension
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>PHP Remi modules installed outside ansible trick</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/php-remi-modules-installed-outside-ansible/</link>
+      <pubDate>Sat, 28 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/php-remi-modules-installed-outside-ansible/</guid>
+      <description>
+        
+          
+            Remi modules are installed in non-standard location. Geerlingguy&#39;s ansible role harmonizes it and install it in standard locations.
+So, if you&#39;re not familiar with standard locations, just do the following trick
+NOTE: In this case, I installed the memcache module for php7.1 from Remi&#39;s repo.
+1yum install -y php71-php-pecl-memcache.x86_64 Find where the memcache module is located
+1[root@example-staging www]# find / -iname *memcache*.so 2/usr/lib64/httpd/modules/mod_socache_memcache.so 3/opt/remi/php71/root/usr/lib64/php/modules/memcache.so Cross-check with a standard installed php module (you can see which modules via &#39;php -m&#39;)
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>php seem to not get installed when accessing a site</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/php-seems-not-installed-accessing-site/</link>
+      <pubDate>Sat, 28 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/php-seems-not-installed-accessing-site/</guid>
+      <description>
+        
+          
+            1apt-get install libapache2-mod-php 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>php7.1 memcache install in CentOS7</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/php7.1-memcache-install-centos7/</link>
+      <pubDate>Sat, 28 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/php7.1-memcache-install-centos7/</guid>
+      <description>
+        
+          
+            1yum install -y memcached libmemcached php71-php-pecl-memcache.x86_64 Harden memcached by at least making it listed only on loopback. Config is in /etc/sysonfig/memcached
+1PORT=&amp;#34;11211&amp;#34; 2USER=&amp;#34;memcached&amp;#34; 3MAXCONN=&amp;#34;1024&amp;#34; 4CACHESIZE=&amp;#34;64&amp;#34; 5OPTIONS=&amp;#34;-l 127.0.0.1 -U 0&amp;#34; Details in https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-memcached-on-centos-7
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Install Docker CE in CentOS</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/install-docker-ce-centos/</link>
+      <pubDate>Tue, 24 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/install-docker-ce-centos/</guid>
+      <description>
+        
+          
+            See details in https://docs.docker.com/install/linux/docker-ce/centos/#upgrade-docker-ce
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>GD PHP Module Installation Error</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/php-gd-dependency-error-during-installation/</link>
+      <pubDate>Sat, 21 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/php-gd-dependency-error-during-installation/</guid>
+      <description>
+        
+          
+            It says something like &amp;quot;gd-last&amp;quot; needed but not found.
+Solution:
+Add remi-safe repo to your repository.
+See https://centos.org/forums/viewtopic.php?t=63158
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Install rpm via Ansible</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/install-rpm-in-ansible/</link>
+      <pubDate>Sat, 21 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/install-rpm-in-ansible/</guid>
+      <description>
+        
+          
+            Manual
+1sudo rpm -Uvh https://mirror.webtatic.com/yum/el7/webtatic-release.rpm In Ansible:
+1- name: Add Web Static Repo 2yum: 3name: https://mirror.webtatic.com/yum/el7/webtatic-release.rpm 4state: present 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Install Several Packages in a Loop</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/install-several-packages-in-loop/</link>
+      <pubDate>Sat, 21 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/install-several-packages-in-loop/</guid>
+      <description>
+        
+          
+            Manual
+1sudo yum install -y mod_php71w php71w-cli php71w-common php71w-gd php71w-mbstring php71w-mcrypt php71w-mysqlnd php71w-xml In Ansible:
+1- name: Install needed php7 packages 2yum: 3name={{ item }} 4state=present 5with_items: 6- mod_php71w 7- php71w-cli 8- php71w-common 9- php71w-gd 10- php71w-mbstring 11- php71w-mcrypt 12- php71w-mysqlnd 13- php71w-xml 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Managing Ansible Installation</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/managing-ansible-installation/</link>
+      <pubDate>Sat, 21 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/managing-ansible-installation/</guid>
+      <description>
+        
+          
+            To be able to change versions, it&#39;s best to use pip
+1pip install -I ansible==2.0.2 More details in https://askubuntu.com/questions/820892/how-to-downgrade-ansible-2-1-1-0-to-2-0-2
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Drupal7 install via drush</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/drupal7-install-via-drush/</link>
+      <pubDate>Mon, 09 Apr 2018 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/drupal7-install-via-drush/</guid>
+      <description>
+        
+          
+            1cd /var/www/sites 2drush dl drupal-7 --destination=yoursite.example.com --drupal-project-rename=www -y 3cd yoursite.example.com/www 4drush site-install standard --account-name=admin --account-pass=admin --db-url=mysql://myDBA:myDBPASS@localhost/myDB -y See http://www.coderintherye.com/install-drupal-7-using-drush
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Install and switch between different drush versions</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/install-and-switch-between-drush-versions/</link>
+      <pubDate>Mon, 09 Apr 2018 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/install-and-switch-between-drush-versions/</guid>
+      <description>
+        
+          
+            See https://www.lullabot.com/articles/switching-drush-versions
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Reinstall Drupal8</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/reinstall-drupal8/</link>
+      <pubDate>Mon, 09 Apr 2018 00:12:49 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/reinstall-drupal8/</guid>
+      <description>
+        
+          
+            Empty the files directory. Replace the settings.php file with a copy of the default.settings.php file. Add write permissions to the settings.php file. Drop all tables in the database. Reinstall the site on http://yoursite.com/core/install.php.  Ref http://dribbit.eu/drupal-8/reinstall-drupal-8
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Drupal8 Install via Composer</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/drupal8-install-via-composer/</link>
+      <pubDate>Mon, 09 Apr 2018 00:09:39 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/drupal8-install-via-composer/</guid>
+      <description>
+        
+          
+            NOTE:
+ Noticed some memory issue during installation on a VM with 2GB RAM, so if it happens to you, just augment with swap file.  1cd /var/www/sites 2composer create-project drupal-composer/drupal-project:8.x yoursite.example.com --stability dev --no-interaction 3../vendor/bin/drush site-install --site-name=&amp;#34;Drupal Title Here&amp;#34; --db-url=mysql://yourDBA:yourPASS@localhost/yourDB --account-mail=admin@example.com --account-pass=acountPassw0RD -y 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Drupal8 Manual Install via Drush</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/drupal8-manual-install-via-drush/</link>
+      <pubDate>Mon, 09 Apr 2018 00:09:39 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/drupal8-manual-install-via-drush/</guid>
+      <description>
+        
+          
+            NOTE:
+ Per https://www.drupal.org/project/drupal/releases/8.4.0, drupal8.4.x needs drush 8.1.12+ Method works but has theme issue. Better to use composer method instead.   cd /var/www/sites/yourdrupal.com/ drush dl drupal-8 mv drupal-8.4.5 docroot composer install composer update composer require drush/drush drush si --db-url=&#39;mysql://yourDBA:yourPASS@127.0.0.1/yourDB&#39;  Steps 4, 5, 6 are mandatory per site. Some reference for drush install of drupal8 in https://drupal.stackexchange.com/questions/130680/downloading-core-via-command-line
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

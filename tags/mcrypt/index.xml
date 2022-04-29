@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>mcrypt on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/mcrypt/</link>
+    <description>Recent content in mcrypt on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Sat, 28 Sep 2019 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/mcrypt/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Installing mcrypt in php7.1 (Ubuntu)</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/install-mcrypt-php71-ubuntu/</link>
+      <pubDate>Sat, 28 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/install-mcrypt-php71-ubuntu/</guid>
+      <description>
+        
+          
+            1sudo add-apt-repository ppa:ondrej/php 2sudo apt-get update 3sudo apt-get install mcrypt php7.1-mcrypt 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Mcrypt error when running &#39;composer install&#39; from CLI</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/mcrypt-error-composer-install-from-cli/</link>
+      <pubDate>Sat, 28 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/mcrypt-error-composer-install-from-cli/</guid>
+      <description>
+        
+          
+            Verify if mcypt is really installed
+1php -m|grep -i mcrypt Counter-check from phpmyadmin. If it say installed there, issue is that php-cli can&#39;t see mcrypt as a module. Find the mcrypt definition and symlink similar to below:
+1ln -s /etc/php5/mods-available/mcrypt.ini /etc/php5/cli/conf.d/20-mcrypt.ini See details in https://stackoverflow.com/questions/16830405/laravel-requires-the-mcrypt-php-extension
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

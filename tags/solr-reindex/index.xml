@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>solr-reindex on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/solr-reindex/</link>
+    <description>Recent content in solr-reindex on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Wed, 25 Sep 2019 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/solr-reindex/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Reindex Solr in Drupal</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/reindex-solr-in-drupal/</link>
+      <pubDate>Wed, 25 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/reindex-solr-in-drupal/</guid>
+      <description>
+        
+          
+            In Drupal Admin, do the following:
+Config &amp;gt; Search and Metadata &amp;gt; Search API
+Click on the index name (e.g. Events)
+ Image not found  a.warning-link { color: inherit !important; font-weight: inherit !important; text-decoration: underline !important; border-bottom: none !important; }  Web path: https://ismael.casimpan.com/reindex-solr-drupal/01_search-api.png
+Disk path: static/reindex-solr-drupal/01_search-api.png
+Using Page Bundles: false
+ 
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>python on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/python/</link>
+    <description>Recent content in python on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Fri, 25 Feb 2022 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Quick HTTP Server Using Python</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/quick-http-server-using-python/</link>
+      <pubDate>Fri, 25 Feb 2022 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/quick-http-server-using-python/</guid>
+      <description>
+        
+          
+            If you ever need to serve your current directory via http for some reason, this is a quick command in python3:
+1~$ python3 -m http.server 8000 Then access http://localhost:8000
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Links - Python</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/links-python/</link>
+      <pubDate>Fri, 18 Feb 2022 09:19:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/links-python/</guid>
+      <description>
+        
+          
+            Python Official Documentation  Python Package Index or PyPI Python3 Standard Library Python3 Docs  Learn Python  PyNative Learn Python in Y minutes  Python Frameworks  Django Project Flask Bottle  Others  Beautiful Soup - HTML &amp;amp; XML web scraping Stackoverflow: Other alternatives to venv Build REST API with Django REST Framework in 30mis  
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Basic Python Datatypes</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/basic-python-datatypes/</link>
+      <pubDate>Sat, 12 Feb 2022 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/basic-python-datatypes/</guid>
+      <description>
+        
+          
+            These are the three core data types in python. Of course there are strings, int too. I&#39;m listing this here as I often forget these:
+List Somewhat similar to tuple (see below) but changeable. Uses square brackets instead of parenthesis in tuple.
+1&amp;gt;&amp;gt;&amp;gt; kirk = [&amp;#34;James Kirk&amp;#34;, 34, &amp;#34;Captain&amp;#34;, 2265] 2&amp;gt;&amp;gt;&amp;gt; type(kirk) 3&amp;lt;class &amp;#39;list&amp;#39;&amp;gt; Tuple A tuple is a collection which is ordered and unchangeable.
+1&amp;gt;&amp;gt;&amp;gt; mytuple = (&amp;#34;apple&amp;#34;, &amp;#34;banana&amp;#34;, &amp;#34;cherry&amp;#34;) 2&amp;gt;&amp;gt;&amp;gt; type(mytuple) 3&amp;lt;class &amp;#39;tuple&amp;#39;&amp;gt; Dictionary 1&amp;gt;&amp;gt;&amp;gt; comedian = {&amp;#39;name&amp;#39;: &amp;#39;Eric Idle&amp;#39;, &amp;#39;age&amp;#39;: 74} 2&amp;gt;&amp;gt;&amp;gt; type(comedian) 3&amp;lt;class &amp;#39;dict&amp;#39;&amp;gt; 4&amp;gt;&amp;gt;&amp;gt; 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Pythonic Code Using Enumerate</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/pythonic-code-using-enumerate/</link>
+      <pubDate>Sat, 12 Feb 2022 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/pythonic-code-using-enumerate/</guid>
+      <description>
+        
+          
+            Use enumerate to iterate to each list&#39;s element
+1&amp;gt;&amp;gt;&amp;gt; # Pythonic Example 2&amp;gt;&amp;gt;&amp;gt; animals = [&amp;#39;cat&amp;#39;, &amp;#39;dog&amp;#39;, &amp;#39;moose&amp;#39;] 3&amp;gt;&amp;gt;&amp;gt; for i, animal in enumerate(animals): 4... print(i, animal) 5... 60 cat 71 dog 82 moose If the index is not important, use &amp;quot;_&amp;quot; in place of &amp;quot;i&amp;quot;:
+1&amp;gt;&amp;gt;&amp;gt; # Pythonic Example 2&amp;gt;&amp;gt;&amp;gt; animals = [&amp;#39;cat&amp;#39;, &amp;#39;dog&amp;#39;, &amp;#39;moose&amp;#39;] 3&amp;gt;&amp;gt;&amp;gt; for _, animal in enumerate(animals): 4... print(animal) 5... 6cat 7dog 8moose Or more simply, without using &amp;quot;enumerate&amp;quot; function:
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

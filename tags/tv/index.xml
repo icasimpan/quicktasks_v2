@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tv on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/tv/</link>
+    <description>Recent content in tv on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Sat, 15 Aug 2020 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/tv/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Basic Sony TV switch on or Off using HDMI-CEC</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/basic-sony-tv-switch-on-or-off-using-hdmi-cec/</link>
+      <pubDate>Sat, 15 Aug 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/basic-sony-tv-switch-on-or-off-using-hdmi-cec/</guid>
+      <description>
+        
+          
+            Install needed package:
+1sudo apt install cec-utils Check connected devices
+1pi@raspberrypi:~ $ echo &amp;#39;scan&amp;#39; | cec-client -s -d 1 2opening a connection to the CEC adapter... 3requesting CEC bus information ... 4CEC bus information 5=================== 6device #0: TV 7address: 0.0.0.0 8active source: no 9vendor: Sony 10osd string: TV 11CEC version: 1.4 12power status: on 13language: eng 141516device #1: Recorder 1 17address: 3.0.0.0 18active source: no 19vendor: Pulse Eight 20osd string: CECTester 21CEC version: 1.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

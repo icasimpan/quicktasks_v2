@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>own-domain on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/own-domain/</link>
+    <description>Recent content in own-domain on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Sat, 28 Sep 2019 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/own-domain/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cannot Send Email To Own Domain in Postfix</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/cannot-send-email-to-own-domain/</link>
+      <pubDate>Sat, 28 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/cannot-send-email-to-own-domain/</guid>
+      <description>
+        
+          
+            vi /etc/postfix/main.cf remove the domain  1... 2... 3#mydestination = example.com, localhost.com, localhost 4mydestination = localhost 5... 6... Then restart postfix:
+1/etc/init.d/postix restart See some further discussion in https://www.digitalocean.com/community/questions/why-won-t-postfix-deliver-mail-to-own-domain
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>composer on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/composer/</link>
+    <description>Recent content in composer on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Fri, 31 Jul 2020 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/composer/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Remove package in composer</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/remove-package-in-composer/</link>
+      <pubDate>Fri, 31 Jul 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/remove-package-in-composer/</guid>
+      <description>
+        
+          
+            1composer remove Vendor/Package_Name See https://stackoverflow.com/questions/23126562/how-to-remove-a-package-from-laravel-using-composer
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Drupal 8 Error Code 1 in Drupal Entity Updates</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/error-code1-in-drupal-entity-updates/</link>
+      <pubDate>Sat, 18 Jan 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/error-code1-in-drupal-entity-updates/</guid>
+      <description>
+        
+          
+            At the end of composer install, the following was shown:
+1In UpdateDBCommands.php line 109: 23Drupal removed its automatic entity-updates API in 8.7. See https://www.dru 4pal.org/node/3034742. 567entity:updates [--cache-clear [CACHE-CLEAR]] [--no-cache-clear] [-h|--help] [-q|--quiet] [-v|vv|vvv|--verbose] [-V|--version] [--ansi] [--no-ansi] [-n|--no-interaction] [-d|--debug] [-y|--yes] [--no] [--remote-host REMOTE-HOST] [--remote-user REMOTE-USER] [-r|--root ROOT] [-l|--uri URI] [--simulate] [--pipe] [-D|--define DEFINE] [--notify [NOTIFY]] [--druplicon] [--xh-link XH-LINK] [--] &amp;lt;command&amp;gt; 89Script sh scripts/composer/updates.sh handling the drupal-updates event returned with error code 1 10Script @drupal-updates was called via post-install-cmd This is just a info message and not an error.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Mcrypt error when running &#39;composer install&#39; from CLI</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/mcrypt-error-composer-install-from-cli/</link>
+      <pubDate>Sat, 28 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/mcrypt-error-composer-install-from-cli/</guid>
+      <description>
+        
+          
+            Verify if mcypt is really installed
+1php -m|grep -i mcrypt Counter-check from phpmyadmin. If it say installed there, issue is that php-cli can&#39;t see mcrypt as a module. Find the mcrypt definition and symlink similar to below:
+1ln -s /etc/php5/mods-available/mcrypt.ini /etc/php5/cli/conf.d/20-mcrypt.ini See details in https://stackoverflow.com/questions/16830405/laravel-requires-the-mcrypt-php-extension
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Drush for non-composer drupal</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/drush-for-non-composer-drupal/</link>
+      <pubDate>Mon, 09 Apr 2018 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/drush-for-non-composer-drupal/</guid>
+      <description>
+        
+          
+            1#install composer and Drush 2curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer 3wget -O drush.phar https://github.com/drush-ops/drush-launcher/releases/download/0.6.0/drush.phar 4chmod +x drush.phar 5sudo mv drush.phar /usr/local/bin/drush 6cd drupal 7cat &amp;gt; composer.json&amp;lt;&amp;lt;&amp;#39;EOF&amp;#39; 8{ 9&amp;#34;require&amp;#34;: { 10&amp;#34;drush/drush&amp;#34;: &amp;#34;8.*&amp;#34; 11}, 12&amp;#34;extra&amp;#34;: { 13&amp;#34;installer-paths&amp;#34;: { 14&amp;#34;core&amp;#34;: [&amp;#34;type:drupal-core&amp;#34;] 15} 16} 17} 18EOF 19composer install Details from https://github.com/dbjpanda/digitalocean-drupal/blob/7.x/install.sh and https://github.com/drush-ops/drush-launcher/issues/33
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Install Composer</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/install-composer/</link>
+      <pubDate>Mon, 09 Apr 2018 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/install-composer/</guid>
+      <description>
+        
+          
+            1curl -sS https://getcomposer.org/installer | php 2mv composer.phar /usr/local/bin/composer 3ln -s /usr/local/bin/composer /usr/bin/composer 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Drupal8 Install via Composer</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/drupal8-install-via-composer/</link>
+      <pubDate>Mon, 09 Apr 2018 00:09:39 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/drupal8-install-via-composer/</guid>
+      <description>
+        
+          
+            NOTE:
+ Noticed some memory issue during installation on a VM with 2GB RAM, so if it happens to you, just augment with swap file.  1cd /var/www/sites 2composer create-project drupal-composer/drupal-project:8.x yoursite.example.com --stability dev --no-interaction 3../vendor/bin/drush site-install --site-name=&amp;#34;Drupal Title Here&amp;#34; --db-url=mysql://yourDBA:yourPASS@localhost/yourDB --account-mail=admin@example.com --account-pass=acountPassw0RD -y 
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

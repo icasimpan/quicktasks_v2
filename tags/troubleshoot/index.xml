@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>troubleshoot on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/troubleshoot/</link>
+    <description>Recent content in troubleshoot on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Mon, 06 Jul 2020 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/troubleshoot/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Fix Jenkins Access Problem</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/fix-jenkins-access-problem/</link>
+      <pubDate>Mon, 06 Jul 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/fix-jenkins-access-problem/</guid>
+      <description>
+        
+          
+             Manage Jenkins &amp;gt; Configure Global Security In &amp;quot;Authorization&amp;quot;, change to &amp;quot;Logged-in users can do anything&amp;quot; but uncheck &amp;quot;Allow anonymous read access&amp;quot;  
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Check Certificates Info</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/check-certificates-info/</link>
+      <pubDate>Sun, 07 Jun 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/check-certificates-info/</guid>
+      <description>
+        
+          
+            Check a Certificate Signing Request (CSR)  1openssl req -text -noout -verify -in CSR.csr  Check a private key  1openssl rsa -in privateKey.key -check  Check a certificate  1openssl x509 -in certificate.crt -text -noout  Check a PKCS#12 file (.pfx or .p12)  1openssl pkcs12 -info -in keyStore.p12 See https://www.sslshopper.com/csr-decoder.html or https://www.sslshopper.com/certificate-decoder.html
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Weak Deffie-Hellman and a B rating in SSL Labs Test</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/weak-deffie-hellman-ratedb-ssllabs/</link>
+      <pubDate>Sun, 07 Jun 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/weak-deffie-hellman-ratedb-ssllabs/</guid>
+      <description>
+        
+          
+            You can fix it by creating .a &#39;dhparam&#39; file as follows in nginx:
+1cd /etc/ssl/certs 2openssl dhparam -dsaparam -out ./dhparam.pem 4096 NOTE: &amp;quot;-dsaparam&amp;quot; is significant. Otherwise, it would take creation of dhparam.pem almost 24hours or more. See https://security.stackexchange.com/questions/95178/diffie-hellman-parameters-still-calculating-after-24-hours
+then add this to nginx config
+1ssl_dhparam /etc/ssl/certs/dhparam.pem; 
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

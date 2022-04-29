@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>module on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/module/</link>
+    <description>Recent content in module on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Wed, 16 Feb 2022 23:17:11 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/module/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Golang Local Module with OOP</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/golang-local-module-with-oop/</link>
+      <pubDate>Wed, 16 Feb 2022 23:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/golang-local-module-with-oop/</guid>
+      <description>
+        
+          
+            Create location of your go code 1~$ mkdir /mnt/c/learning/go Get the suggested golang init script It is in separate post in my quicktasks
+and don&#39;t forget to make it executable. For this quicktask, I assume you named it init.sh as well.
+Create and go to project directory 1~$ mkdir local_module_example 2~$ cd local_module_example Initialize Go environment 1../init.sh Create module location directory 1~$ mkdir -p example.local/person Create the module This is module person
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Golang Module</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/golang-module/</link>
+      <pubDate>Mon, 01 Nov 2021 23:05:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/golang-module/</guid>
+      <description>
+        
+          
+            1~$ mkdir greetings 2~$ cd greetings 3~$ go mod init example.com/greetings In a text editor, create greetings.go with the following content:
+1package greetings 23import &amp;#34;fmt&amp;#34; 45// Hello returns a greeting for the named person. 6func Hello(name string) string { 7// Return a greeting that embeds the name in a message. 8 message := fmt.Sprintf(&amp;#34;Hi, %v. Welcome!&amp;#34;, name) 9return message 10} Call it from another module
+1~$ cd .. 2~$ mkdir hello 3~$ cd hello 4~$ go mod init example.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Install Specific Drupal Module Version via Drush</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/install-specific-drupal-module-version-via-drush/</link>
+      <pubDate>Tue, 04 Aug 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/install-specific-drupal-module-version-via-drush/</guid>
+      <description>
+        
+          
+            1drush dl og-7.x-1.3 2drush en og-7.x-1.4 More details in https://www.drupal.org/node/1499548
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>PHP Remi modules installed outside ansible trick</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/php-remi-modules-installed-outside-ansible/</link>
+      <pubDate>Sat, 28 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/php-remi-modules-installed-outside-ansible/</guid>
+      <description>
+        
+          
+            Remi modules are installed in non-standard location. Geerlingguy&#39;s ansible role harmonizes it and install it in standard locations.
+So, if you&#39;re not familiar with standard locations, just do the following trick
+NOTE: In this case, I installed the memcache module for php7.1 from Remi&#39;s repo.
+1yum install -y php71-php-pecl-memcache.x86_64 Find where the memcache module is located
+1[root@example-staging www]# find / -iname *memcache*.so 2/usr/lib64/httpd/modules/mod_socache_memcache.so 3/opt/remi/php71/root/usr/lib64/php/modules/memcache.so Cross-check with a standard installed php module (you can see which modules via &#39;php -m&#39;)
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>blockinfline module</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/blockinfline-module/</link>
+      <pubDate>Sat, 21 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/blockinfline-module/</guid>
+      <description>
+        
+          
+            You need to add a &amp;quot;marker&amp;quot; in order NOT to overwrite current content.
+For example usage, see github.com/promet/pstools.git and head over to promet-ansible branch &amp;amp; ansible-promet-apacheconfig/tasks/main.yml
+Syntax guide https://docs.ansible.com/ansible/latest/modules/blockinfile_module.html
+Some tutorial online http://www.mydailytutorials.com/ansible-blockinfile-module-adding-multiple-lines/
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>GD PHP Module Installation Error</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/php-gd-dependency-error-during-installation/</link>
+      <pubDate>Sat, 21 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/php-gd-dependency-error-during-installation/</guid>
+      <description>
+        
+          
+            It says something like &amp;quot;gd-last&amp;quot; needed but not found.
+Solution:
+Add remi-safe repo to your repository.
+See https://centos.org/forums/viewtopic.php?t=63158
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Install PHP Module Inside Dockerfile</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/dockerfile-install-php-module/</link>
+      <pubDate>Sat, 21 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/dockerfile-install-php-module/</guid>
+      <description>
+        
+          
+            Add this to Dockerfile
+1RUN docker-php-ext-install mysqli See details in https://github.com/docker-library/php/issues/279
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Example Setup for stage_file_proxy</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/example-setup-stage_file_proxy/</link>
+      <pubDate>Mon, 09 Apr 2018 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/example-setup-stage_file_proxy/</guid>
+      <description>
+        
+          
+            1[me@common-dev default]$ drush pm-download stage_file_proxy 2Project stage_file_proxy (7.x-1.8) downloaded to /var/www/sites/project.example.com/www/sites/all/modules/contrib/stage_file_proxy. [success] 3[me@common-dev default]$ drush pm-enable --yes stage_file_proxy 4The following module has moved within the file system: &amp;lt;em class=&amp;#34;placeholder&amp;#34;&amp;gt;stage_file_proxy&amp;lt;/em&amp;gt;. In order to fix this, clear caches or put the module back in its [warning] 5original location. For more information, see &amp;lt;a href=&amp;#34;https://www.drupal.org/node/2487215&amp;#34;&amp;gt;the documentation page&amp;lt;/a&amp;gt;. bootstrap.inc:1143 6The following extensions will be enabled: stage_file_proxy 7Do you really want to continue? (y/n): y 8stage_file_proxy was enabled successfully.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>configure on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/configure/</link>
+    <description>Recent content in configure on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Sat, 21 Sep 2019 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/configure/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Configure Email Using Mailgun</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/configure-email-using-mailgun/</link>
+      <pubDate>Sat, 21 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/configure-email-using-mailgun/</guid>
+      <description>
+        
+          
+            Have client create account in mailgun (with upgraded account by inputting credit card) Test email using test php sender Check in mailgun &amp;quot;Logs&amp;quot;  More info in https://www.digitalocean.com/community/tutorials/how-to-set-up-a-mail-relay-with-postfix-and-mailgun-on-ubuntu-16-04
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Quick Setup for You Git Code</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/quickly-work-git-code/</link>
+      <pubDate>Mon, 08 Apr 2019 23:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/quickly-work-git-code/</guid>
+      <description>
+        
+          
+            If you need less keystrokes in updating your git code specially if it&#39;s very minimal change, do the following:
+1git clone https://&amp;lt;github_token_here&amp;gt;@github.com/icasimpan/quicktasks-git 2cd quicktasks-git 3git config user.name &amp;#34;Ismael Casimpan&amp;#34; 4git config user.email &amp;#34;ismael.angelo@casimpan.com&amp;#34; 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Configure email and username</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/configure-email-username/</link>
+      <pubDate>Sun, 08 Apr 2018 23:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/configure-email-username/</guid>
+      <description>
+        
+          
+            1git config user.name &amp;#34;Your Name Here&amp;#34; 2git config user.email &amp;#34;name@email.com&amp;#34; 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Pull but no push in git</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/pull-but-no-push/</link>
+      <pubDate>Sun, 08 Apr 2018 23:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/pull-but-no-push/</guid>
+      <description>
+        
+          
+            1$ git remote set-url --push origin no-pushing 2$ git push 3fatal: &amp;#39;no-pushing&amp;#39; does not appear to be a git repository 4fatal: The remote end hung up unexpectedly See https://stackoverflow.com/questions/7556155/git-set-up-a-fetch-only-remote
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>bundle on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/bundle/</link>
+    <description>Recent content in bundle on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Wed, 15 Jul 2020 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/bundle/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>View All SSL Cert in a Bundle File</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/view-all-cert-in-bundle/</link>
+      <pubDate>Wed, 15 Jul 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/view-all-cert-in-bundle/</guid>
+      <description>
+        
+          
+            Oneliner solution using the following command:
+1~$ openssl crl2pkcs7 -nocrl -certfile www.example.org-bundle.crt | openssl pkcs7 -print_certs -noout With sample output as follows:
+1~$ openssl crl2pkcs7 -nocrl -certfile www.example.org-bundle.crt | openssl pkcs7 -print_certs -noout 2subject=/OU=Domain Control Validated/OU=PositiveSSL/CN=www.example.org 3issuer=/C=GB/ST=Greater Manchester/L=Salford/O=COMODO CA Limited/CN=COMODO RSA Domain Validation Secure Server CA 45subject=/C=GB/ST=Greater Manchester/L=Salford/O=COMODO CA Limited/CN=COMODO RSA Domain Validation Secure Server CA 6issuer=/C=GB/ST=Greater Manchester/L=Salford/O=COMODO CA Limited/CN=COMODO RSA Certification Authority 78subject=/C=GB/ST=Greater Manchester/L=Salford/O=COMODO CA Limited/CN=COMODO RSA Certification Authority 9issuer=/C=SE/O=AddTrust AB/OU=AddTrust External TTP Network/CN=AddTrust External CA Root 1011subject=/C=SE/O=AddTrust AB/OU=AddTrust External TTP Network/CN=AddTrust External CA Root 12issuer=/C=SE/O=AddTrust AB/OU=AddTrust External TTP Network/CN=AddTrust External CA Root Details and other solutions in https://serverfault.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

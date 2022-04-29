@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>download on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/download/</link>
+    <description>Recent content in download on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Wed, 11 Mar 2020 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/download/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Curl type download in Ansible</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/curl-type-dowload-in-ansible/</link>
+      <pubDate>Wed, 11 Mar 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/curl-type-dowload-in-ansible/</guid>
+      <description>
+        
+          
+            1- name: Download drush phar file (8.3.0) 2become: yes 3get_url: 4url: https://github.com/drush-ops/drush/releases/download/8.3.0/drush.phar 5dest: /usr/local/bin 6mode: +x 7checksum: sha256:ddfe6d529e44e98c2cf74c143c1fcdf67c927d6f9a5eb2ae10fbe47ef9b8eaf0 8group: root 9owner: root See get_url module in https://docs.ansible.com/ansible/latest/modules/get_url_module.html
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

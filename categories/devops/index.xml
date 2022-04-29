@@ -1,0 +1,683 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>devops on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/categories/devops/</link>
+    <description>Recent content in devops on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Tue, 26 Apr 2022 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/categories/devops/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>JSON Basics</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/json-basics/</link>
+      <pubDate>Tue, 26 Apr 2022 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/json-basics/</guid>
+      <description>
+        
+          
+            JSON or JavaScript Object Notation is a data representation standard shown in a key:value pair, just like a traditional JavaScript object.
+Here&#39;s the key info you need to know about it:
+ All the data in the file must be surrounded by curly braces if you&#39;re representing it as an object, and in square brackets if it is an array. Single quotes are not allowed The key in each JSON must be unique and must be in double quotes Numbers must not be enclosed in double-quotes, otherwise they will be treated as strings.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Git Latest Hash</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/git-latest-hash/</link>
+      <pubDate>Sun, 27 Mar 2022 23:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/git-latest-hash/</guid>
+      <description>
+        
+          
+            Sometimes, for automation purposes, you would like to get the latest commit in a working copy.
+Below is how you do it.
+1~$ git rev-parse --short HEAD Remove the --short HEAD if you need the longer version.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Remove Large Files Committed in Git</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/remove-large-files-committed-in-git/</link>
+      <pubDate>Sun, 21 Mar 2021 23:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/remove-large-files-committed-in-git/</guid>
+      <description>
+        
+          
+            It&#39;s quite annoying when you committed large files to git specially if it&#39;s something that&#39;s something confidential.
+We&#39;ll relatively easy to do that. Just use the &#39;filter-branch&#39; command in git as follows:
+1git filter-branch --force --index-filter \ 2&amp;gt; &amp;#39;git rm --cached --ignore-unmatch path/to/huge-file.mp4&amp;#39; \ 3&amp;gt; --prune-empty --tag-name-filter cat -- --all You should be seeing something like below:
+1~$ git filter-branch --force --index-filter \ 2&amp;gt; &amp;#39;git rm --cached --ignore-unmatch content/sync/files/public/2020-04/Bad_Luck.mp4&amp;#39; \ 3&amp;gt; --prune-empty --tag-name-filter cat -- --all 4Rewrite 8dfc744d18880f14dbc8fcd09f50c4bc3ede71 (1049/1091)rm &amp;#39;content/sync/files/public/2020-04/Bad_Luck.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Pull Request via Github API</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/pull-request-via-github-api/</link>
+      <pubDate>Tue, 08 Sep 2020 23:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/pull-request-via-github-api/</guid>
+      <description>
+        
+          
+            From the example in https://docs.github.com/en/rest/reference/pulls#create-a-pull-request, it seems quite easy:
+1curl \ 2-X POST \ 3-H &amp;#34;Accept: application/vnd.github.v3+json&amp;#34; \ 4https://api.github.com/repos/octocat/hello-world/pulls \ 5-d &amp;#39;{&amp;#34;title&amp;#34;:&amp;#34;title&amp;#34;,&amp;#34;head&amp;#34;:&amp;#34;head&amp;#34;,&amp;#34;base&amp;#34;:&amp;#34;base&amp;#34;}&amp;#39; The above means, create a pull request with title &amp;quot;title&amp;quot; with code in branch &amp;quot;head&amp;quot; against the branch in &amp;quot;base&amp;quot; for the repo https://github.com/octocat/hello-world.git
+In case you need to authenticate, add
+1-u &amp;lt;user&amp;gt;:&amp;lt;GITHUB_TOKEN&amp;gt; before the -H
+1curl \ 2-X POST \ 3-u your_user:DEFINED_GITHUB_TOKEN_HERE 4-H &amp;#34;Accept: application/vnd.github.v3+json&amp;#34; \ 5https://api.github.com/repos/octocat/hello-world/pulls \ 6-d &amp;#39;{&amp;#34;title&amp;#34;:&amp;#34;title&amp;#34;,&amp;#34;head&amp;#34;:&amp;#34;head&amp;#34;,&amp;#34;base&amp;#34;:&amp;#34;base&amp;#34;}&amp;#39; You can also use a payload json file for this value:
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Add Linux Swap File</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/add-linux-swap-file/</link>
+      <pubDate>Sun, 12 Jul 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/add-linux-swap-file/</guid>
+      <description>
+        
+          
+            1sudo dd if=/dev/zero of=/mnt/file.swap bs=1M count=512 2sudo mkswap /mnt/file.swap 3sudo chmod 0600 /mnt/file.swap 4sudo swapon /mnt/file.swap 5echo &amp;#34;/mnt/file.swap none swap sw 0 0&amp;#34; &amp;gt;&amp;gt; /etc/fstab See details in https://www.garron.me/en/linux/increase-swap-memory-linux.html
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Removing Group Sticky Bit</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/remove-group-sticky-bit/</link>
+      <pubDate>Sun, 12 Jul 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/remove-group-sticky-bit/</guid>
+      <description>
+        
+          
+            1chmod g-s &amp;lt;dirname_here&amp;gt; More details in https://serverfault.com/questions/238962/how-do-i-clear-the-s-permission-on-a-directory-in-linux
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Security Updates on CentOS</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/security-updates-centos/</link>
+      <pubDate>Sun, 12 Jul 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/security-updates-centos/</guid>
+      <description>
+        
+          
+            Is best done manually:
+1sudo yum -y update --security 1The problem is that CentOS does not supply the necessary metadata in its yum repositories such that yum-plugin-security can function. In other words, yum-plugin-security does nothing, and the automation of security updates is a lost cause in CentOS. In fact, the CentOS developers go so far as to say this will never work. And yum-cron is no solution as it actually disables security updates from the CentOS repositories completely.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Upgrade php 5.4 to php 5.6 in CentOS</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/php5.4-to-php5.6-upgrade-in-centos/</link>
+      <pubDate>Sun, 12 Jul 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/php5.4-to-php5.6-upgrade-in-centos/</guid>
+      <description>
+        
+          
+            NOTE: php5.4 and php5.6 is no longer supported.
+https://www.mojowill.com/geek/howto-install-php-5-4-5-5-or-5-6-on-centos-6-and-centos-7/
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Upgrade php 5.6 to php 7.0 in CentOS7</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/php5.6-to-php7.0-upgrade-in-centos7/</link>
+      <pubDate>Sun, 12 Jul 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/php5.6-to-php7.0-upgrade-in-centos7/</guid>
+      <description>
+        
+          
+            NOTE: php5.6 and php7.0 is no longer supported.
+1wget https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm 2wget http://rpms.remirepo.net/enterprise/remi-release-7.rpm 3rpm -Uvh remi-release-7.rpm epel-release-latest-7.noarch.rpm Then, enable &amp;quot;remi-php70&amp;quot; in /etc/yum.repos.d/remi-php70.repo
+Then, yum update php.
+Details in https://blog.remirepo.net/post/2016/02/14/Install-PHP-7-on-CentOS-RHEL-Fedora
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>SSL Connect Error on Git Fetch</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/ssl-connect-error-on-git-fetch/</link>
+      <pubDate>Fri, 12 Jun 2020 23:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/ssl-connect-error-on-git-fetch/</guid>
+      <description>
+        
+          
+            1~$ git fetch 2fatal: unable to access &amp;#39;https://github.com/icasimpan/example.git/&amp;#39;: SSL connect error Fixed by:
+1yum update -y nss curl libcurl 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Telling git To Use Specific Private Key</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/telling-git-to-use-specific-private-key/</link>
+      <pubDate>Fri, 29 May 2020 23:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/telling-git-to-use-specific-private-key/</guid>
+      <description>
+        
+          
+            Sometimes, you need to use specific keys. To do it, use ssh config, something like below in ~/.ssh/config
+1host github.com 2HostName github.com 3IdentityFile ~/.ssh/id_rsa_github 4User git See details in https://superuser.com/questions/232373/how-to-tell-git-which-private-key-to-use
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Git with Latest Commit Log Only</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/git-with-latest-commit-log-only/</link>
+      <pubDate>Tue, 26 May 2020 23:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/git-with-latest-commit-log-only/</guid>
+      <description>
+        
+          
+            In some situations, you only need the latest commit log, saving space in the process. You have to do it as follows:
+1git clone --depth=1 REPO 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Build an Ubuntu Kernel</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/build-ubuntu-kernel/</link>
+      <pubDate>Mon, 30 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/build-ubuntu-kernel/</guid>
+      <description>
+        
+          
+            See https://wiki.ubuntu.com/Kernel/BuildYourOwnKernel
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Check Debian Installed Packages</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/check-for-installed-packages/</link>
+      <pubDate>Mon, 30 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/check-for-installed-packages/</guid>
+      <description>
+        
+          
+            1apt list --installed See https://askubuntu.com/questions/17823/how-to-list-all-installed-packages
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Check Debian Package Content</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/check-debian-package-content/</link>
+      <pubDate>Mon, 30 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/check-debian-package-content/</guid>
+      <description>
+        
+          
+            1dpkg-query -L &amp;lt;package_name&amp;gt; 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Check Debian Package List</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/check-debian-package-list/</link>
+      <pubDate>Mon, 30 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/check-debian-package-list/</guid>
+      <description>
+        
+          
+            1apt-cache pkgnames 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Check Debian Package Source</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/check-debian-package-source/</link>
+      <pubDate>Mon, 30 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/check-debian-package-source/</guid>
+      <description>
+        
+          
+            1dpkg -s &amp;lt;package&amp;gt; 2apt-cache showpkg &amp;lt;package&amp;gt; See details in https://askubuntu.com/questions/8560/how-do-i-find-out-which-repository-a-package-comes-from
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Check Debian Specific Package Update Info</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/check-specific-debian-package-update-info/</link>
+      <pubDate>Mon, 30 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/check-specific-debian-package-update-info/</guid>
+      <description>
+        
+          
+            1alaa@aa-lu:~$ apt-cache policy vlc 2vlc: 3Installed: 2.0.8-0ubuntu0.13.04.1 4Candidate: 2.0.8-0ubuntu0.13.04.1 5Version table: 6*** 2.0.8-0ubuntu0.13.04.1 0 7500 http://ae.archive.ubuntu.com/ubuntu/ raring-updates/universe i386 Packages 8500 http://security.ubuntu.com/ubuntu/ raring-security/universe i386 Packages 9100 /var/lib/dpkg/status 102.0.6-1 0 11500 http://ae.archive.ubuntu.com/ubuntu/ raring/universe i386 Packages See https://askubuntu.com/questions/340530/how-can-i-check-the-available-version-of-a-package-in-the-repositories
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Debian Package List To Be Updated</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/debian-package-list-to-be-updated/</link>
+      <pubDate>Mon, 30 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/debian-package-list-to-be-updated/</guid>
+      <description>
+        
+          
+            1/usr/lib/update-notifier/apt-check -p 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Debian Package Search</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/debian-package-search/</link>
+      <pubDate>Mon, 30 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/debian-package-search/</guid>
+      <description>
+        
+          
+            1root@jenkins3:~# apt-cache search chromedriver 2chromium-chromedriver - WebDriver driver for the Chromium Browser 3chromium-chromedriver-dbg - chromium-chromedriver debug symbols 4oxideqt-chromedriver - Web browser engine for Qt (transitional package) 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Locations of PPA in Ubuntu</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/locations-of-ppa-ubuntu/</link>
+      <pubDate>Mon, 30 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/locations-of-ppa-ubuntu/</guid>
+      <description>
+        
+          
+            PPA or Personal Package Archive are unofficial and may therefore harm your system. It is always recommended to use official sources. Nevertheless, if you know what you&#39;re doing, proceed.
+It is in:
+1/etc/apt/sources.list.d/ More info in https://askubuntu.com/questions/57326/where-is-the-ppa-sources-config-file
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Update Debian PHP 5.5 To 5.6</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/update-debian-php5.5-to-5.6/</link>
+      <pubDate>Mon, 30 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/update-debian-php5.5-to-5.6/</guid>
+      <description>
+        
+          
+            See https://www.digitalocean.com/community/questions/how-to-upgrade-from-php-v-5-5-9-to-v-5-6
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Update Debian PHP 7.0 To 7.1</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/update-debian-php-7.0-to-7.1/</link>
+      <pubDate>Mon, 30 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/update-debian-php-7.0-to-7.1/</guid>
+      <description>
+        
+          
+            1sudo apt-get install -y python-software-properties 2sudo add-apt-repository -y ppa:ondrej/php 3sudo apt-get update -y 4sudo apt-get install -y $(apt-cache pkgnames | grep php7.1|tr &amp;#34;\n&amp;#34; &amp;#34; &amp;#34;) See https://www.vultr.com/docs/how-to-install-and-configure-php-70-or-php-71-on-ubuntu-16-04
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Updating an Debian/Ubuntu OS that is no longer supported</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/upgrading-unsupported-debian-os/</link>
+      <pubDate>Mon, 30 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/upgrading-unsupported-debian-os/</guid>
+      <description>
+        
+          
+            In our example, we have Debian Squeeze (6.0) and it&#39;s been unsupported since Feb 2016. We can no longer install nor update the packages until you point it to another source...the archives.
+So, in /etc/apt/sources.list, add you will see:
+1deb http://ftp.us.debian.org/debian/ squeeze main 2deb-src http://ftp.us.debian.org/debian/ squeeze main Replace it with:
+1deb http://archive.debian.org/debian squeeze main 2deb http://archive.debian.org/debian squeeze-lts main and you can now access &#39;apt-get&#39; or &#39;dpkg&#39; as before (but limited to what&#39;s in the archive).
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Updating Debian Kernel Only</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/updating-debian-kernel-only/</link>
+      <pubDate>Mon, 30 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/updating-debian-kernel-only/</guid>
+      <description>
+        
+          
+            1sudo apt-get update 2sudo apt-get install linux-virtual See details in https://www.digitalocean.com/community/tutorials/how-to-update-a-digitalocean-server-s-kernel#upgrading-only-the-latest-kernel
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Upgrade Debian to Higher LTS</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/upgrade-debian-to-higher-lts/</link>
+      <pubDate>Mon, 30 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/upgrade-debian-to-higher-lts/</guid>
+      <description>
+        
+          
+            1do-release-upgrade See https://help.ubuntu.com/lts/serverguide/installing-upgrading.html
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Upgrade Single Debian Package Source</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/upgrade-single-debian-package/</link>
+      <pubDate>Mon, 30 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/upgrade-single-debian-package/</guid>
+      <description>
+        
+          
+            1apt-get install --only-upgrade &amp;lt;packagename&amp;gt; See details in https://askubuntu.com/questions/44122/how-to-upgrade-a-single-package-using-apt-get
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Quick Setup for You Git Code</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/quickly-work-git-code/</link>
+      <pubDate>Mon, 08 Apr 2019 23:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/quickly-work-git-code/</guid>
+      <description>
+        
+          
+            If you need less keystrokes in updating your git code specially if it&#39;s very minimal change, do the following:
+1git clone https://&amp;lt;github_token_here&amp;gt;@github.com/icasimpan/quicktasks-git 2cd quicktasks-git 3git config user.name &amp;#34;Ismael Casimpan&amp;#34; 4git config user.email &amp;#34;ismael.angelo@casimpan.com&amp;#34; 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Git Cherry-Pick Merge</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/git-cherrypick/</link>
+      <pubDate>Fri, 23 Nov 2018 06:03:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/git-cherrypick/</guid>
+      <description>
+        
+          
+            Cherry Picking in Git is quite easy: For single commit
+1git checkout &amp;lt;destination_branch&amp;gt; 2git cherry-pick &amp;lt;hash-here&amp;gt; See https://swsblog.stanford.edu/blog/cherry-picking-small-git-lesson
+Multiple commit NOTE: only the commits between &#39;initial_commit_hash&#39; and &#39;terminal_commit_hash&#39; are merged.
+1git checkout &amp;lt;destination_branch&amp;gt; 2git cherry-pick &amp;lt;initial_commit_hash&amp;gt;..&amp;lt;terminal_commit_hash&amp;gt; To include the &#39;initial_commit_hash&#39; and &#39;terminal_commit_hash&#39;, use the following:
+1git cherry-pick &amp;lt;initial_commit_hash&amp;gt;^..&amp;lt;terminal_commit_hash&amp;gt; Note that conflicts would pause cherry-picking and ask to resolve the conflict. You can then continue as follows:
+1git cherry-pick --continue See details in https://medium.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Compare tags contents in github</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/compare-tag-contents-github/</link>
+      <pubDate>Sun, 08 Apr 2018 23:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/compare-tag-contents-github/</guid>
+      <description>
+        
+          
+            Example https://github.com/icasimpan/shcf/compare/shcf-v0.2.0...shcf-v0.3.0
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Deleting a local git tag</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/deleting-local-git-tag/</link>
+      <pubDate>Sun, 08 Apr 2018 23:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/deleting-local-git-tag/</guid>
+      <description>
+        
+          
+            1me@mysite:/var/www/sites/mysite.local$ git tag --delete origin :v1.56 2To git@git-server:mysite.git 3Deleted tag &amp;#39;v1.56&amp;#39; (was f346d287f) 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Deleting a remote git repo branch</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/deleting-remote-git-repo/</link>
+      <pubDate>Sun, 08 Apr 2018 23:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/deleting-remote-git-repo/</guid>
+      <description>
+        
+          
+            1me@mysite:/var/www/sites/mysite.local$ git push origin :release-redesign 2To git@git-server:mysite.git 3- [deleted] release-redesign 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Deleting a remote git tag</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/deleting-remote-git-tag/</link>
+      <pubDate>Sun, 08 Apr 2018 23:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/deleting-remote-git-tag/</guid>
+      <description>
+        
+          
+            1me@mysite:/var/www/sites/mysite.local$ git push origin :v1.56 2To git@git-server:mysite.git 3- [deleted] v1.56 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Duplicating a git repo</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/duplicating-git-repo/</link>
+      <pubDate>Sun, 08 Apr 2018 23:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/duplicating-git-repo/</guid>
+      <description>
+        
+          
+            1git clone --bare https://example.com/repo.git 2cd repo.git 3git push --mirror https://remote-example.com/repo.git See https://help.github.com/articles/duplicating-a-repository/
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>git log (cli graph)</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/git-log-ci-graph/</link>
+      <pubDate>Sun, 08 Apr 2018 23:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/git-log-ci-graph/</guid>
+      <description>
+        
+          
+            1git log --graph --oneline --decorate --all 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Git Patch Creation/Apply</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/git-patch-creation-apply/</link>
+      <pubDate>Sun, 08 Apr 2018 23:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/git-patch-creation-apply/</guid>
+      <description>
+        
+          
+            See https://www.devroom.io/2009/10/26/how-to-create-and-apply-a-patch-with-git/
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Git submodules (similar to svn:externals)</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/git-submodules/</link>
+      <pubDate>Sun, 08 Apr 2018 23:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/git-submodules/</guid>
+      <description>
+        
+          
+            See https://chrisjean.com/git-submodules-adding-using-removing-and-updating/
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Move a directory in one git repo to another (preserving history)</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/move-directory-in-git-to-another-repo/</link>
+      <pubDate>Sun, 08 Apr 2018 23:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/move-directory-in-git-to-another-repo/</guid>
+      <description>
+        
+          
+            See http://gbayer.com/development/moving-files-from-one-git-repository-to-another-preserving-history/
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Negating contents of .gitignore</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/negating-contents-of-gitignore/</link>
+      <pubDate>Sun, 08 Apr 2018 23:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/negating-contents-of-gitignore/</guid>
+      <description>
+        
+          
+            See https://stackoverflow.com/questions/5533050/gitignore-exclude-folder-but-include-specific-subfolder
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Rename git branch</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/rename-git-branch/</link>
+      <pubDate>Sun, 08 Apr 2018 23:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/rename-git-branch/</guid>
+      <description>
+        
+          
+            If on a branch you want renamed
+1git branch -m new-name If on a different branch
+1git branch -m old-name new-name 
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

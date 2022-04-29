@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>kubectl on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/kubectl/</link>
+    <description>Recent content in kubectl on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Sun, 28 Jun 2020 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/kubectl/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Change Default Cluster in Kubernetes</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/change-default-cluster-in-kubernetes/</link>
+      <pubDate>Sun, 28 Jun 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/change-default-cluster-in-kubernetes/</guid>
+      <description>
+        
+          
+            If you have more than one cluster as illustrated in https://ismael.casimpan.com/quicktasks-k8s/list-nodes-in-kubernetes/, you can change it using command:
+1kubectl config use-context &amp;lt;cluster_name_here&amp;gt; Use this command to verify the change:
+1kubectl config get-contexts 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Get Cluster List in Kubernetes</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/cluster-list-in-kubernetes/</link>
+      <pubDate>Sun, 28 Jun 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/cluster-list-in-kubernetes/</guid>
+      <description>
+        
+          
+            If you have a lot of kubernetes cluster, you will see the following:
+1user@example:~$ kubectl config get-contexts 2CURRENT NAME CLUSTER AUTHINFO NAMESPACE 3* do-nyc1-kubernetes-tutorial do-nyc1-kubernetes-tutorial do-nyc1-kubernetes-tutorial-admin 4do-nyc3-infra do-nyc3-infra do-nyc3-infra-admin 5do-nyc2-devinfra do-nyc2-devinfra do-nyc2-devinfra-admin The one with asterisk (do-nyc1-kubernetes-tutorial) is your current cluster. So &amp;quot;kubectl&amp;quot; commands without specified cluster will default to it.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Get List of Nodes in Kubernetes</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/list-nodes-in-kubernetes/</link>
+      <pubDate>Sun, 28 Jun 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/list-nodes-in-kubernetes/</guid>
+      <description>
+        
+          
+            1user@example:~$ kubectl get nodes 2NAME STATUS ROLES AGE VERSION 3pool-78osxtl1e3-3f4qg Ready &amp;lt;none&amp;gt; 72m v1.17.5 4pool-78osxtl1e3-3f4qw Ready &amp;lt;none&amp;gt; 71m v1.17.5 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Connection to Server Refused</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/connection-to-server-refused/</link>
+      <pubDate>Sat, 27 Jun 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/connection-to-server-refused/</guid>
+      <description>
+        
+          
+            When you see similar error as below:
+1user@example:~$ kubectl get nodes 2The connection to the server localhost:8080 was refused - did you specify the right host or port? Check for the &amp;quot;$KUBECONFIG&amp;quot; if set and &amp;quot;kubectl config view&amp;quot; output. Chances are, both are empty like below:
+1user@example:~$ echo $KUBECONFIG 1user@example:~$ kubectl config view 2apiVersion: v1 3clusters: null 4contexts: null 5current-context: &amp;#34;&amp;#34; 6kind: Config 7preferences: {} 8users: null In this example, we&#39;re using the DOKS or DigitalOcean Managed Kubernetes.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

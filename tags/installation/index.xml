@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>installation on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/installation/</link>
+    <description>Recent content in installation on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Tue, 04 Aug 2020 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/installation/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Install Specific Drupal Module Version via Drush</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/install-specific-drupal-module-version-via-drush/</link>
+      <pubDate>Tue, 04 Aug 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/install-specific-drupal-module-version-via-drush/</guid>
+      <description>
+        
+          
+            1drush dl og-7.x-1.3 2drush en og-7.x-1.4 More details in https://www.drupal.org/node/1499548
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Multi-php installation</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/multi-php-installation/</link>
+      <pubDate>Sat, 28 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/multi-php-installation/</guid>
+      <description>
+        
+          
+             https://pehapkari.cz/blog/2017/03/27/multiple-php-versions-the-easy-way/ https://github.com/oerdnj/deb.sury.org/wiki/Managing-Multiple-Versions  
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>php modules location</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/php-modules-location/</link>
+      <pubDate>Sat, 28 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/php-modules-location/</guid>
+      <description>
+        
+          
+            1Check the current extension directory with: 23php-config --extension-dir 4and you can change it by setting extension_dir in php.ini: 56extension_dir=&amp;#34;/usr/lib64/php/modules&amp;#34; 7Don&amp;#39;t forget to restart Apache. See https://serverfault.com/questions/316156/change-php-modules-directory
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Drush Installation</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/drush-installation/</link>
+      <pubDate>Mon, 09 Apr 2018 00:18:01 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/drush-installation/</guid>
+      <description>
+        
+          
+            Go to your drupal root composer require drush/drush  See http://docs.drush.org/en/master/install/ for details.
+Then install drupal launcher -&amp;gt; https://github.com/drush-ops/drush-launcher
+ cd ~ wget -O drush.phar https://github.com/drush-ops/drush-launcher/releases/download/0.3.1/drush.phar chmod ug+x drush.phar sudo chown www-data:www-data drush.phar sudo mv drush.phar /usr/local/bin/drush  Further readings in https://www.dx-experts.nl/site-specific-local-drush-and-drupal-console
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

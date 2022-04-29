@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>webdev-troubleshooting on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/webdev-troubleshooting/</link>
+    <description>Recent content in webdev-troubleshooting on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Wed, 02 Mar 2022 06:03:11 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/webdev-troubleshooting/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Check Login Given via Google Chrome Dev Tools</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/check-login-given-chromedevtools/</link>
+      <pubDate>Wed, 02 Mar 2022 06:03:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/check-login-given-chromedevtools/</guid>
+      <description>
+        
+          
+            Sometimes, you would like to know what your input credentials in browser. Do the following via Google Chrome Developer Tools:
+1Chrome DevTools &amp;gt; Network &amp;gt; Fetch/XHR &amp;gt; login &amp;gt; Payload where login refers to something like https://api.myproject.local/v1/login
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

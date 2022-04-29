@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>no-push on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/no-push/</link>
+    <description>Recent content in no-push on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Sun, 08 Apr 2018 23:17:11 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/no-push/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pull but no push in git</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/pull-but-no-push/</link>
+      <pubDate>Sun, 08 Apr 2018 23:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/pull-but-no-push/</guid>
+      <description>
+        
+          
+            1$ git remote set-url --push origin no-pushing 2$ git push 3fatal: &amp;#39;no-pushing&amp;#39; does not appear to be a git repository 4fatal: The remote end hung up unexpectedly See https://stackoverflow.com/questions/7556155/git-set-up-a-fetch-only-remote
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

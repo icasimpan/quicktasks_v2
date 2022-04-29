@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>maintenance on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/maintenance/</link>
+    <description>Recent content in maintenance on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Mon, 09 Apr 2018 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/maintenance/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Drupal maintenance mode (turn-off) via drush</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/drupal-maintenance-mode-via-drush/</link>
+      <pubDate>Mon, 09 Apr 2018 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/drupal-maintenance-mode-via-drush/</guid>
+      <description>
+        
+          
+            Drupal 8 1drush sset system.maintenance_mode FALSE Drupal 7 1drush vset maintenance_mode 0 You may need to clear cache for it to work.
+See details and some other options if it doesn&#39;t work in https://drupal.stackexchange.com/questions/100771/how-do-i-turn-off-maintenance-mode
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

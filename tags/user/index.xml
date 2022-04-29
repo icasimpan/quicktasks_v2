@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>user on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/user/</link>
+    <description>Recent content in user on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Tue, 16 Jun 2020 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/user/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Drupal User Blocked in D7</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/drupal-user-blocked-in-d7/</link>
+      <pubDate>Tue, 16 Jun 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/drupal-user-blocked-in-d7/</guid>
+      <description>
+        
+          
+            How to reset user after being blocked (d7 and works in D8 as well).
+1MySQL&amp;gt; delete from flood where identifier=&amp;lt;uid&amp;gt;; To get the uid, search as follows:
+1MySQL&amp;gt; select uid, name from users where name like &amp;#39;%NameHere%&amp;#39;\G; Details in https://www.drupal.org/node/1023440
+NOTE: Observed to work as well in D8 with some adjustments to checking the uid which seems to be in users_data already.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Create Drupal Admin User via Drush</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/create-drupal-admin-user-via-drush/</link>
+      <pubDate>Sun, 24 May 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/create-drupal-admin-user-via-drush/</guid>
+      <description>
+        
+          
+            1## Generate drupal admin access. 2## 3drush user:create admin --mail=&amp;#34;admin.NOREPLY@example.com&amp;#34; --password=&amp;#34;admin&amp;#34; 4drush user:role:add &amp;#34;administrator&amp;#34; admin 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Change drupal user credential</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/change-drupal-credential/</link>
+      <pubDate>Mon, 30 Mar 2020 00:14:45 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/change-drupal-credential/</guid>
+      <description>
+        
+          
+            Go to drupal root, then:
+1drush upwd --password=&amp;#34;newPassword_here&amp;#34; &amp;#34;the_user&amp;#34; More info in https://www.drupal.org/node/44164
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Delete User</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/delete-user/</link>
+      <pubDate>Sun, 08 Apr 2018 23:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/delete-user/</guid>
+      <description>
+        
+          
+            1DROP USER &amp;#39;yourDBA&amp;#39;@&amp;#39;localhost&amp;#39; 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Create DB with ACL</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/create-db-with-acl/</link>
+      <pubDate>Sun, 08 Apr 2018 23:15:37 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/create-db-with-acl/</guid>
+      <description>
+        
+          
+            1create database yourDB; 2CREATE USER &amp;#39;yourDBA&amp;#39;@&amp;#39;localhost&amp;#39; IDENTIFIED BY &amp;#39;yourPASS&amp;#39;; 3GRANT ALL PRIVILEGES ON yourDB.* TO &amp;#39;yourDBA&amp;#39;@&amp;#39;localhost&amp;#39;; 4FLUSH PRIVILEGES; 
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

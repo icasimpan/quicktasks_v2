@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>stage_file_proxy on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/stage_file_proxy/</link>
+    <description>Recent content in stage_file_proxy on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Mon, 09 Apr 2018 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/stage_file_proxy/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Example Setup for stage_file_proxy</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/example-setup-stage_file_proxy/</link>
+      <pubDate>Mon, 09 Apr 2018 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/example-setup-stage_file_proxy/</guid>
+      <description>
+        
+          
+            1[me@common-dev default]$ drush pm-download stage_file_proxy 2Project stage_file_proxy (7.x-1.8) downloaded to /var/www/sites/project.example.com/www/sites/all/modules/contrib/stage_file_proxy. [success] 3[me@common-dev default]$ drush pm-enable --yes stage_file_proxy 4The following module has moved within the file system: &amp;lt;em class=&amp;#34;placeholder&amp;#34;&amp;gt;stage_file_proxy&amp;lt;/em&amp;gt;. In order to fix this, clear caches or put the module back in its [warning] 5original location. For more information, see &amp;lt;a href=&amp;#34;https://www.drupal.org/node/2487215&amp;#34;&amp;gt;the documentation page&amp;lt;/a&amp;gt;. bootstrap.inc:1143 6The following extensions will be enabled: stage_file_proxy 7Do you really want to continue? (y/n): y 8stage_file_proxy was enabled successfully.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

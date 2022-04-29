@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>mailgun on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/mailgun/</link>
+    <description>Recent content in mailgun on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Sat, 21 Sep 2019 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/mailgun/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Configure Email Using Mailgun</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/configure-email-using-mailgun/</link>
+      <pubDate>Sat, 21 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/configure-email-using-mailgun/</guid>
+      <description>
+        
+          
+            Have client create account in mailgun (with upgraded account by inputting credit card) Test email using test php sender Check in mailgun &amp;quot;Logs&amp;quot;  More info in https://www.digitalocean.com/community/tutorials/how-to-set-up-a-mail-relay-with-postfix-and-mailgun-on-ubuntu-16-04
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

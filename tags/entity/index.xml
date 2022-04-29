@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>entity on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/entity/</link>
+    <description>Recent content in entity on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Sat, 18 Jan 2020 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/entity/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Drupal 8 Error Code 1 in Drupal Entity Updates</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/error-code1-in-drupal-entity-updates/</link>
+      <pubDate>Sat, 18 Jan 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/error-code1-in-drupal-entity-updates/</guid>
+      <description>
+        
+          
+            At the end of composer install, the following was shown:
+1In UpdateDBCommands.php line 109: 23Drupal removed its automatic entity-updates API in 8.7. See https://www.dru 4pal.org/node/3034742. 567entity:updates [--cache-clear [CACHE-CLEAR]] [--no-cache-clear] [-h|--help] [-q|--quiet] [-v|vv|vvv|--verbose] [-V|--version] [--ansi] [--no-ansi] [-n|--no-interaction] [-d|--debug] [-y|--yes] [--no] [--remote-host REMOTE-HOST] [--remote-user REMOTE-USER] [-r|--root ROOT] [-l|--uri URI] [--simulate] [--pipe] [-D|--define DEFINE] [--notify [NOTIFY]] [--druplicon] [--xh-link XH-LINK] [--] &amp;lt;command&amp;gt; 89Script sh scripts/composer/updates.sh handling the drupal-updates event returned with error code 1 10Script @drupal-updates was called via post-install-cmd This is just a info message and not an error.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

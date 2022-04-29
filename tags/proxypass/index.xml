@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>proxypass on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/proxypass/</link>
+    <description>Recent content in proxypass on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Fri, 10 Jul 2020 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/proxypass/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Apache Basic Authentication in ProxyPass</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/apache-basic-authentication-proxypass/</link>
+      <pubDate>Fri, 10 Jul 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/apache-basic-authentication-proxypass/</guid>
+      <description>
+        
+          
+            1&amp;lt;VirtualHost *:443&amp;gt; 2ServerName example.com 34SSLEngine on 5SSLCertificateFile /etc/httpd/conf.d/ssl/2017-example.com.crt 6SSLCertificateKeyFile /etc/httpd/conf.d/ssl/2017-example.com.key 7SSLCertificateChainFile /etc/httpd/conf.d/ssl/2017-example.com.bundle.crt 8910ProxyPreserveHost On 1112ProxyPass / http://127.0.0.1:8025/ 13ProxyPassReverse / http://127.0.0.1:8025/ 1415&amp;lt;Location /&amp;gt; 16Options -Indexes 17AllowOverride All 1819AuthType Basic 20AuthName &amp;#34;Development Area&amp;#34; 21AuthUserFile /var/www/sites/.htpasswd 22Require valid-user 23&amp;lt;/Location&amp;gt; 24&amp;lt;/VirtualHost&amp;gt; 
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

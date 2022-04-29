@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>fail2ban on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/fail2ban/</link>
+    <description>Recent content in fail2ban on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Sat, 28 Sep 2019 23:17:11 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/fail2ban/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Checking current status of fail2ban</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/check-current-fail2ban-status/</link>
+      <pubDate>Sat, 28 Sep 2019 23:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/check-current-fail2ban-status/</guid>
+      <description>
+        
+          
+            1root@example:/var/log# fail2ban-client status 2Status 3|- Number of jail: 1 4`- Jail list: sshd 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Checking status of specific jail</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/check-status-specific-jail/</link>
+      <pubDate>Sat, 28 Sep 2019 23:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/check-status-specific-jail/</guid>
+      <description>
+        
+          
+            1root@example:/var/log# fail2ban-client status sshd 2Status for the jail: sshd 3|- Filter 4| |- Currently failed: 6 5| |- Total failed: 91801 6| `- File list: /var/log/auth.log 7`- Actions 8|- Currently banned: 1 9|- Total banned: 9971 10`- Banned IP list: 51.15.255.133 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Interesting Read</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/interesting-read/</link>
+      <pubDate>Sat, 28 Sep 2019 23:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/interesting-read/</guid>
+      <description>
+        
+          
+             Permanent banning of ip - https://nerdily.org/2017/upgrading-fail2ban-to-a-permanent-banhammer/ AbuseDB checking - https://www.abuseipdb.com/check/52.175.24.92  
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ssh on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/ssh/</link>
+    <description>Recent content in ssh on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Wed, 19 Aug 2020 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/ssh/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Shell into Kubernetes Pod</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/shell-into-kubernetes-pod/</link>
+      <pubDate>Wed, 19 Aug 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/shell-into-kubernetes-pod/</guid>
+      <description>
+        
+          
+            Syntax:
+1kubectl exec --stdin --tty &amp;lt;pod_name&amp;gt; -- /bin/bash Example, with the following pods
+1me@example:~$ kubectl get pod 2NAME READY STATUS RESTARTS AGE 3cert-manager-cainjector-68c88cc858-c2rhx 1/1 Running 0 109m 4cert-manager-d76d644df-pgqn9 1/1 Running 0 109m 5cert-manager-webhook-6dd68c6fbc-rzcln 1/1 Running 0 109m 6my-first-vanilla-drupal-6f6dd66b94-xldj7 1/1 Running 0 108m 7my-first-vanilla-drupal-mariadb-0 1/1 Running 0 108m 8traffic-cop-nginx-ingress-controller-5d685cfd59-pjfdg 1/1 Running 0 144m 9traffic-cop-nginx-ingress-default-backend-55f6bcb48-brg6b 1/1 Running 0 144m Run this to go to the drupal pod my-first-vanilla-drupal-6f6dd66b94-xldj7
+1kubectl exec --stdin --tty my-first-vanilla-drupal-6f6dd66b94-xldj7 -- /bin/bash It&#39;s just like any docker container or linux machine when you&#39;re in:
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>SSH to Docker Container</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/ssh-to-docker-container/</link>
+      <pubDate>Thu, 13 Aug 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/ssh-to-docker-container/</guid>
+      <description>
+        
+          
+            Check first the names of your container:
+1docker ps Technically though, it&#39;s just running a shell, so run as follows:
+1docker exec -it &amp;lt;container-name&amp;gt; /bin/bash In case you see this error:
+1OCI runtime exec failed: exec failed: container_linux.go:349: starting container process caused &amp;#34;exec: \&amp;#34;/bin/bash\&amp;#34;: stat /bin/bash: no such file or directory&amp;#34;: unknown You can probe a little and check any available shell. Run:
+1docker exec -it &amp;lt;container-name&amp;gt; ls -l /bin/ You may recognize a few shell like:
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Rsync including hidden files</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/rsync-including-hidden/</link>
+      <pubDate>Sat, 06 Jun 2020 09:21:14 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/rsync-including-hidden/</guid>
+      <description>
+        
+          
+            If you need to rsync those hidden directories or files starting with dot, do it something like below (note the trailing /)
+1rsync -avz -e ssh --progress user@source-server:/somedirA/ somedirB/ See https://stackoverflow.com/questions/9046749/rsync-not-synchronizing-htaccess-file
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Add Passphrase to Existing SSH Key</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/add-passphrase-to-existing-ssh-key/</link>
+      <pubDate>Sun, 05 Apr 2020 18:36:44 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/add-passphrase-to-existing-ssh-key/</guid>
+      <description>
+        
+          
+            1$ openssl rsa -aes256 -in ./id_rsa -out ./id_rsa.hashed 2writing RSA key 3Enter PEM pass phrase: 4Verifying - Enter PEM pass phrase: You should then use &#39;./id_rsa.hashed&#39; as your private key. See https://security.stackexchange.com/questions/59136/can-i-add-a-password-to-an-existing-private-key for details.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Bad Configuration Option</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/bad-configuration-option/</link>
+      <pubDate>Sun, 05 Apr 2020 18:36:44 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/bad-configuration-option/</guid>
+      <description>
+        
+          
+            Noticed this one in a compromised machine by a cryptocurrency(monero) miner:
+1icasimpan@example-prod:~$ scp wp.example.com-HTMLonly.tgz icasimpan@another-example.info:~/ 2command-line: line 0: Bad configuration option: PermitLocalCommand 3lost connection Fix was to remove and re-install openssh-server
+1sudo apt-get remove openssh-server 2sudo apg-get install openssh-server Details in https://stackoverflow.com/questions/16182300/scp-error-bad-configuration-option-permitlocalcommand
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Converting a Putty generated public key to OpenSSH</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/converting-putty-public-key-to-openssh/</link>
+      <pubDate>Sun, 05 Apr 2020 18:36:44 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/converting-putty-public-key-to-openssh/</guid>
+      <description>
+        
+          
+            If you see a public key like below, chances are, it&#39;s generated using PuttyGen in Windows.
+1---- BEGIN SSH2 PUBLIC KEY ---- 2Comment: &amp;#34;rsa-key-20200101&amp;#34; 3AAAAB3NzaC1yc2EAAAABJQAAAQEArPVm4pY6eNaXFay32YHRdu96PXcwmhzGEWhK 4jmNRt2qWs39vbM/ZCQ7I8aKcgZJ6r35wInWpaqOH2xE0Jzx1rbC0aY+66KnPSFXZ 5WUkUK6oNFt55KbjgpGildiD4hehGHnRbNjoKWtKiOZKFVZPYn4H+oJ1qIUjfRzYn 6a9ArXR0gZ9Ev1tENXdbura3fin5qx8Ng6/NkWHseSiCRRW1vgS4ErSnQhei+8pJI 7l+GZnGhGgd4qDzHdoIt63yTuyPzqutgWhd3HoBahxCrcM9P+Gbo2J1as+8yYP56m 8jI5Jnuq5eFRGu7FDaRbxdvj7ZOXlZleAkY4YstE0kewzfnTW+Q== 9---- END SSH2 PUBLIC KEY ---- PuttyGen has a way to convert to OpenSSH but you can also convert it as follows:
+1ssh-keygen -i -f keyfile.pub &amp;gt; newkeyfile.pub More info in https://stackoverflow.com/questions/2224066/how-to-convert-ssh-keypairs-generated-using-puttygenwindows-into-key-pairs-use
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Force ssh client to use ssh-key and not password to authenticate</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/forced-use-ssh-key-not-password/</link>
+      <pubDate>Sun, 05 Apr 2020 18:36:44 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/forced-use-ssh-key-not-password/</guid>
+      <description>
+        
+          
+            1ssh -i ./server-keys.ppk -o PubkeyAuthentication=yes -o PasswordAuthentication=no deps@104.129.111.150 Some details in https://unix.stackexchange.com/questions/15138/how-to-force-ssh-client-to-use-only-password-auth
+Tested in:
+ OpenSSH_7.4p1, OpenSSL 1.0.2k-fips  
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Permission denied (publickey,gssapi-keyex,gssapi-with-mic)</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/permission-denied/</link>
+      <pubDate>Thu, 02 Apr 2020 18:36:44 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/permission-denied/</guid>
+      <description>
+        
+          
+            1[icasimpan@icasimpan ~]$ ssh icasimpan@204.48.29.45 2The authenticity of host &amp;#39;204.48.29.45 (204.48.29.45)&amp;#39; can&amp;#39;t be established. 3ECDSA key fingerprint is SHA256:/g89dBppp6ir72D3dUvHFm4de2k3NPtYKOOfNkUkFQQ. 4ECDSA key fingerprint is MD5:58:41:92:ed:e1:55:52:3f:69:6a:e5:27:7a:dd:98:6a. 5Are you sure you want to continue connecting (yes/no)? yes 6Warning: Permanently added &amp;#39;204.48.29.45&amp;#39; (ECDSA) to the list of known hosts. 7Permission denied (publickey,gssapi-keyex,gssapi-with-mic). In both source and destination machine, make sure to edit /etc/ssh/ssh_config and add
+1PasswordAuthentication yes Then restart sshd
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Remove Bad Keys From ~/.ssh/known_hosts</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/remove-bad-keys-from-known_hosts/</link>
+      <pubDate>Thu, 02 Apr 2020 18:36:44 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/remove-bad-keys-from-known_hosts/</guid>
+      <description>
+        
+          
+            Sample
+1icasimpan-local:~ icasimpan$ ssh root@99.206.157.36 2@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 3@ WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED! @ 4@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 5IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY! 6Someone could be eavesdropping on you right now (man-in-the-middle attack)! 7It is also possible that a host key has just been changed. 8The fingerprint for the ECDSA key sent by the remote host is 9SHA256:AbJnvQd/cMEDiN0ohMp6gdmBYRhRRp6h8iOBJf0m4Zs. 10Please contact your system administrator. 11Add correct host key in /Users/icasimpan/.ssh/known_hosts to get rid of this message.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Retrieve SSH Public Key From Private Key</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/retrieve-ssh-public-key-from-private-key/</link>
+      <pubDate>Thu, 02 Apr 2020 18:36:44 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/retrieve-ssh-public-key-from-private-key/</guid>
+      <description>
+        
+          
+            1ssh-keygen -y -f ~/.ssh/id_rsa &amp;gt; ~/.ssh/id_rsa.pub See details in https://askubuntu.com/questions/53553/how-do-i-retrieve-the-public-key-from-a-ssh-private-key
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>iptables: Allow Specific IP to Connect via SSH.</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/iptables-allow-specific-ip-to-ssh/</link>
+      <pubDate>Sat, 28 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/iptables-allow-specific-ip-to-ssh/</guid>
+      <description>
+        
+          
+            1iptables -A INPUT -p tcp -s 114.191.33.88 --dport 22 -m conntrack --ctstate NEW,ESTABLISHED -j ACCEPT 2iptables -A OUTPUT -p tcp --sport 22 -m conntrack --ctstate ESTABLISHED -j ACCEPT 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Replace SSH Connectivity via Paramiko</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/replace-ssh-connectivity-with-paramiko/</link>
+      <pubDate>Sat, 21 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/replace-ssh-connectivity-with-paramiko/</guid>
+      <description>
+        
+          
+            When an issue such as &amp;quot;Timeout, waiting for priviledged escalation&amp;quot; happens
+Run the playbook as follows:
+1ansible-playbook -c paramiko ansible/ansible-usermgr.yml -i &amp;#34;cool.example.com, &amp;#34; -vvv suggested in https://github.com/ansible/ansible/issues/14426
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Rsync via Ssh</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/rsync-via-ssh/</link>
+      <pubDate>Thu, 25 Oct 2018 09:21:14 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/rsync-via-ssh/</guid>
+      <description>
+        
+          
+            1rsync -avz -e &amp;#34;ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null&amp;#34; \ 2--progress /var/www/html/example.com/docroot me@example.org:/var/www/html/example.org/ 
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

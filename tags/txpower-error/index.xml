@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>txpower-error on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/txpower-error/</link>
+    <description>Recent content in txpower-error on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Sun, 23 Aug 2020 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/txpower-error/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Wireless Interface TXPower Error</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/wireless-interface-txpower-error/</link>
+      <pubDate>Sun, 23 Aug 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/wireless-interface-txpower-error/</guid>
+      <description>
+        
+          
+            I turned-off my built-in wireless network interface using the command:
+1iwconfig wlan0 txpower off Howerver, I can no longer turn-it back on. Logic says just change &amp;quot;off&amp;quot; to &amp;quot;on&amp;quot; but instead, I get this error.
+1root@raspberrypi:/home/pi# iwconfig wlan0 txpower on 2Error for wireless request &amp;#34;Set Tx Power&amp;#34; (8B27) : 3GET failed on device wlan0 ; Input/output error. Current status of the wireless interface looks like:
+1root@raspberrypi:/home/pi# iwconfig wlan0 2wlan0 IEEE 802.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

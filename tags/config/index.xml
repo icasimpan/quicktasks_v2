@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>config on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/config/</link>
+    <description>Recent content in config on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Fri, 03 Jul 2020 19:25:00 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/config/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Location of NewRelic License in CentOS7</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/newrelic-license-location/</link>
+      <pubDate>Fri, 03 Jul 2020 19:25:00 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/newrelic-license-location/</guid>
+      <description>
+        
+          
+            It&#39;s in &amp;quot;/etc/php.d/newrelic.ini&amp;quot; look for &amp;quot;newrelic.license&amp;quot;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Bad Configuration Option</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/bad-configuration-option/</link>
+      <pubDate>Sun, 05 Apr 2020 18:36:44 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/bad-configuration-option/</guid>
+      <description>
+        
+          
+            Noticed this one in a compromised machine by a cryptocurrency(monero) miner:
+1icasimpan@example-prod:~$ scp wp.example.com-HTMLonly.tgz icasimpan@another-example.info:~/ 2command-line: line 0: Bad configuration option: PermitLocalCommand 3lost connection Fix was to remove and re-install openssh-server
+1sudo apt-get remove openssh-server 2sudo apg-get install openssh-server Details in https://stackoverflow.com/questions/16182300/scp-error-bad-configuration-option-permitlocalcommand
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Permission denied (publickey,gssapi-keyex,gssapi-with-mic)</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/permission-denied/</link>
+      <pubDate>Thu, 02 Apr 2020 18:36:44 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/permission-denied/</guid>
+      <description>
+        
+          
+            1[icasimpan@icasimpan ~]$ ssh icasimpan@204.48.29.45 2The authenticity of host &amp;#39;204.48.29.45 (204.48.29.45)&amp;#39; can&amp;#39;t be established. 3ECDSA key fingerprint is SHA256:/g89dBppp6ir72D3dUvHFm4de2k3NPtYKOOfNkUkFQQ. 4ECDSA key fingerprint is MD5:58:41:92:ed:e1:55:52:3f:69:6a:e5:27:7a:dd:98:6a. 5Are you sure you want to continue connecting (yes/no)? yes 6Warning: Permanently added &amp;#39;204.48.29.45&amp;#39; (ECDSA) to the list of known hosts. 7Permission denied (publickey,gssapi-keyex,gssapi-with-mic). In both source and destination machine, make sure to edit /etc/ssh/ssh_config and add
+1PasswordAuthentication yes Then restart sshd
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Remove Bad Keys From ~/.ssh/known_hosts</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/remove-bad-keys-from-known_hosts/</link>
+      <pubDate>Thu, 02 Apr 2020 18:36:44 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/remove-bad-keys-from-known_hosts/</guid>
+      <description>
+        
+          
+            Sample
+1icasimpan-local:~ icasimpan$ ssh root@99.206.157.36 2@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 3@ WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED! @ 4@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 5IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY! 6Someone could be eavesdropping on you right now (man-in-the-middle attack)! 7It is also possible that a host key has just been changed. 8The fingerprint for the ECDSA key sent by the remote host is 9SHA256:AbJnvQd/cMEDiN0ohMp6gdmBYRhRRp6h8iOBJf0m4Zs. 10Please contact your system administrator. 11Add correct host key in /Users/icasimpan/.ssh/known_hosts to get rid of this message.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Redirect Via Varnish</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/redirect-via-varnish/</link>
+      <pubDate>Tue, 01 Oct 2019 23:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/redirect-via-varnish/</guid>
+      <description>
+        
+          
+             https://www.rsreese.com/redirect-http-to-https-using-varnish/ https://varnish-cache.org/tips/vcl/redirect.html https://www.dmsp.de/system-administration/varnish-cache-vcl-301-redirect/  
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Simple Varnish Config</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/simple-varnish-config/</link>
+      <pubDate>Tue, 01 Oct 2019 23:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/simple-varnish-config/</guid>
+      <description>
+        
+          
+            Config is an exact copy of https://gist.github.com/jeremyjbowers/1542949. Copying it here verbatim to avoid bit rot.
+1/* 2* 3* First, set up a backend to answer the request if there&amp;#39;s not a cache hit. 4* 5*/ 6backend default { 78# Set a host. 9.host = &amp;#34;192.168.1.100&amp;#34;; 1011# Set a port. 80 is normal Web traffic. 12.port = &amp;#34;8000&amp;#34;; 13} 14/* 15* 16* Next, configure the &amp;#34;receive&amp;#34; subroutine. 17* 18*/ 19sub vcl_recv { 2021# Use the backend we set up above to answer the request if it&amp;#39;s not cached.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Where is the database config </title>
+      <link>https://ismael.casimpan.com/quicktasks/post/where-is-db-config/</link>
+      <pubDate>Sat, 28 Sep 2019 23:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/where-is-db-config/</guid>
+      <description>
+        
+          
+            1wp-config.php 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>[InnoDB] Fatal error: cannot allocate memory for the buffer pool</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/innodb-fatal-error-cannot-allocate-memory-buffer-pool/</link>
+      <pubDate>Sat, 29 Dec 2018 09:47:00 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/innodb-fatal-error-cannot-allocate-memory-buffer-pool/</guid>
+      <description>
+        
+          
+            From /var/log/mariadb/mariadb.log, something like
+1150515 12:10:45 InnoDB: Completed initialization of buffer pool 2150515 12:10:45 InnoDB: Fatal error: cannot allocate memory for the buffer pool 3150515 12:10:45 [ERROR] Plugin &amp;#39;InnoDB&amp;#39; init function returned error. 4150515 12:10:45 [ERROR] Plugin &amp;#39;InnoDB&amp;#39; registration as a STORAGE ENGINE failed. 5150515 12:10:45 [ERROR] Unknown/unsupported storage engine: InnoDB 6150515 12:10:45 [ERROR] Aborting Ensure to allocate 50% of max machine RAM. Assuming you have 2GB in the machine, you&#39;ll need
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>AUTOMySQLBackup: Looking for .my.cnf in your $HOME instead of in /root</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/automysqlbackup-looking-for-.my.cnf-on-your-home-instead-of-in-root/</link>
+      <pubDate>Mon, 15 Oct 2018 12:32:03 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/automysqlbackup-looking-for-.my.cnf-on-your-home-instead-of-in-root/</guid>
+      <description>
+        
+          
+            1root@rh:~# /usr/local/bin/automysqlbackup /etc/automysqlbackup/rh.conf 2Parsed config file &amp;#34;/etc/automysqlbackup/automysqlbackup.conf&amp;#34; 34grep: /home/icasimpan/.my.cnf: No such file or directory 5grep: /home/icasimpan/.my.cnf: No such file or directory 6# Checking for permissions to write to folders: 7base folder /var/lib ... exists ... ok. 8backup folder /var/lib/automysqlbackup ... exists ... writable? yes. Proceeding. 9checking directory &amp;#34;/var/lib/automysqlbackup/daily&amp;#34; ... exists. 10checking directory &amp;#34;/var/lib/automysqlbackup/weekly&amp;#34; ... exists. 11checking directory &amp;#34;/var/lib/automysqlbackup/monthly&amp;#34; ... exists. 12checking directory &amp;#34;/var/lib/automysqlbackup/latest&amp;#34; ... exists. 13checking directory &amp;#34;/var/lib/automysqlbackup/tmp&amp;#34; ... exists. 14checking directory &amp;#34;/var/lib/automysqlbackup/fullschema&amp;#34; .
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Check Current Character Set Settings in MySQL</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/check-current-character-set-settings-in-mysql/</link>
+      <pubDate>Mon, 15 Oct 2018 07:46:36 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/check-current-character-set-settings-in-mysql/</guid>
+      <description>
+        
+          
+            1mysql&amp;gt; SHOW VARIABLES WHERE Variable_name LIKE &amp;#39;character\_set\_%&amp;#39; OR Variable_name LIKE &amp;#39;collation%&amp;#39;; Sample output as follows: Image not found  a.warning-link { color: inherit !important; font-weight: inherit !important; text-decoration: underline !important; border-bottom: none !important; }  Web path: https://ismael.casimpan.com/img/check-mysql-charset-settings.png
+Disk path: static/img/check-mysql-charset-settings.png
+Using Page Bundles: false
+ 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Checking Supported Character Set</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/checking-supported-character-set/</link>
+      <pubDate>Mon, 15 Oct 2018 07:41:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/checking-supported-character-set/</guid>
+      <description>
+        
+          
+            1mysql&amp;gt; SHOW CHARACTER SET; 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Custom Site Title Per Drupal Installation (d8)</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/custom-title-per-drupal-installation/</link>
+      <pubDate>Mon, 09 Apr 2018 00:18:01 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/custom-title-per-drupal-installation/</guid>
+      <description>
+        
+          
+            Do you have several drupal installation in a test server that you want to distinguish which is which? Add this to settings.local.php and it will override whatever is in database.
+1$config[&amp;#39;system.site&amp;#39;][&amp;#39;name&amp;#39;] = &amp;#34;Example Site (Fixes)&amp;#34;; 
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

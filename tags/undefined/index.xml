@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>undefined on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/undefined/</link>
+    <description>Recent content in undefined on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Mon, 15 Oct 2018 07:27:21 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/undefined/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Undefined Class Constant MYSQL_ATTR_SSL_CA</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/undefined-class-constant-mysql_attr_ssl_ca/</link>
+      <pubDate>Mon, 15 Oct 2018 07:27:21 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/undefined-class-constant-mysql_attr_ssl_ca/</guid>
+      <description>
+        
+          
+            1drupal@ubuntu:/var/www/sites/openedu.localhost/docroot$ drush si site-name=&amp;#39;OpenEDU Testing&amp;#39; --db-url=&amp;#39;mysql://openedu_DBA:openedu_PASS@127.0.0.1/openedu_DB&amp;#39; openedu 2PHP Fatal error: Uncaught Error: Undefined class constant &amp;#39;MYSQL_ATTR_SSL_CA&amp;#39; in /usr/local/share/drush/lib/Drush/Sql/Sqlmysql.php:56 3Stack trace: 4#0 /usr/local/share/drush/lib/Drush/Sql/SqlBase.php(164): Drush\Sql\Sqlmysql-&amp;gt;creds() 5#1 /usr/local/share/drush/lib/Drush/Sql/Sqlmysql.php(107): Drush\Sql\SqlBase-&amp;gt;query(&amp;#39;SELECT 1;&amp;#39;, &amp;#39;/tmp/drush_uX7T...&amp;#39;, &amp;#39;/dev/null&amp;#39;) 6#2 /usr/local/share/drush/commands/core/site_install.drush.inc(146): Drush\Sql\Sqlmysql-&amp;gt;db_exists() 7#3 /usr/local/share/drush/includes/command.inc(422): drush_core_pre_site_install(&amp;#39;site-name=OpenE...&amp;#39;) 8#4 /usr/local/share/drush/includes/command.inc(231): _drush_invoke_hooks(Array, Array) 9#5 /usr/local/share/drush/includes/command.inc(199): drush_command(&amp;#39;site-name=OpenE...&amp;#39;) 10#6 /usr/local/share/drush/lib/Drush/Boot/BaseBoot.php(67): drush_dispatch(Array) 11#7 /usr/local/share/drush/includes/preflight.inc(66): Drush\Boot\BaseBoot-&amp;gt;bootstrap_and_dispatch() 12#8 /usr/local/share/drush/drush.php(12): drush_main() 13#9 {main} 14thrown in /usr/local/share/drush/lib/Drush/Sql/Sqlmysql.php on line 56 15Drush command terminated abnormally due to an unrecoverable error. [error] 16Error: Uncaught Error: Undefined class constant &amp;#39;MYSQL_ATTR_SSL_CA&amp;#39; in /usr/local/share/drush/lib/Drush/Sql/Sqlmysql.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

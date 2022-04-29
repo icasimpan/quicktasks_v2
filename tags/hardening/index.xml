@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>hardening on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/hardening/</link>
+    <description>Recent content in hardening on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Sun, 07 Jun 2020 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/hardening/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hardened TLS / SSL Cert</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/hardened-ssl-cert/</link>
+      <pubDate>Sun, 07 Jun 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/hardened-ssl-cert/</guid>
+      <description>
+        
+          
+            Apache
+1SSLCipherSuite EECDH+AESGCM:EDH+AESGCM:AES256+EECDH:AES256+EDH:ECDHE-RSA-AES128-GCM-SHA384:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA128:DHE-RSA-AES128-GCM-SHA384:DHE-RSA-AES128-GCM-SHA256:DHE-RSA-AES128-GCM-SHA128:ECDHE-RSA-AES128-SHA384:ECDHE-RSA-AES128-SHA128:ECDHE-RSA-AES128-SHA:ECDHE-RSA-AES128-SHA:DHE-RSA-AES128-SHA128:DHE-RSA-AES128-SHA128:DHE-RSA-AES128-SHA:DHE-RSA-AES128-SHA:ECDHE-RSA-DES-CBC3-SHA:EDH-RSA-DES-CBC3-SHA:AES128-GCM-SHA384:AES128-GCM-SHA128:AES128-SHA128:AES128-SHA128:AES128-SHA:AES128-SHA:DES-CBC3-SHA:HIGH:!aNULL:!eNULL:!EXPORT:!DES:!MD5:!PSK:!RC4 2SSLProtocol All -SSLv2 -SSLv3 3SSLHonorCipherOrder On 4Header always set Strict-Transport-Security &amp;#34;max-age=63072000; includeSubdomains; preload&amp;#34; 5Header always set X-Frame-Options SAMEORIGIN 6Header always set X-Content-Type-Options nosniff 7# Requires Apache &amp;gt;= 2.4 8SSLCompression off 9SSLSessionTickets Off 10SSLUseStapling on 11SSLStaplingCache &amp;#34;shmcb:logs/stapling-cache(150000)&amp;#34; Nginx
+1ssl_ciphers &amp;#34;EECDH+AESGCM:EDH+AESGCM:AES256+EECDH:AES256+EDH:ECDHE-RSA-AES128-GCM-SHA384:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA128:DHE-RSA-AES128-GCM-SHA384:DHE-RSA-AES128-GCM-SHA256:DHE-RSA-AES128-GCM-SHA128:ECDHE-RSA-AES128-SHA384:ECDHE-RSA-AES128-SHA128:ECDHE-RSA-AES128-SHA:ECDHE-RSA-AES128-SHA:DHE-RSA-AES128-SHA128:DHE-RSA-AES128-SHA128:DHE-RSA-AES128-SHA:DHE-RSA-AES128-SHA:ECDHE-RSA-DES-CBC3-SHA:EDH-RSA-DES-CBC3-SHA:AES128-GCM-SHA384:AES128-GCM-SHA128:AES128-SHA128:AES128-SHA128:AES128-SHA:AES128-SHA:DES-CBC3-SHA:HIGH:!aNULL:!eNULL:!EXPORT:!DES:!MD5:!PSK:!RC4&amp;#34;; 2ssl_protocols TLSv1 TLSv1.1 TLSv1.2; 3ssl_prefer_server_ciphers on; 4ssl_session_cache shared:SSL:10m; 5# &amp;#39;always&amp;#39; requires nginx &amp;gt;= 1.7.5, see http://nginx.org/en/docs/http/ngx_http_headers_module.html#add_header 6add_header Strict-Transport-Security &amp;#34;max-age=63072000; includeSubdomains; preload&amp;#34; always; 7add_header X-Frame-Options SAMEORIGIN always; 8add_header X-Content-Type-Options nosniff always; 9ssl_session_tickets off; 10ssl_stapling on; # Requires nginx &amp;gt;= 1.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Hardening Mysql</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/hardening-mysql/</link>
+      <pubDate>Sun, 08 Apr 2018 23:31:14 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/hardening-mysql/</guid>
+      <description>
+        
+          
+            1icasimpan@am2018:~$ sudo mysql_secure_installation 23Securing the MySQL server deployment. 45Connecting to MySQL using a blank password. 67VALIDATE PASSWORD PLUGIN can be used to test passwords 8and improve security. It checks the strength of password 9and allows the users to set only those passwords which are 10secure enough. Would you like to setup VALIDATE PASSWORD plugin? 1112Press y|Y for Yes, any other key for No: Y 1314There are three levels of password validation policy: 1516LOW Length &amp;gt;= 8 17MEDIUM Length &amp;gt;= 8, numeric, mixed case, and special characters 18STRONG Length &amp;gt;= 8, numeric, mixed case, special characters and dictionary file 1920Please enter 0 = LOW, 1 = MEDIUM and 2 = STRONG: 8 2122Invalid option provided.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

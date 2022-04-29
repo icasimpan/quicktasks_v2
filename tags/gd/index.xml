@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>gd on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/gd/</link>
+    <description>Recent content in gd on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Sat, 21 Sep 2019 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/gd/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GD PHP Module Installation Error</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/php-gd-dependency-error-during-installation/</link>
+      <pubDate>Sat, 21 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/php-gd-dependency-error-during-installation/</guid>
+      <description>
+        
+          
+            It says something like &amp;quot;gd-last&amp;quot; needed but not found.
+Solution:
+Add remi-safe repo to your repository.
+See https://centos.org/forums/viewtopic.php?t=63158
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>plugin on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/plugin/</link>
+    <description>Recent content in plugin on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Mon, 06 Jul 2020 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/plugin/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Install Jenkins Plugin via Ansible</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/install-jenkins-plugin-via-ansible/</link>
+      <pubDate>Mon, 06 Jul 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/install-jenkins-plugin-via-ansible/</guid>
+      <description>
+        
+          
+            1example@user:/opt/ansible-playbooks$ cat vars/jenkins.yml 2## Search names from https://plugins.jenkins.io/ 3jenkins_plugins: 4- git 5- hipchat 6- log-parser 7- mask-passwords 8- ssh-agent 9- ssh 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Plugin install without FTP Credentials</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/plugin-install-without-ftp-credentials/</link>
+      <pubDate>Sat, 28 Sep 2019 23:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/plugin-install-without-ftp-credentials/</guid>
+      <description>
+        
+          
+            Normal behavior of Wordpress when installing plugin is to ask for FTP credentials. So to fix the problem, just add this line to wp-config.php (of course, make sure permission are fine).
+1define(&amp;#39;FS_METHOD&amp;#39;,&amp;#39;direct&amp;#39;); More troubleshooting details in https://www.digitalocean.com/community/questions/wordpress-asking-for-ftp-credentials
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

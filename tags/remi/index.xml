@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>remi on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/remi/</link>
+    <description>Recent content in remi on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Sat, 28 Sep 2019 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/remi/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PHP Remi modules installed outside ansible trick</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/php-remi-modules-installed-outside-ansible/</link>
+      <pubDate>Sat, 28 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/php-remi-modules-installed-outside-ansible/</guid>
+      <description>
+        
+          
+            Remi modules are installed in non-standard location. Geerlingguy&#39;s ansible role harmonizes it and install it in standard locations.
+So, if you&#39;re not familiar with standard locations, just do the following trick
+NOTE: In this case, I installed the memcache module for php7.1 from Remi&#39;s repo.
+1yum install -y php71-php-pecl-memcache.x86_64 Find where the memcache module is located
+1[root@example-staging www]# find / -iname *memcache*.so 2/usr/lib64/httpd/modules/mod_socache_memcache.so 3/opt/remi/php71/root/usr/lib64/php/modules/memcache.so Cross-check with a standard installed php module (you can see which modules via &#39;php -m&#39;)
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

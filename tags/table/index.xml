@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>table on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/table/</link>
+    <description>Recent content in table on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Tue, 21 Jan 2020 23:17:11 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/table/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Show Table Sizes</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/table-sizes/</link>
+      <pubDate>Tue, 21 Jan 2020 23:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/table-sizes/</guid>
+      <description>
+        
+          
+            Use the query below and replace &amp;quot;database_name&amp;quot; with the correct db name.
+1SELECT table_name AS &amp;#34;Table&amp;#34;, 2ROUND(((data_length + index_length) / 1024 / 1024), 2) AS &amp;#34;Size (MB)&amp;#34; 3FROM information_schema.TABLES 4WHERE table_schema = &amp;#34;database_name&amp;#34; 5ORDER BY (data_length + index_length) DESC; 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>MariaDB Table Join Limit</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/mariadb-tablejoin-limit/</link>
+      <pubDate>Tue, 23 Oct 2018 22:30:18 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/mariadb-tablejoin-limit/</guid>
+      <description>
+        
+          
+            Maximum number of table joins is 61 as per https://stackoverflow.com/questions/23389820/what-is-the-maximum-number-of-table-joins-in-mariadb Tested out as follows:
+1CREATE TABLE t (i INT(10) NOT NULL); 2select * 3from t a01 join t a02 join t a03 join t a04 join t a05 join t a06 join t a07 join t a08 join t a09 join t a10 4join t a11 join t a12 join t a13 join t a14 join t a15 join t a16 join t a17 join t a18 join t a19 join t a20 5join t a21 join t a22 join t a23 join t a24 join t a25 join t a26 join t a27 join t a28 join t a29 join t a30 6join t a31 join t a32 join t a33 join t a34 join t a35 join t a36 join t a37 join t a38 join t a39 join t a40 7join t a41 join t a42 join t a43 join t a44 join t a45 join t a46 join t a47 join t a48 join t a49 join t a50 8join t a51 join t a52 join t a53 join t a54 join t a55 join t a56 join t a57 join t a58 join t a59 join t a60 9join t a61 join t a62; Results in error for more than 61 table used (tested on MariaDB 10.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>List Table Names Only for Shell Scripting Purposes</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/list-table-names-only-for-shell-scripting-purposes/</link>
+      <pubDate>Mon, 15 Oct 2018 12:42:34 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/list-table-names-only-for-shell-scripting-purposes/</guid>
+      <description>
+        
+          
+            1mysql -s --skip-column-names -ne &amp;#34;use DB_to_Use; show tables;&amp;#34; 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Restore One Table</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/restore-one-table/</link>
+      <pubDate>Sun, 08 Apr 2018 23:22:49 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/restore-one-table/</guid>
+      <description>
+        
+          
+            1mysql -u root -p your_DB &amp;lt; ./your_system.sql More details in https://stackoverflow.com/questions/9696249/restoring-a-mysql-table-back-to-the-database
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Dump One or More Table</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/dump-one-or-more-table/</link>
+      <pubDate>Sun, 08 Apr 2018 23:21:30 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/dump-one-or-more-table/</guid>
+      <description>
+        
+          
+            1mysqldump -u root -p yourDB system &amp;gt; yourDB_system.sql More details in https://dba.stackexchange.com/questions/9306/how-do-you-mysqldump-specific-tables
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

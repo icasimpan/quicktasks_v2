@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>sqlite on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/sqlite/</link>
+    <description>Recent content in sqlite on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Tue, 15 Feb 2022 23:17:11 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/sqlite/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Check Tables in SQLite</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/check-tables-in-sqlite/</link>
+      <pubDate>Tue, 15 Feb 2022 23:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/check-tables-in-sqlite/</guid>
+      <description>
+        
+          
+            Open a database 1sqlite&amp;gt; .open test.db Show tables 1sqlite&amp;gt;.table 2n Shows that there is only 1 table named n.
+Check table schema 1sqlite&amp;gt; .schema 2CREATE TABLE n (id INTEGER PRIMARY KEY,f TEXT,l TEXT); Check contents of a table It&#39;s just the usual sql query commands as expected
+1sqlite&amp;gt; select * from n; 21|john|smith Quit the sqlite command prompt 1sqlite&amp;gt; .quite Check for other command not covered above in sqlite.org website
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Use SQLite in Bash</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/use-sqlite-in-bash/</link>
+      <pubDate>Tue, 15 Feb 2022 22:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/use-sqlite-in-bash/</guid>
+      <description>
+        
+          
+            1#!/bin/bash 2sqlite3 test.db &amp;#34;create table n (id INTEGER PRIMARY KEY,f TEXT,l TEXT);&amp;#34; 3sqlite3 test.db &amp;#34;insert into n (f,l) values (&amp;#39;john&amp;#39;,&amp;#39;smith&amp;#39;);&amp;#34; 4sqlite3 test.db &amp;#34;select * from n;&amp;#34; See stackoverflow post
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

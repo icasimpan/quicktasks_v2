@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>windows on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/windows/</link>
+    <description>Recent content in windows on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Thu, 03 Mar 2022 23:17:11 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/windows/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Browse WSL Path in Windows Explorer</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/browse-wsl-path-in-windows-explorer/</link>
+      <pubDate>Thu, 03 Mar 2022 23:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/browse-wsl-path-in-windows-explorer/</guid>
+      <description>
+        
+          
+            Open Windows explorer and type this in address bar
+1\\wsl$ See details in this article
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>NodeJS Install in WSL</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/nodejs-install-in-wsl/</link>
+      <pubDate>Sun, 13 Feb 2022 23:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/nodejs-install-in-wsl/</guid>
+      <description>
+        
+          
+            NodeJS 14+ is needed in WSL. Usual installation via apt in Ubuntu doesn&#39;t work. This one works so far:
+1curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash - 2sudo apt-get install -y nodejs 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Check Windows Uptime</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/check-windows-uptime/</link>
+      <pubDate>Sun, 06 Feb 2022 23:17:12 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/check-windows-uptime/</guid>
+      <description>
+        
+          
+            Sometimes, you need to check the uptime of a Windows machine. Here&#39;s the Powershell command for that:
+1PS C:\&amp;gt; systeminfo|find &amp;#34;System Boot Time&amp;#34; This was tested working under Windows 10 Pro and worth noting that it also works in the old cmd.
+For other methods, see this article.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Reboot Linux under WSL</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/reboot-linux-in-wsl/</link>
+      <pubDate>Sun, 06 Feb 2022 23:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/reboot-linux-in-wsl/</guid>
+      <description>
+        
+          
+            Linux systemcmd or init way of rebooting will not work in a Windows Subsystem for Linux or wsl-run Linux. You need to use the Powershell command below:
+1wsl --shutdown For other methods, see this article.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Fix Garbage in Windows Japanese Locale</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/fix-garbage-in-windows-japanese-locale/</link>
+      <pubDate>Thu, 19 Aug 2021 12:10:45 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/fix-garbage-in-windows-japanese-locale/</guid>
+      <description>
+        
+          
+            If you see garbage characters instead of the expected non-English language, fix is easy.
+ Install corresponding language pack (Japanese in this case) https://support.microsoft.com/en-us/windows/language-packs-for-windows-a5094319-a92d-18de-5b53-1cfc697cfca8 Set the locale for non-unicode programs. See https://www.digitalcitizen.life/changing-display-language-used-non-unicode-programs/  
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Check if Windows is 64-bit Using Powershell</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/check-windows-64bit/</link>
+      <pubDate>Sun, 12 Jul 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/check-windows-64bit/</guid>
+      <description>
+        
+          
+            1PS C:\&amp;gt; [Environment]::Is64BitProcess 2PS C:\&amp;gt; [Environment]::Is64BitOperatingSystem both will return &amp;quot;True&amp;quot; if you&#39;re on a 64 bit Windows. See https://stackoverflow.com/questions/31977657/determining-32-64-bit-in-powershell
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

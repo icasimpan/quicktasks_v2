@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>backend on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/series/backend/</link>
+    <description>Recent content in backend on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Thu, 21 Apr 2022 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/series/backend/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Laravel Mailing</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/laravel-mailing/</link>
+      <pubDate>Thu, 21 Apr 2022 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/laravel-mailing/</guid>
+      <description>
+        
+          
+            Single Email With Multiple Recipients 1$emailRecipient = [&amp;#39;email01@example.com&amp;#39;, &amp;#39;email02@example.com&amp;#39;]; 2Mail::to($emailRecipient)-&amp;gt;send(new MailOnServiceFailure($logTimestamp, $failedContent)); 3Log::info(&amp;#34;Service Failure Mail Alert sent successfully to &amp;#34; . json_encode($emailRecipient)); Single Email Per Recipients 1$emailRecipient = [&amp;#39;email01@example.com&amp;#39;, &amp;#39;email02@example.com&amp;#39;]; 2foreach ($emailRecipient as $eachEmail) { 3Mail::to($eachEmail)-&amp;gt;send(new MailOnServiceFailure($logTimestamp, $failedContent); 4Log::info(&amp;#34;Service Failure Mail Alert sent successfully to {$eachEmail}.&amp;#34;); 5} 
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

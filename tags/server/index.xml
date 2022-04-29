@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>server on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/server/</link>
+    <description>Recent content in server on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Fri, 25 Feb 2022 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/server/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Quick HTTP Server Using Python</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/quick-http-server-using-python/</link>
+      <pubDate>Fri, 25 Feb 2022 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/quick-http-server-using-python/</guid>
+      <description>
+        
+          
+            If you ever need to serve your current directory via http for some reason, this is a quick command in python3:
+1~$ python3 -m http.server 8000 Then access http://localhost:8000
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>php-memory on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/php-memory/</link>
+    <description>Recent content in php-memory on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Sat, 28 Sep 2019 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/php-memory/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Checking for php memory exhaustion &#43; possible fix</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/check-php-memory-exhaustion-and-fix/</link>
+      <pubDate>Sat, 28 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/check-php-memory-exhaustion-and-fix/</guid>
+      <description>
+        
+          
+            1me@web-13940:/var/log/sites/web.prod/logs/web-13940$ zgrep -c &amp;#39;Allowed memory size of&amp;#39; php-errors.log php-errors.log-201712* 2php-errors.log:11 3php-errors.log-20171222.gz:4 1me@web-13940:/var/log/sites/web.prod/logs/web-13940$ zgrep &amp;#39;Allowed memory size of&amp;#39; php-errors.log* | grep -o &amp;#39;request_id=&amp;#34;[^&amp;#34;]*&amp;#39; | awk -F&amp;#39;&amp;#34;&amp;#39; &amp;#39;{print $2}&amp;#39; | xargs -I{} zgrep {} access.log* | awk &amp;#39;{print $6&amp;#34; &amp;#34;$7}&amp;#39; | cut -c2- | sort | uniq -c | sort -nr 26 GET /admin/content 33 POST /system/ajax 43 POST /admin/content 51 POST /views/ajax 61 POST /admin/content?title=budget&amp;amp;type=resource&amp;amp;author=&amp;amp;status=All&amp;amp;vid=All 71 GET /agendas/items/all Conditional fix in https://docs.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

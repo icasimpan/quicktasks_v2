@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ssl-bundle on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/ssl-bundle/</link>
+    <description>Recent content in ssl-bundle on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Sun, 07 Jun 2020 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/ssl-bundle/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Creating an SSL Bundle out of Comodo Positive SSL</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/creating-ssl-bundle-from-comodo-positive-ssl/</link>
+      <pubDate>Sun, 07 Jun 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/creating-ssl-bundle-from-comodo-positive-ssl/</guid>
+      <description>
+        
+          
+            1www.example.org.crt COMODORSADomainValidationSecureServerCA.crt COMODORSAAddTrustCA.crt AddTrustExternalCARoot.crt &amp;gt;&amp;gt; www.example.org-bundle.crt See details in https://helpdesk.ssls.com/hc/en-us/articles/203427642-How-to-install-a-SSL-certificate-on-a-NGINX-server
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

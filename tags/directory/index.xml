@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>directory on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/directory/</link>
+    <description>Recent content in directory on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Mon, 30 Sep 2019 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/directory/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Directory not Found in Debian Apache</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/directory-not-found-apache-debian/</link>
+      <pubDate>Mon, 30 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/directory-not-found-apache-debian/</guid>
+      <description>
+        
+          
+            Some SSL Certs needs to validate through a text file served in apache. Something like: http://example.org/.well-known/pki-validation/F70E08C160E9B8C7GB488B8AEB246D11B.txt
+Solution: Add similar configuration in the virtualhost file in apache:
+1Alias /.well-known/pki-validation/ /var/www/sites/example.org/.well-known/pki-validation/ 2&amp;lt;Directory &amp;#34;/var/html/example.org/.well-known/pki-validation&amp;#34;&amp;gt; 3Order allow,deny 4Allow from all 5Satisfy all 6&amp;lt;/Directory&amp;gt; 
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>root on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/root/</link>
+    <description>Recent content in root on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Wed, 29 Apr 2020 23:11:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/root/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MariaDB root Account Ignoring Password</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/mariadb-root-ignoring-password/</link>
+      <pubDate>Wed, 29 Apr 2020 23:11:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/mariadb-root-ignoring-password/</guid>
+      <description>
+        
+          
+            Observed this in Mariadb 10.x versions. Despite being able to change password, it is still ignoring the password.
+Non-root user not affected.
+Explanation per https://mariadb.com/kb/en/authentication-from-mariadb-104/
+ Using unix_socket means that if you are the system root user, you can login as root@locahost without a password. This technique was pioneered by Otto Kekäläinen in Debian MariaDB packages and has been successfully used in Debian since as early as MariaDB 10.0.
+  It is based on a simple fact that asking the system root for a password adds no extra security — root has full access to all the data files and all process memory anyway.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Automysqlbackup: Cannot Use Root Credentials From MySQL CLI</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/automysqlbackup-cannot-use-root-credentials-from-mysql-cli/</link>
+      <pubDate>Mon, 15 Oct 2018 12:00:13 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/automysqlbackup-cannot-use-root-credentials-from-mysql-cli/</guid>
+      <description>
+        
+          
+            1[root@rh icasimpan]# /usr/local/bin/automysqlbackup /etc/automysqlbackup/rh.conf 2Parsed config file &amp;#34;/etc/automysqlbackup/automysqlbackup.conf&amp;#34; 34# Checking for permissions to write to folders: 5base folder /var/lib ... exists ... ok. 6backup folder /var/lib/automysqlbackup ... exists ... writable? yes. Proceeding. 7checking directory &amp;#34;/var/lib/automysqlbackup/daily&amp;#34; ... exists. 8checking directory &amp;#34;/var/lib/automysqlbackup/weekly&amp;#34; ... exists. 9checking directory &amp;#34;/var/lib/automysqlbackup/monthly&amp;#34; ... exists. 10checking directory &amp;#34;/var/lib/automysqlbackup/latest&amp;#34; ... exists. 11checking directory &amp;#34;/var/lib/automysqlbackup/tmp&amp;#34; ... exists. 12checking directory &amp;#34;/var/lib/automysqlbackup/fullschema&amp;#34; ... exists. 13checking directory &amp;#34;/var/lib/automysqlbackup/status&amp;#34; ... exists. 1415# Testing for installed programs 16mysql .
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Change MySQL User Credentials</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/change-mysql-user-credentials/</link>
+      <pubDate>Sun, 08 Apr 2018 23:20:10 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/change-mysql-user-credentials/</guid>
+      <description>
+        
+          
+            For as long as you have root access to MySQL, this would work:
+1UPDATE mysql.user SET Password=PASSWORD(&amp;#39;new-password-here&amp;#39;) WHERE USER=&amp;#39;user-name-here&amp;#39; AND Host=&amp;#39;host-name-here&amp;#39;; more details from https://www.cyberciti.biz/faq/mysql-change-user-password/
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

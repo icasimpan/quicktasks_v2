@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>varnish on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/varnish/</link>
+    <description>Recent content in varnish on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Mon, 18 May 2020 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/varnish/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Finding Large Files Uncacheable in Acquia Varnish</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/finding-large-files-uncacheable-in-acquia-varnish/</link>
+      <pubDate>Mon, 18 May 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/finding-large-files-uncacheable-in-acquia-varnish/</guid>
+      <description>
+        
+          
+            Acquia varnish cannot cache files &amp;gt;10MB as per https://docs.acquia.com/acquia-cloud/performance/varnish/files/
+To find for those &amp;gt;10MB files, search from the sites/default/files:
+1find ./ -type f -size +10M -exec du -sh &amp;#39;{}&amp;#39; \; -print|grep -v ^\./| sort -n 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Redirect Via Varnish</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/redirect-via-varnish/</link>
+      <pubDate>Tue, 01 Oct 2019 23:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/redirect-via-varnish/</guid>
+      <description>
+        
+          
+             https://www.rsreese.com/redirect-http-to-https-using-varnish/ https://varnish-cache.org/tips/vcl/redirect.html https://www.dmsp.de/system-administration/varnish-cache-vcl-301-redirect/  
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Simple Varnish Config</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/simple-varnish-config/</link>
+      <pubDate>Tue, 01 Oct 2019 23:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/simple-varnish-config/</guid>
+      <description>
+        
+          
+            Config is an exact copy of https://gist.github.com/jeremyjbowers/1542949. Copying it here verbatim to avoid bit rot.
+1/* 2* 3* First, set up a backend to answer the request if there&amp;#39;s not a cache hit. 4* 5*/ 6backend default { 78# Set a host. 9.host = &amp;#34;192.168.1.100&amp;#34;; 1011# Set a port. 80 is normal Web traffic. 12.port = &amp;#34;8000&amp;#34;; 13} 14/* 15* 16* Next, configure the &amp;#34;receive&amp;#34; subroutine. 17* 18*/ 19sub vcl_recv { 2021# Use the backend we set up above to answer the request if it&amp;#39;s not cached.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>upgrades on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/upgrades/</link>
+    <description>Recent content in upgrades on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Wed, 02 Oct 2019 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/upgrades/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Debian/Ubuntu Upgradable Packages List</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/debian-upgradable-list/</link>
+      <pubDate>Wed, 02 Oct 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/debian-upgradable-list/</guid>
+      <description>
+        
+          
+            1icasimpan@example.org:~$ sudo apt list --upgradable 23Listing... Done 4apache2/xenial-updates 2.4.18-2ubuntu3.9 amd64 [upgradable from: 2.4.18-2ubuntu3.8] 5apache2-bin/xenial-updates 2.4.18-2ubuntu3.9 amd64 [upgradable from: 2.4.18-2ubuntu3.8] 6apache2-data/xenial-updates 2.4.18-2ubuntu3.9 all [upgradable from: 2.4.18-2ubuntu3.8] 7apache2-utils/xenial-updates 2.4.18-2ubuntu3.9 amd64 [upgradable from: 2.4.18-2ubuntu3.8] 8base-files/xenial-updates 9.4ubuntu4.7 amd64 [upgradable from: 9.4ubuntu4.6] 9binutils/xenial-updates 2.26.1-1ubuntu1~16.04.7 amd64 [upgradable from: 2.26.1-1ubuntu1~16.04.6] 10bsdutils/xenial-updates 1:2.27.1-6ubuntu3.6 amd64 [upgradable from: 1:2.27.1-6ubuntu3.4] 11ca-certificates/xenial-updates 20170717~16.04.2 all [upgradable from: 20170717~16.04.1] 12cloud-init/xenial-updates 18.4-0ubuntu1~16.04.2 all [upgradable from: 18.2-4-g05926e48-0ubuntu1~16.04.2] 13cloud-initramfs-copymods/xenial-updates 0.27ubuntu1.6 all [upgradable from: 0.27ubuntu1.5] 14cloud-initramfs-dyn-netconf/xenial-updates 0.27ubuntu1.6 all [upgradable from: 0.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

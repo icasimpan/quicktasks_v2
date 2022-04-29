@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tricks on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/tricks/</link>
+    <description>Recent content in tricks on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Thu, 12 Aug 2021 09:34:45 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/tricks/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Query Postgresql from Bash Command Line</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/query-pgsql-from-bash-cli/</link>
+      <pubDate>Thu, 12 Aug 2021 09:34:45 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/query-pgsql-from-bash-cli/</guid>
+      <description>
+        
+          
+            1psql -c &amp;#34;&amp;lt;your_query_here&amp;gt;&amp;#34; Example, to show tables list:
+1psql -c &amp;#34;\dt+&amp;#34; 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Source Only Bash Script</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/source-bash-script-only/</link>
+      <pubDate>Thu, 12 Aug 2021 09:10:45 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/source-bash-script-only/</guid>
+      <description>
+        
+          
+            In some cases, you may need to import the existing environments in bash. Use the following at the top of your script.
+1if [ &amp;#34;${BASH_SOURCE[0]}&amp;#34; -ef &amp;#34;$0&amp;#34; ] 2then 3echo &amp;#34;Hey, you should source this script, not execute it!&amp;#34; 4exit 1 5fi See details in https://unix.stackexchange.com/questions/424492/how-to-define-a-shell-script-to-be-sourced-not-run/424498
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

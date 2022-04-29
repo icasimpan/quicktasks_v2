@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>mac on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/mac/</link>
+    <description>Recent content in mac on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Sun, 13 Mar 2022 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/mac/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Install Unsupported PHP using Brew</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/install-unsupported-php-using-brew/</link>
+      <pubDate>Sun, 13 Mar 2022 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/install-unsupported-php-using-brew/</guid>
+      <description>
+        
+          
+            Brew by default doesn&#39;t install unsupported software versions. Like at this time, php7.3 was no longer supported.
+Installing it disables it and install instead the latest version (8.1.3 at this time).
+1~$ brew install php@7.3 2Running `brew update --preinstall`... 3==&amp;gt; Auto-updated Homebrew! 4Updated 2 taps (homebrew/core and homebrew/cask). 5==&amp;gt; Updated Formulae 6Updated 2 formulae. 7==&amp;gt; Updated Casks 8Updated 6 casks. 910Error: php@7.3 has been disabled because it is a versioned formula!
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Install Powershell in Mac</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/install-powershell-in-mac/</link>
+      <pubDate>Sun, 12 Jul 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/install-powershell-in-mac/</guid>
+      <description>
+        
+          
+            Install
+1brew cask install powershell Run
+1pwsh To update/upgrade later on:
+1brew update 2brew cask upgrade powershell See https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-macos?view=powershell-7
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

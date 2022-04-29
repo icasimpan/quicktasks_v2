@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ruby on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/ruby/</link>
+    <description>Recent content in ruby on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Fri, 18 Feb 2022 09:17:11 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/ruby/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Links - Ruby</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/links-ruby/</link>
+      <pubDate>Fri, 18 Feb 2022 09:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/links-ruby/</guid>
+      <description>
+        
+          
+            Here is a curated links of sites that are I think are useful as I learn or relearn Ruby and Rails further. Incomplete of course but there&#39;s always the internet. Will add any that are worthy to be linked here. For now, this would suffice. If you think there are links worthy to be added here, let me know in the comment below. Thank you!
+Ruby Official Documentation  Ruby Documentation 1 Ruby Documentation 2 Ruby Documentation 3  Learn Ruby  150 Ruby Articles by Jesus Castello Idiosyncratic Ruby - Documenting All Ruby Specialities The Definitive Ruby Tutorial For Complete Beginners Launch School: Intro to Programming with Ruby Launch School: OOP with Ruby Launch School: Core Ruby Tools  Learn Rails  Boring Rails - Direct to the point articles about rails Launch School: Demystifying Rails  Ruby Tools  Curl to Ruby Ruby Cheetsheet  
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Install Specific Ruby Version via RVM</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/install-specific-ruby-version-via-rvm/</link>
+      <pubDate>Tue, 15 Feb 2022 23:18:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/install-specific-ruby-version-via-rvm/</guid>
+      <description>
+        
+          
+            Check list of known versions 1~$ rvm list known Install specific version 1~$ rvm install ruby-2.7.2 Check installed version 1~$ rvm list 2=* ruby-2.7.2 [ x86_64 ] 3ruby-3.0.0 [ x86_64 ] 45# =&amp;gt; - current 6# =* - current &amp;amp;&amp;amp; default 7# * - default Switch versions 1~$ rvm use ruby-3.0.0 2Using /home/user/.rvm/gems/ruby-3.0.0 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Install Ruby on Rails</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/install-ruby-on-rails/</link>
+      <pubDate>Tue, 15 Feb 2022 23:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/install-ruby-on-rails/</guid>
+      <description>
+        
+          
+            Install RVM + Rails Manage Ruby versions (production or not using RVM). Trust me, been there and installing it otherwise is not a walk in the park...
+1~$ gpg2 --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB 2~$ curl -sSL https://get.rvm.io | bash -s stable 3~$ curl -sSL https://get.rvm.io | bash -s stable --rails RVM Already Installed But Without Rails Make sure gem is installed under ~/.rvm. You should see something like below:
+1~$ which gem 2/home/user/.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Rails errors GemNotFoundException</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/rails-error-gemnotfoundexception/</link>
+      <pubDate>Tue, 15 Feb 2022 11:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/rails-error-gemnotfoundexception/</guid>
+      <description>
+        
+          
+            You recently installed rails but since you&#39;re still learning, you did a lot of stuffs. One day, you got the following error:
+1~$ rails --version 2Traceback (most recent call last): 32: from /usr/local/bin/rails:23:in `&amp;lt;main&amp;gt;&amp;#39; 41: from /usr/lib/ruby/2.7.0/rubygems.rb:294:in `activate_bin_path&amp;#39; 5/usr/lib/ruby/2.7.0/rubygems.rb:275:in `find_spec_for_exe&amp;#39;: can&amp;#39;t find gem railties (&amp;gt;= 0.a) with executable rails (Gem::GemNotFoundException) Probably, you forgot that you switched gemset?
+Check contents of your gemdir 1~$ cd `rvm gemdir` 2~$ pwd 3/home/user/.rvm/gems/ruby-2.7.2@newname 4~$ ll 5total 24 6drwxr-xr-x 5 user user 4096 Feb 16 11:54 .
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Uninstall RVM</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/uninstall-rvm/</link>
+      <pubDate>Tue, 15 Feb 2022 10:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/uninstall-rvm/</guid>
+      <description>
+        
+          
+            If you no longer wish to use RVM, you can uninstall it by first removing the script calls in your .bashrc file and then removing the RVM files.
+First, remove the script calls with a text editor like nano:
+1~$ nano ~/.bashrc Scroll down to where you see the RVM lines of your ~/.bashrc file:
+1... 2# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Install Ruby and Rails on a Gemset</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/install-ruby-and-rails-on-gemset/</link>
+      <pubDate>Tue, 15 Feb 2022 09:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/install-ruby-and-rails-on-gemset/</guid>
+      <description>
+        
+          
+            Gems Ruby applications or libraries. In Rails, you install gems so you would write less code.
+Creating Gemset To make it easy to manage, create gemset. Think of it as a group of libraries that you can switch to depending on situation.
+1~$ rvm gemset list 23gemsets for ruby-2.7.0 (found in /home/user/.rvm/gems/ruby-2.7.0) 4=&amp;gt; (default) 5global 6learning_ror Check location of your gemset(s) 1~$ rvm gemdir 2/home/user/.rvm/gems/ruby-2.7.0 Switch gemset 1~$ rvm gemset use learning_ror 2Using ruby-2.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

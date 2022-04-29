@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>compression on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/compression/</link>
+    <description>Recent content in compression on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Sat, 21 Sep 2019 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/compression/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>gz and bz2 Not Supported by unarchive</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/gz-and-bz2-not-supported-by-unarchive/</link>
+      <pubDate>Sat, 21 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/gz-and-bz2-not-supported-by-unarchive/</guid>
+      <description>
+        
+          
+            Encountered this issue:
+1The full traceback is: 2File &amp;#34;/tmp/ansible_f1UXSi/ansible_module_unarchive.py&amp;#34;, line 151, in &amp;lt;module&amp;gt; 3from shlex import quote 45fatal: [206.81.5.18]: FAILED! =&amp;gt; { 6&amp;#34;changed&amp;#34;: false, 7&amp;#34;invocation&amp;#34;: { 8&amp;#34;module_args&amp;#34;: { 9&amp;#34;attributes&amp;#34;: null, 10&amp;#34;backup&amp;#34;: null, 11&amp;#34;content&amp;#34;: null, 12&amp;#34;creates&amp;#34;: null, 13&amp;#34;delimiter&amp;#34;: null, 14&amp;#34;dest&amp;#34;: &amp;#34;/root/&amp;#34;, 15&amp;#34;directory_mode&amp;#34;: null, 16&amp;#34;exclude&amp;#34;: [], 17&amp;#34;extra_opts&amp;#34;: [], 18&amp;#34;follow&amp;#34;: false, 19&amp;#34;force&amp;#34;: null, 20&amp;#34;group&amp;#34;: null, 21&amp;#34;keep_newer&amp;#34;: false, 22&amp;#34;list_files&amp;#34;: false, 23&amp;#34;mode&amp;#34;: null, 24&amp;#34;owner&amp;#34;: null, 25&amp;#34;regexp&amp;#34;: null, 26&amp;#34;remote_src&amp;#34;: true, 27&amp;#34;selevel&amp;#34;: null, 28&amp;#34;serole&amp;#34;: null, 29&amp;#34;setype&amp;#34;: null, 30&amp;#34;seuser&amp;#34;: null, 31&amp;#34;src&amp;#34;: &amp;#34;/root/my-files-2019-07-23.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>GZip Compression Check in curl</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/gzip-compression-check-in-curl/</link>
+      <pubDate>Sat, 21 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/gzip-compression-check-in-curl/</guid>
+      <description>
+        
+          
+            1icasimpan@icasimpan.local:~$ curl -H &amp;#34;Accept-Encoding: gzip&amp;#34; -I -udemo:demo http://example.com 2HTTP/1.1 200 OK 3Date: Wed, 04 Oct 2017 15:25:48 GMT 4Server: Apache/2.4.18 (Ubuntu) 5X-Drupal-Cache: HIT 6Etag: &amp;#34;1507130489-1&amp;#34; 7Content-Language: en 8X-Frame-Options: SAMEORIGIN 9Link: &amp;lt;/node/171&amp;gt;; rel=&amp;#34;shortlink&amp;#34;,&amp;lt;/home&amp;gt;; rel=&amp;#34;canonical&amp;#34; 10X-Generator: Drupal 7 (http://drupal.org) 11Cache-Control: public, max-age=60 12Last-Modified: Wed, 04 Oct 2017 15:21:29 GMT 13Expires: Sun, 19 Nov 1978 05:00:00 GMT 14Vary: Cookie,Accept-Encoding 15Content-Encoding: gzip 16Content-Type: text/html; charset=utf-8 Look at &amp;quot;Content-Encoding&amp;quot;. It says &#39;gzip&#39;.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

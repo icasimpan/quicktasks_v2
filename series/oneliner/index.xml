@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>oneliner on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/series/oneliner/</link>
+    <description>Recent content in oneliner on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Mon, 21 Mar 2022 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/series/oneliner/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Check CSV BOM Using Bash</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/check-csv-bom-using-bash/</link>
+      <pubDate>Mon, 21 Mar 2022 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/check-csv-bom-using-bash/</guid>
+      <description>
+        
+          
+            BOM or Byte-Order-Mark is needed by a UTF-8 CSV in order to be opened in Excel (at least for Windows).
+How to check if said BOM exist using bash? See below:
+1~$ head -c3 samplefile.csv | hexdump -C 200000000 ef bb bf |...| 300000003 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Query Postgresql from Bash Command Line</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/query-pgsql-from-bash-cli/</link>
+      <pubDate>Thu, 12 Aug 2021 09:34:45 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/query-pgsql-from-bash-cli/</guid>
+      <description>
+        
+          
+            1psql -c &amp;#34;&amp;lt;your_query_here&amp;gt;&amp;#34; Example, to show tables list:
+1psql -c &amp;#34;\dt+&amp;#34; 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>View All SSL Cert in a Bundle File</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/view-all-cert-in-bundle/</link>
+      <pubDate>Wed, 15 Jul 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/view-all-cert-in-bundle/</guid>
+      <description>
+        
+          
+            Oneliner solution using the following command:
+1~$ openssl crl2pkcs7 -nocrl -certfile www.example.org-bundle.crt | openssl pkcs7 -print_certs -noout With sample output as follows:
+1~$ openssl crl2pkcs7 -nocrl -certfile www.example.org-bundle.crt | openssl pkcs7 -print_certs -noout 2subject=/OU=Domain Control Validated/OU=PositiveSSL/CN=www.example.org 3issuer=/C=GB/ST=Greater Manchester/L=Salford/O=COMODO CA Limited/CN=COMODO RSA Domain Validation Secure Server CA 45subject=/C=GB/ST=Greater Manchester/L=Salford/O=COMODO CA Limited/CN=COMODO RSA Domain Validation Secure Server CA 6issuer=/C=GB/ST=Greater Manchester/L=Salford/O=COMODO CA Limited/CN=COMODO RSA Certification Authority 78subject=/C=GB/ST=Greater Manchester/L=Salford/O=COMODO CA Limited/CN=COMODO RSA Certification Authority 9issuer=/C=SE/O=AddTrust AB/OU=AddTrust External TTP Network/CN=AddTrust External CA Root 1011subject=/C=SE/O=AddTrust AB/OU=AddTrust External TTP Network/CN=AddTrust External CA Root 12issuer=/C=SE/O=AddTrust AB/OU=AddTrust External TTP Network/CN=AddTrust External CA Root Details and other solutions in https://serverfault.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Filesystem Remount Read-Write in Linux</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/filesystem-remount-readwrite-linux/</link>
+      <pubDate>Sun, 12 Jul 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/filesystem-remount-readwrite-linux/</guid>
+      <description>
+        
+          
+            1mount -o remount,rw /dev/sda1 / 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Removing Group Sticky Bit</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/remove-group-sticky-bit/</link>
+      <pubDate>Sun, 12 Jul 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/remove-group-sticky-bit/</guid>
+      <description>
+        
+          
+            1chmod g-s &amp;lt;dirname_here&amp;gt; More details in https://serverfault.com/questions/238962/how-do-i-clear-the-s-permission-on-a-directory-in-linux
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>One Liner CSR Creation</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/one-liner-csr-creation/</link>
+      <pubDate>Sun, 07 Jun 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/one-liner-csr-creation/</guid>
+      <description>
+        
+          
+            1openssl req -new -newkey rsa:2048 -nodes -out this.example.com.csr -keyout this.example.com.key -subj &amp;#34;/C=PH/ST=Cebu/L=Cebu/O=Example Organization Cebu/OU=IT Department/CN=this.example.com&amp;#34; What to use in the &amp;quot;-subj&#39; as per https://www.endpoint.com/blog/2014/10/30/openssl-csr-with-alternative-names-one
+ C = Country ST = State/Province L = City O = Organization OU = Organizational Unit CN = Common Name (main domain the certificate would cover  
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

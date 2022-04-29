@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>curl on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/curl/</link>
+    <description>Recent content in curl on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Tue, 12 May 2020 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/curl/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Curl with Credentials File</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/curl-with-credentials-file/</link>
+      <pubDate>Tue, 12 May 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/curl-with-credentials-file/</guid>
+      <description>
+        
+          
+            1curl --config /path/to/config-file &amp;lt;url_here&amp;gt; where config-file has this format:
+1-u username:password 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Curl type download in Ansible</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/curl-type-dowload-in-ansible/</link>
+      <pubDate>Wed, 11 Mar 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/curl-type-dowload-in-ansible/</guid>
+      <description>
+        
+          
+            1- name: Download drush phar file (8.3.0) 2become: yes 3get_url: 4url: https://github.com/drush-ops/drush/releases/download/8.3.0/drush.phar 5dest: /usr/local/bin 6mode: +x 7checksum: sha256:ddfe6d529e44e98c2cf74c143c1fcdf67c927d6f9a5eb2ae10fbe47ef9b8eaf0 8group: root 9owner: root See get_url module in https://docs.ansible.com/ansible/latest/modules/get_url_module.html
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Install php-curl 5.6 (Ubuntu)</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/install-php-curl-56-ubuntu/</link>
+      <pubDate>Sat, 28 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/install-php-curl-56-ubuntu/</guid>
+      <description>
+        
+          
+            1sudo apt-get install php5.6-curl More info in https://stackoverflow.com/questions/40567133/cannot-add-ppa-ppaondrej-php5-5-6
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Curl with Authentication Credentials</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/curl-with-authentication-credentials/</link>
+      <pubDate>Sat, 21 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/curl-with-authentication-credentials/</guid>
+      <description>
+        
+          
+            1curl -u user:password &amp;lt;url_here&amp;gt; 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>GZip Compression Check in curl</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/gzip-compression-check-in-curl/</link>
+      <pubDate>Sat, 21 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/gzip-compression-check-in-curl/</guid>
+      <description>
+        
+          
+            1icasimpan@icasimpan.local:~$ curl -H &amp;#34;Accept-Encoding: gzip&amp;#34; -I -udemo:demo http://example.com 2HTTP/1.1 200 OK 3Date: Wed, 04 Oct 2017 15:25:48 GMT 4Server: Apache/2.4.18 (Ubuntu) 5X-Drupal-Cache: HIT 6Etag: &amp;#34;1507130489-1&amp;#34; 7Content-Language: en 8X-Frame-Options: SAMEORIGIN 9Link: &amp;lt;/node/171&amp;gt;; rel=&amp;#34;shortlink&amp;#34;,&amp;lt;/home&amp;gt;; rel=&amp;#34;canonical&amp;#34; 10X-Generator: Drupal 7 (http://drupal.org) 11Cache-Control: public, max-age=60 12Last-Modified: Wed, 04 Oct 2017 15:21:29 GMT 13Expires: Sun, 19 Nov 1978 05:00:00 GMT 14Vary: Cookie,Accept-Encoding 15Content-Encoding: gzip 16Content-Type: text/html; charset=utf-8 Look at &amp;quot;Content-Encoding&amp;quot;. It says &#39;gzip&#39;.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Make curl Use Hardcoded Domain Definition</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/curl-with-hardcoded-domain-definition/</link>
+      <pubDate>Sat, 21 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/curl-with-hardcoded-domain-definition/</guid>
+      <description>
+        
+          
+            1curl --resolve example.edu:443:51.87.65.267 -sI https://graduate.example.edu 
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

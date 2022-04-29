@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>mount on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/mount/</link>
+    <description>Recent content in mount on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Sun, 12 Jul 2020 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/mount/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Filesystem Remount Read-Write in Linux</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/filesystem-remount-readwrite-linux/</link>
+      <pubDate>Sun, 12 Jul 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/filesystem-remount-readwrite-linux/</guid>
+      <description>
+        
+          
+            1mount -o remount,rw /dev/sda1 / 
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

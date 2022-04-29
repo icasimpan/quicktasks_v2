@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>public-key on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/public-key/</link>
+    <description>Recent content in public-key on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Fri, 29 May 2020 23:17:11 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/public-key/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Telling git To Use Specific Private Key</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/telling-git-to-use-specific-private-key/</link>
+      <pubDate>Fri, 29 May 2020 23:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/telling-git-to-use-specific-private-key/</guid>
+      <description>
+        
+          
+            Sometimes, you need to use specific keys. To do it, use ssh config, something like below in ~/.ssh/config
+1host github.com 2HostName github.com 3IdentityFile ~/.ssh/id_rsa_github 4User git See details in https://superuser.com/questions/232373/how-to-tell-git-which-private-key-to-use
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Remove Bad Keys From ~/.ssh/known_hosts</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/remove-bad-keys-from-known_hosts/</link>
+      <pubDate>Thu, 02 Apr 2020 18:36:44 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/remove-bad-keys-from-known_hosts/</guid>
+      <description>
+        
+          
+            Sample
+1icasimpan-local:~ icasimpan$ ssh root@99.206.157.36 2@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 3@ WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED! @ 4@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 5IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY! 6Someone could be eavesdropping on you right now (man-in-the-middle attack)! 7It is also possible that a host key has just been changed. 8The fingerprint for the ECDSA key sent by the remote host is 9SHA256:AbJnvQd/cMEDiN0ohMp6gdmBYRhRRp6h8iOBJf0m4Zs. 10Please contact your system administrator. 11Add correct host key in /Users/icasimpan/.ssh/known_hosts to get rid of this message.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Retrieve SSH Public Key From Private Key</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/retrieve-ssh-public-key-from-private-key/</link>
+      <pubDate>Thu, 02 Apr 2020 18:36:44 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/retrieve-ssh-public-key-from-private-key/</guid>
+      <description>
+        
+          
+            1ssh-keygen -y -f ~/.ssh/id_rsa &amp;gt; ~/.ssh/id_rsa.pub See details in https://askubuntu.com/questions/53553/how-do-i-retrieve-the-public-key-from-a-ssh-private-key
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

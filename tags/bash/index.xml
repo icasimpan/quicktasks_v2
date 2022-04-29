@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>bash on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/bash/</link>
+    <description>Recent content in bash on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Mon, 21 Mar 2022 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/bash/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Check CSV BOM Using Bash</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/check-csv-bom-using-bash/</link>
+      <pubDate>Mon, 21 Mar 2022 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/check-csv-bom-using-bash/</guid>
+      <description>
+        
+          
+            BOM or Byte-Order-Mark is needed by a UTF-8 CSV in order to be opened in Excel (at least for Windows).
+How to check if said BOM exist using bash? See below:
+1~$ head -c3 samplefile.csv | hexdump -C 200000000 ef bb bf |...| 300000003 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Basic Bash Regex</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/basic-bash-regex/</link>
+      <pubDate>Sat, 05 Mar 2022 22:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/basic-bash-regex/</guid>
+      <description>
+        
+          
+            Basic regex operator is =~ with basic syntax
+1[[ &amp;#34;string&amp;#34; =~ pattern ]] NOTE pattern is not quoted, only the string.
+Very basic example when checking if a variable has either values &#39;running&#39; or &#39;exited&#39;:
+1status=&amp;#39;running&amp;#39; ## change to &amp;#39;exited&amp;#39; and &amp;#39;&amp;#39; to see it works 2if [[ &amp;#34;$status&amp;#34; =~ running|exited ]]; then 3echo &amp;#34;Is either running or exited&amp;#34; 4else 5echo &amp;#34;Nope, I don&amp;#39;t understand that status&amp;#34; 6fi See stackoverflow post
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Use SQLite in Bash</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/use-sqlite-in-bash/</link>
+      <pubDate>Tue, 15 Feb 2022 22:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/use-sqlite-in-bash/</guid>
+      <description>
+        
+          
+            1#!/bin/bash 2sqlite3 test.db &amp;#34;create table n (id INTEGER PRIMARY KEY,f TEXT,l TEXT);&amp;#34; 3sqlite3 test.db &amp;#34;insert into n (f,l) values (&amp;#39;john&amp;#39;,&amp;#39;smith&amp;#39;);&amp;#34; 4sqlite3 test.db &amp;#34;select * from n;&amp;#34; See stackoverflow post
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Source Only Bash Script</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/source-bash-script-only/</link>
+      <pubDate>Thu, 12 Aug 2021 09:10:45 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/source-bash-script-only/</guid>
+      <description>
+        
+          
+            In some cases, you may need to import the existing environments in bash. Use the following at the top of your script.
+1if [ &amp;#34;${BASH_SOURCE[0]}&amp;#34; -ef &amp;#34;$0&amp;#34; ] 2then 3echo &amp;#34;Hey, you should source this script, not execute it!&amp;#34; 4exit 1 5fi See details in https://unix.stackexchange.com/questions/424492/how-to-define-a-shell-script-to-be-sourced-not-run/424498
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>BASH_FUNC_module error</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/bash_func_module-error/</link>
+      <pubDate>Mon, 09 Apr 2018 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/bash_func_module-error/</guid>
+      <description>
+        
+          
+            This error is seen as follows:
+1sh:module:line1:syntaxerror:unexpectedendoffile2sh:errorimportingfunctiondefinitionfor`BASH_FUNC_module&amp;#39;A lot of discussions has been done about it in https://github.com/drush-ops/drush/issues/2065#issuecomment-227820550 but the fix is made from /etc/php.ini:
+1disable_functions = pcntl_exec 
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

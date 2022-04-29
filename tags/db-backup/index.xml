@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>db-backup on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/db-backup/</link>
+    <description>Recent content in db-backup on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Sat, 28 Sep 2019 23:17:11 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/db-backup/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DB Backup via wp_cli</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/db-backup-in-wp_cli/</link>
+      <pubDate>Sat, 28 Sep 2019 23:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/db-backup-in-wp_cli/</guid>
+      <description>
+        
+          
+            1cd /path/to/wordpress 2wp db export backups/name-of-db-backup.sql 
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

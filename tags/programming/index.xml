@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>programming on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/programming/</link>
+    <description>Recent content in programming on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Sun, 13 Feb 2022 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/programming/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>First Perl Program</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/first-perl-program/</link>
+      <pubDate>Sun, 13 Feb 2022 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/first-perl-program/</guid>
+      <description>
+        
+          
+            Code Let&#39;s call it first.pl
+1~$ nl -ba first.pl 21	#!/usr/bin/env perl 32	43	use strict; # important pragma 54	use warnings; # important pragma 65	76	print &amp;#34;What is your username? &amp;#34;; # print out the question 87	my $username = &amp;lt;STDIN&amp;gt;; # ask for username 98	chomp($username); # remove “new line” 109	print &amp;#34;Hello, $username.\n&amp;#34;; # print out the greeting Check syntax Make it a habit when coding in Perl.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Basic Python Datatypes</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/basic-python-datatypes/</link>
+      <pubDate>Sat, 12 Feb 2022 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/basic-python-datatypes/</guid>
+      <description>
+        
+          
+            These are the three core data types in python. Of course there are strings, int too. I&#39;m listing this here as I often forget these:
+List Somewhat similar to tuple (see below) but changeable. Uses square brackets instead of parenthesis in tuple.
+1&amp;gt;&amp;gt;&amp;gt; kirk = [&amp;#34;James Kirk&amp;#34;, 34, &amp;#34;Captain&amp;#34;, 2265] 2&amp;gt;&amp;gt;&amp;gt; type(kirk) 3&amp;lt;class &amp;#39;list&amp;#39;&amp;gt; Tuple A tuple is a collection which is ordered and unchangeable.
+1&amp;gt;&amp;gt;&amp;gt; mytuple = (&amp;#34;apple&amp;#34;, &amp;#34;banana&amp;#34;, &amp;#34;cherry&amp;#34;) 2&amp;gt;&amp;gt;&amp;gt; type(mytuple) 3&amp;lt;class &amp;#39;tuple&amp;#39;&amp;gt; Dictionary 1&amp;gt;&amp;gt;&amp;gt; comedian = {&amp;#39;name&amp;#39;: &amp;#39;Eric Idle&amp;#39;, &amp;#39;age&amp;#39;: 74} 2&amp;gt;&amp;gt;&amp;gt; type(comedian) 3&amp;lt;class &amp;#39;dict&amp;#39;&amp;gt; 4&amp;gt;&amp;gt;&amp;gt; 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Pythonic Code Using Enumerate</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/pythonic-code-using-enumerate/</link>
+      <pubDate>Sat, 12 Feb 2022 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/pythonic-code-using-enumerate/</guid>
+      <description>
+        
+          
+            Use enumerate to iterate to each list&#39;s element
+1&amp;gt;&amp;gt;&amp;gt; # Pythonic Example 2&amp;gt;&amp;gt;&amp;gt; animals = [&amp;#39;cat&amp;#39;, &amp;#39;dog&amp;#39;, &amp;#39;moose&amp;#39;] 3&amp;gt;&amp;gt;&amp;gt; for i, animal in enumerate(animals): 4... print(i, animal) 5... 60 cat 71 dog 82 moose If the index is not important, use &amp;quot;_&amp;quot; in place of &amp;quot;i&amp;quot;:
+1&amp;gt;&amp;gt;&amp;gt; # Pythonic Example 2&amp;gt;&amp;gt;&amp;gt; animals = [&amp;#39;cat&amp;#39;, &amp;#39;dog&amp;#39;, &amp;#39;moose&amp;#39;] 3&amp;gt;&amp;gt;&amp;gt; for _, animal in enumerate(animals): 4... print(animal) 5... 6cat 7dog 8moose Or more simply, without using &amp;quot;enumerate&amp;quot; function:
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

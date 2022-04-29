@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>regex on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/regex/</link>
+    <description>Recent content in regex on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Sat, 05 Mar 2022 22:17:11 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/regex/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Basic Bash Regex</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/basic-bash-regex/</link>
+      <pubDate>Sat, 05 Mar 2022 22:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/basic-bash-regex/</guid>
+      <description>
+        
+          
+            Basic regex operator is =~ with basic syntax
+1[[ &amp;#34;string&amp;#34; =~ pattern ]] NOTE pattern is not quoted, only the string.
+Very basic example when checking if a variable has either values &#39;running&#39; or &#39;exited&#39;:
+1status=&amp;#39;running&amp;#39; ## change to &amp;#39;exited&amp;#39; and &amp;#39;&amp;#39; to see it works 2if [[ &amp;#34;$status&amp;#34; =~ running|exited ]]; then 3echo &amp;#34;Is either running or exited&amp;#34; 4else 5echo &amp;#34;Nope, I don&amp;#39;t understand that status&amp;#34; 6fi See stackoverflow post
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

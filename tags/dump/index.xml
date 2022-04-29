@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>dump on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/dump/</link>
+    <description>Recent content in dump on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Wed, 17 Jun 2020 23:11:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/dump/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MySQLDump Except Locked Tables</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/mysqldump-except-locked-tables/</link>
+      <pubDate>Wed, 17 Jun 2020 23:11:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/mysqldump-except-locked-tables/</guid>
+      <description>
+        
+          
+            MySQL will go down if locked tables are touched during dump. Use the following mysqldump syntax instead:
+1mysqldump --single-transaction --skip-lock-tables 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Dump MySQL Database but Skip Some Table(s)</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/dump-database-skip-some-table/</link>
+      <pubDate>Sun, 24 Nov 2019 12:38:49 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/dump-database-skip-some-table/</guid>
+      <description>
+        
+          
+            1mysqldump -u&amp;lt;username&amp;gt; -p&amp;lt;password&amp;gt; --no-create-db myDB --ignore-table=myDB.table1 --ignore-table=myDB.table3-h localhost &amp;gt; mysql.backup See https://tecadmin.net/tutorial/mysql/skip-tables-in-mysqldump/
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Dump MySQL Database</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/dump-mysql-database/</link>
+      <pubDate>Mon, 15 Oct 2018 12:38:49 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/dump-mysql-database/</guid>
+      <description>
+        
+          
+            1mysqldump -u&amp;lt;username&amp;gt; -p&amp;lt;password&amp;gt; --no-create-db myDB -h localhost &amp;gt; mysql.backup That way, it would strip the original database name and NOT become a problem when importing to another database name. See https://stackoverflow.com/questions/30835874/how-to-avoid-use-database-statement-on-mysqldump-backups
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Dump One or More Table</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/dump-one-or-more-table/</link>
+      <pubDate>Sun, 08 Apr 2018 23:21:30 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/dump-one-or-more-table/</guid>
+      <description>
+        
+          
+            1mysqldump -u root -p yourDB system &amp;gt; yourDB_system.sql More details in https://dba.stackexchange.com/questions/9306/how-do-you-mysqldump-specific-tables
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

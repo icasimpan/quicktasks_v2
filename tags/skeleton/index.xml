@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>skeleton on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/skeleton/</link>
+    <description>Recent content in skeleton on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Sat, 21 Sep 2019 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/skeleton/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Create Ansible Playbook Skeleton</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/create-playbook-skeleton/</link>
+      <pubDate>Sat, 21 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/create-playbook-skeleton/</guid>
+      <description>
+        
+          
+            1ansible@example.com:/opt/ansible/roles$ ansible-galaxy init ansible-role-python2 
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>passphrase on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/passphrase/</link>
+    <description>Recent content in passphrase on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Sun, 05 Apr 2020 18:36:44 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/passphrase/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Add Passphrase to Existing SSH Key</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/add-passphrase-to-existing-ssh-key/</link>
+      <pubDate>Sun, 05 Apr 2020 18:36:44 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/add-passphrase-to-existing-ssh-key/</guid>
+      <description>
+        
+          
+            1$ openssl rsa -aes256 -in ./id_rsa -out ./id_rsa.hashed 2writing RSA key 3Enter PEM pass phrase: 4Verifying - Enter PEM pass phrase: You should then use &#39;./id_rsa.hashed&#39; as your private key. See https://security.stackexchange.com/questions/59136/can-i-add-a-password-to-an-existing-private-key for details.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

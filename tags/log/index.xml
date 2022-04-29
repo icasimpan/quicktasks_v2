@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>log on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/log/</link>
+    <description>Recent content in log on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Sat, 28 Sep 2019 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/log/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Create separate php log file</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/create-separate-php-logfile/</link>
+      <pubDate>Sat, 28 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/create-separate-php-logfile/</guid>
+      <description>
+        
+          
+            Update php.ini, example
+1error_log = /tmp/error_php Then restart apache
+Details in https://www.redips.net/php/log-errors-separate-file/
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>git log (cli graph)</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/git-log-ci-graph/</link>
+      <pubDate>Sun, 08 Apr 2018 23:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/git-log-ci-graph/</guid>
+      <description>
+        
+          
+            1git log --graph --oneline --decorate --all 
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

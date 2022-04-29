@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>restart on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/restart/</link>
+    <description>Recent content in restart on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Sun, 08 Apr 2018 23:24:04 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/restart/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mysql Not Restarting Nothing in Logs</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/mysql-not-restarting-nothing-in-logs/</link>
+      <pubDate>Sun, 08 Apr 2018 23:24:04 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/mysql-not-restarting-nothing-in-logs/</guid>
+      <description>
+        
+          
+            Check /etc/mysql/my.cnf and examine &amp;quot;datadir&amp;quot; value. If it isn&#39;t valid or you know the disk is bad, change it. Restart service and all will be well.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

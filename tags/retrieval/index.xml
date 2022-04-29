@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>retrieval on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/retrieval/</link>
+    <description>Recent content in retrieval on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Thu, 02 Apr 2020 18:36:44 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/retrieval/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Retrieve SSH Public Key From Private Key</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/retrieve-ssh-public-key-from-private-key/</link>
+      <pubDate>Thu, 02 Apr 2020 18:36:44 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/retrieve-ssh-public-key-from-private-key/</guid>
+      <description>
+        
+          
+            1ssh-keygen -y -f ~/.ssh/id_rsa &amp;gt; ~/.ssh/id_rsa.pub See details in https://askubuntu.com/questions/53553/how-do-i-retrieve-the-public-key-from-a-ssh-private-key
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

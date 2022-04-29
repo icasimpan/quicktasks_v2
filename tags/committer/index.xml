@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>committer on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/committer/</link>
+    <description>Recent content in committer on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Sun, 08 Apr 2018 23:17:11 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/committer/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Configure email and username</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/configure-email-username/</link>
+      <pubDate>Sun, 08 Apr 2018 23:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/configure-email-username/</guid>
+      <description>
+        
+          
+            1git config user.name &amp;#34;Your Name Here&amp;#34; 2git config user.email &amp;#34;name@email.com&amp;#34; 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Fix the identity used for a commit</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/fix-identity-used-in-commit/</link>
+      <pubDate>Sun, 08 Apr 2018 23:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/fix-identity-used-in-commit/</guid>
+      <description>
+        
+          
+            1git commit --amend --reset-author 
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

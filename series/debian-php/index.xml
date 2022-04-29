@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>debian-php on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/series/debian-php/</link>
+    <description>Recent content in debian-php on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Mon, 30 Sep 2019 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/series/debian-php/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Update Debian PHP 5.5 To 5.6</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/update-debian-php5.5-to-5.6/</link>
+      <pubDate>Mon, 30 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/update-debian-php5.5-to-5.6/</guid>
+      <description>
+        
+          
+            See https://www.digitalocean.com/community/questions/how-to-upgrade-from-php-v-5-5-9-to-v-5-6
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Update Debian PHP 7.0 To 7.1</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/update-debian-php-7.0-to-7.1/</link>
+      <pubDate>Mon, 30 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/update-debian-php-7.0-to-7.1/</guid>
+      <description>
+        
+          
+            1sudo apt-get install -y python-software-properties 2sudo add-apt-repository -y ppa:ondrej/php 3sudo apt-get update -y 4sudo apt-get install -y $(apt-cache pkgnames | grep php7.1|tr &amp;#34;\n&amp;#34; &amp;#34; &amp;#34;) See https://www.vultr.com/docs/how-to-install-and-configure-php-70-or-php-71-on-ubuntu-16-04
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

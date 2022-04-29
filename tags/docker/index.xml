@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>docker on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/docker/</link>
+    <description>Recent content in docker on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Sun, 27 Mar 2022 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Docker MySQL Backup to Local</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/docker-mysql-backup-to-local/</link>
+      <pubDate>Sun, 27 Mar 2022 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/docker-mysql-backup-to-local/</guid>
+      <description>
+        
+          
+            Doing a backup of your mysql container&#39;s DB can be automated just like any other task.
+Script below is one way to do it.
+You may or may not provide a parameter to the script and you&#39;ll always get the gzipped version of the backup + its sha256 checksum.
+Sample Use Case:  use it without parameters  1~$ ./backup_db.sh 2[INFO] DB backup for &amp;#39;cooltool_db&amp;#39; copied to /home/icasimpan/work/backups... 3[INFO] Checking for backup integrity: 4cooltool_db-backup-2022.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Switch to root account in Docker</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/switch-to-root-account-in-docker/</link>
+      <pubDate>Mon, 21 Mar 2022 23:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/switch-to-root-account-in-docker/</guid>
+      <description>
+        
+          
+            Usually, a docker container has a way to easily switch to root account.
+It can be as easy as &#39;su root&#39; or even root by default when you run a shell such as &#39;bash&#39; within it.
+However, sometimes, it&#39;s not that easy. You need to work hard for it.
+My issues where the following:
+ su command won&#39;t work as it&#39;s just a symlink to busybox:  1~ $ ls -l `which su` 2lrwxrwxrwx 1 root root 12 Oct 21 2020 /bin/su -&amp;gt; /bin/busybox  No known root password or sudo is not possible  Solution  su problem - create a copy of /bin/busybox to somewhere you can modify permissions.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Docker Container Using Volume</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/docker-container-using-volume/</link>
+      <pubDate>Mon, 21 Mar 2022 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/docker-container-using-volume/</guid>
+      <description>
+        
+          
+            Sometimes, you may need to know which container a volume is associated with.
+Use this command:
+1docker ps -a --filter volume=VOLUME_NAME_OR_MOUNT_POINT See https://stackoverflow.com/questions/42857575/how-to-determine-what-containers-use-the-docker-volume
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Podman: the Docker alternative.</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/podman-the-docker-alternative/</link>
+      <pubDate>Mon, 14 Feb 2022 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/podman-the-docker-alternative/</guid>
+      <description>
+        
+          
+            Yes, there&#39;s a fully opensourced version of docker and it&#39;s called podman.
+It can be installed in other OS but what I&#39;m showing is in WSL/Ubuntu.
+1~$sudo apt install podman It&#39;s actually a drop-in replacement for Docker. See details in this article.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Check File Contents of a Docker Image</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/check-file-contents-of-docker-image/</link>
+      <pubDate>Wed, 02 Feb 2022 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/check-file-contents-of-docker-image/</guid>
+      <description>
+        
+          
+            When troubleshooting, you sometimes need to check the contents of a docker image.
+1docker run -it &amp;lt;name_of_image&amp;gt; sh Once you&#39;re in, you can inspect specific files and its content.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Run Command from Container Instead of Locally</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/run-command-from-container-instead-of-locally/</link>
+      <pubDate>Thu, 29 Jul 2021 11:29:00 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/run-command-from-container-instead-of-locally/</guid>
+      <description>
+        
+          
+            I encounter an issue where I don&#39;t have local composer installed but I need to run one.
+Solution is to run it on the fly from docker container:
+1docker run --rm --interactive --tty --volume &amp;lt;directory_path_to_your_composer.json&amp;gt;:/app composer install 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>SSH to Docker Container</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/ssh-to-docker-container/</link>
+      <pubDate>Thu, 13 Aug 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/ssh-to-docker-container/</guid>
+      <description>
+        
+          
+            Check first the names of your container:
+1docker ps Technically though, it&#39;s just running a shell, so run as follows:
+1docker exec -it &amp;lt;container-name&amp;gt; /bin/bash In case you see this error:
+1OCI runtime exec failed: exec failed: container_linux.go:349: starting container process caused &amp;#34;exec: \&amp;#34;/bin/bash\&amp;#34;: stat /bin/bash: no such file or directory&amp;#34;: unknown You can probe a little and check any available shell. Run:
+1docker exec -it &amp;lt;container-name&amp;gt; ls -l /bin/ You may recognize a few shell like:
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Bind Container Port to Host Port</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/bind-container-port-to-host-port/</link>
+      <pubDate>Tue, 24 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/bind-container-port-to-host-port/</guid>
+      <description>
+        
+          
+            1docker run -d --name testOnly -p 6379:6379 redis:latest NOTE: Always read the format of -p as host:container.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Check All Running Docker Process</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/check-all-running-docker-process/</link>
+      <pubDate>Tue, 24 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/check-all-running-docker-process/</guid>
+      <description>
+        
+          
+            1docker ps -a 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Check Logs of a Container</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/check-logs-of-container/</link>
+      <pubDate>Tue, 24 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/check-logs-of-container/</guid>
+      <description>
+        
+          
+            1docker logs &amp;lt;friendly-name|container-id&amp;gt; You can tail it much like tailing ordinary logs:
+1docker logs -f --tail=5 &amp;lt;friendly-name|container-id&amp;gt; which means: &amp;quot;start tailing at current last 5 entries of the logs&amp;quot;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Docker Build Cannot Connect to Internet</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/docker-build-cannot-connect-to-internet/</link>
+      <pubDate>Tue, 24 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/docker-build-cannot-connect-to-internet/</guid>
+      <description>
+        
+          
+            Example scenario:
+1[root@selenium php-5.1.2]# docker build -t php5_1_2 . 2Sending build context to Docker daemon 8.071MB 3Step 1/9 : FROM nubs/arch-build 4---&amp;gt; a68cd3855bfe 5Step 2/9 : MAINTAINER Spencer Rinehart &amp;lt;anubis@overthemonkey.com&amp;gt; 6---&amp;gt; Using cache 7---&amp;gt; 0d099a2cd179 8Step 3/9 : COPY php/PKGBUILD php/*.patch /package/ 9---&amp;gt; Using cache 10---&amp;gt; e9a68b923b81 11Step 4/9 : RUN makepkg --force 12---&amp;gt; Running in 22c4f167216a 13==&amp;gt; Making package: php 5.1.2-1 (Wed May 9 21:15:05 UTC 2018) 14==&amp;gt; Checking runtime dependencies.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Docker files within Linux Filesystem</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/docker-files-within-filesystem/</link>
+      <pubDate>Tue, 24 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/docker-files-within-filesystem/</guid>
+      <description>
+        
+          
+            Location in
+1/var/lib/docker 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Force Remove Docker Images</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/force-remove-docker-images/</link>
+      <pubDate>Tue, 24 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/force-remove-docker-images/</guid>
+      <description>
+        
+          
+            1[root@selenium02 ~]# docker rmi ad66a5961263 2Error response from daemon: conflict: unable to delete ad66a5961263 (must be forced) - image is being used by stopped container 088219585a61 3[root@selenium02 ~]# docker rmi -f ad66a5961263 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Getting Started in Docker</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/getting-started-in-docker/</link>
+      <pubDate>Tue, 24 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/getting-started-in-docker/</guid>
+      <description>
+        
+          
+            See details in https://docs.docker.com/get-started/
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>How to Login to DockerHub</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/how-to-login-dockerhub/</link>
+      <pubDate>Tue, 24 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/how-to-login-dockerhub/</guid>
+      <description>
+        
+          
+            1docker login 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Install Docker CE in CentOS</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/install-docker-ce-centos/</link>
+      <pubDate>Tue, 24 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/install-docker-ce-centos/</guid>
+      <description>
+        
+          
+            See details in https://docs.docker.com/install/linux/docker-ce/centos/#upgrade-docker-ce
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Install Docker Compose</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/install-docker-compose/</link>
+      <pubDate>Tue, 24 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/install-docker-compose/</guid>
+      <description>
+        
+          
+            1sudo yum install epel-release 2sudo yum install -y python-pip 3sudo pip install docker-compose Further details in https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-compose-on-centos-7
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>More Details about a Container</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/more-details-about-container/</link>
+      <pubDate>Tue, 24 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/more-details-about-container/</guid>
+      <description>
+        
+          
+            1docker inspect &amp;lt;friendly-name|container-id&amp;gt; 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Pull an Image from DockerHub</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/pull-image-from-dockerhub/</link>
+      <pubDate>Tue, 24 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/pull-image-from-dockerhub/</guid>
+      <description>
+        
+          
+            1docker pull selenium/standalone-chrome:2.53.1-beryllium ## GETS https://hub.docker.com/r/selenium/standalone-chrome/tags/2.53.1-beryllium 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Remove All Docker Containers</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/remove-all-docker-containers/</link>
+      <pubDate>Tue, 24 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/remove-all-docker-containers/</guid>
+      <description>
+        
+          
+            1docker stop $(docker ps -a -q) 2docker rm $(docker ps -a -q) Details in https://coderwall.com/p/ewk0mq/stop-remove-all-docker-containers
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Removing docker0 Interface</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/removing-docker0-interface/</link>
+      <pubDate>Tue, 24 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/removing-docker0-interface/</guid>
+      <description>
+        
+          
+            If you see something like:
+1root@example.com:/etc/apache2/sites-enabled# ifconfig 2docker0 Link encap:Ethernet HWaddr 02:42:8e:e1:53:84 3inet addr:172.17.0.1 Bcast:0.0.0.0 Mask:255.255.0.0 4UP BROADCAST MULTICAST MTU:1500 Metric:1 5RX packets:0 errors:0 dropped:0 overruns:0 frame:0 6TX packets:0 errors:0 dropped:0 overruns:0 carrier:0 7collisions:0 txqueuelen:0 8RX bytes:0 (0.0 B) TX bytes:0 (0.0 B) And you&#39;re sure you don&#39;t need it, remove it using
+1ip link del docker0 See https://superuser.com/questions/995373/remove-docker0-bridge
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Rerun a Docker Container Instance</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/rerun-docker-container-instance/</link>
+      <pubDate>Tue, 24 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/rerun-docker-container-instance/</guid>
+      <description>
+        
+          
+            Given these:
+1[root@selenium php-5.1.2]# docker ps -a 2CONTAINER ID IMAGE COMMAND CREATED STATUS PORTS NAMES 37e89768a78f9 e9a68b923b81 &amp;#34;/bin/sh -c &amp;#39;makepkg…&amp;#34; 7 minutes ago Exited (1) 4 minutes ago nostalgic_lovelace 4af5262bdb8c1 selenium/node-chrome:2.53.1-beryllium &amp;#34;/opt/bin/entry_poin…&amp;#34; 4 weeks ago Up 4 weeks seleniumhub_chrome_5 53d788ffebc32 selenium/node-chrome:2.53.1-beryllium &amp;#34;/opt/bin/entry_poin…&amp;#34; 4 weeks ago Up 4 weeks seleniumhub_chrome_2 60bb97cb44ccd selenium/node-chrome:2.53.1-beryllium &amp;#34;/opt/bin/entry_poin…&amp;#34; 4 weeks ago Up 4 weeks seleniumhub_chrome_3 7982e0a223e1e selenium/node-chrome:2.53.1-beryllium &amp;#34;/opt/bin/entry_poin…&amp;#34; 4 weeks ago Up 4 weeks seleniumhub_chrome_1 8b4a2a19f9e80 selenium/node-chrome:2.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Run Container as Daemon</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/run-container-as-daemon/</link>
+      <pubDate>Tue, 24 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/run-container-as-daemon/</guid>
+      <description>
+        
+          
+            1docker run -d --name redisDynamic -p 6379 redis:latest this will bind though to host port at random. To check bound port, use
+1docker port redisDynamic 6379 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Using a Dockerfile</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/using-dockerfile/</link>
+      <pubDate>Tue, 24 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/using-dockerfile/</guid>
+      <description>
+        
+          
+            1# Build an image using the Dockerfile at current location (specified by &amp;#39;.&amp;#39; at the end) 2# Example: docker build -t [name] . 3docker build -t my_mongodb . To create a Dockerfile, see https://www.digitalocean.com/community/tutorials/docker-explained-using-dockerfiles-to-automate-building-of-images
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Install PHP Module Inside Dockerfile</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/dockerfile-install-php-module/</link>
+      <pubDate>Sat, 21 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/dockerfile-install-php-module/</guid>
+      <description>
+        
+          
+            Add this to Dockerfile
+1RUN docker-php-ext-install mysqli See details in https://github.com/docker-library/php/issues/279
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

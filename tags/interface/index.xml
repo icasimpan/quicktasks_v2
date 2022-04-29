@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>interface on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/interface/</link>
+    <description>Recent content in interface on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Tue, 24 Sep 2019 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/interface/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Removing docker0 Interface</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/removing-docker0-interface/</link>
+      <pubDate>Tue, 24 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/removing-docker0-interface/</guid>
+      <description>
+        
+          
+            If you see something like:
+1root@example.com:/etc/apache2/sites-enabled# ifconfig 2docker0 Link encap:Ethernet HWaddr 02:42:8e:e1:53:84 3inet addr:172.17.0.1 Bcast:0.0.0.0 Mask:255.255.0.0 4UP BROADCAST MULTICAST MTU:1500 Metric:1 5RX packets:0 errors:0 dropped:0 overruns:0 frame:0 6TX packets:0 errors:0 dropped:0 overruns:0 carrier:0 7collisions:0 txqueuelen:0 8RX bytes:0 (0.0 B) TX bytes:0 (0.0 B) And you&#39;re sure you don&#39;t need it, remove it using
+1ip link del docker0 See https://superuser.com/questions/995373/remove-docker0-bridge
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

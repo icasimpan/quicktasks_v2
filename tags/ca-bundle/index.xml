@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ca-bundle on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/ca-bundle/</link>
+    <description>Recent content in ca-bundle on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Sun, 07 Jun 2020 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/ca-bundle/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Getting CA-bundle for Comodo Certificates</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/getting-ca-bundle-for-comodo-certificates/</link>
+      <pubDate>Sun, 07 Jun 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/getting-ca-bundle-for-comodo-certificates/</guid>
+      <description>
+        
+          
+            Get it via chat to Comodo, one would pop-up from https://support.comodo.com/index.php?/Knowledgebase/Article/View/1145/1/how-do-i-make-my-own-bundle-file-from-crt-files.
+Make sure you edit your profile where they could send the information.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

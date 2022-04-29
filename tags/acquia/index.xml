@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>acquia on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/acquia/</link>
+    <description>Recent content in acquia on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Fri, 10 Jul 2020 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/acquia/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Generate CA Chain for Acquia Environment</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/ca-chain-acquia/</link>
+      <pubDate>Fri, 10 Jul 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/ca-chain-acquia/</guid>
+      <description>
+        
+          
+            From Comodo Email after verifying domain ownership, got this hints:
+1Root CA Certificate - AAACertificateServices.crt 2Intermediate CA Certificate - USERTrustRSAAAACA.crt 3Intermediate CA Certificate - SectigoRSADomainValidationSecureServerCA.crt 4Your PositiveSSL Multi-Domain Certificate - 378394251.crt Generate the CA Chain as follows:
+1cat AAACertificateServices.crt USERTrustRSAAAACA.crt SectigoRSADomainValidationSecureServerCA.crt &amp;gt; ca-chain-acquia-prod.pem And add to Acquia SSL section in corresponding environment.
+NOTE: It&#39;s interesting to note that in CheapSSLSecurity site&#39;s download section, an additional file &amp;quot;My_CA_Bundle.txt&amp;quot; is present. Checked the sha256sum and compared to the CA Chain made above but it&#39;s not the same.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>What are the Tasks in Drupal Cron</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/tasks-in-drupal-cron/</link>
+      <pubDate>Tue, 16 Jun 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/tasks-in-drupal-cron/</guid>
+      <description>
+        
+          
+            Wondering what sort of tasks are in drupal cron? I need to know what those tasks are. You can start by searching your codebase for _cron functions.
+Remember:
+1All *_cron() functions in a site will be run on cron. 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Acquia: Troubleshooting Site Downtime</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/troubleshooting-acquia-site-downtime/</link>
+      <pubDate>Fri, 05 Jun 2020 00:20:31 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/troubleshooting-acquia-site-downtime/</guid>
+      <description>
+        
+          
+            Below are some common performance-impacting issues that your environment(s) may be experiencing:
+ Traffic: Increased traffic to your environment(s) may be causing service to be interrupted on those environments. Apache access logs: https://docs.acquia.com/acquia-cloud/monitor/logs/ Insight: https://docs.acquia.com/acquia-cloud/insight/ Stack Metrics: https://docs.acquia.com/acquia-cloud/monitor/stackmetrics/application/ Out of memory issues: Check Stack Metrics for out of memory errors: https://docs.acquia.com/acquia-cloud/monitor/stackmetrics/ Learn to find and resolve memory related errors: https://support.acquia.com/hc/en-us/articles/360005248674-Finding-Resolving-Memory-Related-PHP-errors-in-Acquia-Cloud Application issues - Did you deploy code recently? If so, try reverting code to a previous tag that works properly.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Finding Large Files Uncacheable in Acquia Varnish</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/finding-large-files-uncacheable-in-acquia-varnish/</link>
+      <pubDate>Mon, 18 May 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/finding-large-files-uncacheable-in-acquia-varnish/</guid>
+      <description>
+        
+          
+            Acquia varnish cannot cache files &amp;gt;10MB as per https://docs.acquia.com/acquia-cloud/performance/varnish/files/
+To find for those &amp;gt;10MB files, search from the sites/default/files:
+1find ./ -type f -size +10M -exec du -sh &amp;#39;{}&amp;#39; \; -print|grep -v ^\./| sort -n 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Acquia: Full Path to Database Backups Made via GUI</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/acquia-full-path-to-database-backups/</link>
+      <pubDate>Mon, 09 Apr 2018 00:20:31 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/acquia-full-path-to-database-backups/</guid>
+      <description>
+        
+          
+            From CLI, ssh to specific server and go to:
+1/mnt/files/[site].[dev | test | prod]/backups/ 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Acquia Logs</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/acquia-logs/</link>
+      <pubDate>Mon, 09 Apr 2018 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/acquia-logs/</guid>
+      <description>
+        
+          
+            https://docs.acquia.com/acquia-cloud/files/system-files
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>webserver on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/webserver/</link>
+    <description>Recent content in webserver on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Fri, 10 Jul 2020 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/webserver/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Apache 2.4: IP Whitelisting</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/ip-whitelisting-apache2.4/</link>
+      <pubDate>Fri, 10 Jul 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/ip-whitelisting-apache2.4/</guid>
+      <description>
+        
+          
+            1... 2... 3AuthType Basic 4AuthName &amp;#34;Development Area&amp;#34; 5AuthUserFile /var/www/sites/.htpasswd 6&amp;lt;RequireAny&amp;gt; 7Require ip 19.233.95.152 8Require ip 31.169.217.174 9Require ip 33.202.255.41 10Require ip 31.175.111.184 11Require ip 51.209.11.159 12Require ip 129.162.144.55 13Require valid-user 14&amp;lt;/RequireAny&amp;gt; 15... 16... See https://stackoverflow.com/questions/10419592/htaccess-htpasswd-bypass-if-at-a-certain-ip-address
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Apache Basic Auth</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/apache-basic-auth/</link>
+      <pubDate>Fri, 10 Jul 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/apache-basic-auth/</guid>
+      <description>
+        
+          
+            1AuthType Basic 2AuthName &amp;#34;Development&amp;#34; 3AuthUserFile /var/www/sites/.htpasswd 4Require valid-user 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Apache Basic Authentication in ProxyPass</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/apache-basic-authentication-proxypass/</link>
+      <pubDate>Fri, 10 Jul 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/apache-basic-authentication-proxypass/</guid>
+      <description>
+        
+          
+            1&amp;lt;VirtualHost *:443&amp;gt; 2ServerName example.com 34SSLEngine on 5SSLCertificateFile /etc/httpd/conf.d/ssl/2017-example.com.crt 6SSLCertificateKeyFile /etc/httpd/conf.d/ssl/2017-example.com.key 7SSLCertificateChainFile /etc/httpd/conf.d/ssl/2017-example.com.bundle.crt 8910ProxyPreserveHost On 1112ProxyPass / http://127.0.0.1:8025/ 13ProxyPassReverse / http://127.0.0.1:8025/ 1415&amp;lt;Location /&amp;gt; 16Options -Indexes 17AllowOverride All 1819AuthType Basic 20AuthName &amp;#34;Development Area&amp;#34; 21AuthUserFile /var/www/sites/.htpasswd 22Require valid-user 23&amp;lt;/Location&amp;gt; 24&amp;lt;/VirtualHost&amp;gt; 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Apache HSTS</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/apache-hsts/</link>
+      <pubDate>Fri, 10 Jul 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/apache-hsts/</guid>
+      <description>
+        
+          
+            When a user visits your website, the above header will load first and the expiration time is 2 years (63072000 in seconds).
+1# Optionally load the headers module: 2LoadModule headers_module modules/mod_headers.so 3&amp;lt;VirtualHost 67.89.123.45:443&amp;gt; 4Header always set Strict-Transport-Security “max-age=63072000; includeSubdomains;” 5&amp;lt;/VirtualHost&amp;gt; 6... 7... 8... 9&amp;lt;VirtualHost *:80&amp;gt; 10[…] 11ServerName example.com 12Redirect permanent / https://example.com/ 13&amp;lt;/VirtualHost&amp;gt; More details in https://medium.com/@sslsecurity/how-to-enable-hsts-on-apache-nginx-and-lighttpd-8b0c64155911
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Apache Redirect for http to https via .htaccess</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/redirect-http-to-https-in-htaccess/</link>
+      <pubDate>Fri, 10 Jul 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/redirect-http-to-https-in-htaccess/</guid>
+      <description>
+        
+          
+            Generic way to do it but would result into duplicate URLs, e.g. https://example.com &amp;amp; https://www.example.com
+1RewriteCond %{HTTPS} off 2RewriteCond %{HTTP:X-Forwarded-Proto} !https 3RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301] To avoid the duplicate URLs, do the following:
+1## 1. Redirect all non-https except www to https://www 2RewriteCond %{HTTP_HOST} !foo\.example\.com [NC] # exclude foo.example.com domain 3RewriteCond %{HTTP_HOST} !bar\.example\.net [NC] # exclude foo.example.net domain 4RewriteCond %{HTTP_HOST} . 5RewriteCond %{HTTP_HOST} !^www\. [NC] 6RewriteCond %{HTTP:X-Forwarded-Proto} !https 7RewriteRule ^ https://www.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Clear Nginx Cache</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/clear-nginx-cache/</link>
+      <pubDate>Fri, 10 Jul 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/clear-nginx-cache/</guid>
+      <description>
+        
+          
+             bruteforce method - remove and replace /etc/nginx-cache Tool (untested) - https://github.com/perusio/nginx-cache-purge  
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Comodo SSL Verification in Nginx</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/comodo-ssl-verification-in-nginx/</link>
+      <pubDate>Fri, 10 Jul 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/comodo-ssl-verification-in-nginx/</guid>
+      <description>
+        
+          
+            Add the following to the vhost:
+1location ^~ /.well-known/ { 2log_not_found off; 3} 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Dump All Apache Modules Installed</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/dump-all-apache-modules-installed/</link>
+      <pubDate>Fri, 10 Jul 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/dump-all-apache-modules-installed/</guid>
+      <description>
+        
+          
+            1httpd -t -D DUMP_MODULES 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Logging Cloudflare Country Code in Apache Backend</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/logging-cloudflare-countrycode-apache-backend/</link>
+      <pubDate>Fri, 10 Jul 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/logging-cloudflare-countrycode-apache-backend/</guid>
+      <description>
+        
+          
+            1... 2... 3LogFormat &amp;#34;%h %l %u %t \&amp;#34;%r\&amp;#34; %&amp;gt;s %b \&amp;#34;%{Referer}i\&amp;#34; \&amp;#34;%{User-Agent}i\&amp;#34; %{cf-ipcountry}i&amp;#34; cloudflare_custom 4CustomLog /var/log/httpd/site.example.com-cloudflare_custom.log cloudflare_custom 5... 6... See details in https://support.cloudflare.com/hc/en-us/articles/200168236-What-does-Cloudflare-IP-Geolocation-do-
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Nginx 502 Bad Gateway</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/nginx-502-bad-gateway/</link>
+      <pubDate>Fri, 10 Jul 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/nginx-502-bad-gateway/</guid>
+      <description>
+        
+          
+             Check if php-fpm service is up Check if being listened to by nginx (for CentOS, look for &amp;quot;listen&amp;quot; in /etc/php-fpm.d/www.conf) Adjust nginx vhost (fastcgi_pass) when necessary (example below)  1fastcgi_pass 127.0.0.1:9000; 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Nginx HSTS</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/nginx-hsts/</link>
+      <pubDate>Fri, 10 Jul 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/nginx-hsts/</guid>
+      <description>
+        
+          
+            Update the following line of code in config file’s server Block.
+1add_header Strict-Transport-Security “max-age=63072000; includeSubdomains; “; Restart the NGINX server.
+More details in https://medium.com/@sslsecurity/how-to-enable-hsts-on-apache-nginx-and-lighttpd-8b0c64155911
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Nginx Proxying/Buffering</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/nginx-proxying-buffering/</link>
+      <pubDate>Fri, 10 Jul 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/nginx-proxying-buffering/</guid>
+      <description>
+        
+          
+            https://www.digitalocean.com/community/tutorials/understanding-nginx-http-proxying-load-balancing-buffering-and-caching
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Nginx: Request Entity Too Large</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/nginx-request-entity-too-large/</link>
+      <pubDate>Fri, 10 Jul 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/nginx-request-entity-too-large/</guid>
+      <description>
+        
+          
+            Solution: In server block, add &amp;quot;client_max_body_size&amp;quot; directive like the following
+1server { 2listen 8080; 3client_max_body_size 100M; 4... 5... 6} See details in https://www.cyberciti.biz/faq/linux-unix-bsd-nginx-413-request-entity-too-large/
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>OCSP Stapling in Nginx</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/ocsp-stapling-in-nginx/</link>
+      <pubDate>Fri, 10 Jul 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/ocsp-stapling-in-nginx/</guid>
+      <description>
+        
+          
+            https://raymii.org/s/tutorials/OCSP_Stapling_on_nginx.html
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Quick Install Nginx in CentOS7 &#43; 301 Redirect</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/quick-install-nginx-in-centos7-301-redirect/</link>
+      <pubDate>Fri, 10 Jul 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/quick-install-nginx-in-centos7-301-redirect/</guid>
+      <description>
+        
+          
+            1sudo yum install epel-release 2sudo yum install nginx 3sudo systemctl start nginx 4... 5... 6edit /etc/nginx/nginx.conf 78... 9... 10#add this line in bottom of &amp;#39;server&amp;#39; block: 11Redirect 301 https://your_domain_here/$request_uri; 1213sudo systemctl restart nginx 14sudo systemctl enable nginx 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Setup Default Virtualhost in Nginx</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/setup-default-virtualhost-in-nginx/</link>
+      <pubDate>Fri, 10 Jul 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/setup-default-virtualhost-in-nginx/</guid>
+      <description>
+        
+          
+            1server { 23listen 80 default_server; 4server_name _; 56root /var/www/default; 78} details in https://serverfault.com/questions/527156/setting-nginx-to-catch-all-unhandled-vhosts
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Some Tweaks to Improve Nginx</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/tweaks-improve-nginx/</link>
+      <pubDate>Fri, 10 Jul 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/tweaks-improve-nginx/</guid>
+      <description>
+        
+          
+            https://scaron.info/blog/improve-your-nginx-ssl-configuration.html
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>SSLPassPhraseDialog and How to Use It</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/sslpassphrasedialog-how-to-use/</link>
+      <pubDate>Fri, 10 Jul 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/sslpassphrasedialog-how-to-use/</guid>
+      <description>
+        
+          
+            See https://griffith.wordpress.com/tag/sslpassphrasedialog/
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

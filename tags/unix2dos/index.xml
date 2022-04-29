@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>unix2dos on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/unix2dos/</link>
+    <description>Recent content in unix2dos on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Sun, 12 Jul 2020 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/unix2dos/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Unix2Dows using Powershell</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/unix2dos-in-powershell/</link>
+      <pubDate>Sun, 12 Jul 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/unix2dos-in-powershell/</guid>
+      <description>
+        
+          
+            1get-content&amp;lt;filename&amp;gt;|%{$_.replace(&amp;#34;`n&amp;#34;,&amp;#34;`r`n&amp;#34;)}|out-file-filepath&amp;lt;newfilename&amp;gt;More explanation in https://sus42.wordpress.com/2013/01/21/unix2dos-using-powershell/
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

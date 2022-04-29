@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ubuntu on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/ubuntu/</link>
+    <description>Recent content in ubuntu on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Sun, 13 Feb 2022 23:17:11 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/ubuntu/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>NodeJS Install in WSL</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/nodejs-install-in-wsl/</link>
+      <pubDate>Sun, 13 Feb 2022 23:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/nodejs-install-in-wsl/</guid>
+      <description>
+        
+          
+            NodeJS 14+ is needed in WSL. Usual installation via apt in Ubuntu doesn&#39;t work. This one works so far:
+1curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash - 2sudo apt-get install -y nodejs 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>BerryBoot</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/berryserver/</link>
+      <pubDate>Mon, 10 Aug 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/berryserver/</guid>
+      <description>
+        
+          
+            https://berryboot.alexgoldcheidt.com/
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Install LetsEncrypt in Ubuntu</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/install-letsencrypt-ubuntu/</link>
+      <pubDate>Sun, 07 Jun 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/install-letsencrypt-ubuntu/</guid>
+      <description>
+        
+          
+            1sudo add-apt-repository ppa:certbot/certbot 2sudo apt-get update 3sudo apt-get install python-certbot-apache 4sudo certbot --apache -d one.example.com -d two.example.com If the above don&#39;t work, try this:
+1sudo apt-get update 2sudo apt-get install software-properties-common 3sudo add-apt-repository universe 4sudo add-apt-repository ppa:certbot/certbot 5sudo apt-get update 6sudo apt-get install certbot python-certbot-nginx Put the following in root crontab (sudo crontab -e)
+130 2 * * * /usr/bin/certbot renew &amp;gt;&amp;gt; /var/log/letsencrypt-renew.log Some details in https://www.digitalocean.com/community/tutorials/how-to-secure-apache-with-let-s-encrypt-on-ubuntu-16-04
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Debian/Ubuntu Upgradable Packages List</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/debian-upgradable-list/</link>
+      <pubDate>Wed, 02 Oct 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/debian-upgradable-list/</guid>
+      <description>
+        
+          
+            1icasimpan@example.org:~$ sudo apt list --upgradable 23Listing... Done 4apache2/xenial-updates 2.4.18-2ubuntu3.9 amd64 [upgradable from: 2.4.18-2ubuntu3.8] 5apache2-bin/xenial-updates 2.4.18-2ubuntu3.9 amd64 [upgradable from: 2.4.18-2ubuntu3.8] 6apache2-data/xenial-updates 2.4.18-2ubuntu3.9 all [upgradable from: 2.4.18-2ubuntu3.8] 7apache2-utils/xenial-updates 2.4.18-2ubuntu3.9 amd64 [upgradable from: 2.4.18-2ubuntu3.8] 8base-files/xenial-updates 9.4ubuntu4.7 amd64 [upgradable from: 9.4ubuntu4.6] 9binutils/xenial-updates 2.26.1-1ubuntu1~16.04.7 amd64 [upgradable from: 2.26.1-1ubuntu1~16.04.6] 10bsdutils/xenial-updates 1:2.27.1-6ubuntu3.6 amd64 [upgradable from: 1:2.27.1-6ubuntu3.4] 11ca-certificates/xenial-updates 20170717~16.04.2 all [upgradable from: 20170717~16.04.1] 12cloud-init/xenial-updates 18.4-0ubuntu1~16.04.2 all [upgradable from: 18.2-4-g05926e48-0ubuntu1~16.04.2] 13cloud-initramfs-copymods/xenial-updates 0.27ubuntu1.6 all [upgradable from: 0.27ubuntu1.5] 14cloud-initramfs-dyn-netconf/xenial-updates 0.27ubuntu1.6 all [upgradable from: 0.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Build an Ubuntu Kernel</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/build-ubuntu-kernel/</link>
+      <pubDate>Mon, 30 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/build-ubuntu-kernel/</guid>
+      <description>
+        
+          
+            See https://wiki.ubuntu.com/Kernel/BuildYourOwnKernel
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Directory not Found in Debian Apache</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/directory-not-found-apache-debian/</link>
+      <pubDate>Mon, 30 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/directory-not-found-apache-debian/</guid>
+      <description>
+        
+          
+            Some SSL Certs needs to validate through a text file served in apache. Something like: http://example.org/.well-known/pki-validation/F70E08C160E9B8C7GB488B8AEB246D11B.txt
+Solution: Add similar configuration in the virtualhost file in apache:
+1Alias /.well-known/pki-validation/ /var/www/sites/example.org/.well-known/pki-validation/ 2&amp;lt;Directory &amp;#34;/var/html/example.org/.well-known/pki-validation&amp;#34;&amp;gt; 3Order allow,deny 4Allow from all 5Satisfy all 6&amp;lt;/Directory&amp;gt; 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Mark Packages in Debian so it doesn&#39;t get updated</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/blacklist-package-upgrade-in-debian/</link>
+      <pubDate>Mon, 30 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/blacklist-package-upgrade-in-debian/</guid>
+      <description>
+        
+          
+            1apt hold &amp;lt;package&amp;gt; See https://www.tecmint.com/disable-lock-blacklist-package-updates-ubuntu-debian-apt/
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Updating an Debian/Ubuntu OS that is no longer supported</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/upgrading-unsupported-debian-os/</link>
+      <pubDate>Mon, 30 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/upgrading-unsupported-debian-os/</guid>
+      <description>
+        
+          
+            In our example, we have Debian Squeeze (6.0) and it&#39;s been unsupported since Feb 2016. We can no longer install nor update the packages until you point it to another source...the archives.
+So, in /etc/apt/sources.list, add you will see:
+1deb http://ftp.us.debian.org/debian/ squeeze main 2deb-src http://ftp.us.debian.org/debian/ squeeze main Replace it with:
+1deb http://archive.debian.org/debian squeeze main 2deb http://archive.debian.org/debian squeeze-lts main and you can now access &#39;apt-get&#39; or &#39;dpkg&#39; as before (but limited to what&#39;s in the archive).
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Install php-curl 5.6 (Ubuntu)</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/install-php-curl-56-ubuntu/</link>
+      <pubDate>Sat, 28 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/install-php-curl-56-ubuntu/</guid>
+      <description>
+        
+          
+            1sudo apt-get install php5.6-curl More info in https://stackoverflow.com/questions/40567133/cannot-add-ppa-ppaondrej-php5-5-6
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Installing mcrypt in php7.1 (Ubuntu)</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/install-mcrypt-php71-ubuntu/</link>
+      <pubDate>Sat, 28 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/install-mcrypt-php71-ubuntu/</guid>
+      <description>
+        
+          
+            1sudo add-apt-repository ppa:ondrej/php 2sudo apt-get update 3sudo apt-get install mcrypt php7.1-mcrypt 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>ufw: List Rules in Ubuntu Machine</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/ufw-list-rules-in-ubuntu-machine/</link>
+      <pubDate>Sat, 21 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/ufw-list-rules-in-ubuntu-machine/</guid>
+      <description>
+        
+          
+            1root@xxx:/var/log# ufw status 2Status: active 34To Action From 5-- ------ ---- 622 LIMIT Anywhere 780 ALLOW Anywhere 8443 ALLOW Anywhere 9??41908/tcp ALLOW Anywhere 10Anywhere ALLOW 115.85.11.98 1125/tcp ALLOW Anywhere 124444/tcp ALLOW Anywhere 134444/udp ALLOW Anywhere 1422 (v6) LIMIT Anywhere (v6) 1580 (v6) ALLOW Anywhere (v6) 16443 (v6) ALLOW Anywhere (v6) 1741908/tcp (v6) ALLOW Anywhere (v6) 1825/tcp (v6) ALLOW Anywhere (v6) 194444/tcp (v6) ALLOW Anywhere (v6) 204444/udp (v6) ALLOW Anywhere (v6) 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Drupal Memcache</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/drupal-memcache/</link>
+      <pubDate>Mon, 09 Apr 2018 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/drupal-memcache/</guid>
+      <description>
+        
+          
+            Had to install as follows (need to be php7.x):
+1pecl install memcached Dependencies may need to be installed
+1# yum groupinstall &amp;#34;Development tools&amp;#34; 2# yum install zlib zlib-devel 3# yum install php php-devel php-pear 4echo &amp;#34;extension=memcache.so&amp;#34; &amp;gt;&amp;gt; /etc/php.d/memcache.ini See https://tecadmin.net/install-memcached-with-pecl-memcache-on-centos-rhel/
+For Ubuntu 16.x (with php5.6.x)
+1apt-get install memcached 2apt-get install php-memcache 
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

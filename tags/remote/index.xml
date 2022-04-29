@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>remote on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/remote/</link>
+    <description>Recent content in remote on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Sat, 21 Sep 2019 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/remote/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Copy Files To and From Remote Locations</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/copy-files-to-and-from-remote-locations/</link>
+      <pubDate>Sat, 21 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/copy-files-to-and-from-remote-locations/</guid>
+      <description>
+        
+          
+            1- name: Move foo to bar 2command: mv /path/to/foo /path/to/bar or check first and do a copy if it exist
+1- name: stat foo 2stat: path=/path/to/foo 3register: foo_stat 45- name: Move foo to bar 6command: mv /path/to/foo /path/to/bar 7when: foo_stat.stat.exists and, for ansible 2.0+, you can do:
+1- name: Copy files from foo to bar 2copy: remote_src=True src=https://ismael.casimpan.com/quicktasks/path/to/foo dest=/path/to/bar Details in https://stackoverflow.com/questions/24162996/how-to-move-rename-a-file-using-an-ansible-task-on-a-remote-system
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Checking Remote Tags</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/checking-remote-tags/</link>
+      <pubDate>Sun, 08 Apr 2018 23:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/checking-remote-tags/</guid>
+      <description>
+        
+          
+            1git ls-remote --tags 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Deleting a remote git repo branch</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/deleting-remote-git-repo/</link>
+      <pubDate>Sun, 08 Apr 2018 23:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/deleting-remote-git-repo/</guid>
+      <description>
+        
+          
+            1me@mysite:/var/www/sites/mysite.local$ git push origin :release-redesign 2To git@git-server:mysite.git 3- [deleted] release-redesign 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Deleting a remote git tag</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/deleting-remote-git-tag/</link>
+      <pubDate>Sun, 08 Apr 2018 23:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/deleting-remote-git-tag/</guid>
+      <description>
+        
+          
+            1me@mysite:/var/www/sites/mysite.local$ git push origin :v1.56 2To git@git-server:mysite.git 3- [deleted] v1.56 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Allow Remote Connections to MySQL/MariaDB</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/allow-remote-connections-to-mysql/</link>
+      <pubDate>Sun, 08 Apr 2018 23:11:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/allow-remote-connections-to-mysql/</guid>
+      <description>
+        
+          
+            Use format below:
+1GRANT ALL ON yourDB.* TO yourDBA@&amp;#39;23.216.39.44&amp;#39; IDENTIFIED BY &amp;#39;yourPASS&amp;#39;; and make sure that &#39;bind-address&#39; in /etc/my.cnf is either 0.0.0.0 or commented out for this to take effect. Turn-off as well any firewall, SELinux, etc.
+Further details in https://www.digitalocean.com/community/questions/how-to-allow-remote-mysql-database-connection
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

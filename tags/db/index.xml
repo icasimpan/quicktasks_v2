@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>db on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/db/</link>
+    <description>Recent content in db on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Thu, 12 Aug 2021 09:34:45 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/db/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Query Postgresql from Bash Command Line</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/query-pgsql-from-bash-cli/</link>
+      <pubDate>Thu, 12 Aug 2021 09:34:45 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/query-pgsql-from-bash-cli/</guid>
+      <description>
+        
+          
+            1psql -c &amp;#34;&amp;lt;your_query_here&amp;gt;&amp;#34; Example, to show tables list:
+1psql -c &amp;#34;\dt+&amp;#34; 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Restore Pgsql File</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/restore-pgsql-file/</link>
+      <pubDate>Fri, 30 Jul 2021 12:42:45 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/restore-pgsql-file/</guid>
+      <description>
+        
+          
+            1psql -h db -U mduser md &amp;lt; sqlfile.sql 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>DB Credentials via Drush</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/db-credentials-via-drush/</link>
+      <pubDate>Mon, 09 Apr 2018 00:14:45 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/db-credentials-via-drush/</guid>
+      <description>
+        
+          
+            Go to drupal root, then:
+1drush st --show-passwords database In drush 9.7.2 (may also work for other sub-versions of drush 9), the following command should be used:
+1drush st DB 
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

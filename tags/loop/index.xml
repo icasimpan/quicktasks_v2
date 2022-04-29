@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>loop on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/loop/</link>
+    <description>Recent content in loop on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Sat, 21 Sep 2019 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/loop/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Field Loop Error</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/field-loop-error/</link>
+      <pubDate>Sat, 21 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/field-loop-error/</guid>
+      <description>
+        
+          
+            If you see the error below:
+1ERROR! The field &amp;#39;loop&amp;#39; is supposed to be a string type, however the incoming data structure is a &amp;lt;class &amp;#39;ansible.parsing.yaml.objects.AnsibleSequence&amp;#39;&amp;gt; Upgrade your ansible to at least version 2.5. The &#39;loop&#39; keyword is defined starting that version. See https://stackoverflow.com/questions/49680809/ansible-loop-error
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Install Several Packages in a Loop</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/install-several-packages-in-loop/</link>
+      <pubDate>Sat, 21 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/install-several-packages-in-loop/</guid>
+      <description>
+        
+          
+            Manual
+1sudo yum install -y mod_php71w php71w-cli php71w-common php71w-gd php71w-mbstring php71w-mcrypt php71w-mysqlnd php71w-xml In Ansible:
+1- name: Install needed php7 packages 2yum: 3name={{ item }} 4state=present 5with_items: 6- mod_php71w 7- php71w-cli 8- php71w-common 9- php71w-gd 10- php71w-mbstring 11- php71w-mcrypt 12- php71w-mysqlnd 13- php71w-xml 
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>master on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/master/</link>
+    <description>Recent content in master on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Mon, 15 Oct 2018 12:45:19 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/master/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Get Number of Seconds Slave Is Behind Master</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/get-number-of-seconds-slave-is-behind-master/</link>
+      <pubDate>Mon, 15 Oct 2018 12:45:19 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/get-number-of-seconds-slave-is-behind-master/</guid>
+      <description>
+        
+          
+            Get replication status, and look for &amp;quot;Seconds_Behind_Master&amp;quot;
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

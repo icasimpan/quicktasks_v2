@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>md5 on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/md5/</link>
+    <description>Recent content in md5 on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Sun, 12 Jul 2020 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/md5/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Get MD5 of a File using Powershell</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/get-md5-of-file/</link>
+      <pubDate>Sun, 12 Jul 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/get-md5-of-file/</guid>
+      <description>
+        
+          
+            1PS C:\&amp;gt; Get-FileHash -Path $file -Algorithm MD5 See https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/get-filehash?view=powershell-6
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

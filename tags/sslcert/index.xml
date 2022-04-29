@@ -1,0 +1,625 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>sslcert on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/sslcert/</link>
+    <description>Recent content in sslcert on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Wed, 26 Aug 2020 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/sslcert/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Delete LetsEncrypt Certificate</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/delete-letsencrypt-certificate/</link>
+      <pubDate>Wed, 26 Aug 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/delete-letsencrypt-certificate/</guid>
+      <description>
+        
+          
+            Given the following cert:
+1root@php73:~# certbot certificates 2Saving debug log to /var/log/letsencrypt/letsencrypt.log 34- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 5Found the following certs: 6Certificate Name: php72.example.com 7Domains: php72.example.com php72.example.net 8Expiry Date: 2020-11-19 01:30:55+00:00 (VALID: 85 days) 9Certificate Path: /etc/letsencrypt/live/php72.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Nginx SSL PEM_read_bio End of Line Error</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/nginx-ssl-pem_read_bio-end-of-line-error/</link>
+      <pubDate>Mon, 27 Jul 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/nginx-ssl-pem_read_bio-end-of-line-error/</guid>
+      <description>
+        
+          
+            We had this ssl cert issued by Network Solutions
+1root@www:/etc/nginx/conf.d/ssl/example-2020# unzip -l EXAMPLE.ORG.zip 2Archive: EXAMPLE.ORG.zip 3Length Date Time Name 4--------- ---------- ----- ---- 52150 2020-07-14 16:59 DV_NetworkSolutionsDVServerCA2.crt 6Network Solutions DV Intermediate CA 72093 2020-07-14 16:59 DV_USERTrustRSACertificationAuthority.crt 8Network Solutions DV Intermediate CA 2 92174 2020-07-14 16:59 EXAMPLE.ORG.crt 10Domain certificate 11--------- ------- 126417 3 files I created a bundle as this was for Nginx cat EXAMPLE.ORG.crt DV_NetworkSolutionsDVServerCA2.crt DV_USERTrustRSACertificationAuthority.crt &amp;gt; www.example.org-bundle.crt
+When I tried verifying, I got this error:
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Regenerate Multi-Domain SSL Cert and update extension DNS</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/regenerate-multidomain-sslcert-and-update-extension-dns/</link>
+      <pubDate>Mon, 27 Jul 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/regenerate-multidomain-sslcert-and-update-extension-dns/</guid>
+      <description>
+        
+          
+            Scenario: Cert was purchased originally for 5 years. Cert with that validity need to revalidate every 2 years as per https://www.digicert.com/shortening-validity-periods-for-ov-dv-certificates
+However, the cert has been configured with the following SAN:
+ www.example1.com www.example2.com  Problem: www.example2.com is no longer part of the same hosting and doesn&#39;t need the cert. However, &#39;example1.com&#39; should replace it.
+Solution: Regenerate the cert and add the domains &amp;quot;www.example1.com&amp;quot; and &amp;quot;example1.com&amp;quot;.
+NOTE: Not sure yet, but I think this is valid only when the main domain for the cert is &amp;quot;www.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>View All SSL Cert in a Bundle File</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/view-all-cert-in-bundle/</link>
+      <pubDate>Wed, 15 Jul 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/view-all-cert-in-bundle/</guid>
+      <description>
+        
+          
+            Oneliner solution using the following command:
+1~$ openssl crl2pkcs7 -nocrl -certfile www.example.org-bundle.crt | openssl pkcs7 -print_certs -noout With sample output as follows:
+1~$ openssl crl2pkcs7 -nocrl -certfile www.example.org-bundle.crt | openssl pkcs7 -print_certs -noout 2subject=/OU=Domain Control Validated/OU=PositiveSSL/CN=www.example.org 3issuer=/C=GB/ST=Greater Manchester/L=Salford/O=COMODO CA Limited/CN=COMODO RSA Domain Validation Secure Server CA 45subject=/C=GB/ST=Greater Manchester/L=Salford/O=COMODO CA Limited/CN=COMODO RSA Domain Validation Secure Server CA 6issuer=/C=GB/ST=Greater Manchester/L=Salford/O=COMODO CA Limited/CN=COMODO RSA Certification Authority 78subject=/C=GB/ST=Greater Manchester/L=Salford/O=COMODO CA Limited/CN=COMODO RSA Certification Authority 9issuer=/C=SE/O=AddTrust AB/OU=AddTrust External TTP Network/CN=AddTrust External CA Root 1011subject=/C=SE/O=AddTrust AB/OU=AddTrust External TTP Network/CN=AddTrust External CA Root 12issuer=/C=SE/O=AddTrust AB/OU=AddTrust External TTP Network/CN=AddTrust External CA Root Details and other solutions in https://serverfault.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Apache HSTS</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/apache-hsts/</link>
+      <pubDate>Fri, 10 Jul 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/apache-hsts/</guid>
+      <description>
+        
+          
+            When a user visits your website, the above header will load first and the expiration time is 2 years (63072000 in seconds).
+1# Optionally load the headers module: 2LoadModule headers_module modules/mod_headers.so 3&amp;lt;VirtualHost 67.89.123.45:443&amp;gt; 4Header always set Strict-Transport-Security “max-age=63072000; includeSubdomains;” 5&amp;lt;/VirtualHost&amp;gt; 6... 7... 8... 9&amp;lt;VirtualHost *:80&amp;gt; 10[…] 11ServerName example.com 12Redirect permanent / https://example.com/ 13&amp;lt;/VirtualHost&amp;gt; More details in https://medium.com/@sslsecurity/how-to-enable-hsts-on-apache-nginx-and-lighttpd-8b0c64155911
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Comodo SSL Verification in Nginx</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/comodo-ssl-verification-in-nginx/</link>
+      <pubDate>Fri, 10 Jul 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/comodo-ssl-verification-in-nginx/</guid>
+      <description>
+        
+          
+            Add the following to the vhost:
+1location ^~ /.well-known/ { 2log_not_found off; 3} 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Generate CA Chain for Acquia Environment</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/ca-chain-acquia/</link>
+      <pubDate>Fri, 10 Jul 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/ca-chain-acquia/</guid>
+      <description>
+        
+          
+            From Comodo Email after verifying domain ownership, got this hints:
+1Root CA Certificate - AAACertificateServices.crt 2Intermediate CA Certificate - USERTrustRSAAAACA.crt 3Intermediate CA Certificate - SectigoRSADomainValidationSecureServerCA.crt 4Your PositiveSSL Multi-Domain Certificate - 378394251.crt Generate the CA Chain as follows:
+1cat AAACertificateServices.crt USERTrustRSAAAACA.crt SectigoRSADomainValidationSecureServerCA.crt &amp;gt; ca-chain-acquia-prod.pem And add to Acquia SSL section in corresponding environment.
+NOTE: It&#39;s interesting to note that in CheapSSLSecurity site&#39;s download section, an additional file &amp;quot;My_CA_Bundle.txt&amp;quot; is present. Checked the sha256sum and compared to the CA Chain made above but it&#39;s not the same.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Nginx HSTS</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/nginx-hsts/</link>
+      <pubDate>Fri, 10 Jul 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/nginx-hsts/</guid>
+      <description>
+        
+          
+            Update the following line of code in config file’s server Block.
+1add_header Strict-Transport-Security “max-age=63072000; includeSubdomains; “; Restart the NGINX server.
+More details in https://medium.com/@sslsecurity/how-to-enable-hsts-on-apache-nginx-and-lighttpd-8b0c64155911
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>OCSP Stapling in Nginx</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/ocsp-stapling-in-nginx/</link>
+      <pubDate>Fri, 10 Jul 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/ocsp-stapling-in-nginx/</guid>
+      <description>
+        
+          
+            https://raymii.org/s/tutorials/OCSP_Stapling_on_nginx.html
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>SSLPassPhraseDialog and How to Use It</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/sslpassphrasedialog-how-to-use/</link>
+      <pubDate>Fri, 10 Jul 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/sslpassphrasedialog-how-to-use/</guid>
+      <description>
+        
+          
+            See https://griffith.wordpress.com/tag/sslpassphrasedialog/
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Cert Chain for a multi-domain Comondo Positive SSL</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/cert-chain-multidomain-comodo-positive-ssl/</link>
+      <pubDate>Sun, 07 Jun 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/cert-chain-multidomain-comodo-positive-ssl/</guid>
+      <description>
+        
+          
+            1cat AddTrustExternalCARoot.crt COMODORSAAddTrustCA.crt COMODORSADomainValidationSecureServerCA.crt &amp;gt;&amp;gt; cert-chain.pem NOTE: This is the inverse of &amp;quot;Creating an SSL Bundle out of Comodo Positive SSL&amp;quot; which seems valid as well. Not sure if it&#39;s valid in any order.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Cert Chain for Positive wildcard multi-domain</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/cert-chain-positive-wildcard-multidomain/</link>
+      <pubDate>Sun, 07 Jun 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/cert-chain-positive-wildcard-multidomain/</guid>
+      <description>
+        
+          
+            Given this list of files given by Comodo
+1Root CA Certificate - AddTrustExternalCARoot.crt 2Intermediate CA Certificate - USERTrustRSAAddTrustCA.crt 3Intermediate CA Certificate - SectigoRSADomainValidationSecureServerCA.crt 4Your PositiveSSL Multi-Domain Certificate - 285695299.crt Do the following:
+1cat 285695299.crt SectigoRSADomainValidationSecureServerCA.crt USERTrustRSAAddTrustCA.crt AddTrustExternalCARoot.crt &amp;gt;&amp;gt; cert-chain.pem 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Check Certificates Info</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/check-certificates-info/</link>
+      <pubDate>Sun, 07 Jun 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/check-certificates-info/</guid>
+      <description>
+        
+          
+            Check a Certificate Signing Request (CSR)  1openssl req -text -noout -verify -in CSR.csr  Check a private key  1openssl rsa -in privateKey.key -check  Check a certificate  1openssl x509 -in certificate.crt -text -noout  Check a PKCS#12 file (.pfx or .p12)  1openssl pkcs12 -info -in keyStore.p12 See https://www.sslshopper.com/csr-decoder.html or https://www.sslshopper.com/certificate-decoder.html
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Check SSL Connection</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/check-ssl-connection/</link>
+      <pubDate>Sun, 07 Jun 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/check-ssl-connection/</guid>
+      <description>
+        
+          
+            All the certificates (including Intermediates) should be displayed
+1openssl s_client -connect www.google.com:443 Web UI checking possible in https://www.sslshopper.com/ssl-checker.html
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Converting Certs from Different Formats</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/converting-different-cert-formats/</link>
+      <pubDate>Sun, 07 Jun 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/converting-different-cert-formats/</guid>
+      <description>
+        
+          
+            Convert a DER file (.crt .cer .der) to PEM  1openssl x509 -inform der -in certificate.cer -out certificate.pem  Convert a PEM file to DER  1openssl x509 -outform der -in certificate.pem -out certificate.der  Convert a PKCS#12 file (.pfx .p12) containing a private key and certificates to PEM  1openssl pkcs12 -in keyStore.pfx -out keyStore.pem -nodes  You can add -nocerts to only output the private key or add -nokeys to only output the certificates.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Create SAN TLS/SSL Cert</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/create-san-sslcert/</link>
+      <pubDate>Sun, 07 Jun 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/create-san-sslcert/</guid>
+      <description>
+        
+          
+            Create san.conf  1[ req ] 2default_bits = 4096 3prompt = no 4encrypt_key = no 5default_md = sha256 6distinguished_name = dn 7req_extensions = req_ext 89[ dn ] 10CN = example.org 11emailAddress = webmaster@example.org 12O = Example Memorial Hospital 13OU = Example Memorial Hospital 14L = Chicago 15ST = Illinois 16C = US 1718[ req_ext ] 19subjectAltName = DNS: example.org, DNS: www.example.org NOTE: Do not leave out OU. Otherwise, you will see the error below.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Creating an SSL Bundle out of Comodo Positive SSL</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/creating-ssl-bundle-from-comodo-positive-ssl/</link>
+      <pubDate>Sun, 07 Jun 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/creating-ssl-bundle-from-comodo-positive-ssl/</guid>
+      <description>
+        
+          
+            1www.example.org.crt COMODORSADomainValidationSecureServerCA.crt COMODORSAAddTrustCA.crt AddTrustExternalCARoot.crt &amp;gt;&amp;gt; www.example.org-bundle.crt See details in https://helpdesk.ssls.com/hc/en-us/articles/203427642-How-to-install-a-SSL-certificate-on-a-NGINX-server
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Cross-check Certificate with Private Key and CSR</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/cross-check-certificate-with-csr-and-private-key/</link>
+      <pubDate>Sun, 07 Jun 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/cross-check-certificate-with-csr-and-private-key/</guid>
+      <description>
+        
+          
+            1openssl x509 -noout -modulus -in certificate.crt | openssl md5 2openssl rsa -noout -modulus -in privateKey.key | openssl md5 3openssl req -noout -modulus -in CSR.csr | openssl md5 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Formerly using nginx, Moving to Apache won&#39;t Renew Cert</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/renew-from-nginx-to-apache/</link>
+      <pubDate>Sun, 07 Jun 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/renew-from-nginx-to-apache/</guid>
+      <description>
+        
+          
+            It&#39;s quite expected that certificate won&#39;t renew as the automation has been broken. What you can do is install the apache version of certbot
+1yum install python-certbot-apache and re-issue the certificate
+1sudo certbot --apache -d www.example.org 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Generate CSR from Existing Cert</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/generate-csr-from-existing-cert/</link>
+      <pubDate>Sun, 07 Jun 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/generate-csr-from-existing-cert/</guid>
+      <description>
+        
+          
+            1openssl x509 -x509toreq -in certificate.crt -out CSR.csr -signkey privateKey.key 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Generate CSR from Existing Private Key</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/generate-csr-from-existing-private-key/</link>
+      <pubDate>Sun, 07 Jun 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/generate-csr-from-existing-private-key/</guid>
+      <description>
+        
+          
+            1openssl req -out CSR.csr -key privateKey.key -new 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Generate CSR from Private Key</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/generate-csr-from-private-key/</link>
+      <pubDate>Sun, 07 Jun 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/generate-csr-from-private-key/</guid>
+      <description>
+        
+          
+            1openssl req -out CSR.csr -key privateKey.key -new 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Generate Self-Signed Certificate</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/generate-selfsigned-cert/</link>
+      <pubDate>Sun, 07 Jun 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/generate-selfsigned-cert/</guid>
+      <description>
+        
+          
+            1openssl req -x509 -sha256 -nodes -days 365 -newkey rsa:2048 -keyout privateKey.key -out certificate.crt 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Getting CA-bundle for Comodo Certificates</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/getting-ca-bundle-for-comodo-certificates/</link>
+      <pubDate>Sun, 07 Jun 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/getting-ca-bundle-for-comodo-certificates/</guid>
+      <description>
+        
+          
+            Get it via chat to Comodo, one would pop-up from https://support.comodo.com/index.php?/Knowledgebase/Article/View/1145/1/how-do-i-make-my-own-bundle-file-from-crt-files.
+Make sure you edit your profile where they could send the information.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Hardened TLS / SSL Cert</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/hardened-ssl-cert/</link>
+      <pubDate>Sun, 07 Jun 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/hardened-ssl-cert/</guid>
+      <description>
+        
+          
+            Apache
+1SSLCipherSuite EECDH+AESGCM:EDH+AESGCM:AES256+EECDH:AES256+EDH:ECDHE-RSA-AES128-GCM-SHA384:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA128:DHE-RSA-AES128-GCM-SHA384:DHE-RSA-AES128-GCM-SHA256:DHE-RSA-AES128-GCM-SHA128:ECDHE-RSA-AES128-SHA384:ECDHE-RSA-AES128-SHA128:ECDHE-RSA-AES128-SHA:ECDHE-RSA-AES128-SHA:DHE-RSA-AES128-SHA128:DHE-RSA-AES128-SHA128:DHE-RSA-AES128-SHA:DHE-RSA-AES128-SHA:ECDHE-RSA-DES-CBC3-SHA:EDH-RSA-DES-CBC3-SHA:AES128-GCM-SHA384:AES128-GCM-SHA128:AES128-SHA128:AES128-SHA128:AES128-SHA:AES128-SHA:DES-CBC3-SHA:HIGH:!aNULL:!eNULL:!EXPORT:!DES:!MD5:!PSK:!RC4 2SSLProtocol All -SSLv2 -SSLv3 3SSLHonorCipherOrder On 4Header always set Strict-Transport-Security &amp;#34;max-age=63072000; includeSubdomains; preload&amp;#34; 5Header always set X-Frame-Options SAMEORIGIN 6Header always set X-Content-Type-Options nosniff 7# Requires Apache &amp;gt;= 2.4 8SSLCompression off 9SSLSessionTickets Off 10SSLUseStapling on 11SSLStaplingCache &amp;#34;shmcb:logs/stapling-cache(150000)&amp;#34; Nginx
+1ssl_ciphers &amp;#34;EECDH+AESGCM:EDH+AESGCM:AES256+EECDH:AES256+EDH:ECDHE-RSA-AES128-GCM-SHA384:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA128:DHE-RSA-AES128-GCM-SHA384:DHE-RSA-AES128-GCM-SHA256:DHE-RSA-AES128-GCM-SHA128:ECDHE-RSA-AES128-SHA384:ECDHE-RSA-AES128-SHA128:ECDHE-RSA-AES128-SHA:ECDHE-RSA-AES128-SHA:DHE-RSA-AES128-SHA128:DHE-RSA-AES128-SHA128:DHE-RSA-AES128-SHA:DHE-RSA-AES128-SHA:ECDHE-RSA-DES-CBC3-SHA:EDH-RSA-DES-CBC3-SHA:AES128-GCM-SHA384:AES128-GCM-SHA128:AES128-SHA128:AES128-SHA128:AES128-SHA:AES128-SHA:DES-CBC3-SHA:HIGH:!aNULL:!eNULL:!EXPORT:!DES:!MD5:!PSK:!RC4&amp;#34;; 2ssl_protocols TLSv1 TLSv1.1 TLSv1.2; 3ssl_prefer_server_ciphers on; 4ssl_session_cache shared:SSL:10m; 5# &amp;#39;always&amp;#39; requires nginx &amp;gt;= 1.7.5, see http://nginx.org/en/docs/http/ngx_http_headers_module.html#add_header 6add_header Strict-Transport-Security &amp;#34;max-age=63072000; includeSubdomains; preload&amp;#34; always; 7add_header X-Frame-Options SAMEORIGIN always; 8add_header X-Content-Type-Options nosniff always; 9ssl_session_tickets off; 10ssl_stapling on; # Requires nginx &amp;gt;= 1.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Install LetsEncrypt in Ubuntu</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/install-letsencrypt-ubuntu/</link>
+      <pubDate>Sun, 07 Jun 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/install-letsencrypt-ubuntu/</guid>
+      <description>
+        
+          
+            1sudo add-apt-repository ppa:certbot/certbot 2sudo apt-get update 3sudo apt-get install python-certbot-apache 4sudo certbot --apache -d one.example.com -d two.example.com If the above don&#39;t work, try this:
+1sudo apt-get update 2sudo apt-get install software-properties-common 3sudo add-apt-repository universe 4sudo add-apt-repository ppa:certbot/certbot 5sudo apt-get update 6sudo apt-get install certbot python-certbot-nginx Put the following in root crontab (sudo crontab -e)
+130 2 * * * /usr/bin/certbot renew &amp;gt;&amp;gt; /var/log/letsencrypt-renew.log Some details in https://www.digitalocean.com/community/tutorials/how-to-secure-apache-with-let-s-encrypt-on-ubuntu-16-04
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Manually generating LetsEncrypt certificate</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/manually-generate-letsencryp-cert/</link>
+      <pubDate>Sun, 07 Jun 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/manually-generate-letsencryp-cert/</guid>
+      <description>
+        
+          
+            In cases where you don&#39;t want to disrupt current production server, this is a good approach
+1mkdir /opt/letsencrypt 2cd /opt/letsencrypt 3wget https://dl.eff.org/certbot-auto 4chmod a+x certbot-auto 5sudo ./certbot-auto --apache certonly Sample run as follows:
+1[root@687elmp01 letsencrypt]# sudo ./certbot-auto --apache certonly 2Saving debug log to /var/log/letsencrypt/letsencrypt.log 3Plugins selected: Authenticator apache, Installer apache 4Enter email address (used for urgent renewal and security notices) (Enter &amp;#39;c&amp;#39; to 5cancel): me@example.com 67------------------------------------------------------------------------------- 8Please read the Terms of Service at 9https://letsencrypt.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>One Liner CSR Creation</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/one-liner-csr-creation/</link>
+      <pubDate>Sun, 07 Jun 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/one-liner-csr-creation/</guid>
+      <description>
+        
+          
+            1openssl req -new -newkey rsa:2048 -nodes -out this.example.com.csr -keyout this.example.com.key -subj &amp;#34;/C=PH/ST=Cebu/L=Cebu/O=Example Organization Cebu/OU=IT Department/CN=this.example.com&amp;#34; What to use in the &amp;quot;-subj&#39; as per https://www.endpoint.com/blog/2014/10/30/openssl-csr-with-alternative-names-one
+ C = Country ST = State/Province L = City O = Organization OU = Organizational Unit CN = Common Name (main domain the certificate would cover  
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Oneline Letsencrypt Cert Creation</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/oneline-letsencrypt-cert-creation/</link>
+      <pubDate>Sun, 07 Jun 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/oneline-letsencrypt-cert-creation/</guid>
+      <description>
+        
+          
+            1certbot --apache -d sub1.example.com -d sub2.example.com --agree-tos -m you@example.com --redirect If you&#39;re on nginx, use --nginx
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Perfect Forward Secrecy Fix</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/perfect-forward-secrecy-fix/</link>
+      <pubDate>Sun, 07 Jun 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/perfect-forward-secrecy-fix/</guid>
+      <description>
+        
+          
+            Generate dhparam.pem  1openssl dhparam -out /etc/nginx/ssl/dhparam.pem 4096 Create /etc/nginx/conf.d/perfect-forward-secrecy.conf since all *.conf in /etc/nginx/conf.d:  1ssl_protocols TLSv1.2; 2ssl_prefer_server_ciphers on; 3ssl_ciphers &amp;#34;EECDH+ECDSA+AESGCM EECDH+aRSA+AESGCM EECDH+ECDSA+SHA384 EECDH+ECDSA+SHA256 EECDH+aRSA+SHA384 EECDH+aRSA+SHA256 EECDH+aRSA+RC4 EECDH EDH+aRSA RC4 !aNULL !eNULL !LOW !3DES !MD5 !EXP !PSK !SRP !DSS !MEDIUM&amp;#34;; 45ssl_dhparam /etc/nginx/ssl/dhparam.pem;  Reload nginx
+  Test again using the SSLLabs Tool
+  https://www.howtoforge.com/ssl-perfect-forward-secrecy-in-nginx-webserver
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Remove Passphrase from Private Key</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/remove-passphrase-from-private-key/</link>
+      <pubDate>Sun, 07 Jun 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/remove-passphrase-from-private-key/</guid>
+      <description>
+        
+          
+            1openssl rsa -in privateKey.pem -out newPrivateKey.pem 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>ssllabs.com test says that there&#39;s chain issues (Incorrect order, Extra certs)</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/chain-issues-ssllabs/</link>
+      <pubDate>Sun, 07 Jun 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/chain-issues-ssllabs/</guid>
+      <description>
+        
+          
+            This could be an incorrect use of certificates. Make sure to use the following (translate to nginx if you&#39;re not using apache)
+1SSLCertificateFile /etc/letsencrypt/live/example.com/cert.pem 2SSLCertificateKeyFile /etc/letsencrypt/live/example.com/privkey.pem 3Include /etc/letsencrypt/options-ssl-apache.conf 4SSLCertificateChainFile /etc/letsencrypt/live/example.com/chain.pem In my case, the issue was on SSLCertificateChainFile. Instead of using &amp;quot;chain.pem&amp;quot;, I incorrectly used &amp;quot;fullchain.pem&amp;quot;.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>TLS Best Practices</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/tls-best-practices/</link>
+      <pubDate>Sun, 07 Jun 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/tls-best-practices/</guid>
+      <description>
+        
+          
+            https://github.com/ssllabs/research/wiki/SSL-and-TLS-Deployment-Best-Practices
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Unencrypt Private Key</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/unencrypt-private-key/</link>
+      <pubDate>Sun, 07 Jun 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/unencrypt-private-key/</guid>
+      <description>
+        
+          
+            1openssl rsa -in encrypted-private.key -out non-encrypted-private.key 2Enter pass phrase for encrypted-private.key: 3writing RSA key See https://knowledge.digicert.com/solution/SO5292.html
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Weak Deffie-Hellman and a B rating in SSL Labs Test</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/weak-deffie-hellman-ratedb-ssllabs/</link>
+      <pubDate>Sun, 07 Jun 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/weak-deffie-hellman-ratedb-ssllabs/</guid>
+      <description>
+        
+          
+            You can fix it by creating .a &#39;dhparam&#39; file as follows in nginx:
+1cd /etc/ssl/certs 2openssl dhparam -dsaparam -out ./dhparam.pem 4096 NOTE: &amp;quot;-dsaparam&amp;quot; is significant. Otherwise, it would take creation of dhparam.pem almost 24hours or more. See https://security.stackexchange.com/questions/95178/diffie-hellman-parameters-still-calculating-after-24-hours
+then add this to nginx config
+1ssl_dhparam /etc/ssl/certs/dhparam.pem; 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Wildcard LetsEncrypt</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/wildcard-letsencrypt/</link>
+      <pubDate>Sun, 07 Jun 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/wildcard-letsencrypt/</guid>
+      <description>
+        
+          
+            1yum install certbot.noarch -y 234certbot -d *.example.com \ 5--manual \ 6--preferred-challenges \ 7dns certonly \ 8--server https://acme-v02.api.letsencrypt.org/directory 910... 11... 12create the TXT DNS record NOTE: In creating the cert, make sure to wait for 5minutes or better check in another terminal session if the txt record is now visible. Otherwise, cert creation will fail.
+Some details in https://wicowen.github.io/2018-0315-1400-Enable-Lets-encrypt-wildcard-certificate-in-CentOS-7/
+In Ubuntu/Debian check https://medium.com/@saurabh6790/generate-wildcard-ssl-certificate-using-lets-encrypt-certbot-273e432794d7
+130 2 * * * /usr/bin/certbot renew &amp;gt;&amp;gt; /var/log/letsencrypt-renew.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

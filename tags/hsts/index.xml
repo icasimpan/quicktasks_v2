@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>hsts on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/hsts/</link>
+    <description>Recent content in hsts on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Fri, 10 Jul 2020 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/hsts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Apache HSTS</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/apache-hsts/</link>
+      <pubDate>Fri, 10 Jul 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/apache-hsts/</guid>
+      <description>
+        
+          
+            When a user visits your website, the above header will load first and the expiration time is 2 years (63072000 in seconds).
+1# Optionally load the headers module: 2LoadModule headers_module modules/mod_headers.so 3&amp;lt;VirtualHost 67.89.123.45:443&amp;gt; 4Header always set Strict-Transport-Security “max-age=63072000; includeSubdomains;” 5&amp;lt;/VirtualHost&amp;gt; 6... 7... 8... 9&amp;lt;VirtualHost *:80&amp;gt; 10[…] 11ServerName example.com 12Redirect permanent / https://example.com/ 13&amp;lt;/VirtualHost&amp;gt; More details in https://medium.com/@sslsecurity/how-to-enable-hsts-on-apache-nginx-and-lighttpd-8b0c64155911
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Nginx HSTS</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/nginx-hsts/</link>
+      <pubDate>Fri, 10 Jul 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/nginx-hsts/</guid>
+      <description>
+        
+          
+            Update the following line of code in config file’s server Block.
+1add_header Strict-Transport-Security “max-age=63072000; includeSubdomains; “; Restart the NGINX server.
+More details in https://medium.com/@sslsecurity/how-to-enable-hsts-on-apache-nginx-and-lighttpd-8b0c64155911
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

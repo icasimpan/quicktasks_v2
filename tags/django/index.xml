@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>django on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/django/</link>
+    <description>Recent content in django on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Sun, 13 Feb 2022 23:17:11 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/django/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Django Admin Basics</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/django-admin-basics/</link>
+      <pubDate>Sun, 13 Feb 2022 23:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/django-admin-basics/</guid>
+      <description>
+        
+          
+            Do the Migration 1python3 manage.py makemigrations 2python3 manage.py migrate Create the Admin Account 1python3 manage.py createsuperuser Run server 1python3 manage.py runserver Visit http://127.0.0.1:8000/admin and use the account created earlier.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Basic Django Hello World</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/basic-django-hello-world/</link>
+      <pubDate>Sat, 12 Feb 2022 23:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/basic-django-hello-world/</guid>
+      <description>
+        
+          
+            By now, you should now have a basic django skeleton site as shown in Starting Django.
+Here&#39;s how you create a basic site that now says &amp;quot;Hello World&amp;quot;
+Create the App Inside your basic skeleton site, run the command:
+1~$ python3 manage.py startapp myapp Server file structure of current directory would now be as follows:
+1db.sqlite3 2manage.py 3myapp/ ## &amp;lt;&amp;lt; new app 4mysite/ 5mysite/__init__.py 6mysite/asgi.py 7mysite/settings.py 8mysite/urls.py 9mysite/wsgi.py Add App to Installed Apps Edit the file mysite/settings.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Django Site Structure</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/django-site-structure/</link>
+      <pubDate>Sat, 12 Feb 2022 23:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/django-site-structure/</guid>
+      <description>
+        
+          
+            It is typyically as follows:
+1+- Hello-World &amp;lt;-- Project Root 2| | 3| +-- db.sqlite3 &amp;lt;-- Database 4| +-- manage.py &amp;lt;-- Management Tool 5| +-- myapp/ &amp;lt;-- Custom App 6| +-- forum/ &amp;lt;-- Custom App 7| +-- myadmin/ &amp;lt;-- Custom App 8| +-- mysite/ &amp;lt;-- Project Package 9| 10+- venv &amp;lt;-- virtual environment (Django + Python) Each custom app is a project feature.
+Default content for new &amp;quot;app&amp;quot;
+1myapp 2| 3+-- __init__.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Starting Django</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/starting-django/</link>
+      <pubDate>Fri, 11 Feb 2022 23:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/starting-django/</guid>
+      <description>
+        
+          
+            Setup venv 1~$ python3 -m venv venv 2~$ source venv/bin/activate Install Django (If not yet installed, otherwise skip) 1~$ pip install django Create the skeleton of the site 1~$ django-admin startproject mysite . Server file structure of current directory would be as follows:
+1manage.py 2mysite 3mysite/__init__.py 4mysite/asgi.py 5mysite/settings.py 6mysite/urls.py 7mysite/wsgi.py Run server 1python3 manage.py runserver Visit http://127.0.0.1:8000 or whatever is shown after running the server.
+At this point, &amp;quot;db.sqlite3&amp;quot; would be added (sqlite is the default DB).
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

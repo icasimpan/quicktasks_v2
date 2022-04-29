@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>d8 on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/d8/</link>
+    <description>Recent content in d8 on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Tue, 16 Jun 2020 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/d8/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Drupal User Blocked in D7</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/drupal-user-blocked-in-d7/</link>
+      <pubDate>Tue, 16 Jun 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/drupal-user-blocked-in-d7/</guid>
+      <description>
+        
+          
+            How to reset user after being blocked (d7 and works in D8 as well).
+1MySQL&amp;gt; delete from flood where identifier=&amp;lt;uid&amp;gt;; To get the uid, search as follows:
+1MySQL&amp;gt; select uid, name from users where name like &amp;#39;%NameHere%&amp;#39;\G; Details in https://www.drupal.org/node/1023440
+NOTE: Observed to work as well in D8 with some adjustments to checking the uid which seems to be in users_data already.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Drupal 8 Error Code 1 in Drupal Entity Updates</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/error-code1-in-drupal-entity-updates/</link>
+      <pubDate>Sat, 18 Jan 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/error-code1-in-drupal-entity-updates/</guid>
+      <description>
+        
+          
+            At the end of composer install, the following was shown:
+1In UpdateDBCommands.php line 109: 23Drupal removed its automatic entity-updates API in 8.7. See https://www.dru 4pal.org/node/3034742. 567entity:updates [--cache-clear [CACHE-CLEAR]] [--no-cache-clear] [-h|--help] [-q|--quiet] [-v|vv|vvv|--verbose] [-V|--version] [--ansi] [--no-ansi] [-n|--no-interaction] [-d|--debug] [-y|--yes] [--no] [--remote-host REMOTE-HOST] [--remote-user REMOTE-USER] [-r|--root ROOT] [-l|--uri URI] [--simulate] [--pipe] [-D|--define DEFINE] [--notify [NOTIFY]] [--druplicon] [--xh-link XH-LINK] [--] &amp;lt;command&amp;gt; 89Script sh scripts/composer/updates.sh handling the drupal-updates event returned with error code 1 10Script @drupal-updates was called via post-install-cmd This is just a info message and not an error.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Drupal 8: Broken Web UI</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/drupal8-broken-webui/</link>
+      <pubDate>Sat, 21 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/drupal8-broken-webui/</guid>
+      <description>
+        
+          
+            Most probably caused by CSS/JS Aggreggation. Disable it by doing the following:
+Can edit settings.php - add the following:
+1$config[&amp;#39;system.performance&amp;#39;][&amp;#39;css&amp;#39;][&amp;#39;preprocess&amp;#39;] = FALSE; 2$config[&amp;#39;system.performance&amp;#39;][&amp;#39;js&amp;#39;][&amp;#39;preprocess&amp;#39;] = FALSE; In Drupal Admin
+-site-/admin/config/development/performance
+Uncheck two checkboxes:
+ Aggregate CSS files Aggregate JavaScript files  Reference: https://www.drupal.org/forum/support/post-installation/2017-04-02/disabling-caching-cssjs-aggregation
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Drupal 8: Entities neeeds to be deleted before importing error</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/drupal8-entities-needs-deleted-before-import/</link>
+      <pubDate>Sat, 21 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/drupal8-entities-needs-deleted-before-import/</guid>
+      <description>
+        
+          
+            The following was seen during configuration import (drush cim)
+1The import failed due to the following reasons: 2Entities exist of type &amp;lt;em class=&amp;#34;placeholder&amp;#34;&amp;gt;Shortcut link&amp;lt;/em&amp;gt; and &amp;lt;em class=&amp;#34;placeholder&amp;#34;&amp;gt;Shortcut set&amp;lt;/em&amp;gt; &amp;lt;em class=&amp;#34;placeholder&amp;#34;&amp;gt;Default&amp;lt;/em&amp;gt;. These entities need to 3be deleted before importing. Fix by running this:
+1drush ev &amp;#39;\Drupal::entityManager()-&amp;gt;getStorage(&amp;#34;shortcut_set&amp;#34;)-&amp;gt;load(&amp;#34;default&amp;#34;)-&amp;gt;delete();&amp;#39; Reference: https://www.drupal.org/forum/support/post-installation/2015-12-20/problem-during-import-configuration
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Drupal 8: Site UUID in source storage does not match the target storage</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/drupal8-site-uuid-in-source-storage-does-not-match-the-target-storage/</link>
+      <pubDate>Mon, 09 Apr 2018 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/drupal8-site-uuid-in-source-storage-does-not-match-the-target-storage/</guid>
+      <description>
+        
+          
+            Problem
+You encountered this error when running &#39;drush cim&#39;:
+1Site UUID in source storage does not match the target storage. As mentioned, UUID no longer match. To fix, get the UUID in config/sync directory, something like below:
+1awk &amp;#39;{for (I=1;I&amp;lt;=NF;I++) if ($I == &amp;#34;uuid:&amp;#34;) {print $(I+1)};}&amp;#39; sites/default/config/sync/system.site.yml and assuming you get this value:
+1d5835485-ed5e-433a-b782-41eca3ef7727 Set that to current installation as follows:
+1drush cset system.site uuid d5835485-ed5e-433a-b782-41eca3ef7727 -y Rerun &#39;drush cim&#39;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Reinstall Drupal8</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/reinstall-drupal8/</link>
+      <pubDate>Mon, 09 Apr 2018 00:12:49 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/reinstall-drupal8/</guid>
+      <description>
+        
+          
+            Empty the files directory. Replace the settings.php file with a copy of the default.settings.php file. Add write permissions to the settings.php file. Drop all tables in the database. Reinstall the site on http://yoursite.com/core/install.php.  Ref http://dribbit.eu/drupal-8/reinstall-drupal-8
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Drupal8 Install via Composer</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/drupal8-install-via-composer/</link>
+      <pubDate>Mon, 09 Apr 2018 00:09:39 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/drupal8-install-via-composer/</guid>
+      <description>
+        
+          
+            NOTE:
+ Noticed some memory issue during installation on a VM with 2GB RAM, so if it happens to you, just augment with swap file.  1cd /var/www/sites 2composer create-project drupal-composer/drupal-project:8.x yoursite.example.com --stability dev --no-interaction 3../vendor/bin/drush site-install --site-name=&amp;#34;Drupal Title Here&amp;#34; --db-url=mysql://yourDBA:yourPASS@localhost/yourDB --account-mail=admin@example.com --account-pass=acountPassw0RD -y 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Drupal8 Manual Install via Drush</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/drupal8-manual-install-via-drush/</link>
+      <pubDate>Mon, 09 Apr 2018 00:09:39 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/drupal8-manual-install-via-drush/</guid>
+      <description>
+        
+          
+            NOTE:
+ Per https://www.drupal.org/project/drupal/releases/8.4.0, drupal8.4.x needs drush 8.1.12+ Method works but has theme issue. Better to use composer method instead.   cd /var/www/sites/yourdrupal.com/ drush dl drupal-8 mv drupal-8.4.5 docroot composer install composer update composer require drush/drush drush si --db-url=&#39;mysql://yourDBA:yourPASS@127.0.0.1/yourDB&#39;  Steps 4, 5, 6 are mandatory per site. Some reference for drush install of drupal8 in https://drupal.stackexchange.com/questions/130680/downloading-core-via-command-line
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

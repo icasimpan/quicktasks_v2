@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>database on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/database/</link>
+    <description>Recent content in database on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Tue, 15 Feb 2022 23:17:11 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/database/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Check Tables in SQLite</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/check-tables-in-sqlite/</link>
+      <pubDate>Tue, 15 Feb 2022 23:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/check-tables-in-sqlite/</guid>
+      <description>
+        
+          
+            Open a database 1sqlite&amp;gt; .open test.db Show tables 1sqlite&amp;gt;.table 2n Shows that there is only 1 table named n.
+Check table schema 1sqlite&amp;gt; .schema 2CREATE TABLE n (id INTEGER PRIMARY KEY,f TEXT,l TEXT); Check contents of a table It&#39;s just the usual sql query commands as expected
+1sqlite&amp;gt; select * from n; 21|john|smith Quit the sqlite command prompt 1sqlite&amp;gt; .quite Check for other command not covered above in sqlite.org website
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Dump MySQL Database but Skip Some Table(s)</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/dump-database-skip-some-table/</link>
+      <pubDate>Sun, 24 Nov 2019 12:38:49 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/dump-database-skip-some-table/</guid>
+      <description>
+        
+          
+            1mysqldump -u&amp;lt;username&amp;gt; -p&amp;lt;password&amp;gt; --no-create-db myDB --ignore-table=myDB.table1 --ignore-table=myDB.table3-h localhost &amp;gt; mysql.backup See https://tecadmin.net/tutorial/mysql/skip-tables-in-mysqldump/
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Where is the database config </title>
+      <link>https://ismael.casimpan.com/quicktasks/post/where-is-db-config/</link>
+      <pubDate>Sat, 28 Sep 2019 23:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/where-is-db-config/</guid>
+      <description>
+        
+          
+            1wp-config.php 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Dump MySQL Database</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/dump-mysql-database/</link>
+      <pubDate>Mon, 15 Oct 2018 12:38:49 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/dump-mysql-database/</guid>
+      <description>
+        
+          
+            1mysqldump -u&amp;lt;username&amp;gt; -p&amp;lt;password&amp;gt; --no-create-db myDB -h localhost &amp;gt; mysql.backup That way, it would strip the original database name and NOT become a problem when importing to another database name. See https://stackoverflow.com/questions/30835874/how-to-avoid-use-database-statement-on-mysqldump-backups
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Drush: Drop Mysql Tables Without Deleting Database</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/drush-drop-mysql-tables-without-deleting-database/</link>
+      <pubDate>Mon, 09 Apr 2018 00:21:46 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/drush-drop-mysql-tables-without-deleting-database/</guid>
+      <description>
+        
+          
+            In drupal root:
+1drush sql-drop 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Acquia: Full Path to Database Backups Made via GUI</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/acquia-full-path-to-database-backups/</link>
+      <pubDate>Mon, 09 Apr 2018 00:20:31 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/acquia-full-path-to-database-backups/</guid>
+      <description>
+        
+          
+            From CLI, ssh to specific server and go to:
+1/mnt/files/[site].[dev | test | prod]/backups/ 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Restore Database via Drush</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/restore-database-via-drush/</link>
+      <pubDate>Mon, 09 Apr 2018 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/restore-database-via-drush/</guid>
+      <description>
+        
+          
+            1drush sqlc &amp;lt; database.sql 
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

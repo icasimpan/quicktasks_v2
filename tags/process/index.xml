@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>process on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/process/</link>
+    <description>Recent content in process on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Tue, 24 Sep 2019 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/process/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Check All Running Docker Process</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/check-all-running-docker-process/</link>
+      <pubDate>Tue, 24 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/check-all-running-docker-process/</guid>
+      <description>
+        
+          
+            1docker ps -a 
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

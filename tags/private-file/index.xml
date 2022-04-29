@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>private-file on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/private-file/</link>
+    <description>Recent content in private-file on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Fri, 17 Apr 2020 23:50:10 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/private-file/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Failed to open stream: DrupalTemporaryStreamWrapper::stream_open</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/failed-to-open-stream-drupaltemporarystreamwrapperstream/</link>
+      <pubDate>Fri, 17 Apr 2020 23:50:10 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/failed-to-open-stream-drupaltemporarystreamwrapperstream/</guid>
+      <description>
+        
+          
+            From CLI
+This error is shown:
+1failed to open stream: &amp;#34;DrupalTemporaryStreamWrapper::stream_open&amp;#34; call failed file.inc:1983 Solution
+Seems to be an issue with the temp file. Check &amp;quot;drush st&amp;quot; and confirm if the temp file is still accessible.
+This gives some hints on how to set the &amp;quot;temp and private files&amp;quot; in drupal setttings https://www.drupal.org/forum/support/installing-drupal/2011-03-01/failed-to-open-stream-drupaltemporarystreamwrapperstream#comment-4258986
+However, my test showed using &amp;quot;/tmp&amp;quot; doesn&#39;t seem to reflected in drupal. What works is adding the full path, something like this
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

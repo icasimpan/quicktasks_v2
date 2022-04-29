@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>postfix on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/postfix/</link>
+    <description>Recent content in postfix on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Wed, 11 Mar 2020 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/postfix/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Allow Postfix to Send Mail to Anyone</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/postfix-sending-to-anyone/</link>
+      <pubDate>Wed, 11 Mar 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/postfix-sending-to-anyone/</guid>
+      <description>
+        
+          
+            in /etc/postfix/main.cf, change:
+1inet_interfaces = localhost to
+1inet_interfaces = all And restart postfix accordingly.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Cannot Send Email To Own Domain in Postfix</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/cannot-send-email-to-own-domain/</link>
+      <pubDate>Sat, 28 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/cannot-send-email-to-own-domain/</guid>
+      <description>
+        
+          
+            vi /etc/postfix/main.cf remove the domain  1... 2... 3#mydestination = example.com, localhost.com, localhost 4mydestination = localhost 5... 6... Then restart postfix:
+1/etc/init.d/postix restart See some further discussion in https://www.digitalocean.com/community/questions/why-won-t-postfix-deliver-mail-to-own-domain
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Check Queue Content in Postfix</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/check-queue-contents/</link>
+      <pubDate>Sat, 28 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/check-queue-contents/</guid>
+      <description>
+        
+          
+            1root@example~# postqueue -p 2Mail queue is empty 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Mail Encryption in Postfix</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/mail-encryption/</link>
+      <pubDate>Sat, 28 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/mail-encryption/</guid>
+      <description>
+        
+          
+            in /etc/postfix/main.cf, add:
+1smtpd_tls_security_level = may 2smtp_tls_security_level = may 3smtp_tls_loglevel = 1 4smtpd_tls_loglevel = 1 Details from From http://blog.snapdragon.cc/2013/07/07/setting-postfix-to-encrypt-all-traffic-when-talking-to-other-mailservers/
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Eliminate Queued Mails in Postfix</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/eliminate-queued-mails-postfix/</link>
+      <pubDate>Sat, 21 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/eliminate-queued-mails-postfix/</guid>
+      <description>
+        
+          
+            1root@example~# postsuper -d ALL 2postsuper: Deleted: 7966 messages 
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

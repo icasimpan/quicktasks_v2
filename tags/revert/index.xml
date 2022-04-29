@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>revert on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/revert/</link>
+    <description>Recent content in revert on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Sun, 08 Apr 2018 23:17:11 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/revert/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Reverting a commit</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/reverting-a-commit/</link>
+      <pubDate>Sun, 08 Apr 2018 23:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/reverting-a-commit/</guid>
+      <description>
+        
+          
+            Scenario: A PR has been merged and further tests found out that it breaks the build. What do you do?
+1git checkout -b to-revert-commits 2git revert &amp;lt;sha-to-remove&amp;gt; 3git push -u origin to-revert-commits 45## create a Pull Request and have it reviewed and merged by others. 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Undo almost anything in git</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/undo-almost-anything-in-git/</link>
+      <pubDate>Sun, 08 Apr 2018 23:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/undo-almost-anything-in-git/</guid>
+      <description>
+        
+          
+            See https://github.com/blog/2019-how-to-undo-almost-anything-with-git
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

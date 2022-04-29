@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>blockinfile on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/blockinfile/</link>
+    <description>Recent content in blockinfile on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Sat, 21 Sep 2019 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/blockinfile/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>blockinfline module</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/blockinfline-module/</link>
+      <pubDate>Sat, 21 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/blockinfline-module/</guid>
+      <description>
+        
+          
+            You need to add a &amp;quot;marker&amp;quot; in order NOT to overwrite current content.
+For example usage, see github.com/promet/pstools.git and head over to promet-ansible branch &amp;amp; ansible-promet-apacheconfig/tasks/main.yml
+Syntax guide https://docs.ansible.com/ansible/latest/modules/blockinfile_module.html
+Some tutorial online http://www.mydailytutorials.com/ansible-blockinfile-module-adding-multiple-lines/
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

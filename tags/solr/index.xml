@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>solr on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/solr/</link>
+    <description>Recent content in solr on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Fri, 21 Feb 2020 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/solr/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Drupal Can&#39;t Connect to Local Solr Server</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/drupal-cant-connect-solr-server/</link>
+      <pubDate>Fri, 21 Feb 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/drupal-cant-connect-solr-server/</guid>
+      <description>
+        
+          
+            Solr is already up and accessible from browser and within the drupal server but when connected through proper drupal admin settings, it says cannot connect to server.
+Solution is to create solr core. See https://ismael.casimpan.com/quicktasks-solr/post/create-solr-core-with-config/ or https://ismael.casimpan.com/quicktasks-solr/post/creating-solr-core/ depending on your situation.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Create Solr Core with Config</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/create-solr-core-with-config/</link>
+      <pubDate>Wed, 25 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/create-solr-core-with-config/</guid>
+      <description>
+        
+          
+            In the example below, &amp;quot;drupal_solr_conf&amp;quot; is in /var/www/sites/example.com
+1sudo su solr 2cd /var/www/sites/example.com 3/opt/solr/bin/solr create_core -c upd_event -d drupal_solr_conf 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Creating Solr Core</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/creating-solr-core/</link>
+      <pubDate>Wed, 25 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/creating-solr-core/</guid>
+      <description>
+        
+          
+            1icasimpan@example.local:/opt/solr/bin$ sudo su solr -s /bin/bash 2solr@example.local:/opt/solr-6.6.2/bin$ /opt/solr/bin/solr create -c sample -p 8983 34Copying configuration to new core instance directory: 5/var/solr/data/sample 67Creating new core &amp;#39;sample&amp;#39; using command: 8http://localhost:8983/solr/admin/cores?action=CREATE&amp;amp;name=cmoge&amp;amp;instanceDir=cmoge 910{ 11&amp;#34;responseHeader&amp;#34;:{ 12&amp;#34;status&amp;#34;:0, 13&amp;#34;QTime&amp;#34;:686}, 14&amp;#34;core&amp;#34;:&amp;#34;cmoge&amp;#34;} Then reload from the Web UI in https://example.local:8983/solr and you have the core running.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Define Solr Core in settings.local.php</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/define-solr-core-in-settings/</link>
+      <pubDate>Wed, 25 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/define-solr-core-in-settings/</guid>
+      <description>
+        
+          
+            1$config[&amp;#39;search_api.server.solr_events&amp;#39;][&amp;#39;backend_config&amp;#39;][&amp;#39;connector_config&amp;#39;][&amp;#39;host&amp;#39;] = &amp;#39;68.193.132.102&amp;#39;; 2$config[&amp;#39;search_api.server.solr_events&amp;#39;][&amp;#39;backend_config&amp;#39;][&amp;#39;connector_config&amp;#39;][&amp;#39;port&amp;#39;] = &amp;#39;8983&amp;#39;; 3$config[&amp;#39;search_api.server.solr_events&amp;#39;][&amp;#39;backend_config&amp;#39;][&amp;#39;connector_config&amp;#39;][&amp;#39;core&amp;#39;] = &amp;#39;upd_event&amp;#39;; 4$config[&amp;#39;search_api.server.solr_news&amp;#39;][&amp;#39;backend_config&amp;#39;][&amp;#39;connector_config&amp;#39;][&amp;#39;host&amp;#39;] = &amp;#39;68.193.132.102&amp;#39;; 5$config[&amp;#39;search_api.server.solr_news&amp;#39;][&amp;#39;backend_config&amp;#39;][&amp;#39;connector_config&amp;#39;][&amp;#39;port&amp;#39;] = &amp;#39;8983&amp;#39;; 6$config[&amp;#39;search_api.server.solr_news&amp;#39;][&amp;#39;backend_config&amp;#39;][&amp;#39;connector_config&amp;#39;][&amp;#39;core&amp;#39;] = &amp;#39;upd_news&amp;#39;; 7$config[&amp;#39;search_api.server.solr_search_site&amp;#39;][&amp;#39;backend_config&amp;#39;][&amp;#39;connector_config&amp;#39;][&amp;#39;host&amp;#39;] = &amp;#39;68.193.132.102&amp;#39;; 8$config[&amp;#39;search_api.server.solr_search_site&amp;#39;][&amp;#39;backend_config&amp;#39;][&amp;#39;connector_config&amp;#39;][&amp;#39;port&amp;#39;] = &amp;#39;8983&amp;#39;; 9$config[&amp;#39;search_api.server.solr_search_site&amp;#39;][&amp;#39;backend_config&amp;#39;][&amp;#39;connector_config&amp;#39;][&amp;#39;core&amp;#39;] = &amp;#39;upd_library&amp;#39;; 10$config[&amp;#39;search_api.server.solr_publications&amp;#39;][&amp;#39;backend_config&amp;#39;][&amp;#39;connector_config&amp;#39;][&amp;#39;host&amp;#39;] = &amp;#39;68.193.132.102&amp;#39;; 11$config[&amp;#39;search_api.server.solr_publications&amp;#39;][&amp;#39;backend_config&amp;#39;][&amp;#39;connector_config&amp;#39;][&amp;#39;port&amp;#39;] = &amp;#39;8983&amp;#39;; 12$config[&amp;#39;search_api.server.solr_publications&amp;#39;][&amp;#39;backend_config&amp;#39;][&amp;#39;connector_config&amp;#39;][&amp;#39;core&amp;#39;] = &amp;#39;upd_publication&amp;#39;; As seen above, there&#39;s some config that hooks up drupal&#39;s host/port to solr core.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Reindex Solr in Drupal</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/reindex-solr-in-drupal/</link>
+      <pubDate>Wed, 25 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/reindex-solr-in-drupal/</guid>
+      <description>
+        
+          
+            In Drupal Admin, do the following:
+Config &amp;gt; Search and Metadata &amp;gt; Search API
+Click on the index name (e.g. Events)
+ Image not found  a.warning-link { color: inherit !important; font-weight: inherit !important; text-decoration: underline !important; border-bottom: none !important; }  Web path: https://ismael.casimpan.com/reindex-solr-drupal/01_search-api.png
+Disk path: static/reindex-solr-drupal/01_search-api.png
+Using Page Bundles: false
+ 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Delete Solr Core</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/delete-solr-core/</link>
+      <pubDate>Sat, 21 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/delete-solr-core/</guid>
+      <description>
+        
+          
+            1cd /opt/solr/bin 2./solr delete -c &amp;lt;solr_core_name&amp;gt; 
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

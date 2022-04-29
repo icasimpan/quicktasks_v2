@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>nodes on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/nodes/</link>
+    <description>Recent content in nodes on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Sun, 28 Jun 2020 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/nodes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Get List of Nodes in Kubernetes</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/list-nodes-in-kubernetes/</link>
+      <pubDate>Sun, 28 Jun 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/list-nodes-in-kubernetes/</guid>
+      <description>
+        
+          
+            1user@example:~$ kubectl get nodes 2NAME STATUS ROLES AGE VERSION 3pool-78osxtl1e3-3f4qg Ready &amp;lt;none&amp;gt; 72m v1.17.5 4pool-78osxtl1e3-3f4qw Ready &amp;lt;none&amp;gt; 71m v1.17.5 
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

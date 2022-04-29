@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>java8 on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/java8/</link>
+    <description>Recent content in java8 on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Sun, 12 Jul 2020 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/java8/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Install Java8 in CentOS6</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/java8-in-centos6/</link>
+      <pubDate>Sun, 12 Jul 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/java8-in-centos6/</guid>
+      <description>
+        
+          
+            NOTE: CentOS6 is ending support by end of 2020.
+https://tecadmin.net/install-java-8-on-centos-rhel-and-fedora/
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Install Java8 in Debian</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/install-java8-debian/</link>
+      <pubDate>Mon, 30 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/install-java8-debian/</guid>
+      <description>
+        
+          
+            1sudo add-apt-repository ppa:webupd8team/java 2sudo apt-get update 3sudo apt-get install oracle-java8-installer More details in https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-get-on-ubuntu-16-04
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

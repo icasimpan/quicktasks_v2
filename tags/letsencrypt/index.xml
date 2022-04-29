@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>letsencrypt on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/letsencrypt/</link>
+    <description>Recent content in letsencrypt on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Wed, 26 Aug 2020 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/letsencrypt/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Delete LetsEncrypt Certificate</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/delete-letsencrypt-certificate/</link>
+      <pubDate>Wed, 26 Aug 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/delete-letsencrypt-certificate/</guid>
+      <description>
+        
+          
+            Given the following cert:
+1root@php73:~# certbot certificates 2Saving debug log to /var/log/letsencrypt/letsencrypt.log 34- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 5Found the following certs: 6Certificate Name: php72.example.com 7Domains: php72.example.com php72.example.net 8Expiry Date: 2020-11-19 01:30:55+00:00 (VALID: 85 days) 9Certificate Path: /etc/letsencrypt/live/php72.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Formerly using nginx, Moving to Apache won&#39;t Renew Cert</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/renew-from-nginx-to-apache/</link>
+      <pubDate>Sun, 07 Jun 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/renew-from-nginx-to-apache/</guid>
+      <description>
+        
+          
+            It&#39;s quite expected that certificate won&#39;t renew as the automation has been broken. What you can do is install the apache version of certbot
+1yum install python-certbot-apache and re-issue the certificate
+1sudo certbot --apache -d www.example.org 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Hardened TLS / SSL Cert</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/hardened-ssl-cert/</link>
+      <pubDate>Sun, 07 Jun 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/hardened-ssl-cert/</guid>
+      <description>
+        
+          
+            Apache
+1SSLCipherSuite EECDH+AESGCM:EDH+AESGCM:AES256+EECDH:AES256+EDH:ECDHE-RSA-AES128-GCM-SHA384:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA128:DHE-RSA-AES128-GCM-SHA384:DHE-RSA-AES128-GCM-SHA256:DHE-RSA-AES128-GCM-SHA128:ECDHE-RSA-AES128-SHA384:ECDHE-RSA-AES128-SHA128:ECDHE-RSA-AES128-SHA:ECDHE-RSA-AES128-SHA:DHE-RSA-AES128-SHA128:DHE-RSA-AES128-SHA128:DHE-RSA-AES128-SHA:DHE-RSA-AES128-SHA:ECDHE-RSA-DES-CBC3-SHA:EDH-RSA-DES-CBC3-SHA:AES128-GCM-SHA384:AES128-GCM-SHA128:AES128-SHA128:AES128-SHA128:AES128-SHA:AES128-SHA:DES-CBC3-SHA:HIGH:!aNULL:!eNULL:!EXPORT:!DES:!MD5:!PSK:!RC4 2SSLProtocol All -SSLv2 -SSLv3 3SSLHonorCipherOrder On 4Header always set Strict-Transport-Security &amp;#34;max-age=63072000; includeSubdomains; preload&amp;#34; 5Header always set X-Frame-Options SAMEORIGIN 6Header always set X-Content-Type-Options nosniff 7# Requires Apache &amp;gt;= 2.4 8SSLCompression off 9SSLSessionTickets Off 10SSLUseStapling on 11SSLStaplingCache &amp;#34;shmcb:logs/stapling-cache(150000)&amp;#34; Nginx
+1ssl_ciphers &amp;#34;EECDH+AESGCM:EDH+AESGCM:AES256+EECDH:AES256+EDH:ECDHE-RSA-AES128-GCM-SHA384:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA128:DHE-RSA-AES128-GCM-SHA384:DHE-RSA-AES128-GCM-SHA256:DHE-RSA-AES128-GCM-SHA128:ECDHE-RSA-AES128-SHA384:ECDHE-RSA-AES128-SHA128:ECDHE-RSA-AES128-SHA:ECDHE-RSA-AES128-SHA:DHE-RSA-AES128-SHA128:DHE-RSA-AES128-SHA128:DHE-RSA-AES128-SHA:DHE-RSA-AES128-SHA:ECDHE-RSA-DES-CBC3-SHA:EDH-RSA-DES-CBC3-SHA:AES128-GCM-SHA384:AES128-GCM-SHA128:AES128-SHA128:AES128-SHA128:AES128-SHA:AES128-SHA:DES-CBC3-SHA:HIGH:!aNULL:!eNULL:!EXPORT:!DES:!MD5:!PSK:!RC4&amp;#34;; 2ssl_protocols TLSv1 TLSv1.1 TLSv1.2; 3ssl_prefer_server_ciphers on; 4ssl_session_cache shared:SSL:10m; 5# &amp;#39;always&amp;#39; requires nginx &amp;gt;= 1.7.5, see http://nginx.org/en/docs/http/ngx_http_headers_module.html#add_header 6add_header Strict-Transport-Security &amp;#34;max-age=63072000; includeSubdomains; preload&amp;#34; always; 7add_header X-Frame-Options SAMEORIGIN always; 8add_header X-Content-Type-Options nosniff always; 9ssl_session_tickets off; 10ssl_stapling on; # Requires nginx &amp;gt;= 1.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Install LetsEncrypt in Ubuntu</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/install-letsencrypt-ubuntu/</link>
+      <pubDate>Sun, 07 Jun 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/install-letsencrypt-ubuntu/</guid>
+      <description>
+        
+          
+            1sudo add-apt-repository ppa:certbot/certbot 2sudo apt-get update 3sudo apt-get install python-certbot-apache 4sudo certbot --apache -d one.example.com -d two.example.com If the above don&#39;t work, try this:
+1sudo apt-get update 2sudo apt-get install software-properties-common 3sudo add-apt-repository universe 4sudo add-apt-repository ppa:certbot/certbot 5sudo apt-get update 6sudo apt-get install certbot python-certbot-nginx Put the following in root crontab (sudo crontab -e)
+130 2 * * * /usr/bin/certbot renew &amp;gt;&amp;gt; /var/log/letsencrypt-renew.log Some details in https://www.digitalocean.com/community/tutorials/how-to-secure-apache-with-let-s-encrypt-on-ubuntu-16-04
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Manually generating LetsEncrypt certificate</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/manually-generate-letsencryp-cert/</link>
+      <pubDate>Sun, 07 Jun 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/manually-generate-letsencryp-cert/</guid>
+      <description>
+        
+          
+            In cases where you don&#39;t want to disrupt current production server, this is a good approach
+1mkdir /opt/letsencrypt 2cd /opt/letsencrypt 3wget https://dl.eff.org/certbot-auto 4chmod a+x certbot-auto 5sudo ./certbot-auto --apache certonly Sample run as follows:
+1[root@687elmp01 letsencrypt]# sudo ./certbot-auto --apache certonly 2Saving debug log to /var/log/letsencrypt/letsencrypt.log 3Plugins selected: Authenticator apache, Installer apache 4Enter email address (used for urgent renewal and security notices) (Enter &amp;#39;c&amp;#39; to 5cancel): me@example.com 67------------------------------------------------------------------------------- 8Please read the Terms of Service at 9https://letsencrypt.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Oneline Letsencrypt Cert Creation</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/oneline-letsencrypt-cert-creation/</link>
+      <pubDate>Sun, 07 Jun 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/oneline-letsencrypt-cert-creation/</guid>
+      <description>
+        
+          
+            1certbot --apache -d sub1.example.com -d sub2.example.com --agree-tos -m you@example.com --redirect If you&#39;re on nginx, use --nginx
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Wildcard LetsEncrypt</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/wildcard-letsencrypt/</link>
+      <pubDate>Sun, 07 Jun 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/wildcard-letsencrypt/</guid>
+      <description>
+        
+          
+            1yum install certbot.noarch -y 234certbot -d *.example.com \ 5--manual \ 6--preferred-challenges \ 7dns certonly \ 8--server https://acme-v02.api.letsencrypt.org/directory 910... 11... 12create the TXT DNS record NOTE: In creating the cert, make sure to wait for 5minutes or better check in another terminal session if the txt record is now visible. Otherwise, cert creation will fail.
+Some details in https://wicowen.github.io/2018-0315-1400-Enable-Lets-encrypt-wildcard-certificate-in-CentOS-7/
+In Ubuntu/Debian check https://medium.com/@saurabh6790/generate-wildcard-ssl-certificate-using-lets-encrypt-certbot-273e432794d7
+130 2 * * * /usr/bin/certbot renew &amp;gt;&amp;gt; /var/log/letsencrypt-renew.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

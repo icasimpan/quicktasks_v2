@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>aggregation on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/aggregation/</link>
+    <description>Recent content in aggregation on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Fri, 18 Sep 2020 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/aggregation/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CSS/JS Aggregation in Drupal</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/css-js-aggregation-drupal/</link>
+      <pubDate>Fri, 18 Sep 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/css-js-aggregation-drupal/</guid>
+      <description>
+        
+          
+            When you&#39;re doing development, most of the time, you don&#39;t want to minify css/js. Here&#39;s how you the respective settings:
+settings.local.php (drupal 7)
+1$conf[&amp;#39;preprocess_css&amp;#39;] = FALSE; 2$conf[&amp;#39;preprocess_js&amp;#39;] = FALSE; settings.local.php (drupal 8 &amp;amp; 9)
+1$config[&amp;#39;system.performance&amp;#39;][&amp;#39;css&amp;#39;][&amp;#39;preprocess&amp;#39;] = FALSE; 2$config[&amp;#39;system.performance&amp;#39;][&amp;#39;js&amp;#39;][&amp;#39;preprocess&amp;#39;] = FALSE; drush (drupal 7)
+1drush vset preprocess_js 0 --yes 2drush vset preprocess_css 0 --yes drush (drupal 8 &amp;amp; 9)
+1drush -y config-set system.performance css.preprocess 0 2drush -y config-set system.performance js.preprocess 0 See https://drupal.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>permission-denied on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/permission-denied/</link>
+    <description>Recent content in permission-denied on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Thu, 02 Apr 2020 18:36:44 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/permission-denied/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Permission denied (publickey,gssapi-keyex,gssapi-with-mic)</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/permission-denied/</link>
+      <pubDate>Thu, 02 Apr 2020 18:36:44 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/permission-denied/</guid>
+      <description>
+        
+          
+            1[icasimpan@icasimpan ~]$ ssh icasimpan@204.48.29.45 2The authenticity of host &amp;#39;204.48.29.45 (204.48.29.45)&amp;#39; can&amp;#39;t be established. 3ECDSA key fingerprint is SHA256:/g89dBppp6ir72D3dUvHFm4de2k3NPtYKOOfNkUkFQQ. 4ECDSA key fingerprint is MD5:58:41:92:ed:e1:55:52:3f:69:6a:e5:27:7a:dd:98:6a. 5Are you sure you want to continue connecting (yes/no)? yes 6Warning: Permanently added &amp;#39;204.48.29.45&amp;#39; (ECDSA) to the list of known hosts. 7Permission denied (publickey,gssapi-keyex,gssapi-with-mic). In both source and destination machine, make sure to edit /etc/ssh/ssh_config and add
+1PasswordAuthentication yes Then restart sshd
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

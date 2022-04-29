@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>symfony on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/symfony/</link>
+    <description>Recent content in symfony on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Sat, 19 Feb 2022 09:17:11 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/symfony/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Links - PHP</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/links-php/</link>
+      <pubDate>Sat, 19 Feb 2022 09:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/links-php/</guid>
+      <description>
+        
+          
+            Here is a curated links of sites that are I think are useful as I learn or relearn PHP, Laravel and Symfony further. Incomplete of course but there&#39;s always the internet. Will add any that are worthy to be linked here. For now, this would suffice. If you think there are links worthy to be added here, let me know in the comment below. Thank you!
+PHP Official Manual  PHP Language Reference PHP Function Reference PHP Features PHP Security  PHP Object Oriented  Object Oriented PHP OOP from php.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

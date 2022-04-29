@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>login on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/login/</link>
+    <description>Recent content in login on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Fri, 01 May 2020 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/login/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Drupal Login Not Found</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/drupal-login-404/</link>
+      <pubDate>Fri, 01 May 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/drupal-login-404/</guid>
+      <description>
+        
+          
+            When you login to drupal via https://example.com/user and it is not found, try to check for the following:
+ Does it have .htaccess if in an apache web server? If in nginx, is the correct virtualhost rules in place? Does documentroot in apache have the needed directives to activate .htaccess?  Answer that and you will fix the issue. If you feel stuck, read https://www.drupal.org/docs/7/configuring-clean-urls/enable-clean-urls
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>How to Login to DockerHub</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/how-to-login-dockerhub/</link>
+      <pubDate>Tue, 24 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/how-to-login-dockerhub/</guid>
+      <description>
+        
+          
+            1docker login 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Credentials to Pantheon.io git</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/credentials-pantheon-git/</link>
+      <pubDate>Sun, 08 Apr 2018 23:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/credentials-pantheon-git/</guid>
+      <description>
+        
+          
+            Add the email to the Project&#39;s Team. The login credentials is the access to git as well. NOTE: If using Google login, make sure to change password.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

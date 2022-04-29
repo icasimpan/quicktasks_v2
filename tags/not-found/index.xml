@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>not-found on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/not-found/</link>
+    <description>Recent content in not-found on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Sat, 28 Sep 2019 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/not-found/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PHP Class &#39;DOMDocument&#39; not found</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/php-class-domdocument-not-found/</link>
+      <pubDate>Sat, 28 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/php-class-domdocument-not-found/</guid>
+      <description>
+        
+          
+            Sample error
+1[Wed Jan 10 14:56:38.031846 2018] [:error] [pid 9378] [client 115.85.11.98:23443] PHP Fatal error: Class &amp;#39;DOMDocument&amp;#39; not found in /var/www/sites/site.example.com/docroot/core/lib/Drupal/Component/Utility/Html.php on line 286 Solution:
+1apt-get install php5.6-dom See details in https://stackoverflow.com/questions/14395239/class-domdocument-not-found
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

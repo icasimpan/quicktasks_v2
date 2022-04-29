@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>pfs on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/pfs/</link>
+    <description>Recent content in pfs on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Sun, 07 Jun 2020 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/pfs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Perfect Forward Secrecy Fix</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/perfect-forward-secrecy-fix/</link>
+      <pubDate>Sun, 07 Jun 2020 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/perfect-forward-secrecy-fix/</guid>
+      <description>
+        
+          
+            Generate dhparam.pem  1openssl dhparam -out /etc/nginx/ssl/dhparam.pem 4096 Create /etc/nginx/conf.d/perfect-forward-secrecy.conf since all *.conf in /etc/nginx/conf.d:  1ssl_protocols TLSv1.2; 2ssl_prefer_server_ciphers on; 3ssl_ciphers &amp;#34;EECDH+ECDSA+AESGCM EECDH+aRSA+AESGCM EECDH+ECDSA+SHA384 EECDH+ECDSA+SHA256 EECDH+aRSA+SHA384 EECDH+aRSA+SHA256 EECDH+aRSA+RC4 EECDH EDH+aRSA RC4 !aNULL !eNULL !LOW !3DES !MD5 !EXP !PSK !SRP !DSS !MEDIUM&amp;#34;; 45ssl_dhparam /etc/nginx/ssl/dhparam.pem;  Reload nginx
+  Test again using the SSLLabs Tool
+  https://www.howtoforge.com/ssl-perfect-forward-secrecy-in-nginx-webserver
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

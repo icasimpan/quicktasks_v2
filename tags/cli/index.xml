@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>cli on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/cli/</link>
+    <description>Recent content in cli on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Sun, 24 Nov 2019 12:38:49 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/cli/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Dump MySQL Database but Skip Some Table(s)</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/dump-database-skip-some-table/</link>
+      <pubDate>Sun, 24 Nov 2019 12:38:49 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/dump-database-skip-some-table/</guid>
+      <description>
+        
+          
+            1mysqldump -u&amp;lt;username&amp;gt; -p&amp;lt;password&amp;gt; --no-create-db myDB --ignore-table=myDB.table1 --ignore-table=myDB.table3-h localhost &amp;gt; mysql.backup See https://tecadmin.net/tutorial/mysql/skip-tables-in-mysqldump/
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>DB Backup via wp_cli</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/db-backup-in-wp_cli/</link>
+      <pubDate>Sat, 28 Sep 2019 23:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/db-backup-in-wp_cli/</guid>
+      <description>
+        
+          
+            1cd /path/to/wordpress 2wp db export backups/name-of-db-backup.sql 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>How do you know the php.ini used via CLI</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/php.ini-path-via-cli/</link>
+      <pubDate>Sat, 28 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/php.ini-path-via-cli/</guid>
+      <description>
+        
+          
+            1&amp;lt;?php 2$inipath = php_ini_loaded_file(); 3if ($inipath) { 4echo &amp;#39;Loaded php.ini: &amp;#39; . $inipath; 5} else { 6echo &amp;#39;A php.ini file is not loaded&amp;#39;; 7} 8?&amp;gt; or
+1[icasimpan!@example.org ~]$ php -i |grep php.ini 2Configuration File (php.ini) Path =&amp;gt; /etc 3Loaded Configuration File =&amp;gt; /etc/php.ini But not that server and CLI used php.ini could be different. Details in https://stackoverflow.com/questions/14558150/how-to-know-which-php-ini-is-used
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Mcrypt error when running &#39;composer install&#39; from CLI</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/mcrypt-error-composer-install-from-cli/</link>
+      <pubDate>Sat, 28 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/mcrypt-error-composer-install-from-cli/</guid>
+      <description>
+        
+          
+            Verify if mcypt is really installed
+1php -m|grep -i mcrypt Counter-check from phpmyadmin. If it say installed there, issue is that php-cli can&#39;t see mcrypt as a module. Find the mcrypt definition and symlink similar to below:
+1ln -s /etc/php5/mods-available/mcrypt.ini /etc/php5/cli/conf.d/20-mcrypt.ini See details in https://stackoverflow.com/questions/16830405/laravel-requires-the-mcrypt-php-extension
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Server used php.ini from CLI</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/server-php.ini-path/</link>
+      <pubDate>Sat, 28 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/server-php.ini-path/</guid>
+      <description>
+        
+          
+            1echo &amp;#39;&amp;lt;?php phpinfo(); ?&amp;gt;&amp;#39;|php 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Dump MySQL Database</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/dump-mysql-database/</link>
+      <pubDate>Mon, 15 Oct 2018 12:38:49 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/dump-mysql-database/</guid>
+      <description>
+        
+          
+            1mysqldump -u&amp;lt;username&amp;gt; -p&amp;lt;password&amp;gt; --no-create-db myDB -h localhost &amp;gt; mysql.backup That way, it would strip the original database name and NOT become a problem when importing to another database name. See https://stackoverflow.com/questions/30835874/how-to-avoid-use-database-statement-on-mysqldump-backups
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Acquia: Full Path to Database Backups Made via GUI</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/acquia-full-path-to-database-backups/</link>
+      <pubDate>Mon, 09 Apr 2018 00:20:31 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/acquia-full-path-to-database-backups/</guid>
+      <description>
+        
+          
+            From CLI, ssh to specific server and go to:
+1/mnt/files/[site].[dev | test | prod]/backups/ 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Drush ULI: disable automatic open in browser</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/drush-uli-disable-automatic-open-in-browser/</link>
+      <pubDate>Mon, 09 Apr 2018 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/drush-uli-disable-automatic-open-in-browser/</guid>
+      <description>
+        
+          
+            1drush uli --no-browser 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Install Composer</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/install-composer/</link>
+      <pubDate>Mon, 09 Apr 2018 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/install-composer/</guid>
+      <description>
+        
+          
+            1curl -sS https://getcomposer.org/installer | php 2mv composer.phar /usr/local/bin/composer 3ln -s /usr/local/bin/composer /usr/bin/composer 
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

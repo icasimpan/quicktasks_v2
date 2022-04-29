@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>uuid on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/uuid/</link>
+    <description>Recent content in uuid on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Mon, 09 Apr 2018 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/uuid/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Drupal 8: Site UUID in source storage does not match the target storage</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/drupal8-site-uuid-in-source-storage-does-not-match-the-target-storage/</link>
+      <pubDate>Mon, 09 Apr 2018 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/drupal8-site-uuid-in-source-storage-does-not-match-the-target-storage/</guid>
+      <description>
+        
+          
+            Problem
+You encountered this error when running &#39;drush cim&#39;:
+1Site UUID in source storage does not match the target storage. As mentioned, UUID no longer match. To fix, get the UUID in config/sync directory, something like below:
+1awk &amp;#39;{for (I=1;I&amp;lt;=NF;I++) if ($I == &amp;#34;uuid:&amp;#34;) {print $(I+1)};}&amp;#39; sites/default/config/sync/system.site.yml and assuming you get this value:
+1d5835485-ed5e-433a-b782-41eca3ef7727 Set that to current installation as follows:
+1drush cset system.site uuid d5835485-ed5e-433a-b782-41eca3ef7727 -y Rerun &#39;drush cim&#39;
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

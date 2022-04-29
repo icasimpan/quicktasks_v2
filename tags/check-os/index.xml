@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>check-os on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/check-os/</link>
+    <description>Recent content in check-os on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Sat, 21 Sep 2019 00:20:25 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/check-os/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Check OS Type</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/check-os-type/</link>
+      <pubDate>Sat, 21 Sep 2019 00:20:25 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/check-os-type/</guid>
+      <description>
+        
+          
+            1ansible all -m setup -a &amp;#34;filter=ansible_distribution*&amp;#34; more in https://raymii.org/s/tutorials/Ansible_-_Only_if_on_specific_distribution_or_distribution_version.html
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

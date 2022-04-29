@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ignore on IT Quicktasks</title>
+    <link>https://ismael.casimpan.com/quicktasks/tags/ignore/</link>
+    <description>Recent content in ignore on IT Quicktasks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2022, Ismael Casimpan Jr.; All Rights Reserved</copyright>
+    <lastBuildDate>Sun, 08 Apr 2018 23:17:11 +0800</lastBuildDate><atom:link href="https://ismael.casimpan.com/quicktasks/tags/ignore/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ignore Permission Changes</title>
+      <link>https://ismael.casimpan.com/quicktasks/post/ignore-permission-changes/</link>
+      <pubDate>Sun, 08 Apr 2018 23:17:11 +0800</pubDate>
+      
+      <guid>https://ismael.casimpan.com/quicktasks/post/ignore-permission-changes/</guid>
+      <description>
+        
+          
+            1git config core.fileMode false details in https://stackoverflow.com/questions/1580596/how-do-i-make-git-ignore-file-mode-chmod-changes
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>
