@@ -12,3 +12,4 @@ Here is a curated links of sites that are I think are useful as I learn or relea
 * [JQuery Fundamentals](http://jqfundamentals.com/)
 * [ReactJS Chrome Plugin](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi/related?hl=en) - adds a tab in developer tools
 * [Simplilearn: ReactJS Tutorial](https://www.simplilearn.com/tutorials/reactjs-tutorial)
+* [React Tutorial for Beginners](https://ibaslogic.com/react-tutorial-for-beginners/)
