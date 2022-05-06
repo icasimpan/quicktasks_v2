@@ -62,7 +62,7 @@ Try this code:
     $writer->save(CSV_FILENAME);
 ```
 
-Tips: Verify the encoding is "UTF8-BOM" in Notepad++. In bash you can check using this approach: https://ismael.casimpan.com/quicktasks/check-csv-bom-using-bash/
+Tips: Verify the encoding is "UTF8-BOM" in Notepad++. In bash you can check using this approach: https://ismael.casimpan.com/quicktasks/post/check-csv-bom-using-bash/
 
 Reference:
 * [PHPOffice Manual](https://phpspreadsheet.readthedocs.io/en/latest/)
