@@ -15,6 +15,7 @@ Here is a curated links of sites that are I think are useful as I learn or relea
 * [React DevTools](https://fb.me/react-devtools) - For different browsers
 * [Simplilearn: ReactJS Tutorial](https://www.simplilearn.com/tutorials/reactjs-tutorial)
 * [React Tutorial for Beginners](https://ibaslogic.com/react-tutorial-for-beginners/)
+* [Create React App](https://create-react-app.dev/)
 
 # JQuery
 * [JQuery Fundamentals](http://jqfundamentals.com/)
