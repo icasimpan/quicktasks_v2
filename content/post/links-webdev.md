@@ -17,6 +17,7 @@ Here is a curated links of sites that are I think are useful as I learn or relea
 # Front-End Development
 * [Photopea](https://www.photopea.com/) - FREE Photoshop-like tool on the web
 * [Background Removal](https://www.remove.bg/)
+* [Background Removal2](https://www.experte.com/background-remover)
 * [Background Video Editing](https://www.unscreen.com/)
 * [Unsplash StockPhotos: Free](https://unsplash.com/)
 * [Openshot](https://www.openshot.org/) - Opensource video editing
