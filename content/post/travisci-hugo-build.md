@@ -1,3 +1,17 @@
+---
+title: "TravisCI for Hugo Build"
+date: 2022-08-28T10:04:00+08:00
+tags: [ci, travisci, hugo]
+draft: false
+---
+
+Here's the TravisCI yml file I used while this site was still with TravisCI.
+
+It gets the hugo specific version, build the site and commit + push to `gh-pages`.
+
+Just adapt it to your situation and enjoy!
+
+```
 language: python
 
 env:
@@ -33,3 +47,4 @@ install:
 
 script:
     - hugo -s ./
+```
