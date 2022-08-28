@@ -1,4 +1,4 @@
-[![Build status](https://travis-ci.com/icasimpan/quicktasks.svg)](https://travis-ci.com/icasimpan/quicktasks)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/de0dd0af-ac7b-4fcf-85eb-cd60de78dbe5/deploy-status)](https://app.netlify.com/sites/quicktasks-ismael/deploys)
 
 *What is this*
 
@@ -16,7 +16,7 @@ For installation details, refer to https://gohugo.io/getting-started/installing/
 
 2. Clone the project.
 ```
-~$ git clone --recursive https://github.com/icasimpan/quicktasks.git
+~$ git clone --recursive https://github.com/icasimpan/quicktasks.ismael.casimpan.com.git
 ```
 
 3. Add new notes
@@ -30,7 +30,7 @@ For installation details, refer to https://gohugo.io/getting-started/installing/
 ```
 ~$ hugo server
 ```
-It will probably be accessible as http://localhost:1313/quicktasks/
+It will probably be accessible as http://localhost:1313/
 
 7. Commit changes to git
 ```
@@ -38,7 +38,6 @@ It will probably be accessible as http://localhost:1313/quicktasks/
 ~$ git push
 ```
 
-
 *Publish*
 
-Every change is auto-published via TravisCI and becomes accessible as https://ismael.casimpan.com/quicktasks/
+Every change is auto-published in Netlify and becomes accessible from https://quicktasks.ismael.casimpan.com/
