@@ -8,7 +8,6 @@ draft: false
 Sometimes, python modules in pypi.org is outdated a little bit but it's source code has already fixed what you wanted.
 You can install the said module directly using:
 ```
-python setup.py install
+## git clone the module-name from its repo, then
+python -m pip install -e ./module-name
 ```
-
-Reference: https://stackoverflow.com/questions/13270877/how-to-manually-install-a-pypi-module-without-pip-easy-install
