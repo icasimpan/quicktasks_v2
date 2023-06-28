@@ -11,3 +11,7 @@ You can install the said module directly using:
 ## git clone the module-name from its repo, then
 python -m pip install -e ./module-name
 ```
+or in one line (replace the repo accordingly):
+```
+pip install -e git+https://github.com/enzoampil/fastquant.git@master#egg=fastquant
+```
