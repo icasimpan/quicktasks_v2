@@ -5,6 +5,9 @@ tags: [python, virtual-env]
 draft: false
 ---
 
+Best approach in doing development in any language is to have an isolated dev environment.
+In python, we do it this way:
+
 ```
 python3 -m venv env
 source ./env/bin/activate
