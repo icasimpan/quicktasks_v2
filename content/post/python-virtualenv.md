@@ -1,7 +1,7 @@
 ---
 title: "Python Virtualenv"
 date: 2023-06-27T00:20:25+08:00
-tags: [python, virtual-env]
+tags: [python, virtual-env, python-coding]
 draft: false
 ---
 
