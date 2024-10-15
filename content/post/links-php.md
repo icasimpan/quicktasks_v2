@@ -71,7 +71,9 @@ Here is a curated links of sites that are I think are useful as I learn or relea
 * [PHP Security Checker](https://github.com/fabpot/local-php-security-checker)
 * [Friends of PHP](https://github.com/FriendsOfPHP)
 * [Online PHP shell](https://3v4l.org/) - run code in 300+ PHP versions simultaneously
+* [Online PHP sandbox](https://phphub.net/sandbox/) - run PHP code with a MySQL database 
 * [DB Migration using Phinx](https://phinx.org/)
 * [PHP Docker Extensions](https://github.com/mlocati/docker-php-extension-installer)
 * [PsySH](https://psysh.org) - A runtime developer console, interactive debugger and REPL for PHP.
 * [JSON Placeholder](https://jsonplaceholder.typicode.com/) - Free fake API for testing and prototyping.
+* [JSONing](https://jsoning.com/api/) - Create a mock API from a JSON file for prototyping.
